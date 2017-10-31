@@ -1,0 +1,77 @@
+.detailWrap{
+	width:980px;
+	/*height:700px;*/
+	margin:0 auto;
+}
+.topTitle{
+	width:100%;
+	height:35px;
+	line-height:35px;
+}
+.topTitle li,
+.cenCon li p{
+	width:245px;
+	line-height:35px;
+	float:left;
+	text-align:center;
+	color:#2C4977;
+	font-size:14px;
+	position:relative;
+	z-index:5;
+}
+.topTitle li.col1{
+	background:#f0ecbd; 
+}
+.topTitle li.col2{
+	background:#aecf96
+}
+.topTitle li.col3{
+	background:#fbc088;
+}
+.topTitle li.col4{
+	background:#feac4e;
+}
+.topTitle li span{
+	width:28px;
+	height:28px;
+	background:url(../images/allPic.png) no-repeat;
+	position:absolute;
+	left:78px;
+	top:3px;
+}
+.topTitle li span.bg1{
+	background-position:-154px -92px;
+}
+.topTitle li span.bg2{
+	background-position:-186px -92px;
+}
+.topTitle li span.bg3{
+	left:62px;
+	background-position:-218px -92px;
+}
+.topTitle li span.bg4{
+	background-position:-314px -92px;
+}
+.cenCon{
+	width:980px;
+	height:625px;
+}
+.cenCon li{
+	width:100%;
+	height:35px;
+	line-height:35px;
+	border-bottom:1px dashed #cfdee8;
+	vertical-align:top;
+}
+.cenCon li p a{
+	color:#2C4977;
+}
+.cenCon li p a:hover{
+	text-decoration:underline;
+}
+.cenCon li p .vaild{
+	color:green;
+}
+.cenCon li p .invalid{
+	color:red;
+}

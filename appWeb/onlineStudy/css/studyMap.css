@@ -1,0 +1,458 @@
+body{
+	background:#f3f2f6;
+}
+/* 当前版本 */
+.nowLoc{
+	width:100%;
+	height:0.50rem;
+	line-height:0.50rem;
+	background:#64ccf2;
+	color:#fff;
+	position:relative;
+	text-indent:32px;
+	z-index:2;
+}
+.backIcon{
+	width:30px;
+	height:0.50rem;
+	position:absolute;
+	left:0px;
+	top:0px;
+	background:url(../images/backIcon.png) no-repeat center;
+}
+.nowLoc p{
+	max-width:90%;
+}
+.giftIcon{
+	width:30px;
+	height:30px;
+	position:absolute;
+	right:10px;
+	top:10px;
+	background:url(../images/whole.png) no-repeat 0 -201px;
+}
+/* studyMap */
+#studyMap{
+	width:100%;
+	position:absolute;
+	left:0px;
+	top:50px;
+}
+#scroller{
+	width:100%;
+	position:absolute;
+	left:0;
+	top:0px;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+.topStepDiv,
+.botStepDiv{
+	width:92%;
+	margin:0 auto;
+}
+.topStepDiv{
+	margin-top:15px;
+}
+.botStepDiv{
+	margin-top:25px;
+	position:relative;
+	padding-bottom:4px;
+}
+.topStepDiv li{
+	width:49%;
+	height:100px;
+	float:left;
+	border-radius:5px;
+	position:relative;
+}
+.topStepDiv li:nth-of-type(1){
+	background:#64ccf2;
+}
+.topStepDiv li:nth-of-type(2){
+	background:#fec812;
+}
+.topStepDiv li:nth-of-type(3){
+	background:#c7da33;
+}
+.topStepDiv li:nth-of-type(4){
+	background:#2ed4ce;
+}
+.topStepDiv li:nth-of-type(2n-1){
+	float:left;
+}
+.topStepDiv li:nth-of-type(2n){
+	float:right;
+}
+.topStepDiv li:nth-of-type(1),
+.topStepDiv li:nth-of-type(2){
+	margin-bottom:8px;
+}
+.topStepDiv li span{
+	width:95px;
+	height:49px;
+	position:absolute;
+	left:10px;
+	top:0px;
+	opacity:0.2;
+}
+.topStepDiv li:nth-of-type(1) span{
+	opacity:1;
+	background:url(../images/stepNum_1.png) no-repeat;
+}
+.topStepDiv li:nth-of-type(2) span{
+	background:url(../images/stepNum_2.png) no-repeat;
+}
+.topStepDiv li:nth-of-type(3) span{
+	background:url(../images/stepNum_3.png) no-repeat;
+}
+.topStepDiv li:nth-of-type(4) span{
+	background:url(../images/stepNum_4.png) no-repeat;
+}
+.topStepDiv li:nth-of-type(1) span,
+.topStepDiv li:nth-of-type(2) span,
+.topStepDiv li:nth-of-type(3) span,
+.topStepDiv li:nth-of-type(4) span{
+	background-size:cover;
+}
+.topStepDiv li strong{
+	color:#fff;
+	font-size:0.20rem;
+	font-weight:normal;
+	position:absolute;
+	right:15px;
+	bottom:10px;	
+}
+/* botStepDiv */
+.nowTask{
+	width:100%;
+	height:0.35rem;
+	line-height:.35rem;
+	display:inline-block;
+	color:#666666;
+	font-size:0.18rem;
+	font-weight:normal;
+	border-left:5px solid #64ccf2;
+}
+.nowTask span{
+	color:#30addb;
+	font-size:0.16rem;
+	max-width:76%;
+	display:block;
+	margin-left:5px;
+}
+.nowTask em{
+	font-style:normal;
+	font-size:0.18rem;
+	margin-left:5px;
+}
+.goldenBox{
+	position:relative;
+	margin-top:25px;
+}
+.goldenWrap{
+	position:absolute;
+	top:0px;
+}
+.goldNum{
+	font-size:0.90rem;
+	font-family:"Georgia";
+	color:#feb900;
+	position:relative;
+}
+.rewordPic{
+	width:50px;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	color:#fff;
+	background:url(../images/whole.png) no-repeat 0 -50px;
+	position:absolute;
+	left:-35px;
+	top:0px;
+	font-size:0.16rem;
+	font-family:"Microsoft YaHei";
+}
+.goldenPic{
+	width:90px;
+	height:103px;
+	background:url(../images/goldenPic.png) no-repeat;
+}
+.backKnBtn{
+	width:100%;
+	height:35px;
+	line-height:35px;
+	background:#e9e9e9;
+	color:#666;
+	font-size:0.16rem;
+	display:block;
+	margin:25px auto 0px;
+	position:relative;
+	z-index:2;
+}
+.backKnBtn i{
+	color:#fea100;
+	font-weight:bold;
+	font-style:normal;
+}
+.backKnBtn span.tracTit{
+	margin-left:5px;
+}
+.checkBtn{
+	margin-left:5px;
+	color:#44b4de;
+}  
+.goChallengeBtn{ 
+	width:100%;
+	height:40px;
+	line-height:40px;
+	background:#64ccf2;
+	font-size:0.18rem;
+	text-align:center;
+	color:#fff;
+	display:block;
+	margin:25px auto 0px;
+	border-radius:6px;
+}
+#studyInfoDivWin{
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:50%;
+	top:0px;
+	margin-left:-50%;
+	display:none;
+	z-index:1000;
+	opacity:0;
+}
+/* 视频讲解 */
+#videoInfo{
+	margin:0 auto;
+	z-index:2;
+}
+#studyInfoLay,
+#taskWrap{
+	width:95%;
+	height:80%;
+	background:rgba(255,255,255,0.3);
+	border-radius:6px 13px 6px 6px;
+	position:absolute;
+	left:50%;
+	margin-left:-47.5%;
+}
+#studyInfo,
+.taskBox{
+	width:95%;
+	height:95%;
+	background:#fff;
+	margin:2.5% auto 0px;
+	position:relative;
+	border-radius:6px;
+}
+#studyInfoLay{
+	z-index:1;
+}
+#taskWrap{
+	display:none;
+	opacity:0;
+	z-index:1000;
+}
+.videoAbtn{
+	width:50px;
+	height:50px;
+	position:absolute;
+	right:0px;
+	top:0px;
+	background:url(../images/whole.png) no-repeat;
+	z-index:100;
+}
+/* 点拨指导 */
+.comHeadTit{
+	width:100%;
+	margin:0 auto;
+	position:relative;	
+	text-align:center;
+	z-index:2;
+	border-bottom:1px solid #e2e2e2;
+}
+.comHeadTit strong{
+	color:#64ccf2;
+	font-size:0.18rem;
+	display:block;
+	padding-top:5px;
+}
+.comHeadTit p{
+	padding:5px 10px;
+	text-align:center;
+	color:#999;
+	font-size:0.14rem;
+}
+.otherBtn{
+	width:50px;
+	height:50px;
+	background:url(../images/close.png) no-repeat 19px top;
+	position:absolute;
+	top:0px;
+	z-index:3;
+	right:0px;
+}
+.comDetailCon{
+	width:100%;
+	height:260px;
+	position:relative;
+}
+#guideScroll,
+#knowledgeScroll,
+#solveExampleScroll{
+	width:100%;
+	position:absolute;
+	left:0;
+	top:0;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+.comConHeadType{
+	height:24px;
+	line-height:24px;
+	color:#64ccf2;
+	font-size:0.16rem;
+	text-indent:24px;
+	margin:8px 0 -8px 0;
+	position:relative;
+}
+.targetIcon{
+	width:18px;
+	height:18px;
+	position:absolute;
+	left:6px;
+	top:3px;
+	background:url(../images/whole.png) no-repeat 0 -256px;
+}
+.createDiv{
+	width:100%;
+	margin:10px 0 0 8px;
+	font-size:0.14rem;
+	color:#666;
+}
+.comSpanTit{
+	font-weight:bold;
+	color:#666;
+}
+.comSpanTitCon{
+	display:inline-block;
+}
+.conWrap,
+.conWrap_1{
+	padding-right:10px;
+}
+.conTit{
+	margin-top:3px;
+}
+.conWrap p,
+.conWrap_1 p{
+	line-height:22px;
+}
+.comSpanTitCon p img{
+	margin:3px 0px;
+}
+/* 媒询 */
+@media all and (max-width:336px){
+	.comHeadTit strong{
+		padding-top:0px;
+	}
+	.comHeadTit p{
+		padding:0px 10px;
+	}
+}
+@media all and (max-width:350px){
+	.topStepDiv li{
+		height:78px;
+	}
+	.topStepDiv li span{
+		width:70px;
+		height:36px;
+	}
+	.stepNumFive{
+		font-size:0.36rem;
+	}
+	.nowTask,
+	.topStepDiv li strong{
+		font-size:0.17rem
+	}
+}
+@media all and (min-width:351px) and (max-width:400px){
+	.topStepDiv li{
+		height:90px;
+	}
+	.topStepDiv li span{
+		width:90px;
+		height:47px;
+	}
+	.topStepDiv li strong{
+		font-size:0.18rem;
+	}
+	.nowTask{
+		font-size:0.18rem;
+	}
+	
+}
+#mainTaskCon{
+	position:relative;
+}
+#tasklist{
+	width:100%;
+	position:absolute;
+	left:0;
+	top:0;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+#topTask{
+	padding:10px 0px;
+}
+#stadus{
+	width:100%;
+}
+#stadus li{
+	width:100%;
+	height:39px;
+	line-height:40px;
+	border-bottom:1px dashed #ccc;
+	vertiacal-align:middle;
+}
+#stadus li p{
+	float:left;
+	
+	color:#666;
+}
+#stadus li p.taskListName{
+	width:60%;
+	max-width:60%;
+	text-align:center;
+}
+#stadus li p.complete{
+	width:10%;
+	height:100%;
+	position:relative;
+}
+#stadus li p.reword{
+	width:30%;
+	max-width:30%;
+}
+.taskIcon{
+	width:25px;
+	height:25px;
+	background:url(../images/whole.png) no-repeat 0 -231px;
+	position:absolute;
+	left:0px;
+	top:8px;
+}
+.noRecordP{
+	width:90%;
+	display:none;
+	text-align:center;
+	margin:15px auto 0px;
+	color:#666;
+}
+.noRecordP img{
+	text-align:center;
+	display:inline-block;
+	margin-bottom:10px;
+}

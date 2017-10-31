@@ -1,0 +1,251 @@
+@charset "utf-8";
+.addNewBox{
+	width:785px;
+	height:24px;
+	padding:8px 10px;
+	line-height:24px;
+	background:#fff url(../images/info.png) no-repeat 10px 9px;
+	color:#666;
+	border-bottom:1px solid #ccc;
+	font-size:14px;
+	position:relative;
+}
+.addNewBox p{
+	text-indent:26px;
+}
+.addNewAddBtn{
+	width:110px;
+	height:35px;
+	line-height:35px;
+	background:#a2cd4f;
+	text-align:center;
+	position:absolute;
+	right:5px;
+	bottom:0px;
+	color:#fff;
+	cursor:pointer;
+}
+.addNewAddBtn:hover{
+	background:#91c42f;
+}
+.addManagerBox li{
+	float:left;
+	width:235px;
+	height:150px;
+	margin:10px 6px;
+	box-shadow:0 1px 2px rgba(0,0,0,.12);
+	padding:8px;
+	color:#444;
+	position:relative;
+	overflow:hidden;
+	border:1px solid #E2E2E2;
+	background:#fff;
+}
+.addManagerBox li.hoverBor,
+.addManagerBox li:hover{
+	border:1px solid #68c7ec;
+}
+.addManagerBox .userName,
+.addManagerBox .addressTxt,
+.addManagerBox .phone{
+	border-bottom:1px dotted #dcdcdc;
+}	
+.addManagerBox .userName{
+	display:block;
+	font-size:14px;
+	font-weight:400;
+	padding:0px 0 3px 22px;
+	height:22px;
+	line-height:22px;
+	background:url(../images/user.png) no-repeat 0 3px;
+}
+.addressTxt{
+	padding:8px 0 6px 22px;
+	height:54px;
+	overflow:hidden;
+	background:url(../images/local.png) no-repeat 0 8px;
+}
+.phone{
+	padding:8px 0 6px 22px;
+	background:url(../images/tel.png) no-repeat 3px 7px;	
+}
+.setBox{
+	float:right;
+	margin-top:6px;
+	margin-right:14px;
+	position:relative;
+	z-index:4;
+}
+.setBox a{
+	color:#1b8dc7;
+}
+.setBox a:hover{
+	text-decoration:underline;
+}
+.defauAdd,
+.setdefauAdd{
+	position:absolute;
+	right:10px;
+	padding:0 10px;
+	border-radius:0 0 5px 5px;
+	color:#fff;
+}
+.defauAdd{
+	background:#68c7ec;
+	top:0px;
+	display:none;
+}
+.setdefauAdd{
+	background:#ABDBEE;
+	cursor:pointer;
+	top:-18px;
+	z-index:4;
+}
+.optIcon{
+	width:0px;
+	height:0px;
+	border-width:15px;
+	border-style:dashed solid solid dashed;
+	border-color:transparent #86d3f0 #86d3f0 transparent;
+	position:absolute;
+	right:1px;
+	bottom:1px;
+	display:none;
+}
+.choiceIcon{
+	width:15px;
+	height:15px;
+	background:url(../images/spritePic.png) no-repeat -25px -16px;
+	position:absolute;
+	left:0px;
+	top:-2px;
+}
+.boldBor{
+	width:249px;
+	height:164px;
+	position:absolute;
+	left:0;
+	top:0;
+	border:1px solid #68c7ec;
+	z-index:1;
+	display:none;
+}
+/* 当前选中状态下的一些激活元素的显示 */
+.addManagerBox li.default .defauAdd,
+.addManagerBox li.default .optIcon,
+.addManagerBox li.default .boldBor{
+	display:block;
+}
+/* 修改增加地址 */
+.setFixAddBox{
+	width:592px;
+	height:320px;
+	position:absolute;
+	left:-50%;
+	top:50%;
+	margin-left:-317px;
+	margin-top:-161px;
+	background:#F7f8f8;
+	z-index:1000;
+	border:1px solid #eee;
+	padding:20px;
+	display:none;
+}
+.setFixTit{
+	font-size:18px;
+	color:#333;
+	font-weight:normal;
+}
+.comEditFixBox{
+	padding:10px 0px;
+	color:#666;
+	position:relative;
+}
+.comEditFixBox em{
+	font-style:normal;
+	width:100px;
+	/*display:inline-block*/;
+	text-align:right;
+}
+.comEditFixBox em i{
+	color:#FF0000;
+	font-style:normal;
+}
+.comInpTxt{
+	vertical-align:middle;
+	height:33px;
+	line-height:33px;
+	padding-left:5px;
+	border:1px solid #ccc;
+	color:#666;
+}
+.inpWid1{
+	width:290px;
+}
+.inpWid2{
+	width:338px;
+}
+.tipInfos{
+	color:#f52648;
+	padding-left:18px;
+	background:url(../images/icon6.jpg) 0px center no-repeat;
+	display:none;
+}
+.saveInfo{
+	width:100px;
+	margin:10px 0 0 238px;
+	cursor:pointer;
+	background:#f5c055;
+	height:30px;
+	line-height:30px;
+	border:none;
+	font-size:14px;
+	color:#fff;
+	outline:none;
+	font-family:"Microsoft YaHei";
+}
+.saveInfo:hover{
+	background:#ff3300;
+}
+#cancelUpdate{
+	margin-left:15px;
+	color:#666;
+}
+#cancelUpdate:hover{
+	text-decoration:underline;
+}
+.closeAddWin{
+	width:20px;
+	height:20px;
+	background:url(../images/close.png) 0 0 no-repeat;
+	position:absolute;
+	right:15px;
+	top:10px;
+	cursor:pointer;
+}
+.addInfoHead{
+	width:634px;
+	background:#e6e6e6;
+	height:40px;
+	line-height:40px;
+	position:absolute;
+	left:-1px;
+	top:-1px;
+	text-indent:20px;
+}
+.fixAddForm{
+	margin-top:30px;
+}
+.blank{
+	width:4px;
+	display:inline-block;
+}
+.blankMl{
+	margin-left:8px;
+}
+.ml2{
+	margin-left:5px;
+}
+#province{
+	
+}

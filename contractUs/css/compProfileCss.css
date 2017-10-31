@@ -1,0 +1,66 @@
+@CHARSET "UTF-8";
+.comProWrap{
+	position:relative;
+}
+.margB{
+	margin-bottom:10px;
+}
+.proFileTxt{
+	width:570px;
+	font-size:14px;
+	float:left;
+	line-height:24px;
+}
+.proFileTxt p{
+	text-indent:2em;
+	margin-bottom:10px;
+	color:#666;
+}
+.profileBox img{
+	position:absolute;
+	right:0px;
+	top:250px;
+}
+.compCulture{
+	width:408px;
+	font-size:14px;
+	color:#595959;
+	margin:10px 0 0 20px;
+}
+.compCulture li{
+	border-bottom:1px solid #DDE5ED;
+	height:46px;
+	width:100%;
+	position:relative;
+	
+}
+.nums{
+	width:32px;
+	height:32px;
+	line-height:32px;
+	border-radius:50%;
+	color:#fff;
+	text-align:center;
+	position:absolute;
+	left:0;
+	top:7px;
+	background:#8fbc2c;
+}
+.culTit{
+	position:absolute;
+	left:45px;
+	top:12px;
+	font-size:15px;
+	color:#595959;
+	font-weight:bold;
+}
+.detailTxt{
+	font-size:12px;
+	position:absolute;
+	left:120px;
+	top:14px;
+	color:#616161;
+}
+.l1{
+	left:148px;
+}

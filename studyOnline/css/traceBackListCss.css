@@ -1,0 +1,266 @@
+.traceBackWrap{
+	width:100%;
+	height:auto;
+	position:relative;
+}
+.bottomDec{
+	width:100%;
+	height:10px;
+	background:url(../images/quesWrapBg.png) no-repeat left bottom;
+	position:absolute;
+	left:0;
+	bottom:0;
+	z-index:2;
+}
+.traceBackTop{
+	width:100%;
+	height:78px;
+	background:url(../images/headBg.png) no-repeat;
+	position:relative;
+	z-index:3;
+}
+.topDec{
+	width:893px;
+	height:21px;
+	background:url(../images/topShadow.png) no-repeat;
+	position:absolute;
+	left:99px;
+	bottom:-21px;
+	z-index:4;
+}
+.traceBackTop h2{
+	font-size:20px;
+	color:#f90;
+	text-indent:100px;
+	padding-top:20px
+}
+.traceBackTop p{
+	font-size:16px;
+	color:#999;
+	text-indent:100px;
+}
+.mainTreeWrap{
+	width:100%;
+	background:url(../images/midBg.png) repeat-y;
+	position:relative;
+	z-index:1;
+}
+.resultDivBox{
+	width:880px;
+	margin-left:105px;
+}
+.resultDiv{
+	width:880px;
+	height:100px;
+	background:#fff;
+	color:#777;
+	padding:10px 0 5px 0px;
+	border-bottom:1px solid #e0e0e0;
+}
+.leftSimilePic{
+	width:99px;
+	height:99px;
+	background:url(../images/similePic.jpg) no-repeat;
+	margin:0px 0 0 15px;
+}
+.rightDetialBox{
+	width:750px;
+	margin:10px 0 0 15px;
+	position:relative;
+}
+.congra{
+	font-size:18px;
+	color:#333;
+}
+.studyInfos{
+	width:616px;
+	font-size:14px;
+}
+.congra span{
+	color:#f90;
+	font-family:"Georgia";
+	font-size:26px;
+}
+.studyInfos span,
+.noComplete span{
+	color:#f90;
+}
+.studyLineBox{
+	width:100%;
+}
+.sureBtn{
+	width:137px;
+	height:46px;
+	line-height:35px;
+	background:url(../images/subBtn.gif) no-repeat;
+	text-align:center;
+	cursor:pointer;
+	color:#fff;
+	position:absolute;
+	right:-2px;
+	top:22px;
+	font-size:18px;
+}
+.sureBtn:hover{
+	background:url(../images/subBtn.gif) no-repeat 0 -46px;
+}
+.studyLineBox,
+.useLineDiv,
+.noUseDiv{
+	width:880px;
+	height:auto;
+	background:#fff;
+	color:#777;
+	position:relative;
+	padding:10px 0px 15px 0px;
+}
+.infos{
+	text-align:center;
+	font-size:14px;
+	padding:5px 0px;	
+}
+.icons{
+	width:32px;
+	height:32px;
+	position:absolute;
+	left:130px;
+	top:0;
+	background:url(../images/jihua2.png) no-repeat;
+}
+.stateBox td{
+	position:relative;
+	height:30px;
+	color:#666;
+	font-size:16px;
+}
+.comCol{
+	width:26px;
+	height:26px;
+	position:absolute;
+	top:3px;
+}
+.col_bj1{
+	background:#cbe66e;
+	right:85px;
+}
+.col_bj2{
+	background:#fdbd69;
+	left:90px;
+}
+.col_bj3{
+	background:#d3d3d3;
+	left:-26px;
+}
+.parentTree{
+	position:relative;
+	width:896px;
+	background:#fff;
+	overflow:hidden;
+	margin:0px 0 0 97px;
+}
+.treeBox{
+	width:886px;
+	position:absolute;
+	left:0;
+	top:0;
+	padding-left:10px;
+}
+.numKpBox{
+	width:100%;
+	line-height:41px;
+}
+.stepNums{
+	color:#e88300;
+	font-family:Arial;
+	font-size:28px;
+	font-weight:bold;
+	margin-right:2px;
+	font-style:italic;
+}
+.arrowBox{
+	width:758px;
+	height:47px;
+	margin-left:118px;
+	position:relative;
+}
+.arrowIcon{
+	width:121px;
+	height:30px;
+	background:url(../images/arrowIcon.jpg) no-repeat;
+	position:absolute;
+	left:315px;
+	top:16px;
+}
+.numKp{
+	width:118px;
+	height:41px;
+	font-size:16px;
+	max-width:118px;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	white-space:nowrap;
+	color:#333;
+}
+.font14{
+	font-size:14px;
+	padding: 0 2px;
+}
+.nowKpBox{
+	width:758px;
+	text-align:center;
+	border-top:1px dashed #ddd;
+	border-bottom:1px dashed #ddd;	
+}
+.nowKp,
+.thisKp{
+	text-overflow:ellipsis;
+	overflow:hidden;
+	white-space:nowrap;
+	text-align:center;
+	display:inline-block;
+	margin:0px 5px 0px 0px;
+	cursor:default;
+	font-size:16px;
+	color:#666;
+	height:41px;
+	line-height:41px;
+	/*border:4px solid #c0c0c0;
+	margin-top:3px;
+	background:#d3d3d3;*/
+	
+}
+.oranges{
+	color:#FF9102;
+}
+.green{
+	color:#85a417;
+}
+.grays{
+	background:#d3d3d3;
+	border-color:#c0c0c0;
+}
+.thisKp{
+	width:758px;
+	max-width:758px;
+}
+.nowKp{
+	width:121px;
+	max-width:121px;
+}
+.parentScroll{
+	width:11px;
+	position:absolute;
+	right:0;
+	top:78px;
+	border-radius:20px;
+	z-index:5;
+}
+.scrollBar{
+	width:11px;
+	height:50px;
+	background:#999;
+	position:absolute;
+	left:-3px;
+	top:0;
+	border-radius:20px;
+}

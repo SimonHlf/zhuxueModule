@@ -1,0 +1,980 @@
+html{
+	overflow:hidden;
+}
+body{
+	overflow:hidden;
+	position:relative;
+	position:relative;
+}
+.nowLoc{
+	width:100%;
+	height:0.50rem;
+	line-height:0.50rem;
+	background:#64ccf2;
+	color:#fff;
+	position:relative;
+	z-index:600;
+}
+.nowLoc p{
+	text-indent:32px;
+}
+.backIcon{
+	width:30px;
+	height:0.50rem;
+	position:absolute;
+	left:0px;
+	top:0px;
+	background:url(../../onlineStudy/images/backIcon.png) no-repeat center;
+}
+.subjDiv{
+	height:0.5rem;
+	position:absolute;
+	right:10px;
+	top:0px;
+}
+#subjSpan{
+	padding-right:16px;
+}
+.topTri{
+	border:6px solid #64ccf2;
+	border-top-color:#5F5250;
+	right:0rem;
+	top:24px;
+	-webkit-transition-property:-webkit-transform;
+	-webkit-transition-duration:250ms;	
+	-webkit-transform:rotate(0deg) translateZ(0);
+	-webkit-transform-origin:center center;
+	transform:rotate(0deg) translateZ(0);
+}
+#spanTri.flip .topTri{
+	-webkit-transform:rotate(-180deg) translateZ(0);
+}
+/* 学科数据层 */
+#stuSubWrapper{
+	width:100%;
+	background:#fff;
+	position:absolute;
+	left:0px;
+	top:0px;
+	z-index:503;
+	-webkit-transition:0.5s;
+	transition:0.5s;
+	-webkit-transform:translateY(-100%);
+	transform:translateY(-100%);
+}
+.shadowSpan{
+	width:100%;
+	height:10px;
+	position:absolute;
+	left:0px;
+	box-shadow:0 -6px 6px #fff;
+	bottom:-10px;
+	z-index:3;	
+}
+@media all and (min-height:650px) and (max-height:800px){
+	#stuSubWrapper{
+		height:25%;
+	}
+}
+@media all and (min-height:800px){
+	#stuSubWrapper{
+		height:20%;
+	}
+}
+.subNames{
+	width:30%;
+	height:80px;
+	float:left;
+	margin:10px 5px 10px;
+	position:relative;
+	text-align:center;
+	line-height:130px;
+	color:#666;
+}
+.subNames:nth-of-type(1),
+.subNames:nth-of-type(2),
+.subNames:nth-of-type(3){
+	margin-bottom:0px;
+}
+.comLocScroll{
+	width:100%;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.subImgBg{
+	width:50px;
+	height:50px;
+	position:absolute;
+	left:50%;
+	margin-left:-25px;
+	top:0px;
+	background:url(../images/comSubBg.png) no-repeat;
+}
+.mathBg{
+	background-position:0 -450px;
+}
+.phyBg{
+	background-position:0 -50px;
+}
+.biologyBg{
+	background-position:0 -200px;
+}
+.chemBg{
+	background-position:0 -100px;
+}
+.geograBg{
+	background-position:0 -150px;
+}
+.sicBg{
+	background-position:0 -350px;
+}
+.sicBg_1{
+	background-position:0 -300px;
+}
+.yuwenBg{
+	background-position:0 -400px;
+}
+.engBg{
+	background-position:0 0px;
+}
+.historyBg{
+	background-position:0 -250px;
+}
+#subjLayer,
+#locLayerProv,
+#locLayerCity,
+.bigLayer{
+	width:100%;
+	background:rgba(0,0,0,0.6);
+	position:absolute;
+	left:0px;
+	display:none;
+}
+#subjLayer{
+	top:50px;
+	z-index:500;
+}
+#locLayerProv,
+#locLayerCity{
+	top:95px;
+	z-index:460;
+}
+.bigLayer{
+	height:100%;
+	top:0px;
+	z-index:602;
+}
+/* 定位查询层 */
+.location{
+    width:100%;
+    height:38px;
+    padding:0;
+    background:#fff;
+    color:#666;
+    box-shadow:0 0 6px #666;
+    padding-top:7px;
+    position:relative;
+    z-index:502;
+}
+.comLocDiv{
+	width:70px;
+	height:30px;
+	line-height:30px;
+	background:#64ccf2;
+	position:relative;
+	color:#fff;
+	border-radius:4px;
+	position:relative;
+	float:left;
+	font-size:0.14rem;
+}
+.comLocDiv:nth-of-type(1){
+	margin-left:10px;
+	text-indent:10px;
+}
+.comLocDiv:nth-of-type(2){
+	margin-left:5px;
+	text-indent:5px;
+}
+.triIcon{
+	width:16px;
+	height:11px;
+	position:absolute;
+	right:5px;
+	top:10px;
+	background:url(../../reportCen/images/triIcon.png) no-repeat;
+}
+/* 定位数据层 */
+.dataBox{
+	width:100%;
+	height:40%;
+	background:#fff;
+	position:absolute;
+	left:0px;
+	top:0px;
+	z-index:470;
+	-webkit-transition:0.5s;
+	transition:0.5s;
+	-webkit-transform:translateY(-100%);
+	transform:translateY(-100%);
+}
+.dataBox li{
+	float:left;
+	width:21.5%;
+	max-width:21.5%;
+	height:35px;
+	line-height:35px;
+	text-align:center;
+	border:1px solid #D9D9D9;
+	background:#fff;
+	margin:10px 0 0px 7px;
+}
+.comDecDiv{
+	width:100%;
+	height:10px;
+	background:#fff;
+}
+.dataBox li a{
+	width:100%;
+	height:100%;
+	display:inline-block;
+	color:#666;
+}
+/* 搜索导师名字层 */
+.searDiv{
+	width:47%;
+	height:30px;
+	background:#e5e5e5;
+	border-radius:4px;
+	margin-right:10px;
+	position:relative;
+}
+#ntName{
+	width:75%;
+	border:none;
+	background:none;
+	height:100%;
+	padding-left:3px;
+	font-size:0.14rem;
+	color:#333;
+}
+#ntName::-webkit-input-placeholder{
+	color:#999;
+}
+.searBtn{
+	width:40px;
+	height:30px;
+	position:absolute;
+	right:0px;
+	top:0px;
+}
+.searBtn span{
+	width:20px;
+	height:20px;
+	background:url(../images/searBtn.png) no-repeat;
+	background-size:cover;
+	position:absolute;
+	left:15px;
+	top:5px;
+}
+/* 导师列表数据层 */
+#wrapper{
+    width:100%;
+    position:relative;
+    background:#f3f2f6;
+}
+#scroller{
+	width:100%;
+    position:absolute;
+    left:0px;
+    top:0px;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+#thelist{
+	width:95%;
+	margin:10px auto 0px;
+}
+.netListBox{
+	height:115px;
+	background:#fff;
+	margin-bottom:10px;
+	box-shadow:0 0 10px #B6B6B6;
+	border-radius:4px;
+	font-size:0.14rem;
+	color:#333;
+}
+.netTeaImg,
+.shadowDiv{
+	width:80px;
+	height:80px;
+	float:left;
+	border-radius:50%;
+}
+.netTeaImg{
+	position:relative;
+	border:5px solid #e7e7e7;
+	margin:15px 5px 0 10px;
+}
+.shadowDiv{
+	box-shadow:5px 4px 6px #666 inset;
+	position:absolute;
+	left:0px;
+	top:0px;
+	z-index:2;
+	overflow:hidden;
+}
+.headPic{
+	width:80px;
+	height:80px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-radius:50%;
+	z-index:1;
+}
+.shadowDiv a{
+	width:100%;
+	height:25px;
+	line-height:17px;
+	background:rgba(0,0,0,0.6);
+	position:absolute;
+	left:0px;
+	bottom:-5px;
+	font-size:0.12rem;
+	color:#fff;
+	text-align:center;
+}
+.netInfoBox{
+	width:65%;
+	margin-top:5px;
+	position:relative;
+}
+.ntNameStrong{
+	width:108px;
+	max-width:108px;
+	display:inline-block;
+	font-size:0.18rem;
+	font-weight:normal;
+	color:#333;
+}
+.regLoc{
+	width:90px;
+	max-width:90px;
+	height:21px;
+	position:absolute;
+	left:105px;
+	top:6px;
+	text-indent:16px;
+	font-size:14px;
+}
+.showStarBox,
+.teacheGradeSubj,
+.attachBox{
+	font-size:14px;
+	height:24px;
+	line-height:24px;
+	margin-top:3px;
+}
+.showStarBox dd{
+	width:15px;
+	height:15px;
+	float:left;
+	margin:6px 4px 0 0;
+	background:url(../images/star.png) no-repeat 0 0;
+	background-size:cover;
+}
+.showStarBox dd.on{
+	background-position:0 -30px;
+}
+.showStarBox dd.halfStar{
+	background-position:0 -15px;
+}
+.teaGraP{
+	position:relative;
+	text-indent:20px;
+}
+.teachIcon,
+.yearIcon,
+.locIcon{
+	position:absolute;
+	left:0px;
+	background:url(../images/ntIcon.png) no-repeat;
+}
+.teachIcon{
+	width:17px;
+	height:15px;
+	background-position:0 0;
+	top:5px;
+}
+.yearIcon{
+	width:16px;
+	height:18px;
+	background-position:0 -25px;
+	top:4px;
+}
+.locIcon{
+	width:13px;
+	height:21px;
+	top:0px;
+	background-position:0 -53px;
+}
+.yearSpan{
+	font-size:14px;
+	color:#333;
+	text-indent:18px;
+	margin-left:5px;
+	position:relative;
+}
+.attachBox a{
+	float:left;
+	margin-left:-6px;
+	color:#333;
+	font-size:14px;
+}
+.triangles,
+.triangles_1{
+	width:0px;
+	height:0px;   
+    border-width:8px;  
+    border-style:solid dashed dashed solid;  
+    display:inline-block;
+    float:left;
+    margin-top:4px;
+}
+.triangles{
+	border-color:transparent transparent transparent #32b9ed;
+}
+.triangles_1{
+	border-color:transparent transparent transparent #FF4033;
+}
+.attachBox a.endA{
+	color:#FF4033;
+}
+.attachBox a.freeAColor{
+	color:#32B9ED;
+}
+.pauseSpan{
+	width:20px;
+	height:20px;
+	background:url(../images/01.png) no-repeat;
+	background-size:cover;
+	display:inline-block;
+	float:left;
+	margin:3px 5px 0 0;
+}
+.attachBox a.pauseBtn{
+	color:#FF4033;
+}
+.noRegNtTeaBox{
+	width:110px;
+	height:280px;
+	margin:0px auto;
+	text-align:center;
+	color:#999;
+	font-size:0.16rem;
+}
+.noRegNtTeaBox p{
+	padding-top:5px;
+}
+.noRegNtTeaBox img{
+	padding-top:35px;
+	opacity:0.9;
+}
+.attachSucc{
+	width:60px;
+	height:59px;
+	background:url(../images/tagPic.png) no-repeat;	
+	position:absolute;
+	left:-109px;
+	top:-9px;
+}
+.attachSucc p{
+	color:#fff;
+	font-size:0.12rem;
+	-webkit-transform:rotate(-46deg);
+	transform:rotate(-46deg);
+	position:absolute;
+	left:-4px;
+	top:10px;
+}
+/* 支付窗口 */
+.payWinDiv{
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:0px;
+	top:0px;
+	z-index:700;
+	background:#ececec;
+	-webkit-transition:0.5s;
+	transition:0.5s;
+	-webkit-transform:translateX(100%);
+	transform:translateX(100%);
+}
+#payWrapper{
+	width:100%;
+	background:#f3f2f6;
+	position:relative;
+}
+.payScroller{
+	width:100%;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.detailTit{
+	width:100%;
+	height:39px;
+	line-height:40px;
+	border-bottom:1px solid #dddddd;
+	background:#fff;
+	color:#333;
+}
+.goBackBtn{
+	width:60px;
+	color:#2798c2;
+	height:100%;
+	text-indent:22px;
+	position:relative;
+}
+.goBackBtn span{
+	width:28px;
+	height:28px;
+	background:url(../../studyRecord/images/back.png) no-repeat left center;
+	position:absolute;
+	left:0px;
+	top:7px;
+	background-size:cover;
+}
+.ntInfoTit,
+.ypTit,
+.selPayWayTit{
+	height:35px;
+	line-height:35px;
+	background:#fff;
+	border-left:3px solid #2798c2;
+	border-bottom:1px solid #ddd;
+	text-indent:10px;
+	color:#333;
+	margin-top:10px;
+}
+.listPayTit{
+	background:#fff;
+	color:#666;
+	margin-bottom:10px;
+}
+.listPayTit li{
+	width:100%;
+	height:44px;
+	line-height:45px;
+	border-bottom:1px solid #ddd;
+	font-size:16px;
+	position:relative;
+	text-indent:46px;
+	color:#333;
+}
+.listPayTit li:nth-last-of-type(1){
+	height:45px;
+	border:none;
+	color:#f84a4a;
+}
+.listPayTit li span{
+	width:26px;
+	position:absolute;
+	background:url(../images/payTitIcon.png) no-repeat;
+	left:10px;
+	top:10px;
+	background-size:cover;
+}
+.listPayTit li i{
+	font-style:normal;
+	color:#333;
+}
+.listPayTit li:nth-last-of-type(1) i{
+	color:#f84a4a;
+}
+.listPayTit li:nth-of-type(1) span{
+	background-position:0 1px;
+	height:30px;
+}
+.listPayTit li:nth-of-type(2) span{
+	background-position:0 -30px;
+	height:26px;
+}
+.listPayTit li:nth-last-of-type(1) span{
+	background-position:0 -57px;
+	height:26px;
+}
+.ypCoinP{
+	height:45px;
+	line-height:45px;
+	background:#fff;
+	padding-left:10px;
+	color:#666;
+	margin-bottom:10px;
+	position:relative;
+}
+.ypCoinP p{
+	padding:0 5px;
+	height:25px;
+	line-height:25px;
+	border:1px solid #48a8cb;
+	border-radius:4px;
+	background:#fff;
+	position:absolute;
+	left:175px;
+	top:10px;
+	font-size:0.12rem;
+	color:#48a8cb;
+}
+.ypCoinP p span{
+	width:0px;
+	height:0px;
+	border-style:dashed solid dashed dashed;
+	border-color:transparent #48a8cb transparent transparent;
+	border-width:8px;
+	position:absolute;
+	left:-16px;
+	top:4px;
+}
+.ypCoinP .txtInp{
+	width:70px;
+	height:4px;
+	padding:13px 0px 12px 0px;
+	background:none;
+	border:none;
+	border-bottom:1px solid #ccc;
+	color:#333;
+	font-size:16px;
+}
+.payWayUl li{
+	height:49px;
+	line-height:50px;
+	position:relative;
+	background:#fff;
+	border-bottom:1px solid #ddd;	
+}
+.payWayUl li:nth-last-of-type(1){
+	border-bottom:none;
+	height:50px;
+}
+.comPayLabel{
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:0px;
+	top:0px;
+	z-index:3;
+}
+.comPayStyRad{
+	opacity:0;
+}
+.payWayUl li img{
+	padding:10px 0 0 8px;
+	margin-right:10px;
+	float: left;
+}
+.payStyTxt{
+	height:100%;
+}
+.payStyTxt strong{
+	display:inline-block;
+	height:25px;
+	line-height:25px;
+	font-size:0.14rem;
+	font-weight: normal;
+	color:#333;
+	margin-top:5px;
+}
+.payStyTxt p{
+	font-size:0.12rem;
+	color:#999;
+	margin-top:-16px;
+}
+.cirSty_space,
+.cirSty_full{
+	border-radius:50%;
+	position:absolute;
+	top:12px;
+	z-index:2;
+}
+.cirSty_space{
+	width:23px;
+	height:23px;
+	border:1px solid #ccc;
+	right:11px;
+}
+.cirSty_full{
+	width:26px;
+	height:26px;
+	background:url(../images/payWaySel.png) no-repeat;
+	background-size:cover;
+	right:10px;
+}
+.payWayBot{
+	width:100%;
+	height:49px;
+	line-height:50px;
+	border-top:1px solid #e0e0e0;
+	background:#fff;
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	font-size:16px;
+	color:#333;
+}
+.payWayBot p{
+	padding-left:10px;
+}
+.payWayBot p span{
+	color:#f84a4a;
+}
+.payWayBot a{
+	position:absolute;
+	right:0px;
+	top:0px;
+	width:100px;
+	height:100%;
+	text-align:center;
+	background:#f84a4a;
+	color:#fff;
+}
+/* confirm确认层 */
+.confirmDiv{
+	width:180px;
+	height:100px;
+	background:#fff;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin-top:-50px;
+	margin-left:-90px;
+	display:none;
+	z-index:605;
+	border-radius:6px;
+	opacity:0;
+}
+.confirTxt{
+	height:65px;
+	text-align:center;
+	line-height:65px;
+	color:#666;
+}
+.confirBtn{
+	width:100%;
+	height:34px;
+	line-height:35px;
+	border-top:1px solid #d6dade;
+}
+.sureBtn,
+.cancelBtn{
+	height:100%;
+	display:inline-block;
+	float:left;
+	text-align:center;
+	line-height:35px;
+}
+.sureBtn{
+	width:89px;
+	border-right:1px solid #d6dade;
+	color:#32B9ED;
+}
+.cancelBtn{
+	width:90px;
+	color:#666;
+}
+/* confirm点击确定的提示信息层 */
+.tipInfoBox{
+	width:100%;
+	position:absolute;
+	left:0px;
+	top:0px;
+	z-index:605;
+	font-size:0.12rem;
+	-webkit-transition:0.5s;
+	transition:0.5s;
+	height:50px;
+	color:#333;
+	background:#fff;
+	box-shadow:0 0 5px #000;
+	-webkit-transform:translateY(-110%);
+	transform:translateY(-110%);
+}
+.iconDiv{
+	width:22px;
+	height:100%;
+	float:left;
+}
+.iconDiv span.succ,
+.iconDiv span.tip{
+	width:20px;
+	height:20px;
+	display:inline-block;
+	margin:15px 0 0 1px;
+}
+.iconDiv span.succ{
+	background:url(../images/sucIcon.png) no-repeat center;
+	background-size:cover;
+}
+.iconDiv span.tip{
+	background:url(../images/tipIcon.png) no-repeat center;
+	background-size:cover;
+}
+.innerCon{
+	float:left;
+	height:100%;
+	color:#333;
+	font-size:14px;
+	text-align:center;
+	position:relative;
+}
+.innerCon p{
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+/* 媒询搜索框宽度调整  */
+@media all and (min-width:360px) and (max-width:380px){
+	.comLocDiv{
+		width:80px;
+	}
+}
+@media all and (min-width:381px) and (max-width:410px){
+	.comLocDiv{
+		width:85px;
+	}
+}
+@media all and (min-width:411px) and (max-width:450px){
+	.comLocDiv{
+		width:94px;
+	}
+}
+@media all and (min-width:451px) and (max-width:480px){
+	.comLocDiv{
+		width:104px;
+	}
+}
+@media all and (min-width:481px) and (max-width:520px){
+	.comLocDiv{
+		width:112px;
+	}
+}
+@media all and (min-width:521px) and (max-width:560px){
+	.comLocDiv{
+		width:112px;
+	}
+	.searDiv{
+		width:50% !important; 
+	}
+}
+@media all and (min-width:561px) and (max-width:590px){
+	.comLocDiv{
+		width:120px;
+	}
+	.searDiv{
+		width:51% !important; 
+	}
+}
+@media all and (min-width:591px) and (max-width:620px){
+	.comLocDiv{
+		width:120px;
+	}
+	.searDiv{
+		width:54% !important; 
+	}
+}
+@media all and (min-width:621px) and (max-width:670px){
+	.comLocDiv{
+		width:128px;
+	}
+	.searDiv{
+		width:54% !important; 
+	}
+}
+@media all and (min-width:671px) and (max-width:710px){
+	.comLocDiv{
+		width:128px;
+	}
+	.searDiv{
+		width:57% !important; 
+	}
+}
+@media all and (min-width:711px) and (max-width:760px){
+	.comLocDiv{
+		width:138px;
+	}
+	.searDiv{
+		width:57% !important; 
+	}
+}
+@media all and (min-width:761px) and (max-width:800px){
+	.comLocDiv{
+		width:138px;
+	}
+	.searDiv{
+		width:59% !important; 
+	}
+}
+@media all and (min-width:801px) and (max-width:850px){
+	.comLocDiv{
+		width:147px;
+	}
+	.searDiv{
+		width:59% !important; 
+	}
+}
+@media all and (min-width:851px){
+	.comLocDiv{
+		width:147px;
+	}
+	.searDiv{
+		width:61% !important; 
+	}
+}
+/* 媒询定位数据层的margin调整  */
+@media all and (min-width:351px) and (max-width:380px){
+	.dataBox li{
+		margin:10px 0 0 8px;
+	}
+}
+@media all and (min-width:381px) and (max-width:415px){
+	.dataBox li{
+		margin:10px 0 0 9px;
+	}
+}
+@media all and (min-width:416px) and (max-width:460px){
+	.dataBox li{
+		margin:10px 0 0 10px;
+	}
+}
+@media all and (min-width:461px) and (max-width:500px){
+	.dataBox li{
+		margin:10px 0 0 11px;
+	}
+}
+@media all and (min-width:501px) and (max-width:560px){
+	.dataBox li{
+		margin:10px 0 0 13px;
+	}
+}
+@media all and (min-width:561px) and (max-width:640px){
+	.dataBox li{
+		margin:10px 0 0 15px;
+	}
+}
+@media all and (min-width:641px) and (max-width:710px){
+	.dataBox li{
+		margin:10px 0 0 17px;
+	}
+}
+@media all and (min-width:711px) and (max-width:780px){
+	.dataBox li{
+		margin:10px 0 0 20px;
+	}
+}
+@media all and (min-width:781px){
+	.dataBox li{
+		margin:10px 0 0 22px;
+	}
+}

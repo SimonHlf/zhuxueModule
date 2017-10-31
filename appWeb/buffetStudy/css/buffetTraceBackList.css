@@ -1,0 +1,277 @@
+body{
+	overflow:hidden;
+	background:#f3f2f6;
+	position:relative;
+}
+.nowLoc{
+	width:100%;
+	height:0.50rem;
+	background:#64ccf2;
+	color:#fff;
+	position:relative;
+	z-index:600;
+}
+.nowLoc p.bigTit,
+.smallTit{
+	width:90%;
+	max-width:90%;
+	position:absolute;
+	left:32px;
+}
+.nowLoc p.bigTit{
+	height:30px;
+	line-height:30px;
+	top:0px;
+}
+.smallTit{
+	height:20px;
+	font-size:0.14rem;
+	top:26px;
+}
+.backIcon{
+	width:30px;
+	height:0.50rem;
+	position:absolute;
+	left:0px;
+	top:0px;
+	background:url(../../onlineStudy/images/backIcon.png) no-repeat center;
+}
+/* 已诊断 未诊断 将要诊断 图标表示层 */
+.diagIconWrap{
+	width:100%;
+	height:0.50rem;
+	line-height:0.50rem;
+	background:#fff;
+	box-shadow:0px 0px 3px #666;
+}
+.diagIconUl li{
+	height:100%;
+	float:left;
+	text-align:center;
+	position:relative;
+}
+.comDiagIcon{
+	width:18px;
+	height:18px;
+	position:absolute;
+	background:url(../../onlineStudy/images/whole.png) no-repeat;
+	top:16px;
+	left:50%;
+}
+.hasDiag{
+	background-position:-32px -171px;
+	margin-left:-41px;
+}
+.diagIng{
+	margin-left:-50px;
+	background-position:-32px -189px;
+}
+.noDiag{
+	margin-left:-41px;
+	background-position:-32px -207px;
+}
+.diagIconUl li:nth-of-type(1){
+	color:#228fb7;
+}
+.diagIconUl li:nth-of-type(2){
+	color:#dcd901;
+}
+.diagIconUl li:nth-of-type(3){
+	color:#dfdfdf;
+}
+.noUseDiv,
+.useLineDiv,
+.studyLineBox{
+	display:none;
+}
+/* 溯源任务描述说明层 */
+.taskInfoBox{
+	width:100%;
+	padding:10px 0px;
+	background:#f3f2f6;
+	border-bottom:1px solid #d5d5d5;
+	text-align:center;
+	font-size:0.14rem;
+	position:relative;
+	z-index:2;
+}
+.taskInfoBox strong{
+	display:inline-block;
+	font-weight:normal;
+	font-size:0.18rem;
+	color:#5AC3E9;
+}
+.taskInfoBox p{
+	padding:0px 5px 0px;
+	color:#999;
+}
+.taskInfoBox p span{
+	color:#5AC3E9;
+}
+.sureBtn{
+	width:80px;
+	height:30px;
+	line-height:30px;
+	background:#FFB100;
+	color:#fff;
+	display:inline-block;
+	margin-top:5px;
+	border-radius:3px;
+	text-align:center;
+}
+/* 溯源路线 */
+#loreTreePar{
+	width:100%;
+	position:relative;
+}
+#treeScroller{
+	width:100%;
+	position:absolute;
+	left:0;
+	top:0px;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+#loreTreeDiv{
+	margin-top:10px;
+	position:relative;
+	z-index:1;
+}
+.comBgCol{
+	background:#64ccf2;
+}
+.nowKpoint,
+.nowKpoint_1{
+	width:95%;
+	padding:5px;
+	text-align:center;
+	border-radius:24px;
+	font-size:0.14rem;
+	position:relative;
+	color:#f3f2f2;
+}
+.nowKpoint{
+	margin:0 auto 25px;
+}
+.nowKpoint_1{
+	margin:25px auto 0px;
+}
+.comCircl{
+	width:8px;
+	height:8px;
+	background:#fff;
+	border-radius:50%;
+	position:absolute;
+	top:50%;
+	margin-top:-4px;
+}
+.lSpan{
+	left:8px;
+}
+.rSpan{
+	right:8px;
+}
+#divKpWrap{
+	width:95%;
+	margin:12px auto 0px;
+	position:relative;
+}
+.numKpBoxDiv{
+	width:100%;
+	margin-bottom:18px;
+	position:relative;
+}
+.nowKpBox{
+	width:43%;
+	border-radius:25px;
+	text-align:center;
+	font-size:.14rem;
+	padding:5px;
+	display:inline-block;
+	color:#f3f2f2;
+}
+.numKpBoxDiv:nth-of-type(2n-1) .nowKpBox{
+	float:left;
+}
+.numKpBoxDiv:nth-of-type(2n) .nowKpBox{
+	float:right;
+}
+.lineDiv,
+.nowKpLine{
+	width:2px;
+	height:100%;
+	position:absolute;
+	left:50%;
+	margin-left:-1px;
+	background:#d3d3d3;
+}
+.posLine{
+	top:-22px;
+}
+.stepNums{
+	width:70px;
+	line-height:14px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin-top:-8px;
+	color:#999;
+	font-size:0.12rem;
+	z-index:3;
+}
+.stepNums strong{
+	font-weight:normal;
+	font-size:0.24rem;
+	font-family:"Georgia";
+}
+.treeSpan{
+	position:relative;
+	display:inline-block;
+	padding:0 0 0 18px;
+}
+.comDiagIcon_tree{
+	width:18px;
+	height:18px;
+	background:url(../../onlineStudy/images/whole.png) no-repeat;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.hasDiag_tree{
+	background-position:-32px -171px;
+}
+.diagIng_tree{
+	background-position:-32px -243px;
+}
+.noDiag_tree{
+	background-position:-32px -225px;
+}
+.numKpBoxDiv:nth-of-type(2n-1) .stepNums{
+	text-indent:10px;
+}
+.numKpBoxDiv:nth-of-type(2n) .stepNums{
+	margin-left:-55px;
+	text-align:center;
+}
+.circle{
+	width:10px;
+	height:10px;
+	position:absolute;
+	top:0px;
+	background:#fff;
+	border-radius:50%;
+	border:1px solid #999;
+}
+.numKpBoxDiv:nth-of-type(2n-1) .circle{
+	left:-6px;
+}
+.numKpBoxDiv:nth-of-type(2n) .circle{
+	left:49px;
+}
+
+/* 三种状态颜色 */
+.green{
+	color:#228fb7;
+}
+.oranges{
+	color:#fffc00;
+}

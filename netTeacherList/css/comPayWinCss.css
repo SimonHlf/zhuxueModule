@@ -1,0 +1,473 @@
+/*支付弹窗中选项卡*/
+.showPayDiv{
+	width:540px;
+	height:380px;
+	background:url(../images/opcity50_e0e0e0.png) repeat;
+	position:absolute;
+	left:50%;
+	margin-left:-270px;
+	z-index:1000;
+	padding:10px;
+	border-radius:5px;
+	display:none;
+}
+.payParent{
+	width:100%;
+	height:100%;
+	background:#fff;
+	overflow:hidden;
+}
+.payHeadTit{
+	width:100%;
+	height:40px;
+	line-height:40px;
+	background:#eee;
+	line-height:45px;
+	position:relative;
+}
+.payWinIcon{
+	width:30px;
+	height:30px;
+	background:url(../images/payStepIcon.png) no-repeat 0 -98px;
+	position:absolute;
+	left:5px;
+	top:6px;
+}
+.payHeadTit h2{
+	font-size:18px;
+	text-indent:40px;
+	color:#777;
+	font-weight:normal;
+}
+.closePayWin{
+	width:15px;
+	height:15px;
+	position:absolute;
+	right:20px;
+	top:20px;
+	background:url(../images/payWinClose.png) no-repeat;
+	cursor:pointer;
+}
+.closePayWin:hover{
+	background:url(../images/payWinClose.png) 0 -15px no-repeat;
+}
+/* 选项卡导航 */
+.navTop{
+	width:100%;
+	height:35px;
+	margin:10px 0 0 50px;
+	position:relative;	
+}
+.navTop ul{
+	position:relative;
+	z-index:4;
+}
+.navTop li{
+	float:left;
+	width:100px;
+	height:36px;
+	text-align:center;
+	line-height:36px;
+	font-size:14px;
+	color:#666;
+	margin:0 80px 0px 0px;
+	position:relative;
+	font-size:14px;
+}
+.navTop li span{
+	width:36px;
+	height:36px;
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:5;
+	background:url(../images/payStepIcon.png) no-repeat 0 0;
+}
+.navTop li em{
+	width:36px;
+	height:36px;
+	background:url(../images/payStepIcon.png) no-repeat 0 -36px;
+	position:absolute;
+	left:0px;
+	top:0px;	
+	z-index:5;
+	display:none;
+}
+.line{
+	width:360px;
+	height:10px;
+	background:#dcdcdc;
+	overflow:hidden;
+	position:absolute;
+	left:0;
+	top:13px;
+	z-index:1;
+}
+.smallLine{
+	width:0px;
+	height:5px;
+	background:#94c22e;
+	position:absolute;
+	left:0px;
+	top:15px;
+	z-index:3;
+}
+.moveBox{
+	width:26px;
+	height:26px;
+	position:absolute;
+	left:5px;
+	top:5px;
+	background:url(../images/payStepIcon.png) no-repeat 0 -72px;
+	z-index:4;
+	text-indent:10px;
+	line-height:26px;
+	font-weight:bold;
+	color:#fff;
+}
+.detachInfo,
+.choicePayWay,
+.detachSuc{
+	width:100px;
+	height:20px;
+	position:absolute;
+	top:36px;
+	font-size:14px;
+	color:#888;
+}
+.detachInfo{
+	left:-22px;
+}
+.choicePayWay{
+	left:158px;
+}
+.detachSuc{
+	left:350px;
+}
+/* 选项卡对应内容 */
+.tabCon{
+	width:540px;
+}
+.mt{
+	margin-top:40px;	
+}
+/* 确定绑定信息 */
+.comInfos{
+	width:100%;
+	height:20px;
+	line-height:20px;
+	margin:15px 0 0 28px;
+	font-size:14px;
+	color:#666;
+	padding-left:22px;
+	position:relative;
+	background:url(../images/payIcon.png) no-repeat left 5px;
+}
+.yuan{
+	position:absolute;
+	top:0;
+	left:118px;
+}
+.bg0{
+	background-position: 0 -80px;
+}
+.bg1{
+	background-position: 0 0;
+}
+.bg2{
+	background-position: 0 -20px;
+}
+.bg3{
+	background-position: 0 -40px;
+}
+.bg4{
+	background-position: 0 -60px;
+}
+.inpCons{
+	border:0;
+	color:#777;
+	font-size:14px;
+	font-family:Microsoft YaHei;
+}
+.nowNum{
+	position:absolute;
+	right:20px;
+	bottom:-30px;
+	font-size:120px;
+	font-family:Georgia;
+	color:#eee;
+	z-index:1;
+}
+.mb{
+	bottom:-10px;
+}
+.bindBtn,.payCon,.successPay{
+	width:120px;
+	height:35px;
+	border:none;
+	color:#fff;
+	font-size:14px;
+	cursor:pointer;
+	background:#94c22e;
+	font-weight:bold;
+	text-align:center;
+	position:absolute;
+	left:215px;
+	bottom:25px;
+}
+.bindBtn:hover,
+.payCon:hover,
+.successPay:hover{
+	background:#85ad2d;
+}
+
+/* 选择支付方式 */
+.payStyeNav{
+	width:430px;
+	height:150px;
+	margin-left:28px;
+}
+.payStyeNav li{
+	width:210px;
+	height:150px;
+	line-height:75px;
+	text-align:center;
+	cursor:pointer;
+	font-size:14px;
+	color:#fff;
+	position:relative;
+	margin-bottom:5px;
+	background:#94c22e;
+	float:left;
+}
+.payStyeNav li:hover{
+	background:#87b327;
+}
+.mR{
+	margin-right:10px;
+}
+.payFastCon{
+	width:395px;
+	height:155px;
+	background:#f3f3f3;
+	position:relative;
+	z-index:3;
+}
+.payContent{
+	width:100%;
+	height:100%;
+	padding:0 5px;
+	color:#444;
+	position:relative;
+}
+.inpRadio{
+	width:210px;
+	height:150px;
+	position:absolute;
+	left:0;
+	top:0;
+	opacity:0;
+	filter:alpha(opacity=0);
+	cursor:pointer;
+	z-index:2;
+}
+.imgIcon{
+	position:absolute;
+	left:37px;
+	top:51px;
+	z-index:1;
+}
+.imgIcon1{
+	position:absolute;
+	left:49px;
+	top:38px;
+	z-index:1;
+}
+.triangle{
+	width:60px;
+	height:65px;
+	background:url(../images/choiceState.png) no-repeat;
+	position:absolute;
+	right:0;
+	top:0;
+}
+.conTit{
+	font-size:18px;
+	font-weight:normal;
+	margin-bottom:5px;
+}
+#payType1{
+	font-size:14px;
+}
+#quickPay,
+#bankPay{
+	width:150px;
+	background:#fff;
+	position:absolute;
+	right:10px;
+	top:28px;
+	padding:5px 10px;
+	line-height:22px;
+	border-bottom:1px solid #ccc;
+	border-right:1px solid #ccc;
+	z-index:6;
+}
+#quickPay{
+	color:#666;
+}
+#quickPay span,
+#bankPay span{
+	color:#94c22e;
+}
+#tip,
+#tip1{
+	width:28px;
+	height:28px;
+	position:absolute;
+	right:10px;
+	top:0px;
+	cursor:pointer;
+	z-index:6;
+}
+.tipIconPay{
+	background:url(../images/payStepIcon.png) no-repeat 0 -128px;
+}
+.tipIcon1{
+	background:url(../images/payStepIcon.png) no-repeat 0px -156px;
+}
+.closeTip{
+	width:15px;
+	height:15px;
+	background:url(../images/payWinClose.png) no-repeat 0 -30px;
+	position:absolute;
+	right:0px;
+	top:8px;
+	cursor:pointer;
+}
+.bankIcoBox{
+	width:390px;
+	height:122px;
+	overflow:hidden;
+}
+.bankIcoBox li{
+	width:120px;
+	height:38px;
+	float:left;
+	margin-right:10px;
+	margin-bottom:5px;
+	cursor:pointer;
+	position:relative;
+	z-index:1;
+}
+.bankIcoBox li input{
+	position:absolute;
+	left:0;
+	top:12px;
+}
+.bankIcoBox li label{
+	width:108px;
+	height:38px;
+	background:url(../images/bankIco.gif) no-repeat;
+	position:absolute;
+	left:16px;
+	top:0;
+	cursor:pointer;
+}
+.bankIcoBox li label.gongLabel{
+	background-position:0 0;
+}
+.bankIcoBox li label.jianLabel{
+	background-position:0 -38px;
+}
+.bankIcoBox li label.nongLabel{
+	background-position:0 -114px;
+}
+.bankIcoBox li label.youLabel{
+	background-position:0 -76px;
+}
+.bankIcoBox li label.zhongLabel{
+	background-position:0 -152px;
+}
+/* 点击银行图标raido显示银行卡号和持卡人信息的盒子 */
+.showBankInfoBox{
+	width:350px;
+	height:61px;
+	background:#fff;
+	position:absolute;
+	left:5px;
+	top:33px;
+	z-index:5;
+	display:none;
+	border-bottom:1px solid #94c22e;
+	padding:30px 20px;
+}
+.closeBankInfo,
+.warnIcon{
+	width:25px;
+	height:25px;
+	position:absolute;
+	background:url(../images/payStepIcon.png) no-repeat;
+	cursor:pointer;
+}
+.closeBankInfo{
+	right:0;
+	top:0;
+	z-index:6;
+	background-position:0 -209px;
+}
+.bankNum,
+.cardsName{
+	font-size:18px;
+	color:#666;
+	font-weight:normal;
+}
+.numStyle{
+	font-family:verdana;
+	font-weight:bold;
+}
+.blank{
+	display:inline-block;
+	width:18px;
+}
+.nowBankName{
+	font-size:25px;
+	position:absolute;
+	right:10px;
+	bottom:0;
+	color:#d9d9d9;
+}
+#account{
+	position:relative;
+	margin:5px 0 0 28px;
+	text-indent:25px;
+	color:#666;
+}
+#dueDate,
+#remainDay{
+	font-weight:bold;
+	color:#ff9900;
+}
+.warnIcon{
+	left:0px;
+	top:-5px;
+	background-position:0 -184px;
+	
+}
+.payLayer{
+	width:100%;
+	height:100%;
+	position:fixed;
+	left:0;
+	top:0;
+	z-index:980;
+	background:#000;
+	opacity:0.3;
+	filter:alpha(opacity=30);
+	display:none;
+}
+.next{
+	width:100px;
+	height:35px;
+	line-height:35px;
+	text-align:center;
+}

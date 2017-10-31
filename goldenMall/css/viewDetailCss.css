@@ -1,0 +1,189 @@
+@charset "utf-8";
+.viewDetailWrap{
+	width:775px;
+	margin-top:10px;
+	padding:0 15px 10px;
+}
+.comModBox{
+	margin-bottom:15px;
+}
+.modTit{
+	font-weight:normal;
+	font-size:14px;
+	display:inline-block;
+	border-bottom:2px solid #ffb026;
+	color:#333;
+	height:30px;
+	line-height:30px;
+	margin-bottom:15px;
+}
+.detailBox{
+	width:735px;
+	padding:0 20px;
+	color:#666;
+}
+.tradeState{
+	margin-left:50px;
+	margin-bottom:10px;
+}
+.comPstyle{
+	line-height:28px;
+}
+/* 订单跟踪 */
+.fllowStateBox{
+	height:80px;
+	border-bottom:1px solid #e5e5e5;
+	margin-top:15px;
+}
+.stateBoxPar{
+	width:685px;
+	margin:0 auto;
+	height:80px;
+	position:relative;
+}
+.stateBoxPar ul{
+	width:860px;
+}
+.stateBoxPar li{
+	width:215px;
+	height:29px;
+	float:left;
+	position:relative;
+	z-index:3;
+}
+.iconStep{
+	width:29px;
+	height:29px;
+	background:url(../images/fllowState1.png) no-repeat;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.stepNum,
+.completeState{
+	width:19px;
+	height:19px;
+	position:absolute;
+	left:5px;
+	top:5px;
+}
+.completeState{
+	background:url(../images/fllowState2.png) no-repeat;
+	z-index:5;
+	display:none;
+}
+.stepNum{
+	z-index:4;
+	color:#fff;
+	text-align:center;
+	font-style:normal;
+	font-weight:bold;
+	font-family:Arial;
+}
+.introTxt{
+	position:absolute;
+	bottom:-23px;
+}
+.txt1{
+	left:-7px;
+}
+.txt2{
+	left:-1px;
+}
+.txt3{
+	left:-3px;
+}
+.colorLine{
+	width:0px;
+	z-index:2;
+	background:#91c42f;
+}
+.throughLine{
+	width:616px;
+	background:#dcdcdc;
+	z-index:1;
+}
+.throughLine,
+.colorLine{
+	height:5px;
+	position:absolute;
+	left:29px;
+	top:12px;
+}
+.fllowDetail{
+	margin-top:10px;
+}
+.innnerDetail{
+	width:685px;
+	margin-top:15px;
+	padding:0 25px;
+}
+.comTit{
+	float:left;
+}
+.fllowWid1{
+	width:140px;
+}
+.fllowWid2{
+	width:485px;
+	text-align:left;
+}
+.fllowWid3{                                                                                                                                                                                                                                 
+	width:60px;
+	text-align:center;
+}
+.listFllowInfo{
+	padding-top:26px;
+}
+.listFllowInfo li{
+	height:auto;
+	line-height:25px;
+}
+/* 商品清单 */
+.proListTit{
+	background:#f7f7f7;
+	height:29px;
+	line-height:30px;
+	border-top:1px solid #e6e6e6;
+}
+.proListTit li{
+	float:left;
+	text-align:center;
+}
+.headWid1{
+	width:255px;
+}
+.headWid2{
+	width:160px;
+}
+.thumbnailTd{
+	vertical-align:middle;
+}
+.thumbnailBox{
+	width:100%;
+	height:63px;
+	line-height:63px;
+	display:inline-block;
+	color:#666;
+}
+.thumbnailBox:hover span{
+	text-decoration:underline;
+}
+.thumbnail,
+.proNames{
+	float:left;
+}
+.proNames{
+	margin-left:3px;
+}
+#proListInfo td{
+	padding:14px 0px;
+	border-bottom:1px dashed #dcdcdc;
+}
+.needGoldNum{
+	font-weight:bold;
+}
+.totlalNum{
+	font-weight:bold;
+	color:#c40000;
+}

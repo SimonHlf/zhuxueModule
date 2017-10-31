@@ -1,0 +1,420 @@
+body{
+	overflow:hidden;
+	background:#f3f2f6;
+}
+.backIcon{
+	width:30px;
+	height:0.50rem;
+	position:absolute;
+	left:0px;
+	top:0px;
+	background:url(../../onlineStudy/images/backIcon.png) no-repeat center;
+}
+.resumeHead{
+	width:100%;
+	height:29%;
+	background:#64ccf2;
+	position:relative;
+}
+.netTeaImg,
+.shadowDiv{
+	width:80px;
+	height:80px;
+	border-radius:50%;
+}
+.netTeaImg{
+	border:5px solid #e7e7e7;
+	position:absolute;
+	left:50%;
+	margin-left:-40px;
+	top:50%;
+	margin-top:-54px;
+}
+.shadowDiv{
+	box-shadow:5px 4px 6px #666 inset;
+	position:absolute;
+	left:0px;
+	top:0px;
+	z-index:2;
+	overflow:hidden;
+}
+.headPic{
+	width:80px;
+	height:80px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-radius:50%;
+	z-index:1;
+}
+.shadowDiv span{
+	width:100%;
+	height:25px;
+	line-height:17px;
+	background:rgba(0,0,0,0.4);
+	position:absolute;
+	left:0px;
+	bottom:-5px;
+	font-size:0.12rem;
+	color:#fff;
+	text-align:center;
+}
+.headTxt{
+	color:#fff;
+	position:absolute;
+	bottom:8px;
+}
+.headTxt p:nth-of-type(2){
+	margin-left:10px;
+}
+/* 导航 */
+.ulNav{
+	width:100%;
+	height:38px;
+	background:#5ab7d9;
+}
+.ulNav li{
+	width:50%;
+	height:100%;
+	line-height:38px;
+	float:left;
+	color:#fff;
+	text-align:center;
+	position:relative;
+}
+.ulNav li.active{
+	height:35px;
+	border-bottom:3px solid #ffe400;
+}
+.ulNav li.active span{
+	width:0px;
+	top:0px;
+	border-width:6px;
+	border-style:dashed dashed solid dashed;
+	border-color:transparent transparent #ffe400 transparent;
+	position:absolute;
+	left:50%;
+	bottom:0px;
+	margin-left:-6px;
+}
+/* 个人简介 个人相册 学生评价对应的tab层 */
+.comResumeDiv{
+	width:100%;
+	position:relative;
+	display:none;
+}
+.perinfoScroll,
+.gloryScroll{
+	width:100%;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.proDiv,
+.expDiv{
+	background:#fff;
+}
+.expDiv{
+	margin-top:10px;
+}
+.comH3,
+.comResLi{
+	width:100%;
+	height:39px;
+	line-height:40px;
+	border-bottom:1px solid #e2e2e2;
+	color:#333;
+}
+.comH3{
+	border-left:5px solid #64ccf2;
+	font-size:0.18rem;
+	font-weight:normal;
+	text-indent:5px;
+	background:#fff;
+}
+.comResLi{
+	font-size:0.16rem;
+}
+.comResLi p,
+.perSignTxt p#proSignP{
+	position:relative;
+	margin-left:35px;
+	color:#666;
+}
+.comProIcon{
+	position:absolute;
+	background:url(../images/proIcon.png) no-repeat;
+}
+.gradIcon{
+	width:20px;
+	height:19px;
+	background-position:0 -87px;
+	left:-26px;
+	top:10px;
+}
+.degIcon{
+	width:30px;
+	height:20px;
+	background-position:0 0px;
+	left:-32px;
+	top:10px;
+}
+.proIcon{
+	width:24px;
+	height:24px;
+	background-position:0 -38px;
+	left:-28px;
+	top:8px;
+}
+.emailIcon{
+	width:25px;
+	height:18px;
+	background-position:0 -20px;
+	left:-28px;
+	top:11px;
+}
+.conIcon{
+	width:25px;
+	height:25px;
+	background-position:0 -62px;
+	left:-28px;
+	top:8px;
+}
+.editIcon{
+	width:20px;
+	height:20px;
+	background-position:0 -106px;
+	left:-25px;
+	top:6px;
+}
+.perSignTxt{
+	border-bottom:1px solid #e2e2e2;
+	min-height:30px;
+	padding:5px 0px;
+}
+.perSignTxt p#proSignP{
+	line-height:30px;
+}
+#nusinfo{
+	margin-top:5px;
+}
+.oneBlank{
+	width:32px;
+	display:inline-block;
+}
+.proSpan{
+	color:#999;
+}
+.colSpan{
+	color:#fea700;
+}
+/* 教学经历 */
+#timeCon,
+#unShareCon{
+	width:95%;
+	margin:10px auto 0px;
+	padding-bottom:10px;
+}
+#timeCon li,
+#unShareCon li{
+	margin-bottom:10px;
+}
+#timeCon li h3{
+	font-size:0.16rem;
+	font-weight:normal;
+	position:relative;
+	z-index:2;
+	color:#666;
+}
+.detailExpBox{
+	background:#64ccf2;
+	color:#fff;
+	margin-top:8px;
+	border-radius:4px;
+	position:relative;
+}
+.detailExpBox p{
+	padding:5px;
+	font-size:0.14rem;
+	line-height:24px;
+}
+.topTri{
+	border:8px solid #fff;
+	border-bottom-color:#64ccf2;
+	left:0.2rem;
+	top:-16px;
+}
+/* 成果分享 */
+.gloryShareDiv{
+	background:#fff;
+	margin-top:10px;
+}
+#unShareCon li{
+	background:#f5f5f5;
+	color:#666;
+	border-radius:4px;
+	position:relative;
+	margin-top:15px;
+}
+
+.detailShareBox{
+	box-shadow:0 0 6px #666;
+	border-radius:4px;
+}
+.nowShareTit{
+	width:100%;
+	color:#fff;
+	font-size:0.16rem;
+	font-weight:normal;
+	background:#64ccf2;
+	border-radius:4px 4px 0 0;
+}
+.nowShareTit p{
+	padding:3px 5px;
+}
+.expConBox{
+	padding:5px;
+	font-size:0.14rem;
+}
+.timeBox{
+	font-size:0.14rem;
+	margin:2px 0px;
+}
+/* 暂无教学经历 成果分享 */
+.noExpShareDiv{
+	width:100px;
+	height:100px;
+	margin:-10px auto 0px;
+	color:#666;
+	padding-bottom:15px;
+}
+/* 个人相册 */
+.noImgDiv{
+	width:100px;
+	height:130px;
+	margin:80px auto 0px;
+	color:#666;
+	text-align:center;
+}
+#boxPicUl li{
+	float:left;
+	width:30%;
+	margin:10px 0 0 8px;
+	overflow:hidden;
+}
+#boxPicUl li img{
+	width:100%;
+	height:100%;
+}
+.blankDiv{
+	width:100%;
+	height:10px;
+	background:#f3f2f6;
+}
+.imgLayer{
+	width:100%;
+	height:100%;
+	background:#000;
+	position:absolute;
+	display:none;
+	z-index:1000;
+}
+#originImg,
+.closeOrigImg{
+	position:absolute;
+	z-index:10001;
+	display:none;
+}
+#originImg,
+.imgLayer{
+	left:0px;
+	top:0px;
+}
+.closeOrigImg{
+	width:40px;
+	height:40px;
+	background:url(../images/close.png) no-repeat;
+	right:0px;
+	top:0px;
+}
+
+
+/* 媒询之头部高度设置   */
+@media all and (min-height:500px) and (max-height:600px){
+	.resumeHead{
+		height:22%;
+	}
+}
+@media all and (min-height:601px) and (max-height:700px){
+	.resumeHead{
+		height:22%;
+	}
+}
+@media all and (min-height:701px) and (max-height:800px){
+	.resumeHead{
+		height:20%;
+	}
+}
+@media all and (min-height:801px) and (max-height:999px){
+	.resumeHead{
+		height:20%;
+	}
+}
+@media all and (min-height:1000px){
+	.resumeHead{
+		height:18%;
+	}
+	.netTeaImg,
+	.shadowDiv,
+	.headPic{
+		width:100px;
+		height:100px;
+	}
+}
+
+/* 个人相册img的marginleft媒询 */
+@media all and (min-width:370px) and (max-width:440px){
+	#boxPicUl li{
+		margin-left:10px;
+	}
+}
+@media all and (min-width:441px) and (max-width:480px){
+	#boxPicUl li{
+		margin-left:11px;
+	}
+}
+@media all and (min-width:481px) and (max-width:520px){
+	#boxPicUl li{
+		margin-left:12px;
+	}
+}
+@media all and (min-width:521px) and (max-width:560px){
+	#boxPicUl li{
+		margin-left:13px;
+	}
+}
+@media all and (min-width:561px) and (max-width:620px){
+	#boxPicUl li{
+		margin-left:15px;
+	}
+}
+@media all and (min-width:621px) and (max-width:680px){
+	#boxPicUl li{
+		margin-left:16px;
+	}
+}
+@media all and (min-width:681px) and (max-width:720px){
+	#boxPicUl li{
+		margin-left:17px;
+	}
+}
+@media all and (min-width:721px) and (max-width:780px){
+	#boxPicUl li{
+		margin-left:18px;
+	}
+}
+@media all and (min-width:781px){
+	#boxPicUl li{
+		margin-left:20px;
+	}
+}

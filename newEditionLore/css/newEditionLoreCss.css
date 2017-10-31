@@ -1,0 +1,236 @@
+.newEdiWrap{
+	width:980px;
+	height:740px;
+	margin:10px auto 0px;
+	position:relative;
+	background:#fff;
+}
+.editionBox{
+	width:960px;
+	margin:0 auto;
+}
+#leftDiv{
+	width:455px;
+	margin-right:50px;
+	position:relative;
+}
+#rightDiv{
+	width:455px;
+	position:relative;
+}
+.editTitle{
+	width:100px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	font-size:18px;
+	color:#fff;
+	margin-top:20px;
+}
+.bg1{
+	background:#91D0DF;
+}
+.bg2{
+	background:#fab965;
+}
+#commonEditionDiv{
+	width:455px;
+	border-top:3px solid #91D0DF;
+	padding:10px 0px;
+	position:relative;
+}
+#otherEditionDiv{
+	width:455px;
+	border-top:3px solid #fab965;
+	padding:10px 0px;
+	position:relative;
+}
+.selWidth,
+.selWidth1{
+	height:28px;
+	line-height:28px;
+	position:relative;
+	margin-left:1px;
+}
+.selWidth{
+	width:180px;
+}
+.selWidth1{
+	width:385px;
+}
+.com span,
+.com select{
+	position:absolute;
+	color:#2C4977;
+}
+.com span{
+	left:0;
+	top:3px;
+}
+.com select{
+	left:55px;
+	top:7px;
+}
+.com1 span,
+.com1 select{
+	position:absolute;
+	color:#4e4e4e;
+}
+.com1 span{
+	left:0;
+	top:3px;
+}
+.com1 select{
+	left:60px;
+	top:7px;
+}
+.ml{
+	margin-left:14px;
+}
+/* 搜索，浏览按钮 */
+.comBtn{
+	width:70px;
+	height:0px;
+	padding-top:22px;
+	overflow:hidden;
+	background:url(../images/comBtn.gif) no-repeat;
+	position:absolute;
+	right:5px;
+	bottom:10px;
+}
+.seachBasicBtn{
+	background-position:0 0;
+}
+.viewBtn{
+	background-position:0 -22px;
+}
+.ml1{
+	right:0px;
+}
+.line{
+	width:1px;
+	height:640px;
+	position:absolute;
+	left:490px;
+	top:53px;
+	border-left:1px dashed #999;
+}
+/* 动态创建的Li */
+.editionUl,
+.otherEditionUl{
+	width:455px;
+	height:540px;
+	overflow:auto;
+	overflow-x:hidden;
+}
+.editionUl li{
+	width:100%;
+	height:35px;
+	line-height:35px;
+	color:#2C4977;
+	border-bottom:1px dashed #ddd;
+	position:relative;
+}
+.editionUl{
+	position:relative;
+}
+.editionUl li span{
+	float:left;
+}
+.editionUl li a{
+	width:22px;
+	height:22px;
+	position:absolute;
+	right:5px;
+	*right:20px;
+	top:8px;
+	background:url(../images/comBtn.gif) no-repeat -23px -46px;
+}
+
+.liBg{
+	background:#f2fce9;
+}
+
+.otherEditionUl li{
+	width:100%;
+	height:35px;
+	line-height:35px;
+	margin-bottom:6px;
+	opacity:0;
+	filter:alpha(opacity=0);
+}
+.otherEditionUl li .moveUpDown{
+	width:50px;
+	height:27px;
+	padding-top:8px;
+	margin-left:3px;
+}
+
+.move-down,
+.move-up{
+	width:22px;
+	height:22px;
+	display:inline-block;
+	overflow:hidden;
+	float:left;
+	background:url(../images/comBtn.gif) no-repeat 0 0;
+}
+.move-down{
+	margin-right:3px;
+	background-position:0 -44px;
+}
+.move-up{
+	background-position:0 -66px;
+}
+.otherEditionUl li .newLoreInput{
+	width:355px;
+	height:25px;
+	line-height:25px;
+	vertical-align:middle;
+	border:1px solid #cdcdcd;
+	box-shadow:2px 2px 2px #f1f1f1 inset;
+	border-radius:3px;
+	padding:5px 3px 3px;
+	outline:none;
+	color:#333;
+}
+.delNewPoint{
+	width:16px;
+	height:16px;
+	display:inline-block;
+	background:url(../../loreManager/images/allPic.png) no-repeat -163px -125px;
+	margin:10px 0 0 3px;
+}
+/*浏览其他版本知识点*/ 
+#loreListUl{
+	width:485px;
+	height:460px;
+	margin:0 auto;
+	overflow:auto;
+	overflow-x:hidden;
+}
+#loreListUl li{
+	width:475px;
+	height:35px;
+	line-height:35px;
+	border-bottom:1px dashed #ccc;
+	color:#2C4977;
+	padding-left:10px;
+	overflow:hidden;
+}
+.sure{
+	width:80px;
+	height:35px;
+	line-height:35px;
+	border:none;
+	text-align:center;
+	background:#455B7E;
+	color:#fff;
+	position:absolute;
+	bottom:5px;
+	right:10px;
+	cursor:pointer;
+}
+.sure:hover{
+	background:#32425C;
+}

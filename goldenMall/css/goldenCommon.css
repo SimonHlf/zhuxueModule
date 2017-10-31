@@ -1,0 +1,311 @@
+@charset "utf-8";
+body{
+	background:#E4F3F6;
+}
+.goldWrap{
+	margin-top:25px;
+}
+.sectionL{
+	width:181px;
+}
+.goldTop{
+	width:100%;
+	height:120px;
+	border:1px solid #e8e8e8;
+	background:#efefef url(../images/useImgBg.png) no-repeat;
+	position:relative;
+}
+.imgUserBox{
+	width:72px;
+	height:72px;
+	border-radius:50%;
+	background:#fff;
+	position:absolute;
+	left:54px;
+	top:18px;
+	overflow:hidden;
+}
+.goldTop img{
+	margin:2px;
+}
+.userNames{
+	width:100%;
+	font-weight:normal;
+	font-size:16px;
+	color:#666;
+	position:absolute;
+	bottom:3px;
+	text-align:center;
+}
+.goldenBox{
+	width:181px;
+	height:41px;
+	line-height:41px;
+	background:#f6f6f6 url(../images/goldIcon.png) no-repeat 10px center;
+	position:absolute;
+	bottom:-52px;
+	left:-1px;
+	border:1px solid #e8e8e8;
+	text-indent:34px;
+}
+.goldenNum{
+	color:#666;
+	font-size:14px;
+}
+.goldenNum span{
+	color:#f77a00;
+}
+.decIcon{
+	width:27px;
+	height:17px;
+	background:url(../images/dec.png) no-repeat;
+	position:absolute;
+	right:18px;
+	bottom:-8px;
+	z-index:2;
+}
+.navList_1{
+	width:100%;
+	margin-top:52px;
+	text-align:center;
+	position:relative;
+	padding-top:12px;
+	background:#f6f6f6;
+}
+.navList_1 li{
+	width:100%;
+	height:38px;
+	background:#f6f6f6;
+	margin-bottom:2px;
+	position:relative;
+}
+.navList_1 li a{
+	display:inline-block;
+	width:100%;
+	line-height:38px;
+	font-size:14px;
+	color:#363636;
+}
+.navList_1 li.active{
+	background:#68c7ec;
+}
+.navList_1 li.active a{
+	color:#fff;
+}
+.comIcon{
+	width:22px;
+	position:absolute;
+	left:6px;
+	top:10px;
+	background:url(../images/icons.png) no-repeat;
+}
+.proListIcon{
+	height:18px;
+	background-position:0 -18px;
+}
+.navList_1 li.active .proListIcon{
+	background-position:0 0px;
+}
+.ordIcon{
+	height:23px;
+	background-position:0 -36px;
+}
+.navList_1 li.active .ordIcon{
+	background-position:0 -59px;
+}
+.goldsIcon{
+	height:22px;
+	background-position:0 -82px;
+}
+.navList_1 li.active .goldsIcon{
+	background-position:0 -104px;
+}
+.addMagIcon{
+	height:23px;
+	background-position:0 -126px;
+}
+.navList_1 li.active .addMagIcon{
+	background-position:0 -149px;
+}
+.queIcon{
+	height:21px;
+	background-position:0 -172px;
+}
+.navList_1 li.active .queIcon{
+	background-position:0 -193px;	
+}
+.borL{
+	width:3px;
+	height:38px;
+	background:#68c7ec;
+	position:absolute;
+	left:0;
+}
+.top1{
+	top:12px;
+}
+.top2{
+	top:52px;
+}
+.top3{
+	top:92px;
+}
+.top4{
+	top:132px;
+}
+.top5{
+	top:172px;
+}
+.sectionR{
+	width:808px;
+	margin-left:10px;
+}
+.rMinHei{
+	min-height:500px;
+}
+/* 翻页 */
+.page{
+	height:30px;
+	line-height:30px;
+	color:#464646;
+	margin-bottom:5px;
+	margin-right:10px;
+}
+.right{
+	float:right;
+}
+.page p{
+	margin-right:5px;
+}
+.page a{
+	line-height:22px;
+	padding:0 10px;
+	display:inline-block;
+	background:#f3f4f6;
+	border-radius:2px;
+	color:#464646;
+	border:1px solid #b0b0b0;
+}
+.page a:hover{
+	background:#999;
+	color:#fff;
+}
+.turnInp{
+	width:14px;
+	border:0px;
+	text-align:center;
+	color:#464646;
+	background:none;
+}
+/*-----  我的订单 我的金币详情头部公共样式 ----------*/
+.recentTxt{
+	font-size:16px;
+	color:#fff;
+	position:relative;
+	text-indent:26px;
+	display:inline-block;
+}
+.triangleIcon{
+	width:16px;
+	height:16px;
+	position:absolute;
+	left:5px;
+	top:18px;
+	background:url(../images/triangleIcon.png) no-repeat;
+}
+.orderList,
+.useGoldenList,
+.usualQueWrap{
+	width:805px;
+	margin-top:10px;
+	background:#f6f6f6;
+}
+.detailHead{
+	width:793px;
+	margin-top:1px;
+	height:55px;
+	padding:10px 0px 10px 12px;
+	background:#68c7ec;	
+}
+.detailHead h2{
+	line-height:55px;
+	color:#fff;
+	font-size:24px;
+	font-weight:normal;
+}
+.detailHead h2.orBg{
+	background:url(../images/orderIcon.png) no-repeat 0 2px;
+	text-indent:43px;
+}
+.detailHead h2.goldBg{
+	background:url(../images/goldenIcon.png) no-repeat 0 3px;
+	text-indent:50px;
+}
+.detailHead h2.addBg{
+	background:url(../images/addIcon.png) no-repeat 0 3px;
+	text-indent:48px;
+}
+.detailHead h2.queIcons{
+	text-indent:48px;
+	background:url(../images/queIcon.png) no-repeat 0 6px;
+}
+/* 列表公共样式 */
+.listTit{
+	height:28px;
+	line-height:28px;
+	background:#efefef;	
+}
+.listTit li{
+	float:left;
+	height:28px;
+	text-align:center;
+	font-size:14px;
+	color:#666;
+}
+.wid1{
+	width:150px;
+}
+.wid2{
+	width:200px;
+	max-width:200px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+.listCon{
+	width:805px;
+}
+.listCon,
+.listCon tr td a{
+	color:#666;
+}
+.listCon tr td a.goDetail{
+	color:#f38f00;
+}
+.listCon tr{
+	height:40px;
+}
+.listCon tr td a:hover{
+	text-decoration:underline;
+}
+.oddColor{
+	background:#eaeaea;
+}
+.goldCol{
+	color:#f38f00;
+}
+/* 不存在未创建的情况下的提示 */
+.noExitDiv{
+	width:100%;
+	color:#666;
+	text-align:center;
+	height:300px;
+	padding-top:80px;
+}
+.noExitDiv p{
+	margin-top:15px;
+	font-size:14px;
+}
+.noExitDiv p a{
+	color:#00BAFF;
+}

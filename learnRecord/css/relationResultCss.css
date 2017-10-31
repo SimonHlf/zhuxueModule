@@ -1,0 +1,68 @@
+.treeParent{
+	margin:5px 0 0 8px;
+}
+.bigTit{
+	font-size:16px;
+	color:#333;
+}
+.ulParent a span.noPassTxt,
+.hasLearning{
+	margin-left:10px;
+	color:#f70;
+}
+.ulParent a span.passTxt,
+.smallTit span.passTxt{
+	margin-left:10px;
+	color:#2a860a;
+}
+.ulParent a:hover span,
+.ulParent a:hover span.passTxt{
+	text-decoration:underline;
+}
+.noPassTxt_1,
+.noPassTxt{
+	margin-left:10px;
+}
+.noPassTxt_1{
+	color:#999;
+}
+.noPassTxt{
+	color:#f00;
+}
+.ulParent,
+.fristFloor,
+.secondFloor{
+	position:relative;
+}
+.bigTit,
+.smallTit{
+	padding-left:11px;
+}
+.fristFloor li,
+.secondFloor li{
+	padding-left:5px;
+}
+.fristFloor{
+	margin:5px 0 10px 10px;
+	font-size:16px;
+	color:#333;
+}
+.secondFloor{
+	margin:8px 0 8px 10px;
+	font-size:14px;
+	color:#444;
+}
+.treeIcon,
+.sonTreeIcon{
+	width:18px;
+	height:21px;
+	position:absolute;
+	left:-8px;
+	top:0;
+}
+.treeIcon{
+	background:url(../images/treeIcon.png) no-repeat;
+}
+.sonTreeIcon{
+	background:url(../images/sonTreeIcon.png) no-repeat;
+}

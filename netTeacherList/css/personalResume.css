@@ -1,0 +1,230 @@
+/* CSS Document */
+.resumeWrap{
+	width:860px;
+	overflow:hidden;
+}
+.resumeTop{
+	width:860px;
+	height:140px;
+	background:url(../../onlineBuy/images/fds.png) repeat;
+	position:relative;
+}
+.topTit{
+	width:291px;
+	height:34px;
+	background:url(../images/proTxt.png) no-repeat;
+	position:absolute;
+	left:50%;
+	margin-left:-145px;
+	top:40px;
+}
+.netPicBox{
+	width:100px;
+	height:100px;
+	border-radius:50%;
+	background:#fff;
+	border:6px solid #7bcbed; 
+	position:absolute;
+	left:50%;
+	margin-left:-60px;
+	top:75px;
+	overflow:hidden;
+	z-index:2;
+}
+.nameLayer,
+.ntNames{
+	width:100%;
+	height:20px;
+	position:absolute;
+	left:0px;
+	bottom:0px;
+}
+.nameLayer{
+	background:#000;
+	opacity:0.5;
+	filter:alpha(opacity=50);
+}
+.ntNames{
+	line-height:20px;
+	text-align:center;
+	color:#fff;
+	font-size:14px;
+}
+.resumeCen{
+	width:860px;
+	background:#e8e8e8;
+}
+.perInfoBox{
+	width:100%;
+	height:50px;
+	position:relative;
+	padding-top:56px;
+}
+.margL{
+	margin-left:282px;
+}
+.sexs{
+	position:absolute;
+	left:471px;
+	top:61px;
+	color:#c4d1c8;
+	font-size:14px;
+}
+.xueduans{
+	color:#5e5e5e;
+	font-size:20px;
+	float:left;
+	margin-right:15px;
+}
+.perIntroBox{
+	width:100%;
+	height:130px;
+	position:relative;
+	overflow:hidden;
+	margin-top:10px;
+	padding-bottom:20px;
+}
+.detailConBox{
+	width:780px;
+	height:130px;
+	position:absolute;
+	left:40px;
+	top:0px;
+	line-height:20px;
+	overflow:hidden;
+}
+.detialSonCon{
+	width:760px;
+	font-size:14px;
+	padding:5px 10px;
+	position:absolute;
+	left:0;
+	top:0;
+	color:#666666;
+	line-height:25px;
+}
+.preIntroTxt{
+	font-weight:bold;
+}
+.scrollBox{
+	width:5px;
+	height:130px;
+	position:absolute;
+	right:35px;
+	top:0px;
+	border-radius:20px;
+	opacity:0;
+	filter:alpha(opacity=0);
+}
+.scrollBar{
+	width:5px;
+	height:50px;
+	background:#999;
+	position:absolute;
+	left:0;
+	top:0;
+	border-radius:20px;
+
+}
+.perGloryBox{
+	width:860px;
+	height:325px;
+	background:#eeeeef;
+	position:relative;	
+	overflow:hidden;
+}
+.gloryTxt{
+	fonti-size:20px;
+	text-align:center;
+	font-weight:normal;
+	padding-top:25px;
+	color:#474443;	
+}
+.imgBoxWrap{
+	width:780px;
+	height:275px;
+	position:relative;
+	left:40px;
+	overflow:hidden;
+}
+.perGloryBox ul{
+	width:780px;
+	position:absolute;
+	left:0px;
+}
+.perGloryBox ul li{
+	width:125px;
+	height:125px;
+	float:left;
+	margin:0px 0 10px 31px;
+	position:relative;
+	
+}
+/*  荣誉相册的自定义模拟滚动条 */
+#gloryScrollBox,
+#gloryScrollSon{
+	width:5px;
+	position:absolute;
+	border-radius:20px;
+}
+#gloryScrollBox{
+	top:52px;
+	height:270px;
+	right:33px;
+}
+#gloryScrollSon{
+	left:0px;
+	top:0px;
+	height:50px;
+	background:#999;
+}
+.markLayer{
+	width:125px;
+	height:125px;
+	background:rgba(0,0,0,0.6);
+	position:absolute;
+	left:0px;
+	top:0px;
+	display:none;
+	cursor:pointer;
+	overflow:hidden;
+}
+.noGloryBox{
+	width:200px;
+	height:47px;
+	position:absolute;
+	left:265px;
+	top:100px;
+}
+.checkIcon{ 
+	width:40px;
+	height:40px;
+	position:absolute;
+	left:43px;
+	top:-43px;
+	background:url(../../studyOnline/images/iconBg.png) no-repeat -134px -200px;
+	cursor:pointer;
+}
+.closeIcon{
+	width:60px; 
+	height:60px; 
+	background:url(../images/resumeWinClose.png) no-repeat 0 0;
+	position:absolute;
+	right:0px;
+	top:0;
+	cursor:pointer;
+}
+.closeIcon:hover{
+	background:url(../images/resumeWinClose.png) no-repeat 0 -60px;
+}
+.perResumeBot{
+	width:860px;
+	height:100px;
+	background:#373737;
+}
+.logoBox{
+	width:120px;
+	height:83px;
+	margin:0 auto;
+	padding-top:10px;
+}

@@ -1,0 +1,237 @@
+/* 全屏滚动插件样式开始-----start */
+html { 
+	overflow: hidden;
+}
+body { 
+	width: 100%;
+	*cursor: default;
+	overflow: hidden;
+}
+#pageContain { 
+	overflow: hidden;
+}
+.page { 
+	display: none; 
+	width: 100%; 
+	height: 100%; 
+	overflow: hidden; 
+	position: absolute; 
+	top: 0; 
+	left: 0;
+}
+.contain { 
+	width: 100%; 
+	height: 100%; 
+	display: none; 
+	position: relative; 
+	z-index: 0;
+}
+.current .contain, 
+.slide .contain { 
+	display: block;
+}
+.current { 
+	display: block; 
+	z-index: 1;
+}
+.slide { 
+	display: block; 
+	z-index: 2;
+}
+.swipe { 
+	display: block; 
+	z-index: 3; 
+	transition-duration: 0ms !important; 
+	-webkit-transition-duration: 0ms !important;
+}
+.page1 { 
+	background: #8fbc2c;
+}
+.page2 { 
+	background: #ede33e;
+}
+.page3 { 
+	background: #e98f1b;
+}
+.page4 { 
+	background: #2ec8fe;
+}
+/* 选项卡导航 */
+#navBar { 
+	width:24px;
+	z-index: 3; 
+	position: absolute; 
+	top:50%; 
+	right: 3%; 
+	color:#fff; 
+	font-size:14px;
+	height:120px;
+	margin-top:-61px;
+}
+#navBar .active {
+	width:24px;
+	height:24px;
+	background:url(../images/navLiBg.png) no-repeat center 0;
+}
+#navBar li {
+	cursor: pointer; 
+	margin-bottom: 10px; 
+	transition: all .7s ease;
+	width: 24px; 
+	height: 24px; 
+	background:url(../images/navLiBg.png) no-repeat center -24px;
+}
+
+/* 全屏滚动插件样式结束-----end */
+
+/* 四屏公共样式 */
+.mainContent,
+.mainContent2,
+.mainContent3,
+.mainContent4{
+	position:relative;
+	z-index:2;
+}
+.mainContent2_1{
+	width:1000px;
+	position:absolute;
+	z-index:1;
+	top:0px;
+}
+.mainContent{
+	background:url(../images/page1Bg.jpg) no-repeat center center;
+}
+.mainContent2_1{
+	background:url(../images/page2Bg.jpg) no-repeat center center;
+}
+.mainContent3{
+	background:url(../images/page3Bg.jpg) no-repeat center center;
+}
+.mainContent4{
+	background:url(../images/page4Bg.jpg) no-repeat center center;
+}
+.comH2Tit,
+.comH2Tit2,
+.comH2Tit3,
+.comH2Tit4{
+	font-weight:normal;
+	position:absolute;
+	top:-80px;
+}
+.comH2Tit,
+.comH2Tit3,
+.comH2Tit4,
+.decTxt,
+.decTxt3,
+.decTxt4{
+	color:#fff;
+}
+.comH2Tit2,
+.decTxt2{
+	color:#666;
+}
+.decTxt,
+.decTxt2,
+.decTxt3,
+.decTxt4{
+	width:850px;
+	font-size:16px;
+	text-align:center;
+	display:none;
+	margin:0 auto;
+}
+/* 第一屏 */
+.centerImgBox{
+	margin:10px auto 0px;
+	position:relative;
+}
+.imgLayer{
+	background:#fff;
+	position:absolute;
+	left:0px;
+	top:0px;
+	opacity:0;
+	filter:alpha(opacity=0);
+	border-radius:8px;
+	z-index:3;
+	display:none;
+}
+.imgBox{
+	position:absolute;
+	z-index:4;
+	display:none;
+	left:50%;
+}
+.imgBox img{
+	position:absolute;
+}
+.page1BotBox{
+	height:0px;
+	margin:15px auto 0px;
+	display:none;
+}
+/* 第二屏  轮播图样式*/
+.roundabout-holder{
+	width:850px;
+	height:500px;
+	margin:0 auto; 	
+}
+.roundabout li{
+	display:none;
+}
+.roundabout-moveable-item{
+	width:300px;
+	height:410px;
+	cursor:pointer;
+}
+.roundabout-moveable-item img{
+	width:100%;
+}
+/* 第三屏 */
+.page3DecImg{
+	position:absolute;
+	bottom:30px;
+	display:none;
+	z-index:2;
+}
+.page3MagicImg,
+.page3SmallPicBox{
+	position:absolute;
+	left:-50%;
+}
+.page3MagicImg{
+	z-index:2;
+}
+.page3SmallPicBox{
+	z-index:3;
+}
+.page3SmallImg_1,
+.page3SmallImg_2,
+.page3SmallImg_3{
+	position:absolute;
+	height:0;
+}
+/* 第四屏 */
+.page4Img{
+	position:absolute;
+	display:none;
+	z-index:4;
+}
+.page4DecLayer{
+	position:absolute;
+	z-index:5;
+}
+.page4ZoomPic{
+	position:absolute;
+	z-index:3;
+	display:none;
+	left:-50%;
+}
+.zoomPicCon{
+	width:0;
+	position:absolute;
+	left:-152px;
+	z-index:4;
+	top:-58px;
+	display:none;
+}

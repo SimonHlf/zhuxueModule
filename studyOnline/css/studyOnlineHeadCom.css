@@ -1,0 +1,100 @@
+body{
+	overflow-x:hidden;
+}
+.headWrap{
+	width:100%;
+	height:106px;
+	background:#68c7ec;
+}
+.headWrap .head{
+	height:106px;
+	position:relative;
+	margin:0 auto;
+}
+.perWidth{
+	width:80%;
+}
+.head .logo{
+	width:154px;
+	height:106px;
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+/*不同用户的频道名称*/
+.userCenter{
+	height:27px;
+	background:#efefef;
+	position:absolute;
+	right:5px;
+	top:0;
+	line-height:27px;
+	font-size:14px;
+	color:#00749e;
+	padding-right:5px;
+}
+.userCenter a{
+	color:#00749e;
+}
+.userCenter a:hover{
+	text-decoration:underline;
+}
+.userCenter strong{
+	width:66px;
+	font-size:16px;
+	font-family:'Microsoft YaHei';
+	font-weight:normal;
+	position:absolute;
+	left:-44px;
+	top:76px;
+	color:#333d46;
+}
+.decTriangle{
+	width:43px;
+	height:27px;
+	position:absolute;
+	left:-43px;
+	top:0px;
+	background:url(../../images/inputBg.png) no-repeat -47px -107px;
+}
+/* 导航样式盒子*/
+.nav{
+	height:45px;
+	position:absolute;
+	right:0px;
+	top:48px;
+}
+#markLayer{
+	width:86px;
+	height:40px;
+	background:#efefef;
+	position:absolute;
+	top:0;
+	z-index:2;
+	opacity:0.6;
+	filter:alpha(opacity=60);
+}
+.nav li.navList{
+	width:86px;
+	height:40px;
+	text-align:center;
+	float:left;
+	margin-right:5px;
+	position:relative;
+	z-index:3;
+}
+.nav li a{
+	display:inline-block;
+	width:86px;
+	font-size:18px;
+	line-height:40px;
+	color:#fff;
+}
+.nav li.active{
+	color:#333;
+	height:40px;
+	background:#efefef;
+}
+.nav li.active a{
+	color:#333
+}

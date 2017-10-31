@@ -1,0 +1,60 @@
+/* CSS Document */
+
+/* 自定义滚动条 */
+.scrollBox{
+	width:10px;
+	height:660px;
+	background:#f0ecbd;
+	border-radius:25px;
+	position:absolute;
+	right:0;
+	top:0px;
+	z-index:11;
+}
+.scrollBar{
+	width:10px;
+	height:50px;
+	border-radius:25px;
+	background:#aac147;
+	position:absolute; 
+	left:0; 
+	top:0;
+}
+.no_select{
+	-moz-user-select:none;
+    -webkit-user-select:none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+
+.btnDiv{
+	width:185px;
+	height:35px;
+	margin:10px auto 0px;
+}
+.fix,
+.cancelFix{
+	width:80px;
+	height:35px;
+	line-height:35px;
+	text-align:center;
+	border:none;
+	overflow:visible;	
+	cursor:pointer;
+}
+.fix{
+	color:#fff;
+	background:#aac147;
+}
+.fix:hover{
+	background:#C0DA52;
+}
+.cancelFix{
+	color:#2C4977;
+	background:#d1e7f6;
+	margin-left:5px;
+}
+.cancelFix:hover{
+	text-decoration:underline;
+}

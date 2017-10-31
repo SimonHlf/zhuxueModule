@@ -1,0 +1,206 @@
+/* CSS Document */
+.nowPosition{
+	width:730px;
+	height:35px;
+	line-height:35px;
+	margin:0 auto;
+}
+.nowPosition p{
+	color:#666;
+	font-size:16px;
+}
+.nowPosition p span{
+	color:#91c42f;
+	font-weight:bold;
+}
+.myNetTeacher{
+	width:730px;
+	margin:5px auto 0px;
+	border-top:1px solid #ddd;
+	z-index:2;
+}
+.myNetTeacher li{
+	float:left;
+	width:224px;
+	margin-top:5px;
+	margin-bottom:10px;
+	margin-left:15px;
+	position:relative;
+	
+}
+/* 导师头像 */
+.myNetTeacher li .imgBox{
+	width:224px;
+	height:112px;
+	position:relative;
+	z-index:2;
+}
+.perImgBox{
+	width:88px;
+	height:88px;
+	position:absolute;
+	left:68px;
+	top:68px;
+	z-index:2;
+}
+.perImgBox img{
+	border:4px solid #fff;
+	border-radius:80px;
+	width:80px;
+	height:80px;
+}
+.imgLayer{
+	width:88px;
+	height:88px;
+	display:none;
+	position:absolute;
+	left:0px;
+	top:0px;
+	background:rgba(0,0,0,0.5);
+	border-radius:80px;
+}
+ .imgLayer a{
+ 	width:88px;
+ 	height:88px;
+	color:#fff;
+	display:block;
+	text-align:center;
+	line-height:88px;
+}
+.starLayer{
+	width:100%;
+	height:30px;
+	background:#fff;
+	opacity:0.6;
+	filter:alpha(opacity=60);
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:1;
+}
+/* 评分 */
+.scoreBox{
+	width:220px;
+	height:19px;
+	position:absolute;
+	left:0px;
+	top:5px;
+	z-index:2;
+}
+.scoreBox dd{
+	width:20px;
+	height:19px;
+	float:left;
+	margin-right:5px;
+	background:url(../images/star.png) no-repeat;
+}
+.scoreBox dd.on{
+	background-position:0 -19px;
+}
+.scoreBox dd.halfStar{
+	background-position:0 -38px;
+}
+.mothScTxt{
+	color:#555;
+	font-weight:700;
+	
+	font-size:14px;
+}
+.totalScore{
+	font-family:"Tahoma";
+	font-size:14px;
+	font-weight:bold;
+	margin-top:-1px;
+	color:#555;
+}
+.low{
+	color:#EA544A;
+}
+.mid{
+	color:#ff9c00;
+}
+.hig{
+	color:#00b300;
+}
+/* 导师信息 */
+.netTeaInfo{
+	width:222px;
+	height:155px;
+	background:#fff;
+	border-left:1px solid #dedfe0;
+	border-right:1px solid #dedfe0;
+	border-bottom:3px solid #E3E4E5;
+	position:relative;
+	z-index:1;
+}
+.relName{
+	font-size:14px;
+	font-weight:bold;
+	text-align:center;
+	color:#444;
+	padding-top:45px;
+}
+.commentBox{
+	text-align:center;
+	margin-top:2px;	
+	color:#666;
+}
+.commentBox span.judgeBtn{
+	cursor:pointer;
+}
+.commentBox span.judgeBtn:hover{
+	color:#00b300;
+}
+.commentBox a{
+	color:#666;
+}
+.commentBox a:hover{
+	text-decoration:underline;
+}
+.commentNum{
+	color:#00b300;
+}
+.teacheGradeSubj{
+	text-align:center;
+	color:#666;
+	margin-top:2px;
+}
+.attachBtns,
+.nowState{
+	height:35px;
+	line-height:35px;
+	text-align:center;
+	position:absolute;
+	bottom:10px;
+	font-size:14px;
+	padding:0 10px;
+}
+.attachBtns{
+	background:#f9d99a;
+	color:#333;
+}
+.attachBtns:hover{
+	background:#f3b436;
+}
+.nowState{
+	background:#f1f1f1;	
+	color:#444;
+}
+.l1{
+	left:66px;
+}
+.l2{
+	left:68px;
+}
+.l3{
+	left:18px;
+}
+.l4{
+	left:27px;
+}
+.l5{
+	left:48px;
+}
+.l6{
+	left:38px;
+}

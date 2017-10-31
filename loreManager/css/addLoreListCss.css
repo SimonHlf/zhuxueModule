@@ -1,0 +1,82 @@
+.addListWrap{
+	width:100%;
+	height:667px;
+	overflow:auto;
+	overflow-x:hidden;
+	position:relative;
+}
+.listTop{
+	margin-bottom:8px;
+	width:100%;
+	height:35px;
+}
+.listTop .addNewBtn{
+	width:85px;
+	height:35px;
+	line-height:35px;
+	border:none;
+	background:#AAC147 url(../../chapter/images/addNewChap.png) no-repeat 5px 10px;
+	color:#fff;
+	cursor:pointer;
+	padding-left:25px;
+	display:inline-block;
+}
+.listTop .addNewBtn:hover{
+	background:#f90 url(../../chapter/images/addNewChap.png) no-repeat 5px 10px;
+}
+.listCon{
+	width:750px;
+	position:relative;
+}
+.headTitle{
+	font-size:16px;
+	color:#2C4977;
+	font-family:"微软雅黑";
+	position:absolute;
+}
+.headTitle{
+	top:5px;
+}
+.createDivWrap{
+	width:750px;
+	position:relative;
+	margin-top:15px;
+	/*border:1px dashed #36B148;*/
+	padding:5px 0px;
+}
+.createDivWrap.bor1{
+	border:1px solid #F90;
+	border-top:3px solid #F90;
+	border-radius:5px;
+}
+.createDivWrap.bor2{
+	border:1px solid #36B148;
+	border-top:3px solid #36B148;
+	border-radius:5px;
+}
+.newCreateIcon{
+	width:60px;
+	height:62px;
+	background:url(../images/allPic.png) no-repeat -287px -28px;
+	position:absolute;
+	right:-4px;
+	top:-6px;
+	z-index:6;
+}
+.editorTop{
+	height:35px;
+	position:absolute;
+	top:8px;
+	left:0px;
+}
+.editroSty{
+	margin-top:45px;
+}
+.activeDele{
+	position:absolute;
+	width:25px;
+	height:25px;
+	background:url(../images/allPic.png) no-repeat -87px -116px;
+	right:0;
+	top:0;
+}

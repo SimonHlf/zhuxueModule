@@ -1,0 +1,252 @@
+body{
+	background:#f3f2f6;
+}
+/* 当前版本 */
+.nowLoc{
+	width:100%;
+	height:0.50rem;
+	line-height:0.50rem;
+	background:#64ccf2;
+	color:#fff;
+	position:relative;
+	text-indent:32px;
+	z-index:6;
+}
+.backIcon{
+	width:30px;
+	height:0.50rem;
+	position:absolute;
+	left:0px;
+	top:0px;
+	background:url(../../onlineStudy/images/backIcon.png) no-repeat center;
+}
+.nowLoc p{
+	max-width:95%;
+}
+.detailWrap{
+	width:100%;
+	overflow:hidden;
+}
+.swiper-wrapper{
+	height:100%;
+	-webkit-transition:0.5s;
+	transition:.5s;
+	-webkit-transform:translateX(0px);
+	transform:translateX(0px);
+}
+.swiper-slide{
+	height:100%;
+	float:left;
+}
+.tabNav,
+#innerTabNav{
+	height:40px;
+	background:#fff;
+	position:relative;
+	z-index:5;
+}
+.tabNav{
+	width:100%;
+	box-shadow:0px 0px 3px #666;
+	margin-bottom:10px;
+}
+#innerTabNav{
+	width:95%;
+	margin:0 auto;
+	overflow:hidden;
+}
+.tabNav a{
+	width:114px;
+	height:0.40rem;
+	line-height:0.40rem;
+	float:left;
+	text-align:center;
+	color:#999;
+	font-size:0.14rem;
+	position:relative;
+}
+.tabNav a.active{
+	height:37px;
+	line-height:40px;
+	border-bottom:3px solid #ffe400;
+	color:#666;
+}
+.tabNav a.active .spanTri{
+	width:0px;
+	height:0px;
+	border-width:6px;
+	border-style:dashed dashed solid dashed;
+	border-color:transparent transparent #ffe400 transparent;
+	position:absolute;
+	left:50%;
+	margin-left:-6px;
+	bottom:0px;
+}
+.shadowSpan{
+	width:5px;
+	height:40px;
+	position:absolute;
+	right:0px;
+	top:0px;
+	background:url(../../reportCen/images/shadow.png) no-repeat;
+	display:none;
+	background-size:cover;
+}
+#detailTit{
+	width:100%;
+	font-size:0.20rem;
+	color:#333;
+	font-weight:normal;
+	text-indent:10px;
+	padding:5px 0px;
+}
+.comWrapper,
+.comWrapper_gl{
+	width:95%;
+	margin:0 auto;
+	position:relative;
+}
+/**.comWrapper_gl{
+	background:#fff;
+}**/
+.studyTypeName ul li{
+	background:#fff;
+	margin-bottom:10px;
+	padding:5px 0px;
+}
+.titNumPar{
+	border-bottom:1px solid #ddd;
+	padding:0px 5px 5px 5px;
+}
+.quesNum{
+	width:30px;
+	height:30px;
+	line-height:27px;
+	border-radius:50%;
+	text-align:center;
+	border:1px solid #2798c2;
+	color:#666;
+	font-weight:normal;
+}
+.titDiv{
+	margin-left:8px;
+	font-size:0.16rem;
+}
+.optionDiv{
+	padding:5px 5px 0 5px;
+}
+.optionDiv .sonOptionDiv{
+	margin-bottom:10px;
+}
+.ansDiv{
+	height:35px;
+	line-height:35px;
+	padding:0 5px;
+	color:#333;
+	border-top:1px solid #ddd;
+}
+.ansDiv p:nth-of-type(2){
+	margin-left:10px;
+}
+.errCol{
+	color:#fb5151;
+	font-weight:bold;
+}
+.rightCol{
+	color:#2798c2;
+	font-weight:bold;
+}
+#detailUl_zdx li:nth-last-of-type(1){
+	margin-bottom:0px;
+}
+/* 关联诊断结果 */
+.scroller{
+	width:150%;
+	position:absolute;
+	left:0px;
+	top:0px;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+.ulParent{
+	margin-top:10px;
+}
+.ulParent,
+.fristFloor,
+.secondFloor{
+	position:relative;
+}
+.bigTit{
+	color:#333;
+	font-size:0.18rem;
+}
+.smallTit{
+	font-size:0.16rem;
+	color:#666;
+}
+.smallTit span{
+	font-size:0.12rem;
+}
+.fristFloor,
+.secondFloor{
+	margin:5px 0 0px 10px;
+}
+.bigTit{
+	padding-left:28px;
+}
+.smallTit{
+	display:inline-block;
+	/**background:#fafafa;**/
+	background:#fff;
+	padding:2px 10px 2px 28px;
+}
+.smallTit span{
+	font-size:0.12rem;
+	margin-right:5px;
+}
+.noPassTxt{
+	color:#F67A7A;
+}
+.noPassTxt_1{
+	color:#999;
+}
+.passTxt{
+	color:#2798c2;
+}
+.treeIcon,
+.sonTreeIcon,
+.fristFlIcon{
+	width:18px;
+	height:21px;
+	position:absolute;
+	left:8px;
+}
+.fristFlIcon,
+.treeIcon{
+	background:url(../../../learnRecord/images/treeIcon.png) no-repeat;
+}
+.treeIcon{
+	top:0px;
+}
+.fristFlIcon{
+	top:3px;
+}
+.sonTreeIcon{
+	background:url(../../../learnRecord/images/sonTreeIcon.png) no-repeat;
+	top:5px;	
+}
+
+
+
+
+/* 暂无学习记录详情 */
+.noRecoDiv{
+	width:145px;
+	height:155px;
+	margin:0px auto;
+	text-align:center;
+	color:#999;
+	font-size:0.16rem;
+}
+.noRecoDiv p{
+	padding-top:5px;
+}

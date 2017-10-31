@@ -1,0 +1,720 @@
+/* CSS Document */
+
+body{
+	background:#E4F3F6;
+	color:#666;
+	overflow-x:hidden;
+}
+.head .logos{
+	width:154px;
+	height:106px;
+	position:absolute;
+	top:0px;
+	left:50px;
+}
+.homeTitle{
+	width:102px;
+	height:102px;
+	position:absolute;
+	left:-80px;
+	top:50px;
+}
+.imgDec{
+	width:12px;
+	height:102px;
+	background:url(../images/userDecBg.png) no-repeat;
+	position:absolute;
+	left:-7px;
+	top:0;
+}
+.userImg{
+	height:102px;
+}
+/* 个人中心主要内容 */
+.personCon{
+	background:#fff;
+	padding:0px 0 25px;
+	margin-top:60px;
+	margin-bottom:10px;
+}
+/*   头部   */
+.userHead{
+	width:1000px;
+	height:160px;
+}
+.useImg{
+	width:160px;
+	height:160px;
+	position:relative;
+	overflow:hidden;
+}
+/* 老师，网络导师身份下的图片显示层 */
+.welBox,
+.welBox1{
+	width:835px;
+	height:0px;
+	padding-top:160px;
+	overflow:hidden;
+	float:left;
+	margin-left:5px;
+}
+.welBox{
+	background:url(../images/teaCen.jpg) no-repeat;	
+}
+.welBox1{
+	background:url(../images/parCen.jpg) no-repeat;	
+}
+.layerName,
+.imgLayer{
+	width:160px;
+	height:30px;
+	line-height:30px;
+	position:absolute;
+	left:0;
+	text-align:center;
+}
+.layerName{
+	bottom:-30px;
+}
+.imgLayer{
+	bottom:0px;
+}
+.imgLayer{
+	background:#000;
+	opacity:0.5;
+	filter:alpha(opacity=50);
+	z-index:0;
+}
+.nameUser{
+	color:#fff;
+	font-size:14px;
+	position:relative;
+	z-index:2;	
+}
+/* 当前等级，头衔，金币，个人资料设置 */
+.comDivBox{
+	width:205px;
+	height:160px;
+	float:left;
+	margin-left:5px;
+	position:relative;
+	overflow:hidden;
+	cursor:pointer;
+}
+
+.level{
+	background:#f3b436 url(../images/dengjiIcon.png) no-repeat center;
+}
+.touxian{
+	background:#71bb55 url(../images/touxianIcon.png) no-repeat center;
+}
+.jinbiBox{
+	background:#3eace2 url(../images/jinbiIcon.png) no-repeat center;
+}
+.setPerInfo{
+	background:#e6567a url(../images/setIcon.png) no-repeat center;
+}
+.comLayer,
+.layerWhite{
+	width:100%;
+	height:32px;
+	line-height:32px;
+	text-align:center;
+	position:absolute;
+	left:0;
+	bottom:0;	
+}
+.layerWhite{
+	background:#fff;
+	opacity:0.5;
+	filter:alpha(opacity=50);
+}
+.comTxt{
+	color:#383330;
+	font-size:14px;
+	position:relative;
+	z-index:2;	
+}
+.hideLayer{
+	width:205px;
+	height:128px;
+	position:absolute;
+	left:0;
+	top:-128px;
+}
+/* 等级经验值最外层 */
+.proValueBox{
+	width:145px;
+	height:23px;
+	position:absolute;
+	left:50%;
+	top:50px;
+	margin-left:-73px;
+	background:#f7f8f8;
+	border-radius:15px;
+}
+.innerProBox{
+	width:138px;
+	height:15px;
+	border-radius:15px;
+	background:#738C8C;
+	position:absolute;
+	left:3px;
+	top:4px;
+}
+.perLayer{
+	width:0px;
+	height:15px;
+	border-radius:15px;
+	background:#68c7ec;
+}
+.expValue{
+	width:100%;
+	position:absolute;
+	left:0px;
+	top:-1px;
+	height:18px;
+	line-height:18px;
+	color:#f1f2f3;
+	text-align:center;
+}
+.val_triangle{
+	width:0px;
+	hegiht:0px;
+	border-width:8px;
+	border-style:solid dashed dashed dashed;
+	border-color:#68c7ec transparent transparent transparent;
+	position:absolute;
+	bottom:-15px;
+	*bottom:-34px;
+	left:50%;
+	margin-left:-8px;	
+}
+.expTxt{
+	text-align:center;
+	padding-top:88px;
+	font-size:12px;
+	color:#584837;
+}
+.bgLevel{
+	background:#F9D99A;
+}
+.bgTou{
+	background:#B7DDA9;
+}
+.bgGolden{
+	background:#9ED5F0;
+}
+.bgInfo{
+	background:#F2AABC;
+}
+/* 头衔 */
+#headImg{
+	margin:2px 0 0 8px;
+}
+/* 立即兑换 */
+.exchangeBtn{
+	width:100px;
+	height:35px;
+	line-height:35px;
+	text-align:center;
+	position:absolute;
+	left:52px;
+	top:65px;
+	background:Red;
+}
+/* 修改个人资料 */
+.fixPerInfo{
+	width:40px;
+	height:95px;
+	position:absolute;
+	left:80px;
+	top:20px;
+	background:url(../images/fixInfo.png) no-repeat;
+}
+/* 模块内容部分 */
+
+/* top部分 */
+.midT{
+	width:1000px;
+	height:15px;
+	background:#e4f3f6;
+	border-top:1px solid #eee;
+}
+
+/* 中间部分 */
+.midMiddle{
+	width:100%;
+}
+/* 左侧 */
+.midLeft{
+	width:160px;
+	position:relative;
+	z-index:2;
+}
+.midLeft li{
+	width:160px;
+	height:60px;
+	line-height:60px;
+	text-align:center;
+	font-size:14px;
+	margin-bottom:2px;
+	vertical-align:top;
+}
+.midLeft li .iconBox{
+	width:66px;
+	height:60px;
+	background:#f2f9fb;
+	margin-right:2px;
+	float:left;
+	position:relative;
+}
+.midLeft li .iconBox img.imgIcons{
+	position:absolute;
+	left:0px;
+	top:2px;
+}
+.midLeft li a{
+	width:162px;
+	height:60px;
+	line-height:60px;
+	display:inline-block;
+	color:#666;
+	float:left;
+	background:#f2f9fb;
+	position:relative;
+	cursor:pointer;
+}
+
+.midLeft li:hover{
+	/*background:#89ca4b;*/
+}
+.midLeft li:hover a{
+	color:#333;	
+}
+.midLeft li.active{
+	width:231px;
+	position:relative;
+	
+}
+.midLeft li.active a{
+	position:relative;
+	background:#91c42f;
+	width:162px;
+	color:#2e2625;
+}
+.midLeft li.active .iconBox{
+	background:#91c42f;
+}
+.midLeft li.active:hover{
+	/*background:none;*/
+}
+.midLeft li a .triangles{
+	width:0;
+	height:0;
+	border-width:12px;
+	border-color:transparent #fff transparent transparent;
+	border-style:dashed solid dashed dashed;
+	position:absolute;
+	right:-1px;
+	top:19px;
+	display:none;
+}
+/* 右侧 */
+.midRight{
+	width:765px;
+	height:auto;
+	border-left:1px solid #e0e0e0;
+	position:relative;
+	z-index:1;
+}
+
+/* 网络导师论坛发帖的弹窗 */
+.pubTopicWin{
+	width:626px;
+	height:480px;
+	position:absolute;
+	left:50%;
+	margin-left:-313px;
+	display:none;
+	z-index:1000;
+}
+.pubIcon{
+	width:40px;
+	height:40px;
+	background:url(../../studyOnline/images/iconBg.png) no-repeat -91px -29px;
+	position:absolute;
+	left:10px;
+	top:3px;
+}
+.pubTopicMid{
+	width:606px;
+	height:335px;
+	padding:10px;
+	background:#efeff0;
+}
+.pubTit{
+	height:35px;
+}
+.pubTit span{
+	font-size:14px;
+}
+.pubTit .titCon{	
+	width:538px;
+	height:28px;
+	line-height:28px;
+	background:#fff;
+	color:#333;
+	padding:0 5px;
+	border:none;
+	vertical-align:middle;
+}
+.pubConBox{
+	width:550px;
+	height:295px;
+	margin:10px 0 0 42px;
+}
+/* 显示论坛帖子里面图片原始的尺寸的盒子 */
+.orginalImgBox{
+	background:#fff;
+	display:none;
+	padding:40px 10px;
+	position:absolute;
+	z-index:990;
+	cursor:move;
+}
+.tipBox{
+	width:100%;
+	height:40px;
+	line-height:40px;
+	position:absolute;
+	left:10px;
+	top:0px;
+}
+.no_select{
+	-moz-user-select:none;
+    -webkit-user-select:none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+.closeOldBox{
+	width:17px;
+	height:17px;
+	position:absolute;
+	right:15px;
+	top:10px;
+	background:url(../images/imgzoom_tb.gif) no-repeat -80px 0px;
+	cursor:pointer;
+}
+.closeOldBox:hover{
+	background:url(../images/imgzoom_tb.gif) no-repeat -80px -39px;
+}
+
+/* 我的提问/答疑列表展开具体内容盒子 */
+.ifrmaAskWrap{
+	width:1060px;
+	height:100%;
+	position:absolute;
+	left:50%;
+	top:0px;
+	z-index:961;
+	margin-left:-530px;
+	display:none;
+}
+
+.layer1{
+	width:100%;
+	height:100%;
+	display:none;
+	position:fixed;
+	left:0;
+	top:0;
+	z-index:960;
+	background:#000;
+	opacity:0.5;
+	filter:alpha(opacity=50);
+}
+.backTop{
+	width:50px;
+	height:50px;
+	background:url(../images/backTop.gif) no-repeat 0 -55px;
+	position:fixed;
+	bottom:200px;
+	right:0px;
+	z-index:10009;
+	display:none;
+	opacity:0;
+	filter:alpha(opacity=0);
+}
+
+.cancelScroll{
+	height:100%;
+	overflow:hidden;
+}
+
+/* 网络导师个人简介的弹窗 */
+.teaResumeBox{
+	width:860px;
+	margin-left:-430px;
+	position:absolute;
+	left:50%;
+	z-index:10009;
+	display:none;
+}
+/* 个人简介下个人荣誉图片查看按钮点击时候新创建的层 */
+.newLayer{
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:0;
+	z-index:10010;
+	background:#21262C;
+	opacity:0.8;
+	filter:alpha(opacity=80);
+	display:none;	
+}
+
+/* 呈现个人荣誉原图的盒子弹窗 */
+.perGloryBigImgBox{
+	overflow:hidden;
+	background:#fff;
+	display:none;
+	padding:40px 10px;
+	cursor:move;
+	position:absolute;
+	z-index:100001;
+}
+.tipBox{
+	width:100%;
+	height:40px;
+	line-height:40px;
+	position:absolute;
+	left:10px;
+	top:0px;
+}
+.closeBigBox{
+	width:17px;
+	height:17px;
+	position:absolute;
+	right:15px;
+	top:10px;
+	background:url(../../personalCen/images/imgzoom_tb.gif) no-repeat -80px 0px;
+	cursor:pointer;
+}
+.closeBigBox:hover{
+	background:url(../../personalCen/images/imgzoom_tb.gif) no-repeat -80px -39px;
+}
+
+/* 我的导师模块的评分弹窗 */
+.myNetTeaScore{
+	width:510px;
+	height:400px;
+	position:absolute;
+	left:50%;
+	margin-left:-255px;
+	display:none;
+	z-index:2000;
+	background:url(../../netTeacherList/images/opcity50_e0e0e0.png) repeat;
+	padding:10px;
+	border-radius:5px;
+}
+.scoreBoxCon{
+	width:100%;
+	height:100%;
+	background:#fff;
+}
+.judgeBox{
+	width:100%;
+	height:29px;
+	line-height:29px;
+	padding-top:10px;
+}
+.com_DivBox p{
+	padding-left:15px;
+}
+.com_DivBox p span{
+	color:#e4393c;
+	margin-right:5px;
+}
+.judgeBox li{
+	float:left;
+	width:20px;
+	height:19px;
+	background:url(../../netTeacherList/images/star.png) no-repeat;
+	margin:5px;
+	cursor:pointer;
+}
+.judgeBox li.on{
+	background-position:0 -19px;
+}
+.scoreTxt{
+	float:left;
+	margin-left:5px;
+	font-size:14px;
+}
+/* 网络导师标签 */
+.netTagBox{
+	width:100%;
+	height:100px;
+}
+.netTagBox p{
+	line-height:35px;
+}
+.netTagBox ul{
+	width:432px;
+	float:left;
+}
+.netTagBox li{
+	float:left;
+	width:138px;
+	height:35px;
+	line-height:35px;
+	margin:3px;
+	background:#eee;
+	text-align:center;
+	position:relative;
+}
+.tagRadio{
+	height:35px;
+	opacity:0;
+	filter:alpha(opacity=0);
+	position:absolute;
+	left:0;
+	top:0;
+	cursor:pointer;
+	z-index:2;
+}
+.wid1{
+	width:138px;
+}
+.wid2{
+	width:80px;
+}
+.bor{
+	height:33px;
+	border:1px solid #91c42f;
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:1;
+}
+.wid1_bor{
+	width:136px;
+}
+.wid2_bor{
+	width:76px;
+}
+.netTagBox li.diyLi{
+	width:100%;
+	height:35px;
+	line-height:35px;
+	background:none;
+}
+.diyTxt{
+	position:absolute;
+	left:12px;
+	top:0px;
+}
+.bgDec{
+	width:80px;
+	height:35px;
+	background:#eee;
+	position:absolute;
+	left:0;
+	top:0;
+}
+.diyIcon{
+	width:12px;
+	height:14px;
+	position:absolute;
+	left:8px;
+	top:10px;
+	background:url(../../netTeacherList/images/diyIcon.png) no-repeat;
+}
+.diyInpTxt{
+	width:150px;
+	height:30px;
+	margin-left:-105px;
+	line-height:35px;
+}
+.choiceState{
+	width:15px;
+	height:15px;
+	background:url(../../netTeacherList/images/duihao.png) no-repeat;
+	position:absolute;
+	left:-3px;
+	top:-3px;
+	z-index:2;
+}
+/* 网络导师评价文本框 */
+.judgeTxtWrap{
+	width:100%;
+	height:150px;
+	margin-top:28px;
+}
+.textArea{
+	width:432px;
+	height:150px;
+}
+.judgeTxarea{
+	overflow:auto;
+	width:412px;
+	height:130px;
+	padding:10px;
+	color:#777;
+	line-height:20px;
+}
+.sumbitBtn{
+	width:120px;
+	height:35px;
+	line-height:35px;
+	border:none;
+	outline:none;
+	background:#b4e4f6;
+	cursor:pointer;
+	position:absolute;
+	left:50%;
+	margin-left:-60px;
+	bottom:30px;
+	color:#333;
+	font-size:14px;
+}
+.sumbitBtn:hover{
+	background:#68c7ec;
+}
+/* 关闭窗口 */
+.cloJudgeWin{
+	width:15px;
+	height:15px;
+	position:absolute;
+	right:20px;
+	top:20px;
+	background:url(../../netTeacherList/images/payWinClose.png) no-repeat;
+	cursor:pointer;
+}
+.cloJudgeWin:hover{
+	background:url(../../netTeacherList/images/payWinClose.png) 0 -15px no-repeat;
+}
+
+/* 五部学习的弹窗盒子 */
+.challengeBox{
+	width:910px;
+	position:absolute;
+	left:50%;
+	bottom:0px;
+	background:#f0f0f0;
+	display:none;
+	z-index:10010;
+	margin-left:-455px;
+}
+
+.closeChallengeBtn{
+	width:40px;
+	height:40px;
+	background:url(../../studyOnline/images/midBtn.png) no-repeat -125px -100px;
+	position:absolute;
+	right:5px;
+	top:0px;
+	cursor:pointer;
+}

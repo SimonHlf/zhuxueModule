@@ -1,0 +1,171 @@
+@charset "gb2312";
+/* CSS Document */
+.nowPosition{
+	width:730px;
+	height:35px;
+	line-height:35px;
+	margin:0 auto;
+}
+.nowPosition p{
+	color:#666;
+	font-size:16px;
+}
+.nowPosition p span{
+	color:#91c42f;
+	font-weight:bold;
+}
+.capaRepWrap{
+	width:730px;
+	margin:5px auto 0px;
+	border-top:1px solid #ddd;
+}
+.optionBox{
+	width:668px;
+	height:60px;
+	margin:15px auto 0px;
+}
+.selSubIcon{
+	width:50px;
+	height:50px;
+	display:inline-block;
+	background:url(../images/selIcon.png) no-repeat;
+	float:left;
+}
+.pl{
+	background-position:0 0;
+}
+.pr{
+	background-position:0 -50px;
+}
+.subBoxStud{
+	width:170px;
+	float:left;
+	margin-left:5px;
+}
+#subjectId{
+	width:80px;
+}
+.selSubTimeBox,
+.selSubTimeBox_1{
+	height:50px;
+	position:relative;
+	margin-top:2px;
+}
+.selSubTimeBox_1{
+	line-height:50px;
+}
+.timeBox{
+	margin-left:5px;
+}
+.till{
+	line-height:50px;
+	margin-right:5px;
+}
+.searchBtn{
+	width:75px;
+	height:29px;
+	display:inline-block;
+	background:url(../images/searchBtn.png) no-repeat 0 0px;
+	margin:10px 0 0 10px;
+}
+.searchBtn:hover{
+	background:url(../images/searchBtn.png) no-repeat 0 -29px;
+}
+/* 锟斤拷锟斤拷锟斤拷锟斤拷 */
+.recentlyBox{
+	width:668px;
+	height:46px;
+	line-height:46px;
+	background:#caf09b;
+	text-align:center;
+	font-size:16px;
+	color:#333;
+	margin:6px auto 0px;
+}
+/* 锟剿斤拷 锟斤拷锟�应锟斤拷锟斤拷锟斤拷 */
+.moduBox{
+	width:668px;
+	height:auto;
+	margin:0 auto;
+}
+.comModDiv{
+	width:166px;
+	height:244px;
+	background:url(../images/moduPartBg.png) no-repeat;
+	float:left;
+	margin-top:20px;
+	padding:8px;
+	position:relative;
+}
+.mr{
+	margin-right:61px;
+}
+.bg1{
+	background-position:0 0;
+}
+.bg2{
+	background-position:0 -260px;
+}
+.bg3{
+	background-position:0 -520px;
+}
+.comInnerCon{
+	width:100%;
+	height:100%;
+	border:1px dashed #fff;
+}
+.decIcon{
+	width:40px;
+	height:40px;
+	background:url(../images/decIcon.png) no-repeat;
+	position:absolute;
+	right:-12px;
+	top:-10px;
+}
+.bgIcon1{
+	background-position:0 0;
+}
+.bgIcon2{
+	background-position:0 -40px;
+}
+.bgIcon3{
+	background-position:0 -80px;
+}
+.abiTit{
+	font-size:14px;
+	text-align:center;
+	padding-top:2px;
+}
+.titCol1{
+	color:#1bbc9b;
+}
+.titCol2{
+	color:#94be40;
+}
+.titCol3{
+	color:#3598db;
+}
+.nowScore{
+	font-size:14px;
+	text-align:center;
+	color:#e6587b;
+	padding-top:3px;
+	font-weight:bold;
+	margin-bottom:10px;
+}
+.detailTxt{
+	color:#3c3d3b;
+	text-align:center;
+	line-height:18px;
+}
+.weakTxt{
+	text-align:center;
+	padding-top:20px;
+	font-size:14px;
+	font-weight:normal;
+}
+.detaWeak{
+	text-align:center;
+	padding-top:10px;
+	color:#333539;
+}

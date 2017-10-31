@@ -1,0 +1,654 @@
+/* CSS Document */
+.detailListCon{
+	width:978px;
+	margin:0px auto 0px;
+	height:auto;
+}
+/* 头部部分 */
+.listHead{
+	width:978px;
+	height:63px;
+	background:url(../images/choiceCourseBg.jpg) no-repeat;
+	position:relative;
+}
+.listHead h2{
+	font-size:16px;
+	color:#666666;
+	position:absolute;
+	left:12px;
+	top:15px;
+}
+.backIcon{
+	width:30px;
+	height:22px;
+	background:url(../images/iconBg.png) no-repeat 0 -51px;
+	position:absolute;
+	right:120px;
+	top:30px;
+	z-index:2;
+}
+.listHead a{
+	display:inline-block;
+	width:120px;
+	height:32px;
+	line-height:32px;
+	text-align:center;
+	color:#333;
+	font-size:14px;
+	position:absolute;
+	right:10px;
+	top:26px;
+}
+.listHead a:hover{
+	color:#ff8200;
+}
+
+/* 主要内容 */
+.listMidCon{
+	width:958px;
+	height:auto;
+	background:#fff;
+	padding:10px 10px 15px;
+}
+.parentwWrap{
+	width:100%;
+	height:auto;
+	position:relative;
+}
+
+/* 核心部分样式开始 */
+.mainCons{
+	width:100%;
+	margin-top:10px;
+}
+/* 左侧 */
+.mainConsL{
+	width:218px;
+}
+.mainConsL .readyLearn{
+	color:#fff;
+	font-size:16px;
+	text-align:center;
+	height:38px;
+	line-height:38px;
+	background:#91c42f;
+	width:217px;
+}
+
+.smallPoint li{
+	float:left;
+	width:108px;
+	height:108px;
+	line-height:175px;
+	color:#4d4d4d;
+	text-align:center;
+	cursor:pointer;
+	background:#efeff0;
+	margin-bottom:1px;
+	position:relative;
+	font-size:14px;
+}
+.smallPoint li:hover{
+	background:#dbe7e8;
+}
+.margR{
+	margin-right:1px;
+}
+.sourceIcon,
+.sourceBg2{
+	width:36px;
+	position:absolute;
+	left:50%;
+	margin-left:-18px;
+	background:url(../images/sourceIcon.png) no-repeat;
+}
+.sourceIcon{
+	width:36px;
+}
+.sourceBg1{
+	height:32px;
+	background-position: 0 0;
+	top:38px;
+}
+.sourceBg2{
+	width:40px;
+	height:28px;
+	background-position:0 -32px;
+	top:40px;
+}
+.sourceBg3{
+	height:36px;
+	background-position:0 -60px;
+	top:36px;
+}
+.sourceBg4{
+	height:42px;
+	background-position:0 -96px;
+	top:33px;
+}
+/* 任务栏盒子 */
+.taskBox{
+	width:100%;
+	margin-top:27px;
+}
+.topTask{
+	height:35px;
+	background:#f9d99a;
+	text-align:center;
+	position:relative;
+}
+.topTask p{
+	height:30px;
+	line-height:30px;
+	background:#f3b436;
+	color:#fff;
+	font-size:16px;
+}
+.noTask{
+	font-size:14px;
+	padding:25px 12px 0px;
+	text-indent:2em;
+	color:#444;
+	line-height:26px;
+}
+.taskDecIcon{
+	width:14px;
+	height:24px;
+	background:url(../images/iconBg.png) no-repeat 0 -161px;
+	top:-8px;
+	position:absolute;
+}
+.taskPosL{
+	left:30px;
+}
+.taskPosR{
+	right:30px;
+}
+.mainTaskCon{
+	width:100%;
+	height:150px;
+	background:#efeff0;
+	overflow:hidden;
+	position:relative;
+}
+.taskListCon{
+	position:absolute;
+}
+.taskListCon .stadus{
+	height:32px;
+	line-height:32px;
+	overflow:hidden;
+	position:relative;
+	border-bottom:1px dashed #999;
+	font-size:14px;
+}
+.taskListName{
+	width:130px;
+	max-width:130px;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	height:32px;
+	overflow:hidden;
+	text-indent:5px;
+	color:#4d4d4d;
+}
+.reword{
+	width:60px;
+	margin-right:5px;
+	text-align:center;
+}
+.reword span{
+	font-family:"Georgia";
+	font-weight:bold;
+	color:#FF6500;
+}
+/* 滚动条 */
+.scrollParent,
+.scrollSon{
+	width:5px;
+	border-radius:20px;
+	position:absolute;
+	right:0;
+	top:0px;
+}
+.scrollParent{
+	height:150px;
+	opacity:0;
+	filter:alpha(opacity=0);
+}
+.scrollSon{
+	height:50px;
+	background:#999;
+}
+.no_select{
+	-moz-user-select:none;
+    -webkit-user-select:none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+/* 中间 */
+.mainConsM{
+	width:720px;
+	margin-left:20px;
+	color:#333;
+	font-size:14px;
+}
+.midTitle{
+	height:37px;
+	line-height:38px;
+	margin-bottom:20px;
+	position:relative;
+	border-bottom:1px solid #dadada;
+}
+.midTitle p{
+	color:#666;
+	text-indent:56px;
+	font-size:16px;
+}
+.kehouColor{
+	
+}
+.challangePic{
+	width:54px;
+	height:39px;
+	background:url(../images/iconBg.png) no-repeat -20px -160px;
+	position:absolute;
+	left:0px;
+	top:2px;
+}
+.taskComple{
+	width:135px;
+	height:135px;
+	position:absolute;
+	top:245px;
+	right:90px;
+	background:url(../images/completeIcon.png) no-repeat;
+}
+.taskNum{
+	width:660px;
+	height:40px;
+	line-height:40px;
+	background:#f0f0f0;
+	margin:0 auto;
+	font-size:20px;
+	color:#585858;
+	text-indent:18px;
+	font-weight:normal;
+}
+.taskNum span.nowTask{
+	font-size:16px;
+	color:#ff6500;
+}
+.taskNum span.numTask{
+	font-size:12px;
+}
+.goldLineBox{
+	width:658px;
+	height:368px;
+	margin:0 auto;
+	border:1px solid #f2f2f2;
+	border-top:none;
+}
+.jinbiBox{
+	width:330px;
+	position:relative;
+	color:#666;
+	margin:0px auto 10px;
+	padding-top:35px;
+}
+.nowGolden{
+	font-size:100px;
+	font-family:"Georgia";
+	color:#ffc641;
+}
+.jinbiTxt{
+	padding-top:100px;
+}
+.rewordIcon{
+	width:60px;
+	height:60px;
+	background:url(../images/midBtn.png) no-repeat 0 0;
+	position:absolute;
+	left:-38px;
+	top:46px;
+}
+.goldenIcon{
+	width:94px;
+	height:108px;
+	background:url(../images/goldenIcon.jpg) no-repeat;
+	margin:13px 0 0 10px;
+}
+.suyuanTxt{
+	text-indent:125px;
+	font-size:16px;
+	color:#666;
+}
+.showTree{
+	color:#5b9200;
+}
+.showTree:hover{
+	color:#ff6500;
+}
+.taskDetail{
+	margin-top:20px;
+	color:#666;
+	text-indent:46px;
+	padding:0 10px;
+}
+.loreName{
+	color:#ff6500;
+}
+.midCon{
+	margin-bottom:20px;
+	padding-bottom:20px;
+	border-bottom:1px dashed #787878;
+	position:relative;
+}
+.color{
+	color:#ff6500;
+	font-weight:bold;
+}
+.comBtn{
+	width:165px;
+	height:50px;
+	line-height:50px;
+	font-size:16px;
+	font-weight:bold;
+	color:#444;
+	cursor:pointer;
+	border:none;
+	background:#91c42f;
+	margin:20px 0 0 200px;
+	outline:none;
+	font-family:"Microsoft YaHei";
+}
+.comBtn:hover{
+	background:#99cf30;
+}
+
+/* 右侧 */
+.complete{
+	width:15px;
+	height:15px;
+	margin-top:3px;
+	*margin-top:9px;
+	margin-left:3px;
+}
+.complete .completeIcon{
+	width:15px;
+	height:15px;
+	display:inline-block;
+	background:url(../images/iconBg.png) -31px -34px;
+}
+.taskRewordB{
+	width:220px;
+	height:22px;
+	background:url(../images/taskListBg.png) no-repeat -440px bottom;
+}
+
+/* 课前预习内容描述 */
+.previewDe{
+	margin:0 15px 10px 15px;
+	width:150px;
+	height:auto;
+	line-height:24px;
+	color:#5d5f5a;
+}
+
+/* 知识讲解，点拨指导，知识清单，解题示范对应的弹窗的父级iframe样式 */
+.parPopWin{
+	width:752px;
+	height:587px;
+	margin-left:-400px;
+	display:none;
+	position:absolute;
+	left:50%;
+	z-index:10009;
+}
+.closePopWin{
+	width:60px; 
+	height:60px; 
+	background:url(../images/midBtn.png) no-repeat 0 -100px;
+	position:absolute;
+	right:11px;
+	top:0;
+	cursor:pointer;
+}
+.closePopWin:hover{
+	background:url(../images/midBtn.png) no-repeat 0 -160px;
+}
+
+/* 知识讲解，点拨指导，知识清单，解题示范对应的弹窗的样式 */
+.headSources{
+	width:741px;
+	height:60px;
+	line-height:60px;
+	background:#e8e8e8;
+}
+.headFont{
+	text-indent:15px;
+	font-size:24px;
+	color:#f1a12e;
+}
+.smallFont{
+	font-size:16px;
+	color:#999999;
+	font-weight:normal;
+}
+.smallWrap{
+	width:741px;
+	height:529px;
+	position:relative;
+	background:#fff;
+	display:none;
+}
+.leftDecBg,
+.topDecBg,
+.bottomDecBg,
+.rightDecBg{
+	position:absolute;
+}
+.leftDecBg,
+.rightDecBg,
+.topDecBg{
+	top:-68px;
+}
+.leftDecBg{
+	width:81px;
+	height:610px;
+	background:url(../images/leftDecBg.png) no-repeat;
+	left:-81px;
+}
+.topDecBg,
+.bottomDecBg{
+	left:0;
+}
+.topDecBg{
+	width:753px;
+	height:10px;
+	background:url(../images/topDecBg.png) no-repeat;
+}
+.bottomDecBg{
+	width:753px;
+	height:7px;
+	background:url(../images/bottomDecBg.png) no-repeat;
+	bottom:-7px;
+}
+.rightDecBg{
+	width:11px;
+	height:597px;
+	background:url(../images/rightDecBg.png) no-repeat;
+	right:-11px;
+}
+.guideDivBox,
+.loreListDivBox,
+.loreExaDivBox{
+	width:741px;
+	height:529px;
+	overflow:hidden;
+	position:relative;
+}
+.conDivGuide,
+.conDivLoreExa,
+.conDivLoreList{
+	width:741px;
+	height:auto;
+	position:absolute;
+	left:0;
+	top:0;
+}
+.guideNav{
+	height:25px;
+	position:relative;
+	margin:10px 0 5px 0px;
+}
+.titIcon,
+.titIconList{
+	width:24px;
+	height:24px;
+	background:url(../../studyOnline/images/iconBg.png) no-repeat -82px 0px;
+	position:absolute;
+	left:15px;
+}
+.titIcon{
+	top:0px;
+}
+.titIconList{
+	top:-2px;
+}
+.conTitList{
+	float:left;
+}
+.headTitle{
+	font-size:18px;
+	position:absolute;
+	left:40px;
+	top:0px;
+	color:#333;
+	font-weight:bold;
+}
+.wrapCon{
+	position:relative;
+	height:auto;
+	margin:15px 0 15px 0;
+}
+.createDiv,
+.createDivList,
+.createDivExa{
+	padding:0px 16px 0px;
+	position:relative;
+}
+.createDiv{
+	width:668px;
+	margin-bottom:15px;
+}
+.createDivList,
+.createDivExa{
+	width:700px;
+	margin:15px 0px;
+}
+.exaTit,
+.exaAns,
+.exaExp{
+	font-size:16px;
+	color:#666;
+	font-weight:bold;
+	padding-left:25px;
+	float:left;
+}
+.createConExa{
+	margin-top:5px;
+}
+.createConExa p{
+	font-size:16px;
+	color:#666;
+}
+.lines{
+	width:699px;
+	height:19px;
+	position:absolute;
+	left:21px;
+	bottom:0px;
+	border-bottom:1px solid #ccc;
+}
+.createConList p{
+	color:#666;
+	font-size:16px;
+}
+.createTit,
+.createCon span{
+	color:#666;
+	font-size:16px;
+}
+.titDetail{
+	color:#666;
+	font-size:16px;
+}
+.createTitList,
+.conTitList{
+	color:#666;
+	font-weight:bold;
+	font-size:16px;
+	padding-left:25px;
+}
+.createCon span{
+	float:left;
+	margin-right:5px;
+}
+.createCon p{
+	color:#666;
+	font-size:16px;
+}
+.createCon img{
+	float:left;
+}
+.parentScroll{
+	height:529px;
+	width:4px;
+	position:absolute;
+	right:0;
+	top:0;
+	border-radius:20px;
+}
+.sonScrollBar{
+	width:4px;
+	height:50px;
+	position:absolute;
+	left:0;
+	top:0;
+	background:#999;
+	border-radius:20px;
+}
+/* 开始挑战的弹窗盒子 */
+.challengeBox{
+	width:1008px;
+	position:absolute;
+	left:50%;
+	bottom:0px;
+	display:none;
+	z-index:10010;
+	margin-left:-504px;
+}
+.cancelScroll{
+	height:100%;
+	overflow:hidden;
+}
+.closeChallengeBtn{
+	width:72px;
+	height:69px;
+	background:url(../images/queClose.png) no-repeat;
+	position:absolute;
+	right:18px;
+	top:9px;
+	cursor:pointer;
+}
+.closeChallengeBtn:hover{
+	background:url(../images/queClose.png) no-repeat 0 -69px;
+}
+.botShadow{
+	width:692px;
+	background:url(../images/botShadow.png) no-repeat;
+	height:11px;
+	margin:10px auto;
+}

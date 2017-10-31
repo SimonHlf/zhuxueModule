@@ -1,0 +1,68 @@
+@CHARSET "UTF-8";
+.fourPartsBox{
+	padding-top:50px;
+}
+.bigTit{
+	height:115px;
+	text-align:center;
+	background:#f0f0f0;
+	margin-bottom:26px;
+}
+.bigTit img{
+	margin-top:23px;
+}
+.moduleBox{
+	height:452px;
+}
+.topParts{
+	margin-bottom:2px;
+}
+.topLeft{
+	width:480px;
+	height:250px;
+}
+.topRight{
+	width:518px;
+	height:250px;
+}
+.botLeft{
+	width:287px;
+	height:200px;
+	background:#8fbc2c;
+}
+.botMid{
+	width:287px;
+	height:200px;
+	background:#dddddd;
+	margin-left:2px;
+}
+.botMid img{
+	margin:75px 0 0 98px;
+}
+.botRight{
+	width:422px;
+	height:200px;
+}
+.comHoverBox{
+	position:relative;
+}
+.comModA{
+	width:100%;
+	height:100%;
+	opacity:0;
+	filter:alpha(opacity=00);
+	background:#000;
+	display:none;
+	position:absolute;
+	left:0;
+	top:0;
+}
+.botLeft img{
+	padding:30px 0 0 35px;
+}
+.botLeft p{
+	color:#fff;
+	font-size:16px;
+	margin:6px 0 0 35px;
+	line-height:32px;
+}

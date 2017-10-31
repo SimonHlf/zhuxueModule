@@ -1,0 +1,257 @@
+/* 章节列表 */
+.listWrap{
+	width:980px;
+	/*height:700px;*/
+	margin:0 auto;
+	position:relative;
+}
+/* 章节列表内容*/
+.listCon{
+	width:100%;
+	height:auto;
+	border-top:2px solid #AAC147;
+	position:relative;
+	overflow:hidden;
+}
+/* 章节列表头部标题内容*/
+.conTop{
+	width:980px;
+	height:35px;
+	line-height:35px;
+	position:relative;
+	z-index:10;
+}
+.conTop li{
+	line-height:35px;
+	float:left;
+	font-size:14px;
+	text-align:center;
+	color:#2C4977;
+	/*background:#f3f5f5;*/
+	background:#F0ECBD;
+}
+.conMid{
+	width:980px;
+	height:632px;
+	position:relative;
+	overflow:hidden;
+}
+#conMidBox{
+	width:980px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+#conMidBox tr td{
+	border-bottom:1px dashed #b9b96c;
+	height:35px;
+	font-size:14px;
+	padding:1px 0px;
+	position:relative;
+	z-index:5;
+}
+#conMidBox td{
+	empty-cells:show;
+}
+#conMidBox tr td{
+	color:#2C4977;
+}
+.fix a{
+	color:#2C4977;
+}
+.fix a:hover{
+	color:#ff6600;
+	text-decoration:underline;
+}
+
+/* 自定义滚动条 */
+.scrollBox{
+	width:10px;
+	height:660px;
+	background:#f0ecbd;
+	border-radius:25px;
+	position:absolute;
+	left:-10px;
+	top:0px;
+	z-index:11;
+}
+.scrollBar{
+	width:10px;
+	height:50px;
+	border-radius:25px;
+	background:#aac147;
+	position:absolute; 
+	left:0; 
+	top:0;
+}
+.no_select{
+	-moz-user-select:none;
+    -webkit-user-select:none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+
+/* 知识点管理下的td宽度td公共样式 */
+.widthOne{
+	width:80px;
+}
+.widthTwo{
+	width:218px;
+}
+.ml{
+	margin-left:1px;
+}
+.red{
+	color:red;
+}
+
+/* 浏览知识点  */
+.viewPointWrap{
+	width:780px;
+	height:510px;
+	overflow:auto;
+	overflow-x:hidden;
+	margin:0px auto 0px;
+	position:relative;
+}
+/* 头部导航部分 */
+.topNav{
+	width:50px;
+	height:350px;
+	position:fixed;
+	left:95px;
+	top:170px;
+}
+.fixs{
+	position:fixed;
+	z-index:3;
+}
+.topNav li a{
+	width:50px;
+	height:45px;
+	display:inline-block;
+	text-align:center;
+	line-height:20px;
+	padding-top:5px;
+	color:#fefeff;
+	font-size:14px;
+}
+
+.topNav li.bg1{
+	background:#3e7ebd;
+}
+.topNav li.bg2{
+	background:#2e4448;
+}
+.topNav li.bg3{
+	background:#324474;
+}
+.topNav li.bg4{
+	background:#149dd7;
+}
+.topNav li.bg5{
+	background:#2293ab;
+}
+.topNav li.bg6{
+	background:#a9c146;
+}
+.topNav li.bg7{
+	background:#2c305c;
+}
+/* 导航对应的主要内容部分 */
+.mainContent{
+	width:712px;
+	margin-left:46px;
+}
+.listLoreWrap,
+.loreGuideWrap,
+.loreExampleWrap,
+.loreConSolidWrap,
+.loreTargetWrap,
+.loreAgainWrap,
+.loreExplainWrap{
+	width:696px;
+	height:auto;
+	background:#f2efe9;
+	border:1px solid #eee2d7;
+	padding:0 10px;
+}
+.partTitle{
+	font-size:18px;
+	color:#555;
+	font-family:'Microsoft YaHei';
+	padding:8px 0 8px 0px;
+}
+.createDiv{
+	width:706px;
+	border-top:1px solid #EEE2D7;
+	border-bottom:1px solid #EEE2D7;
+	background:#fff;
+	margin-bottom:8px;
+}
+.createTit,
+.anotherH3{
+	color:#2C4977;
+	font-size:14px;
+	font-weight:bold;
+	padding-left:5px;
+	font-family:'Microsoft YaHei';
+}
+.createCon,
+.optionDiv{
+	margin-top:3px;
+	padding-left:5px;
+}
+.createCon span{
+	font-size:14px;
+	color:#2C4977;
+	font-weight:bold;
+	font-family:'Microsoft YaHei';
+}
+
+.createCon p{
+	line-height:22px;
+	font-size:12px;
+	font-family:'Microsoft YaHei';
+	color:#333;
+}
+.margT{
+	margin-top:20px;
+}
+.smallTit{
+	height:25px;
+	line-height:25px;
+	position:relative;
+	z-index:1;
+}
+.smallTitIcon{
+	width:20px;
+	height:20px;
+	position:absolute;
+	left:0;
+	top:4px;
+	background:url(../images/allPic.png) no-repeat -179px -121px;
+}
+.smallTit h3{
+	font-size:14px;
+	color:#555;
+	position:absolute;
+	left:22px;
+	top:2px;
+}
+.typeCol,
+.typeCol1{
+	font-family:'Microsoft YaHei';
+}
+.typeCol{
+	color:green;
+}
+.typeCol1{
+	color:#f60;
+}
+.optionDiv span{
+	font-size:14px;
+	font-family:'Microsoft YaHei';
+	color:#333;
+}

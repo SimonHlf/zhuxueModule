@@ -1,0 +1,1257 @@
+@charset "utf-8";
+/* CSS Document */
+.imgBg{
+    width:100%;
+    height:100%;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:-1;
+}
+.imgBg img{
+	width:100%;
+    height:100%;
+    position:fixed;
+}
+/* 注册外框父级 */
+.registerWrap{
+	width:1000px;
+	height:700px;
+	margin:0 auto;
+	background:#fff;
+	position:relative;
+	top:100px;
+	z-index:2;
+	padding:4px;
+}
+.logo{
+	width:200px;
+	height:76px;
+	position:absolute;
+	top:-70px;
+	left:10px;
+}
+.logoA{
+	width:112px;
+	height:77px;
+	position:absolute;
+	left:0;
+	top:-8px;
+}
+.logoDec{
+	width:60px;
+	height:64px;
+	background:url(../images/hudie.png) no-repeat;
+	position:absolute;
+	right:30px;
+	top:-14px;
+	display:none;
+}
+
+/* registerCon注册主体内容部分 */
+.registerCon{
+	height:650px;
+	padding:25px;
+}
+
+/* 注册框架部分--导航 */
+.registerNav{
+	width:735px;
+	height:52px;
+	margin:0 auto;
+}
+.registerNav li{
+	width:172px;
+	height:52px;
+	float:left;
+	background:url(../images/regNavLiBg.jpg) no-repeat;
+	position:relative;
+	margin-left:6px;
+}
+.registerNav li.choiceRole{
+	background-position:0 0;
+}
+.registerNav li.writeInfo{
+	background-position:0 -104px;
+}
+.registerNav li.attachSchool{
+	background-position:0 -208px;
+}
+.registerNav li.regComp{
+	background-position:0 -312px;
+}
+.registerNav li.choiceRole.active{
+	background-position:0 -52px;
+}
+.registerNav li.writeInfo.active{
+	background-position:0 -156px;
+}
+.registerNav li.attachSchool.active{
+	background-position:0 -260px;
+}
+.registerNav li.regComp.active{
+	background-position:0 -364px;
+}
+.space,
+.space1{
+	width:12px;
+	height:37px;
+	background:url(../images/regNavArrow.gif) no-repeat;
+	position:absolute;
+	top:0px;
+}
+.space{
+	right:0px;
+} 
+.space1{
+	left:0;
+}
+.registerNav li .space{
+	background-position:0 -74px;
+}
+.registerNav li.active .space{
+	background-position:0 -111px;
+}
+.registerNav li .space1{
+	background-position:0 0px;
+}
+.registerNav li.active .space1{
+	background-position:0 -37px;	
+}
+/* 注册框架部分--内容框架 */
+.registerForm{
+	width:796px;
+	height:538px;
+	margin:10px auto 0px;
+	border:1px solid #ddd;
+	position:relative;
+}
+.registerForm dd{
+	width:100%;
+	height:650px;
+	display:none;
+	position:relative;
+}
+.registerForm .triangle1,
+.registerForm .triangle2,
+.registerForm .triangle3,
+.registerForm .triangle4{
+	width:21px;
+	height:11px;
+	background:#fff url(../images/triangle.png) no-repeat;
+	position:absolute;
+}
+.registerForm .triangle1{
+	left:110px;
+	top:-41px;
+	*top:-11px;
+}
+.registerForm .triangle2{
+	left:290px;
+	top:-11px;
+}
+.registerForm .triangle3{
+	left:480px;
+	top:-41px;
+	*top:-11px;
+}
+.registerForm .triangle4{
+	left:660px;
+	top:-41px;
+	*top:-11px;
+}
+/*--上一步下一步 */
+.prev,
+.next{
+	width:105px;
+	height:32px;
+	line-height:32px;
+	text-align:center;
+	color:#fff;
+	background:url(../images/regPrevNextBtn.gif) no-repeat 0 -32px;
+	bottom:25px;
+	position:absolute;
+	font-size:18px;
+	font-weight:bold;
+	opacity:0.5;
+	filter:alpha(opacity:50);
+	cursor:default;
+}
+.prev{
+	left:395px;
+}
+.next{
+	right:395px;
+}
+.showBtn{
+	opacity:1;
+	filter:alpha(opacity=100);
+	cursor:pointer;	
+}
+
+
+
+/*---------- 角色选择部分开始 start ----------*/
+.roleChoice{
+	width:750px;
+	height:500px;
+	margin:30px auto 0px;
+	overflow:hidden;
+}
+.roleChoice h3,
+.regSuccess h3,
+.attachInfo h3{
+	width:100%;
+	height:30px;
+	line-height:30px;
+	font-size:14px;
+	text-indent:14px;
+	color:#818181;
+	border-bottom:1px dashed #ccc;
+}
+.roleChoice ul{
+	margin-top:10px;
+}
+.roleChoice li{
+	width:185px;
+	height:130px;
+	float:left;
+	margin-right:2px;
+	margin-bottom:30px;
+	position:relative;
+}
+.roleChoice li label{
+	position:absolute;
+	width:185px;
+	height:130px;
+	cursor:pointer;
+	background:url(../images/regUser.jpg) no-repeat;
+	z-index:2;
+}
+.roleChoice li.choiceActive label span,
+.roleChoice li:hover label span{
+	color:#4e4e4e;
+}
+.roleChoice li input{
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:3;
+	cursor:pointer;
+	opacity:0;
+	filter:alpha(opacity=0);
+}
+.roleChoice li label.students{
+	background-position:0 -390px;
+}
+.roleChoice li label.teachers{
+	background-position:0 -520px;
+}
+.roleChoice li label.netTeacherMaserUser{
+	background-position:0 -650px;
+}
+.roleChoice li.choiceActive label.students{
+	background-position:0 0;
+}
+.roleChoice li.choiceActive label.teachers{
+	background-position:0 -130px;
+}
+.roleChoice li.choiceActive label.netTeacherMaserUser{
+	background-position:0 -260px;
+}
+.roleChoice li label span{
+	width:156px;
+	height:36px;
+	line-height:36px;
+	text-align:center;
+	font-size:16px;
+	color:#fff;
+	position:absolute;
+	left:15px;
+	bottom:-46px;
+	border-radius:8px;
+}
+.roleChoice li label span.stuSpan,
+.roleChoice li label span.teaSpan,
+.roleChoice li label span.netSpan{
+	background:#cfcfcf;
+}
+.roleChoice li.choiceActive label span.stuSpan{
+	background:#bdda33;
+}
+.roleChoice li.choiceActive label span.teaSpan{
+	background:#f2d907;
+}
+.roleChoice li.choiceActive label span.netSpan{
+	background:#5ed5ff;
+}
+.roleChoice li label span em{
+	font-style:normal;
+}
+.choiceState{
+	width:34px;
+	height:30px;
+	background:url(../images/choiceActive.png) no-repeat;
+	position:absolute;
+	right:14px;
+	*right:13px;
+	bottom:-40px;
+	z-index:4;
+}
+/*---------- 角色选择部分结束  end ----------*/
+
+
+
+/*----------  填写信息样式部分开始 start ----------*/
+.line{
+	width:520px;
+	height:55px;
+	margin-left:30px;
+	border-bottom:1px dashed #ccc;
+}
+.line h3{
+	width:300px;
+	height:20px;
+	color:#818181;
+	font-size:14px;
+	padding-top:30px;
+}
+.rightLine{
+	width:1px;
+	height:500px;
+	position:absolute;
+	right:235px;
+	top:18px;
+	border-right:1px solid #f1f2e0;
+}
+
+/* 注册信息内部详细内容 */
+.formConWrap{
+	width:380px;
+	height:400px;
+	margin:10px 0px 0px 30px;
+}
+#freeInvCode{
+	display:none;
+}
+.inputBox{
+	height:39px;
+	padding-top:10px;
+	color:#818181;
+	position:relative;
+	z-index:1;
+}
+.inputBox strong{
+	width:150px;
+	color:#999999;
+	font-weight:normal;
+	line-height:16px;
+	margin:5px 0 0 5px;
+}
+.inputBox span{
+	width:100px;
+	float:left;
+	text-align:right;
+	line-height:39px;
+	overflow:hidden;
+	font-size:16px;
+}
+.freeCode,
+.textFrame,
+.verCodes{
+	width:180px;
+	height:24px;
+	line-height:24px;
+	float:left;
+	border:1px #c0c0c0 solid;
+	padding:7px 10px 7px 10px;
+	color:#666;
+	font-family:"微软雅黑";
+}
+.freeCode{
+	width:60px;
+}
+.textFrame{
+	width:200px;
+}
+.verCodes{
+	width:85px;
+}
+
+/* 密码强弱 */
+.pasStrongWeak{
+	width:225px;
+	padding-top:8px;
+	margin-left:100px;
+}
+.pasBox{
+	width:72px;
+	float:left;
+	padding-right:2px;
+}
+.pasBox span{
+	width:72px;
+	height:15px;
+	color:#818181;
+	display:block;
+	overflow:hidden;
+	text-align:center;
+}
+.pasBox p{
+	width:72px;
+	height:5px;
+	overflow:hidden;
+}
+.pasBox p#red{
+	background:#ff0000;
+}
+.pasBox p#orange{
+	background:#ff9c00;
+}
+.pasBox p#green{
+	background:#00b300;
+}
+.pasBox p.gray1{
+	background:#cccccc;
+}
+.pasBox p.gray2{
+	background:#adadae;
+}
+.pasBox p.gray3{
+	background:#8d8d8d;
+}
+
+/* 邀请码 注册帐号，注册密码，确认密码。。公共样式 start*/
+
+.freeInvite,
+.succNetTea,
+.classInvite,
+.freeCodeReq,
+.classCodeReq,
+.notExistCode,
+.notExistCode1,
+.regAccount,
+.regAccountNull,
+.regHasCn,
+.specDot,
+.regAccount1,
+.existAccount,
+.passwordWarn,
+.passwordWarn1,
+.passwordNull,
+.passSpace,
+.passConfirm,
+.passwordDif,
+.passConfirmNull,
+.relName,
+.relNameNull,
+.cnName,
+.lessFour,
+.phoneNum,
+.rightPhoneNum,
+.checkPhExsit,
+.descriVerCon,
+.emptyCode,
+.wrongCode{
+	position:absolute;
+	left:332px;
+}
+.freeInvite,
+.succNetTea,
+.classInvite,
+.specDot,
+.regAccount,
+.passwordWarn,
+.phoneNum,
+.descriVerCon{
+	width:185px;
+	height:50px;
+}
+.freeInvite,
+.succNetTea,
+.classInvite,
+.regAccount,
+.passwordWarn,
+.phoneNum,
+.descriVerCon{
+	background:url(../images/warningPic.gif) no-repeat 0 0;
+}
+.specDot{
+	background:url(../images/warningPic.gif) no-repeat 0 -240px;
+}
+.freeCodeReq,
+.classCodeReq,
+.notExistCode,
+.notExistCode1,
+.regAccountNull,
+.regHasCn,
+.regAccount1,
+.existAccount,
+.passwordWarn1,
+.passSpace,
+.passwordDif,
+.passConfirmNull,
+.relNameNull,
+.cnName,
+.lessFour,
+.rightPhoneNum,
+.checkPhExsit,
+.emptyCode,
+.wrongCode{
+	width:185px;
+	height:33px;
+	background:url(../images/warningPic.gif) no-repeat 0 -83px;
+}
+.passConfirm,
+.relName{
+	width:185px;
+	height:33px;
+	background:url(../images/warningPic.gif) no-repeat 0 -50px;
+}
+.freeInvite p,
+.succNetTea p,
+.classInvite p,
+.freeCodeReq p,
+.notExistCode p,
+.notExistCode1 p,
+.classCodeReq p,
+.regAccount p,
+.regAccountNull p,
+.regHasCn p,
+.specDot p,
+.regAccount1 p,
+.existAccount p,
+.passwordWarn p,
+.passwordWarn1 p,
+.passwordNull p,
+.passSpace p,
+.passConfirm p,
+.passwordDif p,
+.passConfirmNull p,
+.relName p,
+.relNameNull p,
+.cnName p,
+.lessFour p,
+.phoneNum p,
+.rightPhoneNum p,
+.checkPhExsit p,
+.emptyCode p,
+.wrongCode p,
+.descriVerCon p{
+	padding:8px 0 0 15px;
+}
+.freeInvite p,
+.succNetTea p,
+.classInvite p,
+.regAccount p,
+.passwordWarn p,
+.passConfirm p,
+.relName p,
+.phoneNum p{
+	color:#666;
+}
+.freeCodeReq p,
+.notExistCode p,
+.notExistCode1 p,
+.classCodeReq p,
+.regAccountNull p,
+.regHasCn p,
+.specDot p,
+.regAccount1 p,
+.existAccount p,
+.passwordWarn1 p,
+.passwordNull p,
+.passSpace p,
+.passwordDif p,
+.passConfirmNull p,
+.relNameNull p,
+.cnName p,
+.lessFour p,
+.rightPhoneNum p,
+.checkPhExsit p,
+.emptyCode p,
+.wrongCode p{
+	color:#f00;
+}
+/*成功*/
+.regAccountSucc,
+.passwordSuc,
+.passConfirmSucc,
+.relNameSucc,
+.phoneNumSucc,
+.rightCode{
+	width:16px;
+	height:16px;
+	background:url(../images/warningPic.gif) no-repeat 0 -116px;
+	position:absolute;
+	left:348px;
+}
+/* 所有弹窗提示的公共top值 */
+.freeInvite,
+.succNetTea,
+.classInvite,
+.regAccount,
+.passwordWarn,
+.phoneNum{
+	top:5px;
+}
+.specDot{
+	top:2px;
+}
+.freeCodeReq,
+.notExistCode,
+.notExistCode1,
+.classCodeReq,
+.regAccountNull,
+.regHasCn,
+.regAccount1,
+.passwordWarn1,
+.passwordNull,
+.passSpace,
+.passConfirm,
+.passwordDif,
+.passConfirmNull,
+.relName,
+.relNameNull,
+.lessFour,
+.rightPhoneNum,
+.checkPhExsit,
+.emptyCode,
+.wrongCode,
+.descriVerCon{
+	top:12px;
+}
+.regAccountSucc,
+.passwordSuc,
+.passConfirmSucc,
+.relNameSucc,
+.phoneNumSucc,
+.rightCode{
+	top:20px;
+}
+
+/* 邀请码 注册帐号，注册密码，确认密码。。公共样式 end */
+
+/* 邀请码提示框 */
+.freeInvite,
+.freeCodeReq,
+.notExistCode,
+.succFreeCode,
+.succNetTea{
+	display:none;
+}
+/* 班级邀请码提示框 */
+.classInvite{
+	display:none;
+}
+.classCodeReq{
+	display:none;
+}
+.notExistCode1{
+	display:none;
+}
+
+/* 快速绑定班级邀请码成功后显示的信息提示按钮 */
+.succTipBtn{
+	width:32px;
+	height:32px;
+	position:absolute;
+	right:10px;
+	top:12px;
+	background:url(../images/warningPic.gif) no-repeat 0 -208px;
+	display:none;
+}
+.infoBox{
+	width:150px;
+	height:auto;
+	background:#ecbc56;
+	color:#666;
+	display:none;
+	border:1px solid #fff;
+	border-radius:10px;
+	position:absolute;
+	left:370px;
+	top:8px;
+}
+.infoBox p{
+	padding-top:5px;
+	padding-left:5px;
+}
+/* 注册帐号提示框 */
+.regAccount,
+.regAccountNull,
+.regAccount1,
+.existAccount,
+.regAccountSucc,
+.regHasCn,
+.specDot{
+	display:none;
+}
+/* 注册密码提示框 */
+.passwordWarn,
+.passwordWarn1,
+.passwordSuc,
+.passSpace{
+	display:none;
+}
+.passwordNull{
+	width:185px;
+	height:33px;
+	background:url(../images/warningPic.gif) no-repeat 0 -83px;
+	display:none;
+}
+
+/* 确认密码提示框 */
+.passConfirm,
+.passwordDif,
+.passConfirmNull,
+.passConfirmSucc{
+	display:none;
+}
+
+/* 真实姓名提示框 */
+.relName,
+.relNameNull,
+.cnName,
+.lessFour,
+.relNameSucc{
+	display:none;
+}
+
+/* 手机号码提示框 */
+.phoneNum,
+.rightPhoneNum,
+.checkPhExsit,
+.phoneNumSucc{
+	display:none;
+}
+/* 手机验证码 */
+.emptyCode,
+.wrongCode,
+.rightCode,
+.descriVerCon{
+	display:none;
+}
+.getVerCode{
+	width:100px;
+	height:40px;
+	text-align:center;
+	border:1px solid #ccc;
+	margin-left:15px;
+	border-radius:6px;
+	outline:none;
+}
+.verBg{
+	background:url(../images/verBtnBg.png) repeat-x;
+	cursor:pointer;
+	color:#808080;
+}
+.disVerBg{
+	background:#ddd;
+	color:#999;
+	cursor:default;
+}
+/* 选择学科  选择出版社  选择学段  */
+#subjectID,
+#editionID,
+#schoolTypeName{
+	width:222px;
+	position:absolute;
+	left:100px;
+	top:20px;
+	color:#666;
+	border:1px solid #c0c0c0;
+}
+/* 选择学科 学段 出版社提示框 */
+.choiceBox{
+	width:185px;
+	height:33px;
+	background:url(../images/warningPic.gif) no-repeat 0 -83px;
+	position:absolute;
+	left:362px;
+	display:none;
+}
+.mt1{
+	bottom:166px;
+}
+.mt2{
+	bottom:120px;
+}
+.choiceBox p{
+	padding:8px 0 0 15px;
+	color:#f00;
+}
+/* 绑定学校信息 */
+
+#address,
+#schoolStyle{
+	float:left;
+}
+.addressWrap{
+	width:500px;
+	height:100px;
+	background:#FAFAFA;
+	margin:50px 0 0 100px;
+}
+.mt{
+	margin-top:80px;
+}
+.attachTop{
+	width:500px;
+	height:28px;
+	background:url(../images/attachBg.png) no-repeat;
+}
+.attachTop h4{
+	width:120px;
+	color:#465f01;
+	font-size:14px;
+	line-height:28px;
+	text-indent:25px;
+}
+#address,
+#shoolInfo{
+	width:448px;
+	height:82px;
+	background:#FAFAFA;
+	padding:50px 0 0 50px;
+	border:1px solid #ccc;
+}
+#schoolStyle,
+#selectSchoolWindowDiv{
+	width:100px;
+	float:left;
+}
+#selectSchoolWindowDiv,
+#selectGradeWindowDiv,
+#selectClassWindowDiv{
+	margin-left:6px;
+}
+#prov,
+#city,
+#schoolType,
+#schoolID,
+#selectGradeWindowDiv,
+#selectClassWindowDiv{
+	width:100px;
+}
+
+/* 右侧内容 */
+.rightCon{
+	width:210px;
+	height:400px;
+	position:absolute;
+	right:12px;
+	top:20px;
+}
+/* 已有帐号 */
+.hasAccount{
+	width:152px;
+	height:40px;
+	color:#666;
+	line-height:20px;
+	margin:50px 0px 30px 30px;
+}
+.hasAccount p a{
+	color:#006401;
+	cursor:pointer;
+}
+.hasAccount p a:hover{
+	text-decoration:underline;
+}
+.dashedLine{
+	width:100%;
+	height:1px;
+	overflow:hidden;
+	border-bottom:1px dashed #ccc;
+}
+/* 当前用户身份 */
+.userIden{
+	width:185px;
+	height:200px;
+	margin:30px 0px 0px 13px;
+}
+.nowIden{
+	width:100%;
+	height:30px;
+	line-height:30px;
+	font-size:14px;
+	text-indent:12px;
+	color:#818181;
+}
+.idenImg{
+	width:185px;
+	height:130px;
+	background:url(../images/regUser.jpg) no-repeat;
+}
+#student{
+	background-position:0 0px;
+}
+#teacher{
+	background-position:0 -130px;
+}
+#netTeacher{
+	background-position:0 -260px;
+}
+/*----------  填写信息样式部分结束 end ----------*/
+
+
+/*----------  注册成功样式部分开始 strat ----------*/
+.regSuccess,
+.attachInfo{
+	width:750px;
+	height:400px;
+	margin:30px auto 0px;
+	position:relative;
+}
+.succPic{
+	width:93px;
+	height:76px;
+	background:url(../images/warningPic.gif) no-repeat 0 -132px;
+	position:absolute;
+	left:140px;
+	top:50px;
+}
+.regSuccCon{
+	width:750px;
+	text-align:center;
+	margin-top:15px;
+	padding-bottom:50px;
+	border-bottom:1px dashed #ccc;
+}
+.regSuccCon h2{
+	font-size:22px;
+	color:#66cc33;
+	padding:35px 0;
+	font-weight:normal;	
+}
+.regSuccCon h2 strong{
+	font-weight:normal;	
+}
+.regSuccCon p{
+	font-size:14px;
+	line-height:30px;
+}
+.regSuccCon p strong{
+	font-size:16px;
+	color:#f60;
+}
+/*家长账号*/
+.parentAccount{
+	display:none;
+}
+/*----------  注册成功样式部分结束 end ----------*/
+
+
+
+/*----------  预览网站大体功能部分开始 start ----------*/
+.previewWebFun{
+	height:35px;
+	line-height:35px;
+	position:relative;
+}
+.viewIcon{
+	width:38px;
+	height:38px;
+	background:url(../images/view.gif) no-repeat;
+	position:absolute;
+	left:295px;
+	top:0px;
+}
+.oneMinBtn{
+	position:absolute;
+	left:330px;
+	top:5px;
+	color:#f60;
+	font-size:18px;
+}
+.oneMinBtn:hover{
+	text-decoration:underline;
+}
+.viewWebFunction{
+	width:907px;
+	height:600px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin-left:-454px;
+	margin-top:-290px;
+	z-index:10010;
+	display:none;
+	background:url(../images/introWebFun/viewBoxBg.jpg) repeat 0 0;
+	border-bottom-right-radius:10px; 
+	border-bottom-left-radius:10px;
+}
+.viewCon{
+	width:907px;
+	height:600px;
+	overflow:hidden;
+	margin:0 auto;
+	position:relative;
+}
+.viewCon ul{
+	height:600px;
+	position:relative;
+	left:0;
+}
+.viewCon ul li{
+	width:907px;
+	height:600px;
+	float:left;
+}
+.introTitle{
+	height:78px;
+	background:#2c3134;
+	border-bottom:4px solid #2c3134;
+	font-family:楷体_GB2312,楷体;
+}
+.introTitle h2{
+	height:73px;
+	line-height:85px;
+	font-size:28px;
+	color:#fff;
+	padding-left:45px;
+	font-weight:normal;
+}
+.oneMinTit{
+	width:297px;
+	height:44px;
+	background:url(../images/introWebFun/oneMinTit.png) no-repeat 0 0;
+	position:absolute;
+	left:100px;
+	top:100px;
+}
+.oneMinTit p{
+	font-size:26px;
+	color:#fff;
+	font-family:楷体_GB2312,楷体;
+	text-indent:75px;
+}
+.introCon{
+	width:893px;
+	height:315px;
+	background:url(../images/introWebFun/oneMin.png) no-repeat 0 0;
+	position:absolute;
+	left:6px;
+	top:180px;
+}
+.introCon1{
+	width:738px;
+	margin:30px auto 0px;
+}
+.introCon1 p.one{
+	width:282px;
+	height:55px;
+	padding-top:40px;
+}
+.introCon1 .topWrap{
+	width:738px;
+	height:175px;
+}
+.introCon1 p.three{
+	width:738px;
+	height:179px;
+	padding-top:35px;
+}
+.introCon2{
+	width:701px;
+	margin:48px auto 0px;
+}
+.quAn{
+	height:103px;
+	margin-bottom:15px;
+}
+.quAn p{
+	font-size:14px;
+	height:52px;
+	line-height:52px;
+}
+.quAn p.one{
+	padding-left:60px;
+	background:url(../images/introWebFun/quAn.png) no-repeat 0 0;
+}
+.quAn p.two{
+	padding-left:60px;
+	background:url(../images/introWebFun/quAn.png) no-repeat right -57px;
+}
+.introCon3{
+	width:786px;
+	margin:20px auto 0px;
+}
+.introCon5{
+	width:880px;
+	margin:20px auto 0px;
+}
+.detail{
+	height:68px;
+	background:white;
+	background:rgba(255,255,255,0.5);
+	padding:20px 36px 0 20px;
+}
+.detail p{
+	font-size:14px;
+	line-height:26px;
+}
+.detailTitle{
+	position:relative;
+	height:21px;
+	line-height:21px;
+	padding-left:3px;
+	padding-right:3px;
+	background:#7fa93d;
+	margin-right:12px;
+	display:inline-block;
+	color:#fff;
+}
+.detailTitle .triangle{
+	width:11px;
+	height:21px;
+	display:inline-block;
+	position:absolute;
+	right:-11px;
+	top:0px;
+	background:url(../images/introWebFun/triangleIcon.png) no-repeat;
+}
+.gifCon{
+	margin-top:10px;
+}
+.gifCon1{
+	margin-top:55px;
+}
+.ml{
+	margin-left:40px;
+}
+.ml1{
+	margin-left:65px;
+}
+.ml2{
+	margin-left:5px;
+}
+.introPic{
+	width:728px;
+	margin:25px 0 0 58px;
+}
+.smallPic{
+	margin:128px 54px 0 0;
+}
+.economyPro{
+	width:292px;
+}
+.proDetailBox{
+	width:290px;
+	background:#fff;
+	background:rgba(255,255,255,0.5);
+	height:290px;
+	margin-top:5px;
+}
+.proDetailBox p{
+	padding:10px 10px 0 10px;
+	line-height:26px;
+	color:#333;
+	font-size:14px;
+}
+.proDetailBox p .color1{
+	color:#4e7f01;
+}
+.proDetailBox p .color2{
+	color:#f60;
+}
+.ecoMid{
+	margin:-20px 15px 0 15px;
+}
+.introCon4{
+	width:820px;
+	margin:20px auto 0px;
+}
+.picCon{
+	width:370px;
+	margin-right:15px;
+	margin-top:45px;
+}
+.picCon1{
+	width:360px;
+	background:#fff;
+	background:rgba(255,255,255,0.5);
+	margin-bottom:5px;
+}
+.picCon1 p{
+	line-height:26px;
+	color:#333;
+	padding:15px 15px;
+	font-size:12px;
+}
+.netTeaName{
+	width:605px;
+	height:150px;
+	margin:40px auto 0px;
+}
+.netTeaName strong{
+	font-weight:normal;
+}
+.realName{
+	margin-left:20px;
+	padding-top:20px;
+}
+.realName strong{
+	font-size:14px;
+	font-weight:normal;
+}
+.realName input{
+	width:146px;
+	height:25px;
+	line-height:25px;
+	border:1px solid #ccc;
+	vertical-align:middle;
+	padding:0 8px;
+}
+.note{
+	width:300px;
+	margin-left:10px;
+	padding-top:18px;
+	font-size:12px;
+	line-height:16px;
+}
+.note p{
+	color:#333;
+}
+/* 上一步下一步 */
+.prevPage,
+.nextPage,
+#loginButton{
+	position:absolute;
+	font-size:18px;
+	font-weight:bold;
+	width:106px;
+	height:38px;
+	line-height:40px;
+	color:#af680c;
+	bottom:30px;
+	background:url(../images/pageButton.gif) no-repeat;
+}
+.prevPage{
+	background-position:0 0;
+	text-indent:35px;
+	right:165px;
+}
+.nextPage,
+#loginButton{
+	right:50px;
+}
+.nextPage{
+	text-indent:13px;
+	background-position:0 -38px;
+}
+#loginButton{
+	display:none;
+	text-align:center;
+	background-position:0 -76px;
+}
+#loginButton:hover{
+	text-decoration:underline;
+}
+.noMl{
+	margin-left:0px;
+}
+/*----------  预览网站大体功能部结束 end ----------*/
+

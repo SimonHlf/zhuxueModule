@@ -1,0 +1,442 @@
+/* CSS Document */
+.nowPosition{
+	width:730px;
+	height:35px;
+	line-height:35px;
+	margin:0 auto;
+}
+.nowPosition p{
+	color:#666;
+	font-size:16px;
+}
+.nowPosition p span{
+	color:#91c42f;
+	font-weight:bold;
+}
+.myAskWrap{
+	width:730px;
+	margin:5px auto 0px;
+	border-top:1px solid #ddd;
+}
+.colors{
+	background:#F1F1F1
+}
+/* 头部 */
+.askHead{
+	width:100%;
+	height:50px;
+	margin:0 auto;
+	position:relative;
+}
+.askIcon{
+	width:50px;
+	height:50px;
+	background:url(../../studyOnline/images/iconBg.png) no-repeat -137px -37px;
+	position:absolute;
+	top:4px;
+}
+.studentTxt,
+.teacherTxt{
+	font-size:14px;
+	color:#999;
+	position:absolute;
+	left:55px;
+	top:20px;
+}
+.totalAskNum,
+.noAskNum{
+	font-weight:bold;
+	color:red;
+}
+.askBtn{
+	width:102px;
+	height:35px;
+	line-height:35px;
+	font-size:18px;
+	color:#fff;
+	text-align:center;
+	background:#a2cd4f;
+	position:absolute;
+	right:0px;
+	top:10px;
+}
+.askBtn:hover{
+	background:#91c42f;
+}
+
+/* 选择学科，回答状态 */
+.choiceSec{
+	width:728px;
+	height:38px;
+	margin:10px auto 0px;
+	background:#edffd1;
+	border:1px solid #ffdf04;
+}
+.comDiv{
+	width:200px;
+	height:40px;
+	line-height:40px;
+	position:relative;
+}
+.choices,
+.choices1{
+	position:absolute;
+	top:1px;
+	color:#666;
+}
+.choices{
+	left:10px;
+}
+.choices1{
+	left:20px;
+}
+.comDiv select{
+	width:100px;
+	margin-left:80px;
+	margin-top:12px;
+	float:left;
+}
+/* 老师和学生两种身份下不同select下拉框的显示和隐藏 */
+.lookBtn{
+	width:70px;
+	height:30px;
+	line-height:30px;
+	background:#f5c055;
+	border:none;
+	cursor:pointer;
+	margin-top:4px;
+	color:#fff;
+	outline:none;
+}
+.lookBtn:hover{
+	background:#f3b436;
+}
+/* 问题回答列表中心 */
+.queCen{
+	width:100%;
+	height:auto;
+	margin:10px auto 0px;
+}
+.queCenH{
+	width:728px;
+	height:35px;
+	line-height:35px;
+	background:#dad9d9;
+	border:1px solid #c7c7c7
+}
+.queCenH li{
+	float:left;
+	width:242px;
+	text-align:center;
+	color:#3a3a3a;
+}
+.queCenMid{
+	width:730px;
+	height:auto;
+}
+/* 没有问题 */
+.queeEmpty{
+	height:150px;
+}
+.queeEmpty img{
+	float:left;
+	margin-left:200px;
+	margin-top:65px;
+}
+.queeEmpty p{
+	float:left;
+	margin-top:100px;
+}
+/* 有问题 */
+.queHave{
+	width:730px;
+	height:435px;
+	overflow:auto;
+	display:no-ne;
+}
+.wrap{
+	width:100%;
+	height:auto;
+	overflow:hidden;
+}
+.queHave div.queListWrap{
+	width:100%;
+	height:35px;
+	line-height:35px;
+	border-bottom:1px dashed #ccc;
+	position:relative;
+}
+.title,
+.pubTime,
+.anState{
+	height:35px;
+	line-height:35px;
+	color:#3a3a3a;
+}
+.title{
+	width:300px;
+	max-width:300px;
+	padding-left:5px;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	overflow:hidden;
+	cursor:default;
+}
+.pubTime{
+	width:150px;
+	margin-left:6px;
+}
+.anState{
+	width:242px;
+	text-align:center;
+	margin-left:26px;
+}
+/* 最新回答的图标 */
+.newIcon{
+	width:22px;
+	height:12px;
+	background:url(../images/newAns.gif) no-repeat;
+	position:absolute;
+	left:5px;
+	top:0px;
+}
+
+/* 图片缩略图的icon */
+.imgIcon{
+	width:14px;
+	height:14px;
+	background:url(../../studyOnline/images/iconBg.png) no-repeat -91px -70px;
+	position:absolute;
+	left:295px;
+	top:10px;
+}
+
+/* 查看 */
+.showBox{
+	width:20px;
+	height:20px;
+	position:absolute;
+	right:10px;
+	top:8px;
+	background:url(../../studyOnline/images/iconBg.png) no-repeat -91px -90px;
+	cursor:pointer;
+}
+
+
+/* 翻页盒子 */
+.turnPage{
+	width:730px;
+	height:30px;
+	line-height:30px;
+	position:relative;
+}
+.turnPage .pageNum{
+	width:80px;
+	line-height:30px;
+	position:absolute;
+	right:216px;
+}
+.pageNum p{
+	float:left;
+}
+.pagePrev,
+.pageNext,
+.indexPage,
+.endPage{
+	display:inline-block;
+	padding:0 10px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	position:absolute;
+	
+}
+.indexPage{
+	right:168px;
+	background:#f3b436;
+	color:#fff;
+	font-weight:bold;
+}
+.pagePrev{
+	right:108px;
+	color:#3a3a3a;
+}
+.pageNext{
+	right:48px;
+	background:#f3b436;
+	color:#fff;
+	font-weight:bold;
+}
+.endPage{
+	right:0;
+	background:#f3b436;
+	color:#fff;
+	font-weight:bold;
+}
+.indexPage:hover,
+.pageNext:hover,
+.endPage:hover{
+	background:#e5e5e5;
+	color:#555;
+}
+
+
+/* 我的提问/答疑列表展开具体内容盒子 */
+.askListBox{
+	width:1000px;
+	overflow:auto;
+	overflow-x:hidden;
+}
+.stQuesBox{
+	width:1000px;
+	height:auto;
+	background:#fff;
+}
+.picBox{
+	width:150px;
+	height:auto;
+	border-top:5px solid #febd5c;
+}
+.pic{
+	width:120px;
+	height:120px;
+	margin:15px auto;
+}
+.stName{
+	width:100%;
+	height:38px;
+	border-top:1px dashed #ccc;
+}
+.stName p{
+	margin-top:10px;
+	font-size:14px;
+	text-align:center; 
+	color:#67AE2C;
+	font-weight:bold;
+}
+.detailCon{
+	width:849px;
+	height:auto;
+	border-top:5px solid #febd5c;
+	border-left:1px solid #ccc;
+}
+.detailCon h2{
+	max-width:1000px;
+	height:35px;
+	line-height:35px;
+	text-indent:10px;
+	font-size:18px;
+	color:#666;
+	border-bottom:2px solid #fafafa;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	cursor:default;
+}
+.timeBox{
+	width:100%;
+	height:35px;
+	line-height:35px;
+	border-bottom:1px dashed #CDCDCD;
+}
+.timeBox .userIcon,
+.replayUserIcon{
+	width:16px;
+	height:16px;
+	display:inline-block;
+	float:left;
+	margin:8px 5px 0 12px;
+}
+.timeBox .userIcon{
+	background:url(../../studyOnline/images/iconBg.png) -91px -116px;
+}
+.replayUserIcon{
+	background:url(../../studyOnline/images/iconBg.png) -107px -116px;
+}
+.timeBox p{
+	float:left;
+	color:#666;
+}
+.mainContents{
+	height:auto;
+	margin:0 auto;
+	padding:10px 11px;
+}
+.mainContents p{
+	color:#666;
+}
+.mainContents img{
+	margin-bottom:10px;
+	cursor:pointer;
+}
+.close{
+	width:60px; 
+	height:60px; 
+	background:url(../../studyOnline/images/popWinClose.gif) no-repeat;
+	position:absolute;
+	right:0px;
+	top:0;
+	cursor:pointer;
+	z-index:10010;
+}
+.close:hover{
+	background:url(../../studyOnline/images/popWinClose.gif) no-repeat 0 -60px;
+}
+/* 文本编辑器盒子 */
+.textEdit{
+	width:1000px;
+	height:auto;
+	background:#fff;
+	border-top:5px solid #ccc;
+	padding-bottom:10px;
+	position:relative;
+}
+.editParent{
+	width:849px;
+	height:auto;
+	border-left:1px solid #ccc;
+}
+#myEditor{
+	margin:10px 0 0 12px;
+}
+.boxNoReplay{
+	width:849px;
+	height:190px;
+	border-left:1px solid #ccc;
+}
+.noReplayImg{
+	float:left;
+	margin:30px 0 0 50px;
+}
+.noReplayTxt{
+	font-size:16px;
+	color:#999;
+	float:left;
+	line-height:190px;
+	margin-left:15px;
+}
+.noBor{
+	border-top:none;
+}
+.btnParent{
+	position:absolute;
+	right:85px;
+	top:76px;
+}
+.save{
+	width:120px;
+	height:120px;
+	line-height:120px;
+	border:none;
+	text-align:center;
+	font-size:16px;
+	color:#fff;
+	cursor:pointer;
+	font-weight:bold;
+	background:#aeaeae;
+	outline:none;
+}
+.save:hover{
+	background:#70ca10;
+	transition:0.5s;
+}

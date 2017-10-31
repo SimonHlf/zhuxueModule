@@ -1,0 +1,631 @@
+html{
+	overflow:hidden;
+}
+body{
+	position:relative;
+	overflow:hidden;
+}
+/* 当前版本 */
+.nowLoc{
+	width:100%;
+	height:0.50rem;
+	line-height:0.50rem;
+	background:#64ccf2;
+	color:#fff;
+	position:relative;
+	z-index:700;
+}
+.nowLoc p{
+	text-indent:32px;
+}
+.backIcon{
+	width:30px;
+	height:0.50rem;
+	position:absolute;
+	left:0px;
+	top:0px;
+	background:url(../../onlineStudy/images/backIcon.png) no-repeat center;
+}
+.showStBtn{
+	width:80px;
+	height:50px;
+	position:absolute;
+	right:10px;
+	top:0px;
+	font-size:0.16rem;
+}
+.topTri{
+	border:6px solid #64ccf2;
+	border-top-color:#5F5250;
+	right:0rem;
+	top:24px;
+	-webkit-transition-property:-webkit-transform;
+	-webkit-transition-duration:250ms;	
+	-webkit-transform:rotate(0deg) translateZ(0);
+	-webkit-trtansform-origin:center center;
+	transform:rotate(0deg) translateZ(0);
+}
+#spanTri.flip .topTri{
+	-webkit-transform:rotate(-180deg) translateZ(0);
+}
+.txtSpan{
+	display:none;
+}
+#stuWrapper{
+	width:100%;
+	height:25%;
+	background:rgba(0,0,0,0.6);
+	position:absolute;
+	left:0px;
+	top:0px;
+	color:#fff;
+	z-index:600;
+	-webkit-transition:0.5s;
+	transition:0.5s;
+	-webkit-transform:translateY(-100%);
+	transform:translateY(-100%);
+}
+.stScroller{
+	width:100%;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+#stuDataUl{
+	margin:10px auto 0px;
+}
+#stuDataUl li{
+	width:70px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	background:#fff;
+	color:#2798c2;
+	float:left;
+	margin-left:8px;
+	margin-bottom:10px;
+	border-radius:6px;
+	font-size:0.14rem;
+}
+/* 头部搜索框st */
+.searchBox{
+	width:100%;
+	height:0.40rem;
+	background:#fff;
+	position:relative;
+	box-shadow:0px 0px 3px #666;
+	z-index:550;
+}
+.searInner{
+	width:95%;
+	height:100%;
+	margin:0 auto;
+}
+.subBox{
+	width:75px;
+	height:30px;
+	line-height:30px;
+	background:#64ccf2;
+	margin-top:5px;
+	color:#fff;
+	text-indent:10px;
+	border-radius:4px;
+	position:relative;
+}
+#subNameSpan,
+#guideStaSpan{
+	width:100%;
+	height:100%;
+	max-width:60px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-size:0.14rem;
+}
+.triIcon{
+	width:16px;
+	height:11px;
+	position:absolute;
+	right:5px;
+	top:10px;
+	background:url(../../reportCen/images/triIcon.png) no-repeat;
+}
+.comDataUl{
+	width:63px;
+	border:1px solid #ddd;
+	border-radius:4px;
+	position:absolute;
+	left:0px;
+	top:42px;
+	background:#fff;
+	color:#666;
+	display:none;
+	font-size:0.14rem;
+}
+.stuTriSpan{
+	width:0px;
+	height:0px;
+	border-width:8px;
+	border-style:dashed dashed solid dashed;
+	border-color:transparent transparent #fff transparent;
+	position:absolute;
+	left:12px;
+	top:-16px;
+}
+.comDataUl li{
+	height:29px;
+	line-height:30px;
+	border-bottom:1px solid #ccc;
+	max-width:100%;
+}
+.comDataUl li:nth-last-of-type(1){
+	border-bottom:none;
+}
+.timeBox{
+	padding-left:5px;
+	margin-top:5px;
+	color:#666;
+	line-height:30px;
+	font-size:0.14rem;
+	position:relative;
+}
+.calIcon{
+	width:18px;
+	height:18px;
+	background:url(../../reportCen/images/cal.png) no-repeat;
+	position:absolute;
+	right:8px;
+	top:7px;
+}
+.timeBox div{
+	float:left;
+	height:30px;
+	background:#64ccf2;
+	border-radius:4px;
+	color:#fff;
+	position:relative;
+}
+.timeBox div input{
+	width:100%;
+	height:100%;
+	font-size:0.12rem;
+	background:none;
+	border:none;
+	color:#fff;
+	padding-left:8px;
+}
+.searBtn{
+	width:30px;
+	height:30px;
+	display:inline-block;
+	background:#64ccf2 url(../../reportCen/images/searBtn.png) no-repeat 6px 6px;
+	margin-top:5px;
+	border-radius:4px;
+	margin-left:5px;
+}
+/* 头部搜索框end */
+
+/* 学习记录明细 */
+#recordWrap{
+	width:100%;
+	margin-top:10px;
+}
+/* 学习记录列表 */
+.recListPar,
+.recListWrap{
+	margin:0px auto 0px;
+	background:#fff;
+	border-radius:6px;
+}
+.recListWrap{
+	width:95%;
+	box-shadow:-2px -2px 4px #c0c0c0;
+}
+.recListPar{
+	width:100%;
+	height:100%;
+	box-shadow:2px -2px 4px #c0c0c0;
+}
+.recordTit{
+	width:100%;
+	max-width:100%;
+	height:39px;
+	line-height:40px;
+	border-bottom:1px solid #dddddd;
+	color:#4db7de;
+	text-indent:10px;
+	font-size:0.16rem;
+}
+#innerRecoWrap{
+	overflow:hidden;
+}
+.recordBot{
+	width:100%;
+	height:45px;
+	background:#64ccf2;
+	border-radius:0 0 6px 6px;
+	font-size:0.14rem;
+}
+.recordBot .totalDiv{
+	width:75%;
+	height:45px;
+	color:#2798c2;
+	position:relative;	
+}
+.totalDiv p{
+	padding-left:10px;
+	position:absolute;
+	left:0px;
+	top:3px;
+}
+@media all and (min-width:427px){
+	.totalDiv p{
+		top:12px;
+	}
+}
+.viewDetailBtn{
+	text-decoration:underline;
+	color:#fff;
+}
+.statusP{
+	width:25%;
+	height:45px;
+	color:#fff;
+	text-indent:16px;
+}
+.statusP p{
+	position:relative;
+	height:20px;
+}
+.statusP p:nth-of-type(1) span,
+.statusP p:nth-of-type(2) span{
+	width:10px;
+	height:10px;
+	border:2px solid #fff;
+	position:absolute;
+	left:0px;
+	top:4px;
+	border-radius:50%;
+}
+.statusP p:nth-of-type(1){
+	margin:2px 0 2px 0px;
+}
+.statusP p:nth-of-type(1) span,
+#recordInfo .recordDiv span.compSpan{
+	background:#64ccf2;
+}
+.statusP p:nth-of-type(2) span,
+#recordInfo .recordDiv span.noCompSpan{
+	background:#ffa200;
+}
+#recordInfo .recordDiv{
+	width:100%;
+	height:39px;
+	line-height:40px;
+	font-size:0.14rem;
+	color:#666;
+	position:relative;
+	text-indent:24px;
+	border-bottom:1px dashed #dbdbdb;
+}
+#recordInfo .recordDiv.active{
+	background:#e6e6e6;
+}
+.recordDiv p.comStateP{
+	height:100%;
+	font-size:0.14rem;
+	text-indent:0px;
+	margin:0 4px;
+}
+.recordDiv p.noPubTxtP{
+	color:#fb5151;
+}
+.recordDiv p.pubTxtP{
+	color:#2798c2;
+}
+.viewDetailP{
+	width:20px;
+	height:20px;
+	background:url(../images/tongji.png) no-repeat;
+	background-size:cover;
+	margin:10px 10px 0 0;
+}
+#recordInfo .recordDiv span.compSpan,
+#recordInfo .recordDiv span.noCompSpan{
+	width:10px;
+	height:10px;
+	position:absolute;
+	left:10px;
+	top:15px;
+	border-radius:50%;
+}
+/* 暂无学习记录 */
+.noRecoDiv,
+.noStDiv{
+	margin:0px auto;
+	text-align:center;
+	color:#999;
+	font-size:0.16rem;
+}
+.noRecoDiv p,
+.noStDiv p{
+	padding-top:5px;
+}
+.noRecoDiv{
+	width:145px;
+	height:155px;
+}
+.noStDiv{
+	width:110px;
+	height:280px;
+}
+.noStDiv img{
+	padding-top:35px;
+	opacity:0.9;
+}
+/* 每个知识点学习记录对应的详细信息 */
+.detailInfoBox{
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:0px;
+	top:0px;
+	z-index:701;
+	background:#fff;
+	-webkit-transition:0.5s;
+	transition:0.5s;
+	-webkit-transform:translateX(100%);
+	transform:translateX(100%);
+}
+.detailTit{
+	width:100%;
+	height:39px;
+	line-height:40px;
+	border-bottom:1px solid #dddddd;
+	background:#fff;
+	color:#333;
+}
+.goBackBtn{
+	width:60px;
+	color:#2798c2;
+	height:100%;
+	text-indent:22px;
+	position:relative;
+}
+.goBackBtn span{
+	width:28px;
+	height:28px;
+	background:url(../../studyRecord/images/back.png) no-repeat left center;
+	position:absolute;
+	left:0px;
+	top:7px;
+	background-size:cover;
+}
+.loreNameP{
+	margin-left:5px;
+}
+/* 展示老师发布自助餐的详情 */
+.detailTxtDiv{
+	width:100%;
+	background:#fff;
+	position:absolute;
+	left:0px;
+	bottom:10px;
+	z-index:601;
+	border-radius:6px;
+	display:none;
+	opacity:0;
+}
+.detailTxtDiv p{
+	padding:10px 18px;
+	color:#2798c2;
+}
+.detailTriSpan{
+	width:0px;
+	height:0px;
+	border-width:10px;
+	border-style:solid dashed dashed dashed;
+	border-color:#fff transparent transparent transparent;
+	position:absolute;
+	left:50px;
+	bottom:-20px;
+}
+.studyLogLayer{
+	width:100%;
+	background:rgba(0,0,0,0.6);
+	position:absolute;
+	left:0px;
+	top:91px;
+	z-index:600;
+	display:none;
+	opacity:0;
+}
+.tableBox{
+	width:95%;
+	height:280px;
+	margin:10px auto 0px;
+}
+.ui-loader{
+	display:none;
+}
+/* 网络导师身份下学生列表的媒体查询 */
+@media all and (min-width:321px) and (max-width:340px){
+	#stuDataUl li{
+		width:65px;
+		margin-left:14px;
+	}
+}
+@media all and (min-width:341px) and (max-width:350px){
+	#stuDataUl li{
+		width:65px;
+		margin-left:18px;
+	}
+}
+@media all and (min-width:351px) and (max-width:360px){
+	#stuDataUl li{
+		width:70px;
+		margin-left:14px;
+	}
+}
+@media all and (min-width:361px) and (max-width:380px){
+	#stuDataUl li{
+		width:76px;
+		margin-left:14px;
+	}
+}
+@media all and (min-width:381px) and (max-width:400px){
+	#stuDataUl li{
+		width:80px;
+		margin-left:14px;
+	}
+}
+@media all and (min-width:401px) and (max-width:420px){
+	#stuDataUl li{
+		width:80px;
+		margin-left:17px;
+	}
+}
+@media all and (min-width:421px) and (max-width:436px){
+	#stuDataUl li{
+		width:85px;
+		margin-left:17px;
+	}
+}
+@media all and (min-width:437px) and (max-width:450px){
+	#stuDataUl li{
+		width:68px;
+		margin-left:16px;
+	}
+}
+@media all and (min-width:451px) and (max-width:465px){
+	#stuDataUl li{
+		width:76px;
+		margin-left:12px;
+	}
+}
+@media all and (min-width:466px) and (max-width:480px){
+	#stuDataUl li{
+		width:76px;
+		margin-left:15px;
+	}
+}
+@media all and (min-width:481px) and (max-width:495px){
+	#stuDataUl li{
+		width:68px;
+		margin-left:11px;
+	}
+}
+@media all and (min-width:496px) and (max-width:510px){
+	#stuDataUl li{
+		width:70px;
+		margin-left:11px;
+	}
+}
+@media all and (min-width:511px) and (max-width:525px){
+	#stuDataUl li{
+		width:60px;
+		margin-left:12px;
+	}
+}
+@media all and (min-width:526px) and (max-width:540px){
+	#stuDataUl li{
+		width:70px;
+		margin-left:15px;
+	}
+}
+@media all and (min-width:541px) and (max-width:555px){
+	#stuDataUl li{
+		width:66px;
+		margin-left:10px;
+	}
+}
+@media all and (min-width:556px) and (max-width:569px){
+	#stuDataUl li{
+		width:70px;
+		margin-left:8px;
+	}
+}
+@media all and (min-width:570px) and (max-width:585px){
+	#stuDataUl li{
+		width:62px;
+		margin-left:8px;
+	}
+}
+@media all and (min-width:586px) and (max-width:605px){
+	#stuDataUl li{
+		width:70px;
+		margin-left:12px;
+	}
+}
+@media all and (min-width:606px) and (max-width:620px){
+	#stuDataUl li{
+		width:70px;
+		margin-left:15px;
+	}
+}
+@media all and (min-width:621px) and (max-width:640px){
+	#stuDataUl li{
+		width:65px;
+		margin-left:11px;
+	}
+}
+@media all and (min-width:641px) and (max-width:660px){
+	#stuDataUl li{
+		width:68px;
+		margin-left:11px;
+	}
+}
+@media all and (min-width:661px) and (max-width:680px){
+	#stuDataUl li{
+		width:65px;
+		margin-left:16px;
+	}
+}
+@media all and (min-width:681px) and (max-width:700px){
+	#stuDataUl li{
+		width:70px;
+		margin-left:14px;
+	}
+}
+@media all and (min-width:701px) and (max-width:715px){
+	#stuDataUl li{
+		width:68px;
+		margin-left:9px;
+	}
+}
+@media all and (min-width:716px) and (max-width:730px){
+	#stuDataUl li{
+		width:75px;
+		margin-left:13px;
+	}
+}
+@media all and (min-width:731px) and (max-width:745px){
+	#stuDataUl li{
+		width:77px;
+		margin-left:13px;
+	}
+}
+@media all and (min-width:746px) and (max-width:765px){
+	#stuDataUl li{
+		width:69px;
+		margin-left:13px;
+	}
+}
+@media all and (min-width:766px) and (max-width:780px){
+	#stuDataUl li{
+		width:71px;
+		margin-left:13px;
+	}
+}
+@media all and (min-width:781px) and (max-width:795px){
+	#stuDataUl li{
+		width:70px;
+		margin-left:15px;
+	}
+}
+@media all and (min-width:796px) and (max-width:810px){
+	#stuDataUl li{
+		width:72px;
+		margin-left:15px;
+	}
+}

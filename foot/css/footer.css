@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+/* 网页底部 */
+.footerWrap{
+	width:100%;
+	height:200px;
+	background:url(../../images/repeatBg.png) repeat-x 0 -374px;
+	margin-top:50px;
+}
+.foot{
+	height:200px;
+	color:#5f6060;
+	position:relative;
+}
+.footerLogo{
+	width:98px;
+	height:58px;
+	margin:0px auto 0px;
+	padding-top:15px;
+}
+.stateMentBox{
+	width:380px;
+	height:60px;
+	position:absolute;
+	left:310px;
+	top:82px;
+	text-align:center;
+	font-size:12px;
+}
+.botLinkBox{
+	width:1000px;
+	height:47px;
+	position:absolute;
+	left:0;
+	bottom:0;
+}
+.botLinkBox li{
+	width:250px;
+	height:47px;
+	line-height:47px;
+	float:left;
+	text-align:center;
+	font-size:13px;
+}
+.botLinkBox li a,
+.stateMentBox p a{
+	color:#5f6060;
+}
+.botLinkBox li a:hover,
+.stateMentBox p a:hover{
+	color:#9b9b9b;
+}

@@ -1,0 +1,17 @@
+@CHARSET "UTF-8";
+.proFileTxt{
+	width:500px;
+	font-size:14px;
+	float:left;
+	margin-top:15px;
+}
+.proFileTxt p{
+	text-indent:2em;
+	margin-bottom:10px;
+	color:#666;
+	line-height:24px;
+}
+.proBox img{
+	float:left;
+	margin-left:18px;
+}

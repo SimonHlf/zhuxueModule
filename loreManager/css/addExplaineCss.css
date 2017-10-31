@@ -1,0 +1,81 @@
+.addExplaineWrap{
+	width:100%;
+}
+.headTitle{
+	font-size:16px;
+	color:#2C4977;
+	margin-bottom:5px;
+}
+.noticeBox{
+	width:500px;
+	position:absolute;
+	left:120px;
+	top:0;
+}
+.warnningIcon{
+	width:25px;
+	height:25px;
+	background:url(../images/allPic.png) no-repeat -29px -116px;
+	position:absolute;
+	left:12px;
+	top:-1px;
+}
+.noticeBox .col{
+	color:red;
+	font-weight:normal;
+}
+#videoDiv{
+	width:100%;
+	margin-top:10px;
+	position:relative;
+}
+.upDisabled,
+.upunDisableBtn{
+	height:35px;
+	line-height:35px;
+	float:left;
+	overflow:visible;
+}
+.upDisabled{
+	padding:0 10px;
+	text-align:center;
+	border:1px solid #bfb9b9;
+	background:#d8d2c6;
+	color:#bdb7ac;
+}
+.upunDisableBtn{
+	border:none;
+	color:#fff;
+	background:#43b811;
+	cursor:pointer;
+	padding-left:32px;
+	padding-right:15px;
+}
+.upunDisableBtn:hover{
+	background:#45c50e;
+}
+.upIcon{
+	width:25px;
+	height:25px;
+	background:url(../images/allPic.png) no-repeat -116px -116px;
+	position:absolute;
+	left:8px;
+	top:6px;
+}
+#videoInfo{
+	width:130px;
+	height:100px;
+	float:left;
+	position:relative;
+	margin-left:20px;
+}
+.delUpFiles{
+	width:25px;
+	height:0;
+	background:url(../images/allPic.png) no-repeat -475px -66px;
+	padding-top:25px;
+	overflow:hidden;
+	position:absolute;
+	right:0;
+	top:0;
+}

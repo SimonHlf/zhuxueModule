@@ -1,0 +1,137 @@
+.clover_calender{
+	margin:10px auto 0px; 
+	width:210px; 
+	height:auto; 
+	position:relative;
+	z-index:1;
+}
+.clover_calender .clr{
+	min-height:1%;
+	_height:1%;
+}
+.clover_calender .clr:after{
+	clear:both;
+	content:".";
+	overflow:hidden;
+	height:0;
+	display:block;
+}
+.clover_calender .cal-hd{
+	height:30px;
+	background:#000;
+	color:#FFF;
+}
+.clover_calender .cal-bd{
+	padding:10px 0px 0px 0px;
+	position:relative;
+	z-index:1;
+}
+.clover_calender .cal-bd .cal-num{
+	position:absolute;
+	top:10px;
+	font-size:120px;
+	z-index:-1;
+	opacity:0.1;
+	filter:alpha(opacity=10);
+	width:210px;
+	text-align:center; 
+	color:#fff;
+}
+.clover_calender .cal-seldate{
+	text-align:center;
+	height:30px;
+	line-height:30px;
+	font-size:14px; 
+	font-weight:bold;
+}
+.clover_calender .cal-toleft,
+.clover_calender .cal-toright{
+	width:20px;
+	height:20px;
+	text-indent:-999em;
+	overflow:hidden;
+	background:url("../images/cal.gif") no-repeat 6px 4px;
+	position:absolute;
+	z-index:1;
+	top:20px;
+	cursor:pointer;
+	-moz-user-select:none;
+	-webkit-user-select:none;
+	user-select:none;
+}
+.clover_calender .cal-toleft{
+	left:25px;
+}
+.clover_calender .cal-toright{
+	background-position:6px -129px;
+	right:25px;
+}
+.clover_calender .cal-day{
+	padding-bottom:8px; 
+	width:210px;
+}
+.clover_calender .cal-day li{
+	float:left;
+	width:30px;
+}
+.clover_calender .cal-day li span{
+	width:12px;
+	height:12px;
+	display:block;
+	background:url("../images/cal.gif") no-repeat 0 -23px;
+	text-indent:-999em;
+	overflow:hidden;
+	margin:0 auto;
+}
+.clover_calender .cal-day .item1 span,
+.clover_calender .cal-day .item7 span{
+	background-position:0 -23px;
+}
+.clover_calender .cal-day .item2 span{
+	background-position:0 -45px;
+}
+.clover_calender .cal-day .item3 span,
+.clover_calender .cal-day .item5 span{
+	background-position:0 -67px;
+}
+.clover_calender .cal-day .item4 span{
+	background-position:0 -89px;
+}
+.clover_calender .cal-day .item6 span{
+	background-position:0 -111px;
+}
+.clover_calender .cal-date{
+	width:210px;
+}
+.clover_calender .cal-date li{
+	float:left;
+	font-size:12px;
+	width:30px;
+	height:30px;
+	text-align:center;
+}
+.clover_calender .cal-date li a{
+	width:20px;
+	height:20px;
+	margin:0 auto;
+	text-decoration:none;
+	color:#77B049;
+	display:block;
+	line-height:20px;
+}
+.clover_calender .cal-date .cal-red a{
+	color:#77B049;
+}
+.clover_calender .cal-date li .cal-on,
+.clover_calender .cal-date li a:hover{
+	background:#0D0D0D;
+	color:#FFF;
+}
+.clover_calender .cal-date .cal-red .cal-on,
+.clover_calender .cal-date .cal-red a:hover{
+	background:#77B049;
+	color:#FFF;
+}
+.clover_calender .cal-date li .cal-fade{
+	color:#999;
+}

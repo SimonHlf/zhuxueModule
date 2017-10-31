@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+
+/** 清除内外边距 **/
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,dl,dt,dd,input,select,textarea{margin:0;padding:0;}
+
+/** 设置默认字体 **/
+body{font:12px/1.5 "Microsoft YaHei",Verdana,Tahoma,Arial,Helvetica,sans-serif;}
+
+/** 重置图片元素 **/
+img{border:none;vertical-align:top;}
+
+/** 重置列表元素 **/
+li{list-style:none;}
+
+/** 重置超链接元素 **/
+a{text-decoration:none;}
+
+/** 去除textarea的resize属性 **/
+textarea{resize:none;}
+
+/**通用display none元素**/
+.itemCon{display:none;}
+.showBox{display:block;}
+
+/**通用浮动类元素 **/
+.fl{float:left;}
+.fr{float:right;}
+
+/*清浮动*/
+.clearfix{zoom:1;}
+.clearfix:after{content:"";display:block;clear:both;}
+
+/* 公共样式 */
+.w1000{width:1000px;margin:0 auto;}
+.mr{margin-right:5px;}
+
+/* 遮罩层 */
+.layer,
+#layer{
+	width:100%;
+	height:100%;
+	display:none;
+	position:fixed;
+	left:0;
+	top:0;
+	z-index:980;
+	background:#000;
+	opacity:0.5;
+	filter:alpha(opacity=50);
+}

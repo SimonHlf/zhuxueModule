@@ -1,0 +1,113 @@
+body{
+	background:#f3f2f6;
+}
+.headDiv,
+.downDiv,
+.introDiv{
+	width:92%;
+	background:#fff;
+	border:1px solid #dbdbdb;
+	margin:0 auto;
+	position:relative;
+}
+.headDiv{
+	height:150px;
+	margin-top:10px;
+}
+.downDiv{
+	height:80px;
+	border-top:none;
+}
+.introDiv{
+	margin-top:15px;
+}
+.headDiv img{
+	margin:25px 15px 0 15px;
+}
+.headInfoDiv{
+	margin-top:20px;
+}
+.headInfoDiv h2{
+	font-weight:normal;
+	font-size:0.22rem;
+	color:#333;
+}
+.headInfoDiv p{
+	font-size:0.14rem;
+	color:#666;
+	margin-top:5px;
+}
+.headInfoDiv p.introP{
+	font-size:0.14rem;
+}
+.headInfoDiv p.introP span{
+	display:inline-block;
+	padding:1px 7px;
+	background:#f1f1f1;
+}
+.downDiv a{
+	width:90%;
+	height:40px;
+	line-height:40px;
+	position:absolute;
+	left:50%;
+	margin-left:-45%;
+	top:20px;
+	background:#32bcec;
+	color:#fff;
+	text-align:center;
+	font-size:0.18rem;
+}
+.introDiv ul{
+	width:90%;
+	height:80%;
+	margin:10px auto;
+}
+.introDiv ul li{
+	width:50%;
+	height:100%;
+	float:left;
+	text-align:center;
+}
+.introText{
+	width:90%;
+	margin:15px auto;
+}
+.introText strong{
+	color:#333;
+	font-size:0.16rem;
+	font-weight:normal;
+}
+.introText p{
+	color:#666;
+	font-size:0.14rem;
+	margin-top:10px;
+}
+.tipDiv{
+	width:273px;
+	height:241px;
+	background:url(../images/tipBg.png) no-repeat;
+	position:absolute;
+	right:20px;
+	top:0px;
+	z-index:1000;
+	text-align:center;
+	color:#333;
+	font-size:0.16rem;
+	display:none;
+}
+.tipDiv p{
+	width:222px;
+	position:absolute;
+	left:12px;
+	bottom:35px;
+}
+.tipDiv p span{
+	width:180px;
+	height:35px;
+	line-height:35px;
+	text-align:center;
+	color:#fff;
+	background:#32bcec url(../images/icon.png) no-repeat 3px center;
+	display:inline-block;
+}

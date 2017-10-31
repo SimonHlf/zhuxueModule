@@ -1,0 +1,617 @@
+body{
+	background:#f3f2f6;	
+	overflow-x:hidden;
+}
+.backIcon{
+	width:30px;
+	height:0.50rem;
+	position:absolute;
+	left:0px;
+	top:0px;
+	background:#64ccf2 url(../images/backIcon.png) no-repeat center;
+	z-index:2;
+}
+.headTit,
+.subjectDiv{
+	width:100%;
+	height:0.50rem;
+	line-height:0.50rem;
+	background:#64ccf2;
+	color:#fff;
+}
+.headTit{
+	text-align:center;
+	font-size:0.24rem;
+	font-weight: normal;
+	letter-spacing:0.01rem;
+	position:relative;
+	z-index:2;
+}
+/* 学科列表  */
+.subjectDiv{
+	position:relative;
+	z-index:1;
+	box-shadow:0px 0 5px #666;
+}
+.subjectDiv ul{
+	height:0.50rem;
+	float:left;
+	margin-left:30px;
+}
+.subjectDiv li{
+	width:0.80rem;
+	max-width:0.80rem;
+	line-height:0.50rem;
+	float:left;
+	text-align:center;
+}
+.subjectDiv li a{
+	display:inline-block;
+	width:100%;
+	height:100%;
+	color:#fff;
+}
+.subjectDiv li.active{
+	height:0.46rem;
+	line-height:0.50rem;
+	border-bottom:4px solid #ffe400;
+}
+/* 选择出版社 */
+.selPubDiv{
+	width:92%;
+	height:0.3rem;
+	position:relative;
+	margin:15px auto 0px;
+}
+.nowPubTxt{
+	width:90%;
+	line-height:0.3rem;
+	background:#e5e5e5;
+	border-radius:0 20px 20px 0px;
+	text-indent:0.14rem;
+	color:#666;
+	font-size:0.14rem;
+}
+.fenleiIcon{
+	width:30px;
+	height:30px;
+	background:url(../images/whole.png) no-repeat 0 -171px;
+	position:absolute;
+	right:0px;
+	top:0px;
+}
+#selPubWin{
+	width:100%;
+	position:absolute;
+	left:0px;
+	top:50px;
+	z-index:1000;
+	background:rgba(255,255,255,0.9);
+	display:none;
+}
+#selPubWin ul{
+	width:85%;
+	margin:0 auto;
+	opacity:0;
+}
+#selPubWin li{
+	width:1.3rem;
+	height:33px;
+	line-height: 33px;
+	text-align:center;
+	border:1px solid #666;
+	border-radius:18px;
+	margin-top:20px;
+	font-size:0.14rem;
+}
+#selPubWin li a{
+	display:inline-block;
+	width:100%;
+	height:100%;
+	color:#333;
+	border-radius:18px;
+}
+#selPubWin li:nth-child(2n-1){
+	float:left;
+}
+#selPubWin li:nth-child(2n){
+	float:right;
+}
+#selPubWin li.active{
+	border:1px solid #52aecf;
+	
+}
+#selPubWin li.active a{
+	color:#52aecf;
+}
+#subBtn{
+	width:85%;
+	height:35px;
+	line-height:35px;
+	text-align:center;
+	background:#64ccf2;
+	font-size:0.18rem;
+	display:block;
+	margin:20px auto 0px;
+	border-radius:18px;
+	opacity:0;
+	color:#fff;
+}
+/* 学科上下册  */
+.detailSubDiv{
+	width:100%;
+}
+.comSubDiv{
+	width:92%;
+	height:1.35rem;
+	background:#fff;
+	margin:0.22rem auto 0rem;	
+}
+.subLeftCon{
+	width:1.48rem;
+	height:1.35rem;
+	position:relative;	
+}
+.subLeftCon img{
+	height:1.35rem;
+	position:absolute;
+	left:-7px;
+	top:0px;
+}
+.subNameBox{
+	width:100%;
+	height:26px;
+	line-height:26px;
+	background:#00a1e8;
+	position:absolute;
+	left:-7px;
+	bottom:4px;
+	color:#fff;
+}
+.subNameBox h3{
+	font-weight:normal;
+	font-size:0.16rem;
+	margin-left:4px;
+	float:left;
+	max-width:50px;
+}
+.subNameBox p{
+	font-size:0.12rem;
+	float:left;
+	margin-left:2px;
+}
+.subRigCon{
+	height:1.25rem;
+	background:#fff;
+}
+.subRigCon p{
+	font-size:0.12rem;
+	color:#333;
+	line-height:0.26rem;
+}
+.goLearn{
+	width:0.41rem;
+	height:1.35rem;
+	display:block;
+	float:right;
+	background:url(../images/learnBtn.png) no-repeat 0 0;	
+}
+.goLearn:hover{
+	background:url(../images/learnBtn.png) no-repeat 0 -135px;
+}
+.goLearn_1{
+	display:none;
+}
+.blank{
+	width:0.06rem;
+	display:inline-block;
+}
+.blank1{
+	width:0.24rem;
+	display:inline-block;
+}
+.freeDiv{
+	margin:20px 0 0 10px;
+	font-size:0.14rem;
+}
+/* 高三选择年级复习 */
+#gradeDiv{
+	width:100%;
+	height:0.5rem;
+	background:#CBC9C9;
+	display:none;
+	position:absolute;
+	left:0px;
+	bottom:0px;
+}
+#gradeDiv p{
+	height:100%;
+	font-size:0.14rem;
+	float:left;
+	color:#666;
+	padding-left:10px;
+}
+#gradeDiv div{
+	height:50px;
+	margin-top:-5px;
+}
+#gradeDiv div a{
+	width:40px;
+	height:100%;
+	float:left;
+	text-align:center;
+	display:inline-block;
+	background:#64CCF2;
+	color:#fff;
+	position:relative;
+}
+#gradeDiv div a.active{
+	background:#00a1e8;
+}
+#gradeDiv div a em{
+	width:100%;
+	font-style:normal;
+	display:inline-block;
+}
+#gradeDiv div a em:nth-of-type(1){
+	margin-top:6px;
+}
+#gradeDiv div a span{
+	width:1px;
+	height:50px;
+	background:#fff;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+@media all and (min-width:300px) and (max-width:451px){
+	#gradeDiv{
+		padding-top:5px;
+		height:0.45rem;
+	}
+}
+@media all and (min-width:452px){
+	#gradeDiv p{
+		line-height:50px;
+	}
+	#gradeDiv div{
+		margin-top:0px;
+	}
+}
+/* 暂无出版社位置 */
+.noExPos{
+	left:18px;
+	top:35px;
+}
+/* 媒体查询 */
+@media all and (min-width:318px) and (max-width:323px){
+	.comSubDiv{
+		height:1.20rem;
+	}
+	.subLeftCon{
+		width:1.31rem;
+		height:1.20rem;
+	}
+	.subLeftCon img{
+		height:1.20rem;
+		position:absolute;
+		left:-7px;
+		top:0px;
+	}
+	.subRigCon{
+		height:1.2rem;
+		margin-left:0px;	
+	}
+	.subRigCon p{
+		line-height:0.24rem;
+	}
+	.goLearn{
+		display:none;
+	}
+}
+@media all and (min-width:324px) and (max-width:380px){
+	.comSubDiv{
+		height:1.25rem;	
+		position:relative;
+	}
+	.subLeftCon{
+		width:1.37rem;
+		height:1.25rem;
+	}
+	.subLeftCon img{
+		height:1.25rem;
+		position:absolute;
+		left:-7px;
+		top:0px;
+	}
+	.subRigCon{
+		margin-left:0px;	
+	}
+	.subRigCon p{
+		line-height:0.24rem;
+	}
+	.goLearn{
+		display:none;
+	}
+}
+@media all and (min-width:381px) and (max-width:399px){
+	.subRigCon{
+		margin-left:10px;
+	}
+	.subNameBox{
+		height:28px;
+		line-height:28px;
+		bottom:5px;
+	}
+	.subNameBox h3{
+		margin:0 3px 0 5px;
+	}
+	.goLearn{
+		display:none;
+	}
+}
+@media all and (min-width:400px) and (max-width:768px){
+	.subRigCon{
+		margin-left:10px;
+	}
+	#selPubWin li{
+		width:49%;
+		height:38px;
+		line-height: 40px;
+		margin-top:30px;
+		font-size:0.16rem;
+	}
+}
+@media all and (min-width:768px) and (max-width:1024px){
+	.subRigCon{
+		margin-left:10px;
+	}
+	#selPubWin li{
+		width:49%;
+		height:38px;
+		line-height: 40px;
+		margin-top:30px;
+		font-size:0.16rem;
+	}
+}
+
+/* 升学至新学段 */
+.goNewGradDiv,
+.comDataDiv{
+	width:100%;
+	height:100%;
+	background:#fff;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.goNewGradDiv{
+	z-index:10;
+}
+.comDataDiv{
+	z-index:12;
+}
+.gradPtit{
+	background:#68c7ec;
+	height:49px;
+	line-height:50px;
+	border-bottom:1px solid #ccc;
+	text-align:center;
+	font-size:18px;
+	color:#fff;
+}
+.gradTipInfo{
+	height:40px;
+	line-height:40px;
+	background:#fefced;
+	font-size:14px;
+}
+.gradTipInfo i{
+	width:20px;
+	height:20px;
+	background:url(../images/gradTipIcon.png) no-repeat;
+	background-size:cover;
+	display:inline-block;
+	float:left;
+	margin:11px 0 0 3px;
+}
+.gradTipInfo div{
+	width:90%;
+	height:100%;
+	float:left;
+	position:relative;
+	color:#fc7929;
+	overflow:hidden;
+}
+.gradTipInfo div ul{
+	width:385%;
+	position:absolute;
+	left:0px;
+	-webkit-animation:12s move infinite linear;
+}
+
+@-webkit-keyframes move{
+	0%{
+		left:0px;
+	}
+	100%{
+		left:-546px;
+	}
+}
+.gradTipInfo div li{
+	width:546px;
+	float:left;
+}
+.gradTipInfo ul li:nth-of-type(2){
+	margin-left:5px;
+}
+.gradDataBox{
+	width:95%;
+	margin:0 auto;
+}
+.comGradDatBox,
+.schoolDataBox{
+	height:49px;
+	line-height:50px;
+	border-bottom:1px solid #ccc;
+	font-size:14px;
+	color:#666;
+	margin-top:10px;
+	position:relative;
+}
+.schoolDataBox{
+	width:100%;
+	float:left;
+}
+.comGradDatBox{
+	width:46%;
+}
+.comGradDatBox:nth-of-type(2n-1){
+	float:left;
+}
+.comGradDatBox:nth-of-type(2n){
+	float:right;
+}
+.innerTxt{
+	margin-left:10px;
+}
+.moreIcon{
+	width:20px;
+	height:20px;
+	position:absolute;
+	right:10px;
+	top:15px;
+	background:url(../images/moreIcon.png) no-repeat;
+	background-size:cover;
+}
+.saveNewGradBtn{
+	width:100%;
+	height:40px;
+	line-height:40px;
+	background:#68c7ec;
+	font-size:18px;
+	text-align:center;
+	color:#fff;
+	position:absolute;
+	left:0;
+	bottom:0px;
+	z-index:11;
+}
+.comDataDiv{
+	width:100%;
+	height:100%;
+	background:#f1f3f7;
+	position:absolute;
+	left:0px;
+	top:0px;
+	-webkit-transition:0.5s;
+	transition:0.5s;
+	-webkit-transform:translateX(100%);
+	transform:translateX(100%);
+}
+.dataPar{
+	width:95%;
+	margin:0 auto;
+}
+.dataBoxGrad{
+	width:100%;
+	height:100%;
+	display:none;
+	position:relative;
+	overflow:hidden;
+}
+.comLocScroll{
+	width:100%;
+	position:absolute;
+	left:0px;
+	top:0px;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+.comLocScroll li{
+	background:#fff;
+	height:35px;
+	line-height:35px;
+	text-align:center;
+	margin-top:10px;
+	font-size:14px;
+}
+/* 一列2个 */
+@media all and (min-width:318px) and (max-width:336px){
+	.comLocScroll li{
+		width:48%;
+	}
+	.comLocScroll li:nth-of-type(2n-1){
+		float:left;
+	}
+	.comLocScroll li:nth-of-type(2n){
+		float:right;
+	}
+}
+/* 一列3个 */
+@media all and (min-width:337px) and (max-width:450px){
+	.comLocScroll li{
+		width:31%;
+	}
+	.comLocScroll li:nth-of-type(3n-2){
+		float:left;
+		margin-right:3.5%;
+	}
+	.comLocScroll li:nth-of-type(3n-1){
+		float:left;
+	}
+	.comLocScroll li:nth-of-type(3n){
+		float:right;
+	}
+}
+/* 一列4个 */
+@media all and (min-width:451px) and (max-width:800px){
+	.comLocScroll li{
+		width:23%;
+	}
+	.comLocScroll li:nth-of-type(4n-3){
+		float:left;
+		margin-right:2.5%;
+	}
+	.comLocScroll li:nth-of-type(4n-2){
+		float:left;
+		margin-right:2.5%;
+	}
+	.comLocScroll li:nth-of-type(4n-1){
+		float:left;
+	}
+	.comLocScroll li:nth-of-type(4n){
+		float:right;
+	}
+}
+/* 大于801给固定宽 */
+@media all and (min-width:801px){
+	.comLocScroll li{
+		width:140px;
+	}
+	.comLocScroll li:nth-of-type(5n-4){
+		float:left;
+		margin-right:2%;
+	}
+	.comLocScroll li:nth-of-type(5n-3){
+		float:left;
+		margin-right:2%;
+	}
+	.comLocScroll li:nth-of-type(5n-2){
+		float:left;
+		margin-right:2%;
+	}
+	.comLocScroll li:nth-of-type(5n-1){
+		float:left;
+		margin-right:2%;
+	}
+	.comLocScroll li:nth-of-type(5n){
+		float:right;
+	}
+}
+.comLocScroll li a{
+	width:100%;
+	max-width:100%;
+	height:100%;
+	display:block;
+	color:#333;
+}

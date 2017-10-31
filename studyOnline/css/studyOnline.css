@@ -1,0 +1,319 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background:#F0F0F0;
+}
+/*  閿熸枻鎷烽敓鏂ゆ嫹閿熸枻鎷烽敓鎹疯鎷烽敓鏂ゆ嫹  */
+.mainContent{
+	width:978px;
+	margin:0 auto;
+}
+/* 澶撮敓鏂ゆ嫹閿熸枻鎷烽敓鏂ゆ嫹 */
+.mainHead{
+	width:978px;
+	margin:40px auto 0px;
+	position:relative;
+}
+.head_L{
+	width:193px;
+	height:130px;
+	float:left;
+	background:url(../images/mainHeadDec.png) no-repeat;
+}
+.tabNav1Wrap{
+	width:514px;
+	height:88px;
+	background:url(../images/subNavBg.png) no-repeat;
+	margin-top:42px;
+	float:right;
+	position:relative;
+}
+.tabNav1Box{
+	width:450px;
+	height:104px;
+	margin:-56px 0 0 32px;
+	position:relative;
+	overflow:hidden;
+}
+.mainHead ul{
+	position:relative;
+	left:0px;
+}
+.mainHead li.smallNavList{
+	width:90px;
+	height:104px;
+	float:left;
+	cursor:pointer;
+	position:relative;
+	z-index:3;
+}
+.bookMark{
+	width:15px;
+	height:21px;
+	position:absolute;
+	right:10px;
+	top:0;
+	z-index:3;
+}
+.mainHead li.active .bookMark{
+	background:url(../images/bookMark.png) no-repeat;
+}
+.mainHead li a{
+	width:90px;
+	height:104px;
+	display:inline-block;
+	position:relative;
+	z-index:2;
+}
+.mainHead li a img{
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.bookDec1{
+	width:78px;
+	height:93px;
+	background:url(../images/bookDec.png) no-repeat;
+	position:absolute;
+	right:20px;
+	top:6px;
+	display:none;
+}
+.bookDec2{
+	width:64px;
+	height:96px;
+	background:url(../images/bookDec1.png) no-repeat;
+	position:absolute;
+	top:8px;
+	display:none;
+}
+.comBtns{
+	width:12px;
+	height:23px;
+	background:url(../images/midBtn.png) no-repeat;
+	position:absolute;
+	top:-16px;
+	cursor:pointer;
+	display:none;
+	z-index:4;
+}
+.prevBtn{
+	background-position:-155px 0px;
+	left:8px;
+}
+.nextBtn{
+	background-position:-155px -23px;
+	right:8px;
+}
+/* 閿熸枻鎷烽敓鎹疯鎷烽敓鏂ゆ嫹 */
+
+/* 閿熻娇绛规嫹閫夐敓鏂ゆ嫹閿熸枻鎷峰紡 */
+.choiceCourse{
+	width:978px;
+	margin:0 auto;
+	height:auto;
+}
+.parentWrap{
+	background:#fff;
+}
+.choiceHead{
+	width:978px;
+	height:63px;
+	position:relative;
+	margin:0 auto;
+	background:url(../images/choiceCourseBg.jpg) no-repeat;
+}
+.choiceHead p{
+	position:absolute;
+	left:12px;
+	top:15px;
+	font-size:16px;
+	color:#666666;
+}
+.choiceHead p .nowPub{
+	color:#f60
+}
+.choicePubBox{
+	position:absolute;
+	right:5px;
+	top:23px;
+	color:#666666;
+	font-size:14px;
+}
+.choicePubBox select{
+	color:#666;
+}
+.choiceCon{
+	width:840px;
+	margin:10px auto 0px;
+}
+.choiceCon li{
+	width:100%;
+	height:199px;
+	background:url(../images/coursePartBg.jpg) no-repeat left bottom;
+	position:relative;
+	margin:0px 0 10px 0px;
+}
+/* 閿熶粙绫嶉敓鏂ゆ嫹閿熸枻鎷�*/
+.bookCover{
+	width:196px;
+	height:179px;
+	float:left;
+	margin:9px 0 0 -22px;
+	position:relative;
+}
+.choiceCon li .bookName{
+	height:36px;
+	line-height:30px;
+	position:absolute;
+	left:0;
+	bottom:0;
+	font-size:14px;
+	color:#fff;
+	text-indent:68px;
+}
+
+/* 閿熸枻鎷烽敓鏂ゆ嫹閿熸枻鎷烽敓鏂ゆ嫹 */
+.introInfo{
+	float:left;
+	font-size:16px;
+	line-height:48px;
+	color:#666;
+	margin:30px 0 0 25px;
+}
+.dayTime{
+	color:#ff6600;
+	font-weight:bold;
+}
+/* xx閿熸枻鎷峰笀 閿熸枻鎷峰笀澶撮敓鏂ゆ嫹 閿熸枻鎷烽敓鏂ゆ嫹甯堥敓鏂ゆ嫹閿熸枻鎷�*/
+.daoshiWrap{
+	width:191px;
+	height:167px;
+	background:url(../images/netTeaLayer.png) no-repeat left bottom;
+	float:left;
+	margin:15px 0 0 25px;
+	position:relative;
+	z-index:3;
+}
+.daoshiWrap p.nianxian{
+	font-size:12px;
+	color:#666;
+	font-weight:bold;
+	position:absolute;
+	left:40px;
+	top:64px;
+}
+.teaPic{
+	width:120px;
+	height:120px;
+	border:5px solid #fff;
+	background:#dfdfdf;
+	position:absolute;
+	left:32px;
+	border-radius:50%;
+	overflow:hidden;
+	z-index:2;
+}
+.teaNamesLayer,
+.nameTeacher{
+	width:100%;
+	height:20px;
+	line-height:20px;
+	position:absolute;
+	left:0;
+	bottom:0;
+}
+.teaNamesLayer{
+	background:#000;
+	opacity:0.5;
+	filter:alpha(opacity=50);
+}
+.nameTeacher{	
+	text-align:center;
+	color:#fff;
+	font-size:12px;
+}
+.askTea,
+.goAttachBtn{
+	position:absolute;
+	top:136px;
+	left:60px;
+	z-index:4;
+}
+.askTea a{
+	color:#fff;
+	font-size:18px;
+}
+.goAttachBtn{
+	color:#fff;
+	font-size:18px;
+}
+.askTea a:hover,
+.goAttachBtn:hover{
+	text-decoration:underline;
+}
+.timerOverImg{
+	position:absolute;
+	left:33px;
+	top:20px;
+}
+.tmpNoTeaDec{
+	font-size:76px;
+	font-family:"黑体";
+	color:#666;
+	position:absolute;
+	left:40px;
+	top:-16px;
+}
+/* 閺嗗倹妫ょ�鐓庣瑎 */
+.noNetTea{
+	font-size:16px;
+	color:#666;
+	position:absolute;
+	top:76px;
+}
+.left_1{
+	left:20px;
+}
+.left_2{
+	left:28px;
+}
+/* 鍘诲涔犻敓鏂ゆ嫹鍘婚敓鏂ゆ嫹閿熸枻鎷�*/
+
+.goLearning{
+	width:42px;
+	height:104px;
+	display:inline-block;
+	background:url(../images/goLearning.gif) no-repeat 0 0;
+	float:left;
+	margin:45px;
+}
+.goLearning:hover{
+	background:url(../images/goLearning.gif) no-repeat 0 -104px;
+}
+.noExit{
+	width:976px;
+	height:320px;
+	background:#fff;
+}
+.exitPic{
+	width:233px;
+	height:165px;
+	margin:0 auto;
+	padding:50px 0px 0px;
+}
+.infoBox{
+	width:350px;
+	margin:25px auto 10px;
+}
+.infos{
+	font-size:18px;
+	font-family:Microsoft YaHei;
+	color:#383838;
+}
+.marg{
+	margin-left:260px;
+}
+.col{
+	color:#f60;
+}

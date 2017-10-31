@@ -1,0 +1,343 @@
+/* CSS Document */
+.nowPosition{
+	width:730px;
+	height:35px;
+	line-height:35px;
+	background:url(../../studyOnline/images/iconBg.png) no-repeat -181px 5px;
+	margin:0 auto;
+	border-bottom:1px solid #ddd;
+	position:relative;
+}
+.nowPosition p{
+	text-indent:25px;
+	color:#666;
+	font-size:14px;
+}
+.backIcon{
+	width:30px;
+	height:22px;
+	background:url(../../studyOnline/images/iconBg.png) no-repeat 0 -51px;
+	position:absolute;
+	right:90px;
+	top:6px;
+	z-index:2;
+}
+.nowPosition a{
+	width:88x;
+	height:32px;
+	line-height:32px;
+	text-align:center;
+	color:#333;
+	font-size:14px;
+	position:absolute;
+	right:0px;
+	top:2px;
+}
+.nowPosition a:hover{
+	color:#f90;
+}
+.commentWrap{
+	width:730px;
+	margin:0 auto;
+}
+/* 头部当月评分，学生印象 */
+.commentTop{
+	width:100%;
+	position:relative;
+	padding-top:10px;
+}
+.left_part{
+	width:149px;
+	text-align:center;
+	border-right:1px solid #E4E4E4;
+}
+.netImgBox{
+	width:100px;
+	height:100px;
+	margin-left:25px;
+	border-radius:50%;
+	overflow:hidden;
+}
+.commentTop p{
+	font-size:14px;
+	color:#363636;
+	padding-top:3px;
+}
+/* 右侧标签和星星 */
+.right_part,
+.ntTagsBox{
+	height:121px;
+	font-size:14px;
+	color:#363636;
+}
+.right_part{
+	width:560px;
+	padding-left:20px;
+}
+.ntTagsBox{
+	width:100%;
+}
+.totalScore{
+	font-size:18px;
+	color:#00b300;
+}
+.monthStar{
+	margin-top:15px;
+}
+.monthStar dd,
+.listTable dd{
+	width:13px;
+	height:12px;
+	float:left;
+	margin-right:5px;
+	background:url(../images/star.png) no-repeat 0 -57px;
+	margin-top:5px;
+}
+.monthStar dd.on,
+.listTable dd.on{
+	background-position:0 -69px;
+}
+.monthStar dd.halfStar,
+.listTable dd.halfStar{
+	background-position:0 -81px;
+}
+.monthTag{
+	height:30px;
+	line-height:30px;
+}
+.monthTag li{
+	padding:0 5px;
+	background:#f3dbb3;
+	margin:0px 3px 5px 0;
+	float:left;
+	font-size:12px;
+	white-space:nowrap;
+}
+.totalTimes{
+	color:#777;
+}
+.tagPar{
+	width:660px;
+}
+.tagPar_1{
+	width:490px;
+}
+/*搜索月评论*/
+.checkMonthList{
+	position:absolute;
+	right:0;
+	top:5px;
+}
+#checkPj{
+	width:80px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	border:none;
+	outline:none;
+	background:#91c42f;
+	cursor:pointer;
+	color:#363636;
+}
+#checkPj:hover{
+	background:#87b62c;
+}
+/* 评论列表核心内容的呈现 */
+.mainComment{
+	width:730px;
+	height:auto;
+	border-top:2px solid #E4E4E4;
+	margin-top:5px;
+}
+.topTit{
+	height:35px;
+	line-height:35px;
+	background:#f7f7f7;
+}
+.topTit li{
+	float:left;
+	text-align:center;
+	font-weight:700;
+	color:#666;
+}
+.wid1{
+	width:400px;
+}
+.wid2{
+	width:95px;
+}
+.wid3{
+	width:95px;
+}
+.wid4{
+	width:130px;
+}
+.margR{
+	margin-right:3px;
+}
+.comListParent{
+	width:720px;
+	padding:15px 5px;
+	border-bottom:1px solid #ddd;
+	color:#666;
+}
+.listTable{
+	width:100%;
+	height:auto;
+	padding:10px 0px;
+	font-size:14px;
+}
+.listTable tr td{
+	height:35px;
+	empty-cells:show;	
+}
+.tags{
+	height:28px;
+	line-height:28px;
+	padding:0 5px;
+	background:#fff1e4;
+	display:inline-block;
+	color:#363636;
+	font-size:12px;
+	margin-top:5px;
+	float:left;
+}
+.tagIcon{
+	width:18px;
+	height:18px;
+	display:inline-block;
+	background:url(../../studyOnline/images/iconBg.png) no-repeat -150px 0px;
+	float:left;
+	margin:10px 5px 0 0px;
+}
+/* 回复盒子 */
+.replayBox{
+	height:25px;
+	line-height:25px;
+	margin-top:5px;
+}
+.replayBox a{
+	color:#666;
+}
+.replayBox a:hover{
+	color:#e4393c;
+}
+/* 回复文本框 */
+.replayArea{
+	width:680px;
+	background:#f5f5f5;
+	padding:10px 9px;
+	border:1px solid #d9d9d9;
+	display:none;
+	margin:0 auto;
+}
+.editArea{
+	width:660px;
+	height:50px;
+	overflow:auto;
+	overflow-x:hidden;
+	padding:5px 8px;
+	line-height:20px;
+	resize:none;
+	color:#000;
+	outline:none;
+	background:#fff url(../images/logo.png) no-repeat 50%;
+	border:1px solid #ccc;
+}
+.subReplay{
+	width:80px;
+	height:25px;
+	line-height:25px;
+	text-align:center;
+	background:#f5f5f5;
+	border:none;
+	cursor:pointer;
+	float:right;
+	margin-top:5px;
+	border:1px solid #ddd;
+	outline:none;
+}
+.subReplay:hover{
+	text-decoration:underline;
+}
+/* 已经回复后显示的盒子 */
+.hasReplayBox{
+	width:100%;
+	margin-top:5px;
+	padding:5px 0px 5px;
+	font-size:14px;
+	line-height:28px;
+}
+.listConBox{
+	width:700px;
+	border-top:1px dotted #ccc;
+	margin:0 auto;
+	padding:5px 0px;
+}
+.replayerBox{
+	position:relative;
+	text-indent:28px;
+}
+.nowReplayer{
+	color:#005aa0;
+}
+.replayCons{
+	word-wrap:break-word;
+	color:#666;
+}
+.stIcon,
+.ntIcon{
+	width:25px;
+	height:25px;
+	background:url(../images/replayerIcon.jpg) no-repeat;
+	position:absolute;
+	left:0;
+	top:0;
+}
+.stIcon{
+	background-position:0 0;
+}
+.ntIcon{
+	background-position:0 -25px;
+}
+.time_Replay{
+	color:#999;
+	margin-left:15px;
+}
+.evenColor{
+	background:#F8FCFF;
+}
+/* 分页盒子 */
+.turnPageBox{
+	margin-top:10px;
+	height:30px;
+	line-height:30px;
+	color:#4d4d4d;
+}
+.turnPageBox a,
+.turnPageBox a,
+.turnPageBox input{
+	margin-top:10px;
+	color:#4d4d4d;
+	font-size:14px;
+}
+#tPage{
+	float:right;
+}
+.turnPageBox a:hover{
+	color:#1eb009;
+	background:#e6e6e6;
+}
+
+.noRecordBoxSt,
+.noRecordBoxNt{
+	width:260px;
+	height:92px;
+	margin:72px auto 0px;
+}
+.noRecordBoxSt{
+	background:url(../images/noCommenList.jpg) no-repeat;
+}
+.noRecordBoxNt{
+	background:url(../images/noCommenListNt.jpg) no-repeat;
+}

@@ -1,0 +1,413 @@
+body{
+	overflow:hidden;
+	background:#f3f2f6;
+	position:relative;
+}
+.nowLoc{
+	width:100%;
+	height:0.50rem;
+	line-height:0.50rem;
+	background:#64ccf2;
+	color:#fff;
+	position:relative;
+	z-index:600;
+}
+.nowLoc p{
+	text-indent:32px;
+}
+.backIcon{
+	width:30px;
+	height:0.50rem;
+	position:absolute;
+	left:0px;
+	top:0px;
+	background:url(../../onlineStudy/images/backIcon.png) no-repeat center;
+}
+.subjDiv{
+	height:0.5rem;
+	position:absolute;
+	right:10px;
+	top:0px;
+}
+#subjSpan{
+	padding-right:16px;
+}
+.topTri{
+	border:6px solid #64ccf2;
+	border-top-color:#5F5250;
+	right:0rem;
+	top:24px;
+	-webkit-transition-property:-webkit-transform;
+	-webkit-transition-duration:250ms;	
+	-webkit-transform:rotate(0deg) translateZ(0);
+	-webkit-transform-origin:center center;
+	transform:rotate(0deg) translateZ(0);
+}
+#spanTri.flip .topTri{
+	-webkit-transform:rotate(-180deg) translateZ(0);
+}
+/* 学科数据层 */
+#stuSubWrapper{
+	width:100%;
+	/**height:31%;**/
+	background:#fff;
+	position:absolute;
+	left:0px;
+	top:0px;
+	z-index:551;
+	-webkit-transition:0.5s;
+	transition:0.5s;
+	-webkit-transform:translateY(-100%);
+	transform:translateY(-100%);
+}
+.shadowSpan{
+	width:100%;
+	height:10px;
+	position:absolute;
+	left:0px;
+	box-shadow:0 -6px 6px #fff;
+	bottom:-10px;
+	z-index:3;	
+}
+@media all and (min-height:650px) and (max-height:800px){
+	#stuSubWrapper{
+		height:25%;
+	}
+}
+@media all and (min-height:800px){
+	#stuSubWrapper{
+		height:20%;
+	}
+}
+.subNames{
+	width:30%;
+	height:80px;
+	float:left;
+	margin:10px 5px 10px;
+	position:relative;
+	text-align:center;
+	line-height:130px;
+	color:#666;
+}
+.subNames:nth-of-type(1),
+.subNames:nth-of-type(2),
+.subNames:nth-of-type(3){
+	margin-bottom:0px;
+}
+.subImgBg{
+	width:50px;
+	height:50px;
+	position:absolute;
+	left:50%;
+	margin-left:-25px;
+	top:0px;
+	background:url(../../ntlist/images/comSubBg.png) no-repeat;
+}
+.mathBg{
+	background-position:0 -450px;
+}
+.phyBg{
+	background-position:0 -50px;
+}
+.biologyBg{
+	background-position:0 -200px;
+}
+.chemBg{
+	background-position:0 -100px;
+}
+.geograBg{
+	background-position:0 -150px;
+}
+.sicBg{
+	background-position:0 -350px;
+}
+.sicBg_1{
+	background-position:0 -300px;
+}
+.yuwenBg{
+	background-position:0 -400px;
+}
+.engBg{
+	background-position:0 0px;
+}
+.historyBg{
+	background-position:0 -250px;
+}
+#subjLayer,
+#studyStaLayer{
+	width:100%;
+	background:rgba(0,0,0,0.6);
+	position:absolute;
+	left:0px;
+	display:none;
+	z-index:500;
+}
+#subjLayer{
+	top:50px;
+}
+#studyStaLayer{
+	top:90px;
+}
+/* 头部搜索框st */
+.searchBox{
+	width:100%;
+	height:0.40rem;
+	background:#fff;
+	position:relative;
+	box-shadow:0px 0px 3px #666;
+	z-index:550;
+}
+.searInner{
+	width:95%;
+	height:100%;
+	margin:0 auto;
+}
+.subBox{
+	width:75px;
+	height:30px;
+	line-height:30px;
+	background:#64ccf2;
+	margin-top:5px;
+	color:#fff;
+	text-indent:10px;
+	border-radius:4px;
+	position:relative;
+}
+#studyStaSpan{
+	width:100%;
+	height:100%;
+	max-width:60px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-size:0.14rem;
+}
+.triIcon{
+	width:16px;
+	height:11px;
+	position:absolute;
+	right:5px;
+	top:10px;
+	background:url(../../reportCen/images/triIcon.png) no-repeat;
+}
+.comDataUl{
+	width:63px;
+	border:1px solid #ddd;
+	border-radius:4px;
+	position:absolute;
+	left:0px;
+	top:42px;
+	background:#fff;
+	color:#666;
+	display:none;
+	font-size:0.14rem;
+}
+.stuTriSpan{
+	width:0px;
+	height:0px;
+	border-width:8px;
+	border-style:dashed dashed solid dashed;
+	border-color:transparent transparent #fff transparent;
+	position:absolute;
+	left:12px;
+	top:-16px;
+}
+.comDataUl li{
+	height:29px;
+	line-height:30px;
+	border-bottom:1px solid #ccc;
+	max-width:100%;
+}
+.comDataUl li:nth-last-of-type(1){
+	border-bottom:none;
+}
+.timeBox{
+	padding-left:5px;
+	margin-top:5px;
+	color:#666;
+	line-height:30px;
+	font-size:0.14rem;
+	position:relative;
+}
+.calIcon{
+	width:18px;
+	height:18px;
+	background:url(../../reportCen/images/cal.png) no-repeat;
+	position:absolute;
+	right:4px;
+	top:7px;
+}
+.timeBox div{
+	float:left;
+	height:30px;
+	background:#64ccf2;
+	border-radius:4px;
+	color:#fff;
+	position:relative;
+}
+.timeBox div input{
+	width:100%;
+	height:100%;
+	font-size:0.12rem;
+	background:none;
+	border:none;
+	color:#fff;
+}
+.searBtn{
+	width:30px;
+	height:30px;
+	display:inline-block;
+	background:#64ccf2 url(../../reportCen/images/searBtn.png) no-repeat 6px 6px;
+	margin-top:5px;
+	border-radius:4px;
+	margin-left:5px;
+}
+@media all and (min-width:360px) and (max-width:400px){
+	.timeBox div input{
+		padding-left:3px;
+		font-size:0.14rem;
+	}
+}
+@media all and (min-width:401px) and (max-width:770px){
+	.timeBox div input{
+		padding-left:3px;
+		font-size:0.16rem;
+	}
+}
+/* 头部搜索框end */
+
+/* 培优数据层 */
+#bsDiv{
+	width:100%;
+	position:relative;
+}
+#scroller{
+	width:100%;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+#buffetSendInfo li{
+	border-bottom:1px solid #cecece;
+}
+#buffetSendInfo li .innerCon{
+	width:95%;
+	margin:10px auto 0px;
+	color:#666;
+	position:relative;
+}
+#buffetSendInfo li .innerCon .titP{
+	height:25px;
+	line-height:25px;
+	max-width:100%;
+	border-left:3px solid #2ea7e0;
+	text-indent:5px;
+}
+.titP strong{
+	font-size:0.16rem;
+	font-weight:normal;
+}
+.listPar{
+	margin:8px 0px;
+}
+.comListDiv{
+	float:left;
+}
+.comListDiv:nth-of-type(1){
+	width:30%;
+	margin-left:5px;
+}
+.comListDiv:nth-of-type(2){
+	width:38%;
+}
+.comListDiv:nth-of-type(3){
+	width:30%;
+}
+.comListDiv p:nth-of-type(1),
+.compScaleDiv p:nth-of-type(1){
+	font-size:0.12rem;
+	color:#999;
+}
+.comListDiv p:nth-of-type(2){
+	font-size:0.14rem;
+}
+.noStudySta{
+	color:#666;	
+}
+.noPassSta{
+	color:#f76f2b;
+}
+.comPleteSta{
+	color:#2ea7e0;
+}
+.compScaleDiv{
+	height:30px;
+	position:relative;
+	margin-left:5px;
+}
+.compScaleDiv p:nth-of-type(2){
+	position:absolute;
+	right:0px;
+	top:-4px;
+	color:#2ea7e0;
+	font-weight:bold;
+}
+.prograDiv{
+	width:100%;
+	height:13px;
+	background:#dcdcdc;
+	position:relative;
+}
+.nowPerBar{
+	width:0px;
+	height:100%;
+	position:absolute;
+	left:0px;
+	top:0px;
+	background:#2ea7e0;
+}
+.btnDiv{
+	margin:10px 0 10px 5px;
+}
+.comBtn{
+	width:100px;
+	height:40px;
+	line-height:40px;
+	display:inline-block;
+	text-align:center;
+	color:#FFF;
+	background:#2ea7e0;
+}
+.completePic{
+	width:100px;
+	height:100px;
+	background:url(../../../studyOnline/images/completeIcon.png) no-repeat;
+	position:absolute;
+	right:25px;
+	top:10px;
+	background-size:cover;
+	display:none;
+}
+.noData{
+	width:141px;
+	height:140px;
+	margin:0px auto 0px;
+	color:#666;
+	text-align:center;
+}
+.tipInfo{
+	width:100%;
+	height:50px;
+	line-height:50px;
+	background:rgba(0,0,0,0.7);
+	position:absolute;
+	left:0px;
+	top:0px;
+	color:#fff;
+	z-index:601;
+	font-size:0.14rem;
+	text-align:center;
+}
+.ui-loader{
+	display:none;
+}

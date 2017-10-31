@@ -1,0 +1,144 @@
+/* CSS Document */
+
+/* 章节列表 */
+.listWrap{
+	width:980px;
+	height:700px;
+	margin:0 auto;
+	position:relative;
+}
+/* 新增章节按钮 */
+.addNewChap{
+	width:75px;
+	height:35px;
+	line-height:35px;
+	display:inline-block;
+	color:#fff;
+	background:#aac147 url(../images/addNewChap.png) no-repeat 8px center;
+	padding-left:25px;
+}
+.addNewChap:hover{
+	background:#C0DA52 url(../images/addNewChap.png) no-repeat 8px center;
+}
+/* 章节列表内容*/
+.listCon{
+	width:100%;
+	height:auto;
+	border-top:2px solid #AAC147;
+	position:relative;
+	overflow:hidden;
+}
+/* 章节列表头部标题内容*/
+.conTop{
+	width:980px;
+	height:35px;
+	line-height:35px;
+	position:relative;
+	z-index:10;
+}
+.conTop li,
+.conMid li p{
+	width:323px;
+	line-height:35px;
+	float:left;
+	font-size:14px;
+	text-align:center;
+	color:#2C4977;
+	position:relative;
+}
+.conTop li.col1{
+	background:#f0ecbd;
+}
+.conTop li.col2{
+	background:#aecf96;
+}
+.conTop li.col3{
+	background:#fbc088;
+}
+.ml{
+	margin-left:5px;
+}
+.conTop li span{
+	width:28px;
+	height:28px;
+	background:url(../../loreManager/images/allPic.png) no-repeat;
+	position:absolute;
+	left:118px;
+	top:3px;
+}
+.conTop li span.bg1{
+	left:107px;
+	background-position:-154px -92px;
+}
+.conTop li span.bg2{
+	background-position:-282px -92px;
+}
+.conTop li span.bg3{
+	background-position:-314px -92px;
+}
+/* 章节列表中间主要内容*/
+.conMid{
+	width:980px;
+	height:625px;
+	position:relative;
+	overflow:hidden;
+}
+.conMid ul{
+	position:absolute;
+	left:0;
+	top:0px;
+}
+.conMid li{
+	height:35px;
+	line-height:35px;
+	width:100%;
+	border-bottom:1px dashed #b9b96c;
+	vertical-align:top;
+}
+.edit,
+.dele{
+	width:16px;
+	height:16px;
+	display:inline-block;
+	float:left;
+	margin-top:10px;
+	background:url(../../loreManager/images/allPic.png) no-repeat;
+}
+.edit{
+	background-position:-147px -126px;
+	margin-left:128px;
+	
+}
+.dele{
+	background-position:-163px -125px;
+	margin-left:15px;
+	
+}
+
+/* 新增章节和编辑章节样式 */
+.comDiv{
+	width:375px;
+	height:30px;
+	line-height:30px;
+	margin:10px auto 0px;
+}
+#chapterName,
+#newChapterName{
+	width:212px;
+	margin-left:2px;
+	height:19px;
+	padding-left:3px;
+	border:1px solid #ccc;
+}
+.blank{
+	width:24px;
+	display:inline-block;
+}
+#orders,
+#newOrders{
+	width:312px;
+	height:19px;
+	border:1px solid #ccc;
+	padding-left:3px;
+}
+

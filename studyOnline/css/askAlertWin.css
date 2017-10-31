@@ -1,0 +1,276 @@
+/* 在线答题，个人中心，我要提问的弹窗公共样式 */
+.myAskBox{
+	width:626px;
+	height:507px;
+	position:absolute;
+	left:50%;
+	margin-left:-313px;
+	display:none;
+	z-index:1000;
+}
+.topAsk{
+	width:100%;
+	height:48px;
+	position:relative;
+}
+.topTiwen{
+	background:#f3b436;	
+}
+.topTiwen1{
+	background:#91c42f;	
+}
+.topFatie{
+	background:#68c7ec;
+}
+.botAsk{
+	width:100%;
+	height:69px;
+	position:relative;
+}
+.botAskR{
+	width:137px;
+	height:69px;
+	position:absolute;
+	top:0px;
+	right:0px;
+	z-index:2;
+}
+.botTiwen{
+	background:url(../../studyOnline/images/botDecPic.png) no-repeat 0 0;
+}
+.botTiwen1{
+	background:url(../../studyOnline/images/botDecPic.png) no-repeat 0 -69px;
+}
+.botFaTie{
+	background:url(../../studyOnline/images/botDecPic.png) no-repeat 0 -138px;
+}
+.botAskMid{
+	width:557px;
+	height:69px;
+	background:#efeff0;
+	position:absolute;
+	left:0px;
+}
+/* 我要提问窗口中间 */
+.midAsk,
+.midFeed{
+	width:616px;
+	padding:5px;
+	background:#efeff0;
+}
+.midAsk{
+	height:380px;
+}
+.midFeed{
+	height:338px;
+}
+/* 我要提问盒子头部 */
+.comFontCol{
+	color:#5d5d5d;
+}
+.font1{
+	font-size:18px;
+}
+.font2{
+	font-size:16px;
+}
+.font3{
+	font-size:14px;
+}
+.myAsks{
+	font-size:20px;
+	color:#fff;
+	position:absolute;
+	left:55px;
+	top:8px;
+}
+.askIcon,
+.feedIcon{
+	width:40px;
+	height:40px;
+	position:absolute;
+	left:10px;
+	top:3px;
+}
+.askIcon{
+	background:url(../../studyOnline/images/iconBg.png) no-repeat -137px -88px;
+}
+.feedIcon{
+	background:url(../../welcome/images/sideIcon.png) no-repeat 0px -200px;
+}
+.closeAskBox{
+	width:48px;
+	height:48px;
+	background:url(../../studyOnline/images/closeAlertWin.png) no-repeat 0 0;
+	position:absolute;
+	right:0px;
+	top:0px;
+	cursor:pointer;
+}
+.closeAskBox:hover{
+	background:url(../../studyOnline/images/closeAlertWin.png) no-repeat 0 -48px;
+}
+/* 我要提问盒子中间内容 */
+.askConTit li{
+	width:308px;
+	height:30px;
+	float:left;
+	position:relative;
+}
+.bor1{
+	border-bottom:1px dashed #e7c353;
+}
+.bor2{
+	border-bottom:1px dashed #94c22e;
+}
+.bor3{
+	border-bottom:1px dashed #2aa9dd;
+}
+.daoshiIcon{
+	width:22px;
+	height:30px;
+	position:absolute;
+	left:10px;
+	top:0px;
+	background:url(../../studyOnline/images/iconBg.png) no-repeat -30px 0px;
+}
+
+.subjectBox,
+.askTitle{
+	width:100%;
+	position:relative;	
+}
+.subjectBox{
+	height:35px;
+}
+.subjectBox .choiceText{
+	position:absolute;
+	left:38px;
+	top:5px;
+}
+.subjectBox select{
+	width:200px;
+	color:#5d5d5d;
+	position:absolute;
+	left:140px;
+	top:8px;
+	
+}
+/* 未绑定网络导师的盒子 */
+.noNetTeaBox{
+	position:absolute;
+	left:358px;
+	top:5px;
+	color:#f00;
+	display:no-ne;
+}
+.noNetTeaBox p{
+	float:left;
+	line-height:24px;
+}
+.warningIcon{
+	width:24px;
+	height:24px;
+	display:inline-block;
+	float:left;
+	background:url(../../studyOnline/images/iconBg.png) no-repeat -137px -166px;
+}
+.goAttachBtn{
+	width:95px;
+	line-height:24px;
+	display:inline-block;
+	float:left;
+	height:24px;
+	color:#f00;
+}
+.goAttachBtn span{
+	cursor:pointer;
+}
+.goAttachBtn:hover{
+	color:#2B8C09;
+	text-decoration:underline;
+}
+.goAttachIcon{
+	width:27px;
+	height:17px;
+	position:absolute;
+	right:5px;
+	top:1px;
+	background:url(../../studyOnline/images/iconBg.png) no-repeat -134px -141px;
+	
+}
+/* 提问标题 */
+.askTitle{
+	height:40px;
+	margin-bottom:2px;
+}
+.askTitle span{
+	position:absolute;
+	left:10px;
+	top:8px;
+}
+.askTitle input.askHeadCon{
+	width:538px;
+	height:28px;
+	line-height:28px;
+	background:#fff;
+	background:rgba(255,255,255,0.6);
+	color:#333;
+	padding:0 5px;
+	border:none;
+	position:absolute;
+	left:54px;
+	top:5px;
+}
+/* 提问内容 */
+.askCon{
+	height:275px;
+	position:relative;
+}
+.askContit{
+	position:absolute;
+	left:20px;
+	top:120px;
+}
+.mainAskCon{
+	height:275px;
+	position:absolute;
+	left:54px;
+}
+/* 我的提问提交 */
+.tijiaoBtn{
+	width:120px;
+	height:35px;
+	line-height:35px;
+	border:none;
+	color:#333;
+	position:absolute;
+	left:265px;
+	bottom:22px;
+	cursor:pointer;
+	font-size:18px;
+	font-family:'Microsoft YaHei';
+}
+.saveBtn1{
+	background:#f5c055;
+}
+.saveBtn1:hover{
+	background:#f3b436;
+}
+.saveBtn2{
+	background:#a2cd4f;
+}
+.saveBtn2:hover{
+	background:#91c42f;
+}
+.saveBtn3{
+	background:#68c7ec;
+}
+.saveBtn3:hover{
+	background:#65bbdd;
+}
+.tijiaoBtn:hover{
+	color:#fff;
+}
+
+

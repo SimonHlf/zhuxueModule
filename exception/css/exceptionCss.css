@@ -1,0 +1,46 @@
+body{
+	background:#9ddaeb;
+}
+.errorBox{
+	width:380px;
+	height:356px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin-left:-190px;
+	margin-top:-178px;
+}
+.errTop{
+	width:217px; 
+	height:108px; 
+	background:url(../images/top.png) no-repeat;
+	position:absolute; 
+	left:75px;
+}
+.errorBox p{
+	color:#383838;
+}
+.errorBox p.info1{
+	font-size:21px;
+	position:absolute; 
+	left:54px; 
+	top:150px;
+}
+.errorBox p.info2{
+	font-size:16px;
+	position:absolute; 
+	left:0px; 
+	top:190px;
+}
+.errorBtn{
+	width:171px; 
+	height:40px; 
+	background:url(../images/backBtn.png) no-repeat;
+	position:absolute; 
+	left:95px; 
+	top:255px;
+}
+.errorBtn:hover{
+	background:url(../images/backHover.png) no-repeat;
+}
+

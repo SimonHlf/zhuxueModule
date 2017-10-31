@@ -1,0 +1,173 @@
+/* CSS Document */
+body{
+	/*background:url(../images/bg.jpg) repeat center;*/
+	background:url(../images/bg.png) no-repeat center;
+	/*background:url(../images/4.jpg) no-repeat center;*/
+	background-attachment:fixed;
+}
+/* 头部内容样式 */
+.headWrap{
+	width:100%;
+	height:75px;
+	background:#373737;
+	position:relative;
+	border-bottom:2px solid #9eb342;
+}
+.headWrap .logo{
+	width:97px;
+	height:50px;
+	position:absolute;
+	left:50px;
+	top:10px;
+}
+.headWrap h2{
+	height:40px;
+	line-height:40px;
+	font-size:26px;
+	font-family:楷体_GB2312,楷体;
+	color:#A1A1A1;
+	position:absolute;
+	left:150px;
+	top:22px;
+	font-weight:normal;
+}
+.personalInfo{
+	height:69px;
+	position:absolute;
+	right:30px;
+}
+.perPic{
+	width:50px;
+	height:50px;
+	border:2px solid #ccc;
+	border-radius:50%;
+	overflow:hidden;
+	margin-top:8px;
+	float:left;
+}
+.infoText{
+	height:15px;
+	/*color:#6a7e85;*/
+	color:#A1A1A1;
+	float:left;
+	margin:40px 5px 0 5px;
+}
+.managerName{
+	color:#fb9d00;
+}
+.switchBtn,.exitSys{
+	width:35px;
+	height:35px;
+	background:url(../../comManager/images/headIcon.png) no-repeat 0 -70px;
+	display:inline-block;
+	float:left;
+	margin-top:30px;
+}
+.switchBtn{
+	background-position:0 -70px;
+}
+.exitSys{
+	background-position:0 -105px;
+}
+.weatherWrap{
+	width:300px;
+	position:absolute;
+	right:235px;
+	top:-5px;
+}
+
+/*   主要内容样式   */
+.mainFrame{
+	width:100%;
+	height:auto;
+}
+
+
+/* 左侧 */
+.leftFrame{
+	width:220px;
+	position:absolute;
+	top:77px;
+	left:0;
+	background:#30383b;
+	border-right:2px solid #fb9d00;
+	padding-bottom:15px;	
+}
+.bigPic{
+	width:100px;
+	height:100px;
+	border:2px solid #fff;
+	border-radius:50%;
+	overflow:hidden;
+	margin:15px auto 0px;
+}
+.perIden{
+	width:100px;
+	height:30px;
+	margin:5px auto 0px;
+	font-size:16px;
+	color:#fff;
+	text-align:center;
+}
+.leftFrame li a{
+	text-align:center;
+	color:#A1A1A1;
+	font-size:14px;
+	cursor:pointer;
+}
+.leftFrame li a{
+	width:220px;
+	height:40px;
+	line-height:40px;
+	display:inline-block;
+}
+.leftFrame li:hover a{
+	background:#282d31;
+	color:#77b049;
+}
+
+.leftFrame li.active a{
+	width:218px;
+	display:inline-block;
+	border-left:4px solid #77b049;
+	background:#fff;
+	font-weight:bold;
+	color:#77b049;
+	
+}
+
+/* 右侧 */
+.rightFrame{
+	background:#fff;
+	margin-left:220px;
+	padding-bottom:15px;
+}
+#bodyPic{
+	width:1920px;
+	height:1080px;
+	background:url(../images/bg.png) no-repeat center;
+}
+
+/* 底部 */
+.footerWrap{
+	width:100%;
+	height:80px;
+}
+.footer{
+	height:120px;
+}
+.footCon{
+	height:75px;
+	padding-top:30px;
+}
+.footer p{
+	text-align:center;
+	line-height:25px;
+	color:#2c4977;
+}
+.footer p a{
+	color:#f04e37;
+}
+.footer p a:hover{
+	text-decoration:underline;
+}

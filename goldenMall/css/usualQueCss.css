@@ -1,0 +1,35 @@
+@charset "utf-8";
+.usualQueWrap{
+	padding-bottom:10px;
+}
+.queListWrap{
+	width:780px;
+	padding:0 10px;
+}
+.usualQueWrap h4{
+	font-size:16px;
+	font-weight:normal;
+	color:#363636;
+}
+.usualQueWrap h4 i{
+	color:#ffb026;
+	font-size:32px;
+	font-family:Arial;
+}
+.queAnsBox{
+	margin:0 0 10px;
+}
+.comStyleP{
+	padding:0 0 0 42px;
+}
+.comStyleP p{
+	line-height:23px;
+	font-size:14px;
+	color:#666;
+}
+.comStyleP p a{
+	color:#00BAFF;
+}
+.comStyleP p a:hover{
+	text-decoration:underline;
+}

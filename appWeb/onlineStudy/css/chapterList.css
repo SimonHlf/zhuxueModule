@@ -1,0 +1,183 @@
+body{
+	background:#f3f2f6;
+}
+/* 当前版本 */
+.nowLoc{
+	width:100%;
+	height:0.50rem;
+	line-height:0.50rem;
+	background:#64ccf2;
+	color:#fff;
+	position:relative;
+	text-indent:32px;
+	z-index:2;
+}
+.backIcon{
+	width:30px;
+	height:0.50rem;
+	position:absolute;
+	left:0px;
+	top:0px;
+	background:url(../images/backIcon.png) no-repeat center;
+}
+/* 注释层 */
+.introInfo{
+	width:100%;
+	padding:0.10rem 0px;
+	background:#fff;
+	position:relative;
+	box-shadow:0px 0px 3px #666;
+	z-index:1;
+}
+.noteTit{
+	width:0.3rem;
+	height:0.80rem;
+	line-height:0.80rem;
+	text-align:center;
+	font-size:0.20rem;
+	border:1px solid #42bae5;
+	border-radius:5px;
+	color:#42bae5;
+	margin-left:0.2rem;
+}
+.starIcon{
+	width:18px;
+	height:18px;
+	background:url(../images/starIcon.png) no-repeat;
+}
+.finIcon{
+	background-position:0 0;
+}
+.noFinIcon{
+	background-position:0 -18px;
+}
+.noLearnIcon{
+	background-position:0 -36px;
+}
+.infoTxt{
+	margin-left:0.2rem;
+	font-size:0.14rem;
+	line-height:0.26rem;
+}
+.infoCol1,
+.iconCol1{
+	color:#64ccf2;
+}
+.infoCol2,
+.iconCol2{
+	color:#ffa200;
+}
+.infoCol3,
+.iconCol3{
+	color:#c8c8c8;
+}
+.iconfont{
+	font-size:0.14rem;
+}
+.posLR1,
+.posLR2,
+.posLR3,
+.posLR4{
+	position:absolute;
+	right:0.20rem;
+}
+.posLR1{
+	top:0.16rem;
+}
+.posLR2{
+	top:0.42rem;
+}
+.posLR3{
+	top:0.68rem;
+}
+.posLR4{
+	top:13px;
+}
+@media all and (max-width:319px){
+	.infoTxt{
+		margin-left:0.1rem;
+	}
+	.iconCol1,
+	.iconCol2,
+	.iconCol3{
+		right:0.10rem;
+	}
+}
+/* 章节内容层 */
+#chapterDiv{
+	width:100%;
+	overflow:auto;
+	/*padding:0px 0.20rem;*/
+	position:absolute;
+	left:0px;
+	top:153px;
+	z-index:1;
+	
+}
+#scroller{
+	position:absolute; z-index:1;
+/*	-webkit-touch-callout:none;*/
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	width:100%;
+	padding:0;
+}
+.comChapterDiv{
+	width:100%;
+	position:relative;
+}
+
+.topTri{
+	border:6px solid #f3f2f6;
+	border-top-color:#c8c8c8;
+	right:0.1rem;
+	top:20px;
+}
+.leftTri{
+	border:6px solid #f3f2f6;
+	border-left-color:#64ccf2;
+	right:0.1rem;
+	top:18px;
+}
+.comChapterDiv h3,
+.comDetListUl li{
+	height:0.44rem;
+	line-height:0.44rem;
+	border-bottom:1px solid #dfdfdf;
+	font-weight:normal;
+}
+.comChapterDiv h3{
+	width:100%;
+	font-size:0.16rem;
+}
+.comChapterDiv h3 a{
+	width:90%;
+	max-width:90%;
+	height:0.44rem;
+	display:inline-block;
+	margin-left:20px;
+	color:#666666;
+}
+.comDetListUl{
+	width:100%;
+	display:none;
+	transition:1s;
+}
+.comDetListUl li{
+	/**with:96.5%;**/
+	width:100%;
+	position:relative;
+	text-indent:20px;
+}
+.comDetListUl li a{
+	width:84%;
+	max-width:84%;
+	height:0.44rem;
+	font-size:0.14rem;
+	color:#999999;
+	display:inline-block;
+}
+/* 暂无出版社位置 */
+.noExPos{
+	left:30px;
+	top:35px;
+}

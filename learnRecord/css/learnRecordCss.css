@@ -1,0 +1,420 @@
+@charset "utf-8";
+/* CSS Document */
+.nowPosition{
+	width:730px;
+	height:35px;
+	line-height:35px;
+	margin:0 auto 10px;
+	border-bottom:1px solid #ddd;
+	position:relative;
+}
+.nowPosition p{
+	color:#666;
+	font-size:16px;
+}
+.nowPosition p span{
+	color:#91c42f;
+	font-weight:bold;
+}
+.optionBox{
+	width:700px;
+	height:50px;
+	margin:15px auto 0px;
+}
+.selSubIcon{
+	width:50px;
+	height:50px;
+	display:inline-block;
+	background:url(../../capacityReport/images/selIcon.png) no-repeat;
+	float:left;
+}
+.pl{
+	background-position:0 0;	
+}
+.pr{
+	background-position:0 -50px;
+}
+
+.selSubTimeBox,
+.selSubTimeBox_1{
+	height:50px;
+	position:relative;
+}
+.selSubTimeBox_1{
+	line-height:50px;
+}
+.timeBox{
+	margin-left:5px;
+}
+.timeMl{
+	line-height:50px;
+	color:#666;
+}
+.till{
+	margin-right:5px;
+	color:#666;
+}
+#stu{
+	width:70px;
+}
+.netMl{
+	margin-left:5px;
+}
+.marginLTime{
+	margin-left:5px;
+}
+.searchBtn{
+	width:75px;
+	height:29px;
+	display:inline-block;
+	background:url(../../capacityReport/images/searchBtn.png) no-repeat 0 0px;
+	margin:10px 0 0 5px;
+	float:left;
+}
+.searchBtn:hover{
+	background:url(../../capacityReport/images/searchBtn.png) no-repeat 0 -29px;
+}
+.searchBtnNet{
+	width:53px;
+	height:29px;
+	background:#ffa00a;
+	float:left;
+	border-radius:6px;
+	text-align:center;
+	line-height:29px;
+	color:#fff;
+	margin:10px 0 0 5px;
+}
+.searchBtnNet:hover{
+	background:#cfcfcf;
+}
+.subBoxStud{
+	width:185px;
+	float:left;
+	margin-left:5px;
+}
+.subBoxStud select,
+.subBoxNet select{
+	color:#666;
+	margin-top:16px;
+}
+.selStateBox{
+	margin-left:5px;
+}
+.txtChoice{
+	color:#666;
+}
+.ptNet{
+	color:#666;
+}
+.recordWrap{
+	width:730px;
+	height:auto;
+	margin:0 auto;
+	padding-bottom:10px;
+}
+.recordTop{
+	width:698px;
+	height:190px;
+	margin:20px auto 0px;
+	position:relative;
+	border:1px solid #ededed;
+	box-shadow:2px 2px 5px #b4b2b2;
+	border-radius:6px;
+}
+.recordTip{
+	width:698px;
+	height:45px;
+	line-height:45px;
+	font-size:14px;
+	color:#666666;
+	background:#f4f4f4;
+}
+.recordTip p{
+	width:545px;
+	max-width:545px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	padding: 0 10px;
+}
+.tipIcon{
+	width:135px;
+	height:40px;
+	position:absolute;
+	right:10px;
+	top:2px;
+}
+.one,
+.two{
+	width:15px;
+	height:15px;
+	position:absolute;
+	left:0px;
+}
+.one{
+	background:url(../images/1.png) no-repeat;
+	top:2px;
+}
+.two{
+	background:url(../images/2.png) no-repeat;
+	top:23px;
+}
+.complete,
+.nocomplete{
+	position:absolute;
+	left:19px;
+}
+.complete{
+	left:18px;
+	top:-13px;
+}
+.nocomplete{
+	top:7px;
+}
+.learnTime,
+.subName,
+.stusName{
+	color:#ff6600;
+	font-size:16px;
+	font-weight:normal;
+}
+.listBox{
+	width:698px;
+	height:143px;
+	overflow:hidden;
+	background:#fff;
+	margin:0px auto 0px;
+	position:relative;
+}
+.listBox ul{
+	width:100%;
+	height:143px;
+	overflow:auto;
+	overflow-x:hidden;
+}
+.listBox li{
+	width:143px;
+	max-width:143px;
+	height:18px;
+	padding-left:17px;
+	margin:6px 0 6px 10px;
+	color:#342d2c;
+	float:left;
+	cursor:pointer;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	font-size:14px;
+}
+
+.listBox li.kpoint_on{
+	color:#333335;
+	font-weight:bold;
+}
+.listBox li.status1{
+	background:url(../images/1.png) no-repeat 0 3px;
+}
+.listBox li.status2{
+	background:url(../images/2.png) no-repeat 0 3px;
+}
+
+/* 每个知识点对应的诊断情况的的盒子 */
+.recordBot{
+	width:698px;
+	margin:30px auto 0px;
+	border:1px solid #ededed;
+	box-shadow:2px 2px 5px #b4b2b2;
+	border-radius:6px;
+	margin-bottom:15px;
+}
+.learnSit{
+	height:42px;
+	line-height:42px;
+	background:#e7e7e7;
+	color:#333;
+	font-size:14px;
+	position:relative;
+}
+.learnSit p#cloreNameDet{
+	text-indent:95px;
+	font-size:16px;
+	color:#666;
+}
+.recordIcon{
+	position:absolute;
+	left:12px;
+	top:-22px;
+}
+.recordIcon1{
+	width:62px;
+	height:51px;
+	position:absolute;
+	left:12px;
+	top:-12px;
+	background:url(../images/recordIcon2.png) no-repeat;
+}
+.recBg{
+	width:77px;
+	height:53px;
+	background:url(../images/recordIcon.png) no-repeat;
+}
+.recBg1{
+	width:59px;
+	height:51px;
+	background:url(../images/recordIcon1.png) no-repeat;
+}
+.detailKpBox{
+	width:698px;
+	border-top:none;
+}
+.detailKpBox table{
+	width:100%;
+	color:#333;	
+	font-size:14px;
+}
+.head{
+	font-size:14px;
+	color:#333;
+}
+.h35{
+	height:35px;
+}
+.lorNa{
+	width:212px;
+}
+.learnDeta{
+	width:220px;
+}
+.com{
+	width:117px;
+}
+.borR{
+	border-right:solid 1px #dfdfdf;
+}
+.borB{
+	border-bottom:solid 1px #dfdfdf;
+}
+.contLearn,
+.checkAns{
+	width:100px;
+	height:30px;
+	line-height:30px;
+	display:inline-block;
+	color:#333;
+	margin-left:8px;
+}
+.contLearn{
+	background:#bfe472;
+	font-size:12px;
+}
+.contLearn:hover{
+	background:#a7ca5f
+}
+.checkAns{
+	background:#f9d574;
+	font-size:12px;
+}
+.checkAns:hover{
+	background:#e4c265;
+}
+.sysCommentBox,
+.teaAdviceBox,
+.editAdviceBox{
+	width:696px;
+	height:144px;
+	margin:30px auto 0px;
+	position:relative;
+	border:1px solid #ededed;
+	box-shadow:2px 2px 5px #b4b2b2;
+	border-radius:6px;
+}
+.sysCommentBox p,
+.teaAdviceBox p{
+	color:#666666;
+	font-size:16px;
+}
+.teaAdviceBox{
+	word-wrap:break-word;
+}
+.textAdT{
+	text-indent:75px;
+}
+.textAdT1{
+	text-indent:78px;
+}
+
+.advice,
+.sysTxt,
+.guideAdvice{
+	width:678px;
+	height:92px;
+	padding:5px 8px;
+	line-height:22px;
+	color:#333;
+	font-size:12px;
+	border-top:none;
+}
+.advice,
+.sysTxt{
+	overflow:auto;
+	overflow-x:hidden;
+	position:relative;
+}
+/* 暂无学习记录暂无系统评价暂无导师建议 */
+.noSysCom,
+.noAdvice, 
+.noLearnRecord{
+	width:140px;
+	height:22px;
+	margin:0px auto 0px;
+	position:absolute;
+	left:279px;
+	top:35px;
+}
+.noSysCom{
+	background:url(../images/noSysCom.png) no-repeat;
+}
+.noAdvice{
+	background:url(../images/noAdvice.png) no-repeat;
+}
+.noLearnRecord{
+	background:url(../images/noLearnRecord.png) no-repeat;
+}
+.editBox{
+	width:585px;
+	height:90px;
+	outline:none;
+	resize:none;
+	color:#333;
+	line-height:18px;
+	overflow:auto;
+	margin-top:6px;
+	border:none;
+	border:1px solid none;
+	padding:0 10px;
+}
+.tijiao{
+	width:82px;
+	height:90px;
+	line-height:82px;
+	text-align:center;
+	position:absolute;
+	right:8px;
+	top:48px;
+	background:#bfe472;
+	color:#332c2b;
+	font-size:16px;
+}
+.tijiao:hover{
+	background:#91c42f;
+	transition:0.5s;
+}
+/* textarea上的问题提示层 */
+.txtLayer{
+	position:absolute;
+	left:11px;
+	top:48px;
+	color:#888;
+	letter-spacing:2px;
+}

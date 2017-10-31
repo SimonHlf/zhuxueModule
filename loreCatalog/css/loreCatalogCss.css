@@ -1,0 +1,177 @@
+/* CSS Document */
+/* 章节列表 */
+.listWrap{
+	width:980px;
+	height:669px;
+	margin:0 auto;
+	position:relative;
+}
+/* 新增章节按钮 */
+.addNewChap{
+	width:100px;
+	height:35px;
+	line-height:35px;
+	display:inline-block;
+	color:#fff;
+	background:#aac147 url(../../chapter/images/addNewChap.png) no-repeat 8px center;
+	padding-left:25px;
+}
+.addNewChap:hover{
+	background:#C0DA52 url(../../chapter/images/addNewChap.png) no-repeat 8px center;
+}
+/* 章节列表内容*/
+.listCon{
+	width:100%;
+	height:auto;
+	border-top:2px solid #AAC147;
+	position:relative;
+	overflow:hidden;
+}
+/* 章节列表头部标题内容*/
+.conTop{
+	width:980px;
+	height:35px;
+	line-height:35px;
+	position:relative;
+	z-index:10;
+}
+.conTop li{
+	line-height:35px;
+	float:left;
+	font-size:14px;
+	text-align:center;
+	color:#2C4977;
+	position:relative;
+}
+.conTop li.col1{
+	width:302px;
+	background:#f0ecbd; 
+}
+.conTop li.col2{
+	width:302px;
+	background:#aecf96
+}
+.conTop li.col3{
+	width:131px;
+	background:#fbc088;
+}
+.conTop li.col4{
+	width:245px;
+	background:#feac4e;
+}
+.conTop li span{
+	width:28px;
+	height:28px;
+	background:url(../../loreManager/images/allPic.png) no-repeat;
+	position:absolute;
+	left:78px;
+	top:3px;
+}
+.conTop li span.bg1{
+	left:70px;
+	background-position:-154px -92px;
+}
+.conTop li span.bg2{
+	left:83px;
+	background-position:-186px -92px;
+}
+.conTop li span.bg3{
+	left:5px;
+	background-position:-218px -92px;
+}
+.conTop li span.bg4{
+	background-position:-314px -92px;
+}
+/* 章节列表中间主要内容*/
+.conMid{
+	width:980px;
+	height:592px;
+	position:relative;
+	overflow:hidden;
+}
+#conMidBox{
+	width:100%;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+#conMidBox li{
+	border-bottom:1px dashed #b9b96c;
+	height:36px;
+	font-size:14px;
+	padding:1px 0px;
+}
+#conMidBox li p{
+	height:36px;
+	line-height:36px;
+	float:left;
+	color:#2C4977;
+	text-align:center;
+}
+#conMidBox li p a{
+	color:#2C4977;
+}
+#conMidBox li p a:hover{
+	text-decoration:underline;
+}
+#conMidBox li p .vaild{
+	color:green;
+}
+#conMidBox li p .invaild{
+	color:red;
+}
+.conMidTdWid{
+	width:302px;
+	max-width:302px;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	cursor:default;
+}
+.conMidTdWid1{
+	width:131px
+}
+.conMidTdWid2{
+	width:245px;
+}
+/* 新增章节和编辑章节样式 */
+.comDiv{
+	width:320px;
+	height:30px;
+	line-height:30px;
+	margin:10px auto 0px;
+	position:relative;
+}
+#viewLoreCatalorName,
+#newLoreCatalorName{
+	width:230px;
+	height:18px;
+	padding:4px 0 3px 3px;
+	border:1px solid #ccc;
+	vertical-align:middle;
+}
+.blank,
+.blank1{
+	display:inline-block;
+}
+.blank{
+	width:36px;
+}
+.blank1{
+	width:5px;
+}
+#viewOrders,
+#newOrders{
+	width:230px;
+	height:18px;
+	border:1px solid #ccc;
+	padding:4px 0 3px 3px;
+	vertical-align:middle;
+}
+#viewInUse{
+	width:235px;
+	position:absolute;
+	left:66px;
+	top:5px;
+}
+

@@ -1,0 +1,255 @@
+/* CSS Document */
+/* 头部 */
+body{
+	background:url(../images/bg.jpg) no-repeat center;
+	background-attachment:fixed;
+}
+.head{
+	width:100%;
+	height:63px;
+	/*background:#aac147;*/
+	background:#373737;
+	background:rgba(0,0,0,0.8);
+	border-bottom:2px solid #9eb342;
+	position:relative;
+}
+.logo{
+	width:146px;
+	height:40px;
+	position:absolute;
+	left:60px;
+	top:-2px;
+}
+.head h2{
+	height:40px;
+	line-height:40px;
+	font-size:26px;
+	font-family:楷体_GB2312,楷体;
+	color:#A1A1A1;
+	position:absolute;
+	left:156px;
+	top:18px;
+	font-weight:normal;
+}
+.helloBox{
+	height:65px;
+	font-size:14px;
+	color:#fff;
+	position:absolute;
+	right:18px;
+	border-left:2px solid #9eb342;
+}
+.userPic{
+	width:50px;
+	height:50px;
+	border:2px solid #fff;
+	border-radius:50%;
+	overflow:hidden;
+	margin-top:8px;
+	float:left;
+	margin-left:10px;
+}
+.timeHello,
+.helloSen{
+	margin-left:5px;
+}
+.timeHello,
+.username,
+.helloSen{
+	margin-top:30px;
+}
+.checkWeather,
+.exit,
+.switchBtn{
+	width:35px;
+	height:35px;
+	margin:22px 0 0 5px;
+	cursor:pointer;
+	background:url(../images/headIcon.png) no-repeat;
+}
+.checkWeather{
+	background-position:0 0;
+}
+.exit{
+	background-position:0 -105px;
+}
+.switchBtn{
+	background-position:0 -70px;
+}
+.weaherBox{
+	width:330px;
+	display:none;
+	background:#edf3f7;
+	position:absolute;
+	border:1px solid #9eb342;
+	border-top:none;
+	top:65px;
+	right:15px;
+	z-index:10;
+}
+.closeWin{
+	width:33px;
+	height:33px;
+	background:url(../../studyOnline/images/iconBg.png) -52px -101px;
+	position:absolute;
+	right:0px;
+	cursor:pointer;
+}
+
+/* 主体内容部分 */
+.mainFrame{
+	width:100%;
+	height:100%;
+}
+/* 左侧 */
+.leftPart{
+	width:220px;
+	position:absolute;
+	top:65px;
+	left:0;
+	background:#30383B;
+	background:rgba(0,0,0,0.6);
+	padding-bottom:15px;
+}
+.bigPic{
+	width:100px;
+	height:100px;
+	border:2px solid #fff;
+	border-radius:50%;
+	overflow:hidden;
+	margin:15px auto 0px;
+}
+.perIden{
+	width:100px;
+	height:30px;
+	margin:5px auto 0px;
+	color:#fff;
+	font-size:16px;
+	text-align:center;
+}
+.moduleList{
+	margin-top:15px;
+}
+.tabNav li a{
+	width:220px;
+	height:60px;
+	display:inline-block;
+	/*border-left:4px solid #656666;*/
+	line-height:60px;
+	text-align:center;
+	color:#a1a1a1;
+	font-size:14px;
+	cursor:pointer;
+}
+.tabNav li:hover{
+	background:rgba(0,0,0,0.6);
+	background:#282d31\9;
+}
+.tabNav li:hover a{
+	width:220px;
+	color:#c0da52;
+	
+}
+.tabNav li.active a{
+	width:216px;
+	display:inline-block;
+	border-left:4px solid #c0da52;
+	background:rgba(0,0,0,0.6);
+	background:#282d31\9;
+	font-weight:bold;
+	color:#fff;
+}
+.showBtn,
+.showBtn1{
+	width:8px;
+	height:200px;
+	background:url(../images/showBtn.png) no-repeat;
+	position:absolute;
+	left:220px;
+	top:260px;
+	cursor:pointer;
+}
+.showBtn{
+	background-position:0 0;
+}
+.showBtn1{
+	background-position:0 -200px;
+}
+/* 右侧 */
+.rightPart{
+	background:#edf3f7;
+	margin-left:228px;
+	padding-bottom:15px;
+}
+.rightPart iframe{
+	background: transparent;
+}
+.bodyPic{
+	width:100%;
+	height:100%;
+}
+.topPic{
+	width:100%;
+	height:33px;
+	background:url(../images/repeatXbg.jpg) repeat-x 0 0;
+}
+.nowPos{
+	height:33px;
+	line-height:33px;
+	background:url(../images/nowPos.jpg) no-repeat left center;
+	margin-left:10px;
+	text-indent:30px;
+	color:#2c4977;
+}
+.botCon{
+	width:1000px;
+	height:670px;
+	margin:0 auto;
+	position:relative;
+}
+.welcome{
+	height:100px;
+	position:absolute;
+	left:0px;
+	top:150px;
+	color:#e4e4e4;
+}
+.welcome h2{
+	font-size:25px;
+	color:#2c4977;
+}
+.eng{
+	font-size:25px;
+	margin-left:1px;
+}
+.smallPic{
+	width:706px;
+	height:318px;
+	background:url(../images/indexBg.jpg) no-repeat 0 0;
+	position:absolute;
+	top:230px;
+	left:100px;
+}
+/* 底部 */
+.footerWrap{
+	width:100%;
+	height:80px;
+}
+.footer{
+	height:120px;
+}
+.footCon{
+	height:75px;
+	padding-top:30px;
+}
+.footer p{
+	text-align:center;
+	line-height:25px;
+	color:#2c4977;
+}
+.footer p a{
+	color:#f04e37;
+}
+.footer p a:hover{
+	text-decoration:underline;
+}

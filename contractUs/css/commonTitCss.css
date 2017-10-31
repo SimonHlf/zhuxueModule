@@ -1,0 +1,52 @@
+@CHARSET "UTF-8";
+.navTit{
+	height:30px;
+	line-height:30px;
+	border-bottom:1px solid #dddddd;
+	padding-top:42px;
+	position:relative;
+	margin-bottom:15px;
+}
+.decPic{
+	width:19px;
+	height:19px;
+	background:url(../images/dec.gif) no-repeat;
+	position:absolute;
+	left:0;
+	bottom:-9px;
+}
+.navTit p{
+	float:right;
+	margin-right:15px;
+	color:#666;
+}
+.navTit p a{
+	color:#666;
+}
+.navTit p a:hover{
+	text-decoration:underline;
+}
+.comH2{
+	height:48px;
+	text-indent:-9999em;
+	background:url(../images/h2Tit.gif) no-repeat;
+	margin-left:20px;
+}
+.contractTxt{
+	background-position:0 -96px;	
+}
+.zhuxueTxt{
+	background-position:0 0px;	
+}
+.newsTxt{
+	background-position:0 -48px;	
+}
+.comProfileTxt{
+	background-position:0 -144px;	
+}
+.cultureTxt{
+	background-position:0 -192px;
+}
+.messageTxt{
+	background-position:0 -240px;
+}

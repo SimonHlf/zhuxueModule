@@ -1,0 +1,334 @@
+body{
+	background:#f3f2f6;	
+	overflow:hidden;
+}
+.nowLoc{
+	width:100%;
+	height:0.50rem;
+	line-height:0.50rem;
+	background:#64ccf2;
+	color:#fff;
+	position:relative;
+	text-indent:32px;
+	z-index:2;
+}
+.backIcon{
+	width:30px;
+	height:0.50rem;
+	position:absolute;
+	left:0px;
+	top:0px;
+	background:url(../../onlineStudy/images/backIcon.png) no-repeat center;
+	z-index:2;
+}
+#innerWrap{
+	width:100%;
+	position:relative;
+}
+.innerScroller{
+	width:100%;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.payHead{
+	width:100%;
+	height:89px;
+	background:#fff;	
+	border-bottom:1px solid #e2e2e2;
+}
+.payHead img{
+	margin:10px 0 0 10px;
+}
+.payHead strong{
+	font-weight:normal;	
+	display:inline-block;
+}
+.payHead div{
+	font-size:0.14rem;
+	margin:20px 0 0 10px;
+	color:#333;
+}
+.payHead div p{
+	margin-top:5px;	
+}
+/* 使用优惠券/元培币  */
+.discountBox,
+.yuanpeiBox,
+.payMent{
+	width:100%;
+	background:#fff;
+	margin-top:10px;
+	position:relative;
+}
+.discountBox div.itemTit,
+.yuanpeiBox div.itemTit,
+.payMent div.itemTit{
+	width:100%;
+	height:39px;
+	line-height:40px;
+	background:#fff;
+	position:relative;
+	text-indent:8px;
+	font-weight:normal;
+	font-size:0.18rem;
+	color:#333;
+	border-bottom:1px solid #dbdbdb;
+}
+.discountBox div.itemTit span,
+.yuanpeiBox div.itemTit span,
+.payMent div.itemTit span{
+	width:5px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	background:#64ccf2;
+}
+.helpIcon{
+	width:21px;
+	height:18px;
+	position:absolute;
+	top:5px;
+	left:100px;
+	background:url(../images/help.png) no-repeat;
+	background-size:cover;
+}
+.posOnOff{
+	right:10px;
+	top:5px;	
+}
+.innerDiscount,
+.innerYuanpei,
+.innerPayStyle{
+	width:100%;
+}
+.innerDiscount p,
+.innerDiscount ul li,
+.innerYuanpei p,
+.innerYuanpei ul li,
+.innerPayStyle ul li{
+	border-bottom:1px solid #dbdbdb;
+	font-size:0.14rem;	
+}
+.innerDiscount p,
+.innerDiscount ul li,
+.innerYuanpei p,
+.innerYuanpei ul li{
+	height:39px;
+	line-height:40px;
+	text-indent:8px;
+}
+.innerDiscount p,
+.innerYuanpei p{
+	color:#f6a629;	
+}
+.innerDiscount ul li,
+.innerYuanpei ul li,
+.innerPayStyle ul li{
+	color:#666;
+}
+.innerDiscount ul li input.cardPasInp,
+.innerYuanpei ul li input.yuanpeiInp{
+	width:156px;
+	height:35px;
+	line-height:35px;
+	border:none;
+	color:#666;
+	font-size:0.14rem;
+}
+.innerDiscount ul li input.cardPasInp::-webkit-input-placeholder,
+.innerYuanpei ul li input.yuanpeiInp::-webkit-input-placeholder{
+	color:#999;
+}
+.innerDiscount ul li strong{
+	color:#64ccf2;
+}
+/* 选择支付方式  */
+.innerPayStyle ul li{
+	height:49px;
+	position:relative;	
+}
+.comPayLabel{
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:0px;
+	top:0px;
+	z-index:3;
+}
+.comPayStyRad{
+	opacity:0;
+}
+.innerPayStyle ul li img{
+	padding:10px 0 0 8px;
+	margin-right:10px;
+	float: left;
+}
+.payStyTxt{
+	height:100%;
+}
+.payStyTxt strong{
+	display:inline-block;
+	height:25px;
+	line-height:25px;
+	font-size:0.14rem;
+	font-weight: normal;
+	color:#333;
+	margin-top:5px;
+}
+.payStyTxt p{
+	font-size:0.12rem;
+	color:#999;
+	margin-top:-5px;
+}
+.cirSty_space,
+.cirSty_full{
+	border-radius:50%;
+	position:absolute;
+	top:12px;
+	z-index:2;
+}
+.cirSty_space{
+	width:23px;
+	height:23px;
+	border:1px solid #d8d8d8;
+	right:11px;
+}
+.cirSty_full{
+	width:26px;
+	height:26px;
+	background:url(../images/rightIcon.png) no-repeat;
+	background-size:cover;
+	right:10px;
+}
+/* 支付按钮  */
+.payBtnBox{
+	width:100%;
+	height:49px;
+	line-height:50px;
+	border-top:1px solid #dbdbdb;
+	background:#fff;
+	position:relative;
+}
+.payBtnBox p{
+	text-indent:8px;
+}
+.payBtnBox p span{
+	color:#fb5151;
+}
+.payBtn{
+	width:100px;
+	height:50px;
+	line-height:50px;
+	position:absolute;
+	right:0px;
+	top:0px;
+	background:#ffa200;
+	text-align:center;
+	color:#fff;
+	font-size:0.18rem;
+}
+.comInner{
+	display:none;
+}
+/* 优惠券介绍 */
+.comIntroBox{
+	width:80%;
+	background:red;
+	position:absolute;
+	left:50%;
+	top:0px;
+	margin-left:-40%;
+	z-index:1000;
+	display:none;
+	opacity:0;
+}
+.titDec{
+	width:100%;
+	height:30px;
+	background:url(../images/dec.png) repeat-x;
+	position:relative;
+}
+.comSpanDec{
+	width:20px;
+	height:8px;
+	background:#ecd8c5;
+	position:absolute;
+	top:11px;
+}
+.lDecSpan{
+	left:-20px;
+}
+.rDecSpan{
+	right:-20px;
+}
+.titHead{
+	width:100%;
+	height:50px;
+	background:#f9f9f9;
+	text-align:center;
+}
+.titHead h3{
+	font-weight:normal;
+	font-size:0.16rem;
+	color:#666;
+	padding-top:5px;
+}
+.titHead p{
+	font-size:0.14rem;
+	color:#999;
+}
+.infoTxtDiv{
+	width:100%;
+	background:#64ccf2;
+	color:#fff;
+	font-size:0.14rem;
+}
+.infoTxtDiv p{
+	padding:5px 10px;
+}
+.knowBtn{
+	width:40%;
+	height:35px;
+	line-height:35px;
+	background:rgba(0,0,0,.6);
+	color:#fff;
+	margin:0 0 10px 30%;
+	border-radius:30px;
+	display:inline-block;
+	text-align:center;
+}
+/* 左右滑动开关 */
+.onoffswitch {
+    position: absolute; width: 50px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+	display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    height: 20px; padding: 0; line-height: 20px;
+    border: 2px solid #dbdbdb; border-radius: 20px;
+    background-color: #5F5F5F;
+    transition: background-color 0.3s ease-in;
+}
+.onoffswitch-label:before {
+    content: "";
+    display: block; width: 20px; margin: 0px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 28px;
+    border: 2px solid #dbdbdb; border-radius: 20px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label {
+    background-color: #05B1EA;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label, .onoffswitch-checkbox:checked + .onoffswitch-label:before {
+   border-color: #05B1EA;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label:before {
+    right: 0px; 
+}

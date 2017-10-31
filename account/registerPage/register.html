@@ -1,0 +1,963 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>助学网注册</title>
+<link href="Module/css/reset.css" type="text/css" rel="stylesheet" />
+<link  href="Module/account/registerPage/css/register.css" type="text/css" rel="stylesheet" />
+<script src="Module/commonJs/jquery-easyui-1.3.0/jquery-1.7.2.min.js"></script>
+<script src="Module/commonJs/comMethod.js" type="text/javascript"></script>
+<script src="Module/js/index.js" type="text/javascript"></script>
+<script src="Module/account/registerPage/js/registerJs.js" type="text/javascript"></script>
+<script type="text/javascript" src="Module/account/registerPage/js/GlobalProvinces_main.js" type="text/javascript"></script>
+<script type="text/javascript" src="Module/account/registerPage/js/GlobalProvinces_extend.js" type="text/javascript"></script>
+<script type="text/javascript" src="Module/account/registerPage/js/jquery.citySelect.js" type="text/javascript"></script>
+<script src="http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js" type="text/ecmascript"></script>
+<script src="Module/js/login.js"></script>
+<script type="text/jscript">
+$(function(){
+ 	 randomLoadBg();
+ 	 choiceUserReg();
+	 choiceRole();
+	 showRegFormNext();
+	 showRegFormPrev();
+	 checkPasStrongWeak($("#userPassword"));
+	 checkFreeCode();
+	 checkClassInviteCode();
+	 checkRegLoginAccount();
+	 checkLoginPassword();
+	 checkConfirmPassword();
+	 checkRealName();
+	 checkPhoneNum();
+	 checkVerifyCodeBox();
+	 checkSubjectSelect();
+	 checkSchoolTypeSelect();
+	 showAddress();
+	 getSchoolList();
+	 getSubjectList();
+	 getEditionList();
+	 showSchoolTypeList(null);
+	 showInfoBox();//显示快速绑定班级的盒子
+});
+
+//随机加载背景图片
+function randomLoadBg(){
+	var randomBgIndex = Math.round( Math.random() * 1 + 1 );
+	if(randomBgIndex == 1){
+		$(".logoDec").show();
+		$(".logoA").html("<img src='Module/images/logo.png' width='116' height='77' alt='助学网中小学生课堂反馈系统'/>");
+	}else{
+		$(".logoA").html("<img src='Module/images/logoZxw.png' alt='助学网中小学生课堂反馈系统'/>");
+	}
+	$(".imgBg").html("<img src='Module/account/registerPage/images/bg"+randomBgIndex+".jpg'/>");
+	
+}
+//获取学科列表
+function getSubjectList(){
+	$.ajax({
+        type:"post",
+        async:false,
+        dataType:"json",
+        url:"commonManager.do?action=getSubjectList",
+        success:function (json){
+        	showSubjectList(json)
+        }
+    });
+}
+//学科列表显示
+function showSubjectList(list){
+	var t='<span>选择学科：</span><select id="subjectID" onchange="getSchoolType(this);">';
+  	var f='<option value="0">请选择学科</option>';
+	var options = '';
+	if(list==null){
+		
+	}else{
+		for(i=0; i<list.length; i++)
+		{
+		  options +=  "<option value='"+list[i].id+"'>"+list[i].subName+"</option>";
+		}
+	}
+	var h='</select> ';
+	$('#basicSubejctTypeDiv').html(t+f+options+h);
+	
+}
+//根据所选学科动态加载学段
+function getSchoolType(obj){
+	$("#basicSchoolTypeDiv").empty();
+	$.ajax({
+        type:"post",
+        async:false,
+        dataType:"json",
+        url:"commonManager.do?action=getSchoolTypeList&subjectID="+obj.value,
+        success:function (json){
+        	showSchoolTypeList(json)
+        }
+   	});
+}
+//获取教材版本（总）
+function getEditionList(){
+	$.ajax({
+        type:"post",
+        async:false,
+        dataType:"json",
+        url:"commonManager.do?action=getEditionList",
+        success:function (json){
+        	showEditionList(json)
+        }
+    });
+}
+//教材列表显示
+function showEditionList(list){
+	var t='<span>选择出版社：</span><select id="editionID">';
+  	var f='<option value="0">请选择出版社</option>';
+	var options = '';
+	if(list==null){
+		
+	}else{
+		for(i=0; i<list.length; i++)
+		{
+		  options +=  "<option value='"+list[i].id+"'>"+list[i].ediName+"</option>";
+		}
+	}
+	var h='</select> ';
+	$('#basicEditionDiv').html(t+f+options+h);
+}
+//重载学段列表
+function showSchoolTypeList(list){
+	var t='<span>选择学段：</span><select id="schoolTypeName">';
+  	var f='<option value="0">请选择学段</option>';
+  	var options = '';
+  	if(list==null){
+		
+	}else{
+		for(i=0; i<list.length; i++)
+		{
+		  options +=  "<option value='"+list[i]+"'>"+list[i]+"</option>";
+		}
+	}
+	var h='</select> ';
+	$('#basicSchoolTypeDiv').html(t+f+options+h);
+}
+function showAddress(){
+    init(remote_ip_info["province"],remote_ip_info["city"],"","","","","","");
+}
+
+//获取学校列表
+function getSchoolList(){
+	var province = getId("prov").value;
+	var city = getId("city").value;
+	var county = getId("county").value;
+	var townObj = getId("town");
+	var town = 0;
+	if(townObj == null){
+		town = 0;
+	}else{
+		town = townObj.value;
+	}
+	var schoolTypeArray = getId("schoolType").value.split(":");
+	var length = schoolTypeArray.length;
+	var schoolType = schoolTypeArray[0];
+	var yearSystem = "";
+	if(length == 2){
+		yearSystem = schoolTypeArray[1];
+	}
+	var newUrl = "&prov="+encodeURIComponent(province)+"&city="+encodeURIComponent(city)+"&county="+encodeURIComponent(county)+"&town="+encodeURIComponent(town)+"&schoolType="+encodeURIComponent(schoolType);
+	$.ajax({
+        type:"post",
+        async:false,
+        dataType:"json",
+        url:"commonManager.do?action=getSchoolList"+newUrl,
+        success:function (json){
+        	schoolList(json);
+        	//清空年级，班级列表
+        	$("#selectGradeWindowDiv").empty();
+			$("<option value=\"0\">请选择年级</option>").appendTo($("#selectGradeWindowDiv"));
+			$("#selectClassWindowDiv").empty();
+			$("<option value=\"0\">请选择班级</option>").appendTo($("#selectClassWindowDiv"));
+        	getGradeList(schoolType,yearSystem);
+        }
+    });
+}
+function schoolList(list){
+	var schoolTypeArray = getId("schoolType").value.split(":");
+	var schoolType = schoolTypeArray[0];
+	var t='<select id="schoolID" style="width:100px;">';
+  	var f='<option value="0">请选择学校</option>';
+  	var options = "";
+  	if(schoolType == "小学"){
+  		options = "<option value='-1'>其他学校(小学)</option>";
+  	}else if(schoolType == "初中"){
+  		options = "<option value='-2'>其他学校(初中)</option>";
+  	}else if(schoolType == "高中"){
+  		options = "<option value='-3'>其他学校(高中)</option>";
+  	}
+	if(list==null){
+		
+	}else{
+		for(i=0; i<list.length; i++)
+		{
+		  options +=  "<option value='"+list[i].id+"'>"+list[i].schoolName+"</option>";
+		}
+	}
+	var h='</select> ';
+	$('#selectSchoolWindowDiv').html(t+f+options+h);
+}
+//年级列表
+function getGradeList(schoolType,yearSystem){
+	$("#selectGradeWindowDiv").empty();
+	getClassList(null);
+	$("<option value=\"0\">请选择年级</option>").appendTo($("#selectGradeWindowDiv"));
+	if(schoolType == "小学"){
+		$("<option value='1'>一年级</option>").appendTo($("#selectGradeWindowDiv"));
+		$("<option value='2'>二年级</option>").appendTo($("#selectGradeWindowDiv"));
+		$("<option value='3'>三年级</option>").appendTo($("#selectGradeWindowDiv"));
+		$("<option value='4'>四年级</option>").appendTo($("#selectGradeWindowDiv"));
+		$("<option value='5'>五年级</option>").appendTo($("#selectGradeWindowDiv"));
+		if(yearSystem == "6"){
+			$("<option value='6'>六年级</option>").appendTo($("#selectGradeWindowDiv"));
+		}
+	}else if(schoolType == "初中"){
+		if(yearSystem == "4"){
+			$("<option value='6'>六年级</option>").appendTo($("#selectGradeWindowDiv"));
+		}
+		$("<option value='7'>七年级</option>").appendTo($("#selectGradeWindowDiv"));
+		$("<option value='8'>八年级</option>").appendTo($("#selectGradeWindowDiv"));
+		$("<option value='9'>九年级</option>").appendTo($("#selectGradeWindowDiv"));
+	}else if(schoolType == "高中"){
+		$("<option value='10'>高一</option>").appendTo($("#selectGradeWindowDiv"));
+		$("<option value='11'>高二</option>").appendTo($("#selectGradeWindowDiv"));
+		$("<option value='12'>高三</option>").appendTo($("#selectGradeWindowDiv"));
+	}
+}
+//班级列表
+function getClassList(obj){
+	$("#selectClassWindowDiv").empty();
+	$("<option value=\"0\">请选择班级</option>").appendTo($("#selectClassWindowDiv"));
+	if(obj != null){
+		if(obj.value != "0"){
+			for(var i = 1 ; i < 21 ; i++){
+				$("<option value='"+ i +"班'>"+ i +"班</option>").appendTo($("#selectClassWindowDiv"));
+			}
+		}
+	}
+}
+
+//获取验证码
+var count = 60;
+//成功注册后修改status的值为1
+function updateMobileCode(){
+	
+}
+function getNumber(){
+	var phoneCode = "";
+	var phoneNumber = getId("phoneNumber").value.replace(/ /g,"");
+	if(checkPhoneNum()){
+		//插入一条数据到数据库(status=0)
+		showBtnCodeStyle();
+		phoneCode = addPhoneCode();
+		if(phoneCode != ""){
+			//向注册的手机好发送一条手机验证码
+			sendMobileCode(phoneNumber,phoneCode);
+		}
+	}else{
+		$(".rightPhoneNum").show();
+		$(".phoneNum").hide();
+	}
+}
+//获取按钮禁止动作
+function showBtnCodeStyle(){
+	$("#btnCode").attr("disabled", "disabled");
+	$("#btnCode").removeClass("verBg");
+	$("#btnCode").addClass("disVerBg");
+    $("#btnCode").val(count + "秒后点击获取")
+	count--;
+	if(count > 0){
+		setTimeout(showBtnCodeStyle, 1000);
+	}else{
+		$("#btnCode").val("点击获取验证码");
+        $("#btnCode").removeAttr("disabled");
+         $("#btnCode").removeClass("disVerBg");
+		$("#btnCode").addClass("verBg");
+        count = 60;
+	}
+}
+//向数据库插入\修改一条手机验证码数据
+function addPhoneCode(){
+	var phoneNumber = getId("phoneNumber").value.replace(/ /g,"");
+	var code = "";
+	$.ajax({
+        type:"post",
+        async:false,
+        dataType:"json",
+        url:"commonManager.do?action=addMobileCode&phoneNum="+phoneNumber+"&purpose=0",
+        success:function (json){
+        	if(json != ""){
+        		code = json;
+        	}else{
+        		code = "";
+        	}
+        }
+    });
+    return code;
+}
+
+//向注册的手机号发送一条短信验证码
+function sendMobileCode(phoneNumber,phoneCode){
+	$.ajax({
+        type:"post",
+        async:false,
+        dataType:"json",
+        url:"commonManager.do?action=sendMessage&phoneNum="+phoneNumber+"&vercode="+phoneCode,
+        success:function (json){
+        	
+        }
+    });
+}
+//检查输入的验证码和短信验证码是否匹配
+function checkMobileCode(phoneCode){
+	var inputCode = getId("codeNumber").value;
+	if(inputCode != ""){
+		if(inputCode == phoneCode){
+			alert("验证码匹配成功!")
+		}else{
+			alert("验证码不匹配或者已经超时!");
+		}
+	}else{
+		alert("验证码不能为空!")
+		getId("codeNumber").focus();
+	}
+}
+//初始化选择身份的一个状态
+function choiceUserReg(){
+	$(".comRadio").each(function(){
+		$(this).click(function(){
+			$(this).parent("li").addClass("choiceActive").append("<b class='choiceState'></b>").siblings().removeClass("choiceActive").find('b').remove();
+			
+		});
+	});
+}
+
+</script>
+</head>
+
+<body>
+	<div class="imgBg"></div>
+	<div class="registerWrap w1000">
+		<!-- logo -->
+		<div class="logo">
+			<span class="logoDec"></span>
+			<a href="http://www.zhu-xue.cn" title="返回首页" class="logoA"></a>
+		</div>
+		<!-- 主体注册内容部分 -->
+		<div class="registerCon">
+			<ul id="registerNav" class="registerNav">
+				<li class="choiceRole active"></li>
+				<li class="writeInfo"></li>
+				<li class="attachSchool"></li>
+				<li class="regComp"></li>
+			</ul>
+			<input type="hidden" id="roleBridge" name="roleBridge" value="学生"/>
+			<div id="registerForm" class="registerForm">
+				<dl>
+					<!-- 身份选择 -->
+					<dd style="display:block">
+						<span class="triangle1"></span>
+						<div id="roleChoice" class="roleChoice">
+							<h3>身份选择</h3>
+							<ul>
+								<li class="choiceActive">
+									<input type="radio" id="studentUsers" class="comRadio" name="user" checked="checked" value="学生"/>
+									<label class="students" for="studentUsers">
+										<span class="stuSpan">
+											<em>学生</em>用户注册
+										</span>
+									</label>
+									<b class="choiceState"></b>
+								</li>
+								<li>	
+									<input type="radio" id="teachersUser" class="comRadio" name="user" value="老师"/>
+									<label class="teachers" for="teachersUser">
+										<span class="teaSpan">
+											<em>老师</em>用户注册
+										</span>
+									</label>
+								</li>
+								<li>
+									<input type="radio" id="netTeacherMaserUser" class="comRadio" name="user" value="网络导师"/>
+									<label class="netTeacherMaserUser" for="netTeacherMaserUser">
+										<span class="netSpan">
+											<em>网络导师</em>用户注册
+										</span>
+									</label>
+								</li>
+							</ul>
+						</div>
+					</dd>
+					<!-- 注册信息填写 -->
+					<dd>
+						<span class="triangle2"></span>
+						<div class="line">
+							<h3>请填写注册信息</h3>
+						</div>
+						<div class="formConWrap">
+							<form id="formContent" name="formContent" action="">
+								<div id="freeInvCode" class="inputBox">
+									<div class="fl">
+										<span>邀请码：</span><input type="text" id="freeCode" maxlength="6" class="freeCode" />
+									</div>
+									<strong id="infoDetail" class="fl">有体验码可在有效期内免费使用。若没有，可不填</strong>
+									<!-- 邀请码说明 -->
+									<div class="freeInvite">
+										<p>输入您得到的免费邀请码，享受免费学习10天的体验权利</p>
+									</div>
+									<!-- 邀请码格式要求 -->
+									<div class="freeCodeReq">
+										<p>请输入六位英文或数字的格式</p>
+									</div>
+									<!-- 邀请码不存在 -->
+									<div class="notExistCode">
+										<p>邀请码不存在！</p>
+									</div>
+									<!-- 验证码成功后显示该邀请码所对应的网络导师 -->
+									<div class="succNetTea">
+										<p class="succText"></p>
+									</div>
+								</div>
+								
+								<div id="classInvCode" class="inputBox">
+									<div class="fl">
+										<span>班级邀请码：</span><input type="text" id="classCode" maxlength="6" class="freeCode" />
+									</div>
+									<strong class="fl">班级邀请码。若没有，可不填</strong>
+									<!-- 邀请码说明 -->
+									<div class="classInvite">
+										<p>通过此邀请码可以快速绑定班级</p>
+									</div>
+									<!-- 邀请码格式要求 -->
+									<div class="classCodeReq">
+										<p>输入六位英文或数字的格式</p>
+									</div>
+									<!-- 邀请码不存在 -->
+									<div class="notExistCode1">
+										<p>邀请码不存在！</p>
+									</div>
+									<!-- 快速绑定班级邀请码成功后显示的信息提示按钮  -->
+									<a href="javascript:void(0)" class="succTipBtn"></a>
+									<!-- 绑定到班级的盒子  -->
+									<div class="infoBox">
+										<p class="infoText"></p>
+									</div>
+								</div>
+								
+								<div class="inputBox">
+									<span>登录帐号：</span><input type="text" id="userName" maxlength="12" class="textFrame" />
+									<!-- 注册帐号要求 -->	
+									<div class="regAccount">
+										<p>帐号由4-12个字符（字母、数字、下划线）组成</p>
+									</div>
+									<!-- 注册账号不能为空  -->
+									<div class="regAccountNull">
+										<p>注册账号不能为空</p>
+									</div>
+									<!-- 注册账号不能有汉字  -->
+									<div class="regHasCn">
+										<p>注册账号不能有汉字</p>
+									</div>
+									<!-- 注册账号不能含有标点符号或者空格   -->
+									<div class="specDot">
+										<p>注册账号不能有特殊字符、标点、或空格</p>
+									</div>
+									<!-- 注册帐号小于4个字符时候的提示框 -->
+									<div class="regAccount1">
+										<p>账号长度不能小于4个字符</p>
+									</div>
+									<!-- 帐号已存在 -->
+									<div class="existAccount">
+										<p>此帐号已存在！</p>
+									</div>
+									<!-- 注册帐号填写正确后提示 -->
+									<div class="regAccountSucc"></div>
+								</div>
+								<div id="passwordBox" class="inputBox">
+									<span>登录密码：</span><input type="password" id="userPassword" maxlength="16" class="textFrame"/>
+									<!-- 注册密码填写要求 -->
+									<div class="passwordWarn">
+										<p>密码由6-16字符（字母、数字、符号）组成，区分大小写</p>
+									</div>
+									<!-- 注册密码小于6位的时候提示窗口 -->
+									<div class="passwordWarn1">
+										<p>请输入6-16位字符</p>
+									</div>
+									<!-- 注册密码不能为空提示窗口 -->
+									<div class="passwordNull">
+										<p>密码不能为空</p>
+									</div>
+									<!-- 注册密码不能含有空格 -->
+									<div class="passSpace">
+										<p>密码中不能还有空格</p>
+									</div>
+									<!-- 注册密码填写正确后的提示 -->
+									<div class="passwordSuc"></div>
+								</div>
+								<!-- 密码强弱 -->
+								<div id="pasStrongWeak" class="pasStrongWeak clearfix">
+									<div class="pasBox">
+										<p class="gray1"></p>
+										<span>弱</span>
+									</div>
+									<div class="pasBox">
+										<p class="gray2"></p>
+										<span>中</span>
+									</div>
+									<div class="pasBox">
+										<p class="gray3"></p>
+										<span>强</span>
+									</div>
+								</div>
+								<div class="inputBox">
+									<span>确认密码：</span><input type="password" id="confirmPass" class="textFrame" />
+									<!-- 确认密码提示窗口 -->
+									<div class="passConfirm">
+										<p>请再次确认密码</p>
+									</div>
+									<!-- 两次密码输入不一致窗口 -->
+									<div class="passwordDif">
+										<p>两次密码输入不一致</p>
+									</div>
+									<!-- 确认密码不能为空提示窗口 -->
+									<div class="passConfirmNull">
+										<p>确认密码不能为空</p>
+									</div>
+									<!-- 确认密码成功提示窗口 -->
+									<div class="passConfirmSucc"></div>
+								</div>
+								<div class="inputBox">
+									<span>真实姓名：</span><input type="text" id="realName" maxlength="4" class="textFrame" />
+									<!-- 真实姓名提示窗口 -->
+									<div class="relName">
+										<p>请填写您的真实姓名</p>
+									</div>
+									<!-- 真实姓名不能为空提示窗口 -->
+									<div class="relNameNull">
+										<p>姓名不能为空</p>
+									</div>
+									<!-- 姓名必须是汉字  -->
+									<div class="cnName">
+										<p>姓名必须是汉字</p>
+									</div>
+									<!-- 姓名长度小于4个字符时候的提示框 -->
+									<div class="lessFour">
+										<p>姓名长度不能小于2个字符</p>
+									</div>
+									<!-- 真实姓名填写成功提示窗口 -->
+									<div class="relNameSucc"></div>
+								</div>
+								<div class="inputBox">
+									<span>手机号码：</span><input type="text" id="phoneNumber" class="textFrame" maxlength="11"/>
+									<!-- 手机号码提示窗口 (学生)-->
+									<div class="phoneNum">
+										<p class="phoneNumTxt"></p>
+									</div>
+									<!-- 填写正确的手机号提示窗口 -->
+									<div class="rightPhoneNum">
+										<p>请填正确的手机号码</p>
+									</div>
+									<!-- 检测手机号码是否存在的窗口  -->
+									<div class="checkPhExsit">
+										<p>该号码已经注册！</p>
+									</div>
+									<!-- 手机号码填写成功提示窗口 -->
+									<div class="phoneNumSucc"></div>
+								</div>
+								<div class="inputBox">
+									<span>短信验证码：</span><input type="text" id="codeNumber" class="verCodes" maxlength="6"/>
+									<input type="button" value="点击获取验证码" id="btnCode" class="getVerCode fl verBg" onclick="getNumber();"/>
+									<!--  手机验证码描述  -->
+									<div class="descriVerCon">
+										<p>请输入您获取到的六位数字和字母组成的验证码</p>
+									</div>
+									<!-- 手机验证码为空  -->
+									<div class="emptyCode">
+										<p>请输入手机短信验证码！</p>
+									</div>
+									<!-- 验证码不正确或者验证码失效  -->
+									<div class="wrongCode">
+										<p>短信验证码不正确或已过期</p>
+									</div>
+									<!-- 手机验证码正确  -->
+									<div class="rightCode"></div>
+								</div>
+								<div class="inputBox" id="basicSubejctTypeDiv" style="display:none;"></div>
+								<div class="inputBox" id="basicSchoolTypeDiv" style="display:none;"></div>
+								<div class="inputBox" id="basicEditionDiv" style="display:none;"></div>
+								<!-- 请选择学科 -->
+								<div id="subJect" class="choiceBox mt1">
+									<p>请选择学科</p>
+								</div>
+								<!-- 请选择出版社 -->
+								<div id="pub" class="choiceBox mt2">
+									<p>请选择出版社</p>
+								</div>						
+								<!-- 请选择学段 -->
+								<div id="xueduan" class="choiceBox mt2">
+									<p>请选择学段</p>
+								</div>		
+							</form>
+						</div>
+						<div class="rightLine"></div>
+						<div class="rightCon">
+							<div class="hasAccount">
+								<p>如果您已经拥有助学网帐号</p>
+								<p>请&nbsp;<a href="http://www.zhu-xue.cn">点此登录</a></p>
+							</div>
+							<div class="dashedLine"></div>
+							<!-- 用户身份 -->
+							<div class="userIden">
+								<h3 class="nowIden">当前选择身份：<span id="regUser"></span></h3>
+								<div class="idenImg"></div>
+							</div>
+						</div>
+					</dd>
+					<!-- 绑定学校信息填写 -->
+					<dd>
+						<span class="triangle3"></span>	
+						<div class="attachInfo">
+							<h3 class="attachTit">绑定相关信息</h3>
+							<div class="addressWrap">
+								<div class="attachTop">
+									<h4>绑定位置信息</h4>
+								</div>
+						        <div id="address">
+						            <select id="prov" name="prov" onchange="getSchoolList()"></select>
+							
+									<select id="city" name="city" onchange="getSchoolList()"></select>
+							
+									<select id="county" name="county" onchange="getSchoolList()">
+										<option value="0">请选择县/市</option>
+									</select>
+						            
+						        </div>
+					        </div>
+					        <div class="addressWrap mt">	
+					        	<div class="attachTop">
+									<h4>绑定学校信息</h4>
+								</div>
+								<div id="shoolInfo">
+									<div id="schoolStyle">
+										<select id="schoolType" onchange="getSchoolList()">
+											<option value="-1">请选择学段</option>
+								        	<option value="小学:5">小学(五年制)</option>
+								        	<option value="小学:6">小学(六年制)</option>
+								        	<option value="初中:3">初中(三年制)</option>
+								        	<option value="初中:4">初中(四年制)</option>
+								        	<option value="高中">高中</option>
+									    </select>	
+						   			 </div>
+						   			 <div id="selectSchoolWindowDiv"></div>
+						   			 <select id="selectGradeWindowDiv" class="fl" onchange="getClassList(this)">
+						        		<option value="0">请选择年级</option>
+						   			 </select>
+						   			 <select id="selectClassWindowDiv" class="fl">
+						        		<option value="0">请选择班级</option>
+						  			  </select>   
+								</div>
+					        </div>  
+						</div>
+					</dd>					
+					<!-- 注册完成 -->
+					<dd>	
+						<span class="triangle4"></span>
+						<div class="regSuccess">
+							<div class="succPic"></div>
+							<h3>注册成功</h3>
+							<div class="regSuccCon">
+								<h2>恭喜您成功注册<strong id="succUserIden"></strong>用户</h2>
+								<p>您申请的登录帐号为：<strong id="succAccount"></strong>&nbsp;请牢记帐号！</p>
+								<p class="parentAccount">系统为您自动生成的家长账号为：<strong id="parAccountBox"><span id="parAccount"></span>_jz</strong>，初始密码为：<strong class="parIntPassword">123456</strong></p>
+								<p>您已经可以使用该帐号登录助学网了</p>
+							</div>
+						</div>
+						<div class="previewWebFun">
+							<span class="viewIcon"></span>
+							<a href="javascript:void(0)" hidefocus="true" class="oneMinBtn" onclick="showWebFun()">一分钟认识助学网并登录</a>
+						</div>
+					</dd>
+				</dl>
+			</div>
+			<a href="javascript:void(0)" id="prev" class="prev">上一步</a>
+			<a href="javascript:void(0)" id="next" class="next showBtn" >下一步</a>
+		</div>
+	</div>
+	<!-- 预览网站大体功能一分钟了解知识点 -->
+	<div id="viewWebFunction" class="viewWebFunction">
+		<div id="viewCon" class="viewCon">
+			<ul>
+				<li>
+					<div class="introTitle">
+						<h2>一分钟认识助学网...</h2>
+					</div>
+					<div class="oneMinTit">
+						<p>网络教辅新时代</p>
+					</div>
+					<div class="introCon"></div>
+				</li>
+				<li class="studentPart">
+					<div class="introTitle">
+						<h2>为什么努力了还是学不好？？？</h2>
+					</div>
+					<div class="introCon2">
+						<div class="quAn">
+							<p class="one">
+								<strong>为什么课后作业不会做、作业很吃力？</strong>
+							</p>
+							<p class="two">
+								<strong>因为：</strong>课堂学习的新知识没有掌握、或掌握的不牢固，没有跟上课堂教学进度。
+							</p>
+						</div>
+						<div class="quAn">
+							<p class="one">
+								<strong>为什么上课听不懂、跟不上课堂进度？</strong>
+							</p>
+							<p class="two">
+								<strong>因为：</strong>知识具有关联性，新知识相关的旧知识掌握的不牢，导致学习新知识时听不懂。
+							</p>
+						</div>
+						<div class="quAn">
+							<p class="one">
+								<strong>为什么做了大量的作业、卷子，成绩还是不理想？</strong>
+							</p>
+							<p class="two">
+								<strong>因为：</strong>重复做不会的题是效率低的主要原因。追溯根源补习知识链的断点，才能提高学习效率。
+							</p>
+						</div>
+					</div>
+				</li>
+				<li class="teacherPart">
+					<div class="introTitle">
+						<h2>独特的溯源预习，扫清一切听课障碍，从此没有听不懂的课！</h2>
+					</div>	
+					<div class="introCon3">
+						<div class="detail">
+							<p>
+								<span class="detailTitle">什么是溯源学习法？<em class="triangle"></em></span>
+								助学网学习平台以知识点为单位，按照关联性，构建学科关联知识树。在每个知识点的学习中，通过关联知识的逐级倒查，追溯出学生每个知识点知识链条的断点和薄弱点，然后逐级学习加以扶正。
+							</p>
+						</div>
+						<div class="gifCon">
+							<img src="Module/account/registerPage/images/introWebFun/suyuanfuxi.gif" width="787" height="297" alt="溯源复习法演示" />
+						</div>
+					</div>
+				</li>
+				<li class="studentPart">
+					<div class="introTitle">
+						<h2>独特的溯源预习，让您拒绝题海，减负增效！</h2>
+					</div>
+					<div class="introCon3">
+						<div class="detail">
+								<p>
+									<span class="detailTitle">溯源复习<em class="triangle"></em></span>
+									以知识点为单位，依据关联知识树，逐级检测倒查知识的断点，反向生成学生个性化学习路线图，让学生从已会知识学习不会的知识，科学高效。
+								</p>						
+						</div>
+						<div class="introPic clearfix noMl">
+							<img src="Module/account/registerPage/images/introWebFun/bigPic_1.png"/>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="introTitle">
+						<h2>以知识点为单位的切片式教学，将学科学习细分到知识点！</h2>
+					</div>	
+					<div class="introCon3">
+						<div class="detail">
+							<p>
+								<span class="detailTitle">课前预习：<em class="triangle"></em></span>
+								每个知识点配置丰富的学习资源：听"视频讲解"、看"点拨指导"、背"知识清单"、学"解题示范"、做"再次诊断"，五步学习让学生透彻的把握每个知识点。
+							</p>
+						</div>
+						<div class="gifCon ml">
+							<img src="Module/account/registerPage/images/introWebFun/tabGif.gif" width="700" height="317" alt="视频讲解，点拨指导" />
+						</div>
+					</div>					
+				</li>
+				<li>
+					<div class="introTitle">
+						<h2>游戏化探究式学习，激发学生的学习兴趣！</h2>
+					</div>	
+					<div class="introCon3">
+						<div class="detail">
+							<p>
+								<span class="detailTitle">学习过程引入了游戏机制：<em class="triangle"></em></span>
+								任务、头衔、学习道具、学习经验值、学习币等。像游戏闯关一样的知识"探险"，激发学生的学习动力，使之产生持续、有效的学习行为。
+							</p>
+						</div>
+						<div class="gifCon ml1">
+							<img src="Module/account/registerPage/images/introWebFun/game.gif" width="687" height="291" alt="游戏化探究式学习" />
+						</div>
+					</div>					
+				</li>
+				<li class="studentPart">
+					<div class="introTitle">
+						<h2>网络导师一对一指导，学习成绩快速提高！</h2>
+					</div>		
+					<div class="introCon3">
+						<div class="detail">
+							<p>
+								<span class="detailTitle">网络导师：<em class="triangle"></em></span>
+								为每位学员分配一位在知识的海洋里旅行的"全程导游"--网络导师。一对一网上答疑，为你答疑解惑！关注你的每一个进步，指导你的学科学习，激励你不断前进！
+							</p>
+						</div>
+						<div class="gifCon1 ml2">
+							<img src="Module/account/registerPage/images/introWebFun/2.png" width="765" height="167" alt="网络导师一对一指导" />
+						</div>
+					</div>	
+				</li>
+				<li class="studentPart">
+					<div class="introTitle">
+						<h2>系统智能化一对一跟踪指导，孩子贴心的家庭老师！</h2>
+					</div>	
+					<div class="introCon3">
+						<div class="detail">
+							<p>
+								<span class="detailTitle">智能化的跟踪指导：<em class="triangle"></em></span>
+								 根据学生的学习情况，以网络导师的名义智能发送站内信与学生沟通，跟踪指导学生的学习。根据学生的学习结果，以网络导师的名义智能的向家长发送学生学习效果和动态，督导学生持续使用。
+							</p>
+						</div>
+						<div class="gifCon ml1">
+							<img src="Module/account/registerPage/images/introWebFun/teacherPart.png" width="527" height="293" alt="智能化的跟踪指导" />
+						</div>
+					</div>
+				</li>
+				<li class="teacherPart">
+					<div class="introTitle">
+						<h2>申请网络导师获得"经济"+"名誉"双层收益</h2>
+					</div>	
+					<div class="introCon5 clearfix">
+						<div class="economyPro fl">
+							<div class="ecoPic">
+								<img src="Module/account/registerPage/images/introWebFun/ecoPro1.png" width="158" height="40" alt="获得经济收益" />
+							</div>
+							<div class="proDetailBox">
+								<p><strong class="color1">1:获得收益</strong></p>
+								<p>您只需设置好您的导师指导费，每学期可获得"导师指导费 X  学生数"的劳动报酬。导师指导费的标准300-700元，由您根据当地的辅导班收费水平自行设定。<span class="color2">（拥有20名左右学生，每年可轻松获得1-3万收益）</span></p>
+								<p><strong class="color1">2、获得学员分配名额：</strong></p>
+								<p>平台依据网络导师在平台的活跃度，优先分配学生提高您的收益。</p>
+							</div>
+						</div>
+						<div class="ecoMid fl">
+							<img src="Module/account/registerPage/images/introWebFun/ecoPro3.png" width="255" height="363" />
+						</div>
+						<div class="economyPro fl">
+							<div class="ecoPic">
+								<img src="Module/account/registerPage/images/introWebFun/ecoPro2.png" width="145" height="40" alt="获得名誉收益" />
+							</div>
+							<div class="proDetailBox">
+								<p><strong class="color1">提高班级教学成绩：</strong></p>
+								<p>您可以推荐班级里的中差生免费使用，为他们寻找一条补习基础、快速提高成绩的密钥，这必然能够使您班级的成绩、及格率大幅提高，如此您一定是名利双收。</p>
+							</div>
+						</div>
+					</div>								
+				</li>
+				<li class="teacherPart">
+					<div class="introTitle">
+						<h2>申请网络导师，您只需...</h2>
+					</div>		
+					<div class="introCon5 clearfix">
+						<div class="fl">
+							<img src="Module/account/registerPage/images/introWebFun/four.png" width="466" height="353" />
+						</div>
+						<div class="picCon fr">
+							<div class="picCon1">
+								<p>通过我们的短信平台，免费发送短信，极其方便的向家长推荐助学网，让学生到网站免费学习（10天），体验助学网的高效学习效果。购买使用的学生，将成为您导师导学的学员。</p>
+							</div>
+							<div class="picCon1">
+								<p>助学网平台独有的溯源学习体系，替孩子设计再学习路线图，不断补习薄弱知识，从而真正做到提高孩子的学习成绩。智能化运行机制、丰富的学习资源，实现了对学生学习的一对一辅导。网络导师只需按照短信提醒每周上来一次，在网上回答学生的提问即可。</p>
+							</div>
+						</div>
+					</div>			
+				</li>
+				<li class="teacherPart">
+					<div class="introTitle">
+						<h2>设置您申请的网络导师称谓</h2>
+					</div>	
+					<div class="introCon3">
+						<div class="detail">
+							<p>
+								<span class="detailTitle">网络导师称谓：<em class="triangle"></em></span>
+								系统将以网络导师的名义智能化的与家长短信沟通，智能化的在网站上指导学生学习。请设置显现给家长和学生的网络导师称谓。
+							</p>
+						</div>
+						<div class="netTeaName">
+							<div class="nameT clearfix">
+								<div class="realName fl">
+									<strong>真实姓名：</strong>
+									<input type="text" id="reallyName" readonly="readonly"/>
+								</div>
+								<div class="note fl">
+									<p>（请填写真实姓名，方便我们在审核及结算时，与您联系。我们将保证您的隐私安全！）</p>
+								</div>
+							</div>
+							<div class="nameT clearfix">
+								<div class="realName fl">
+									<strong>网络姓名：</strong>
+									<input type="text" id="netName" />
+								</div>
+								<div class="note fl">
+									<p>（此处设置的称谓将显现给您的学生。您可以使用真实姓名，如果感觉不方便，也可以使用化名，如"张老师"。）</p>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</li>
+				<li class="teacherPart">
+					<div class="introTitle">
+						<h2>设置您的导师指导费</h2>
+					</div>	
+					<div class="introCon3">
+						<div class="detail">
+							<p>
+								<span class="detailTitle">网络导师称谓：<em class="triangle"></em></span>
+								系统将以网络导师的名义智能化的与家长短信沟通，智能化的在网站上指导学生学习。请设置显现给家长和学生的网络导师称谓。
+							</p>
+						</div>
+						<div class="netTeaName">
+							<div class="nameT clearfix">
+								<!--div class="realName fl">
+									<strong>网站资源费：</strong>
+									298元/半年（180天）
+								</div-->
+								
+							</div>
+							<div class="nameT clearfix">
+								<div class="realName fl">
+									<strong>学生购买价：</strong>
+									导师指导费/年
+								</div>
+								
+							</div>
+							<div class="nameT clearfix">
+								<div class="realName fl">
+									<strong>您的指导价：</strong>
+									<input type="text" id="teachMoney"/>
+								</div>
+								
+							</div>
+						</div>
+					</div>	
+				</li>
+			</ul>
+			<a href="javascript:void(0)" id="prevPage" class="prevPage" onclick="showPrevPage()">上一页</a>
+			<a href="javascript:void(0)" id="nextPage" class="nextPage" onclick="showNextPage()">下一页</a>
+			<a href="javascript:void(0)" id="loginButton" onclick="webFunLogin()">登录</a>
+		</div>
+	</div>
+
+	<!-- 遮罩层 -->
+	<div id="layer"></div>
+	
+	<form name="roleForm" action="userManager.do?action=goPage" method="post">
+   		<input type="hidden" id="roleID" name="roleID"/>
+   		<input type="hidden" id="roleName" name="roleName"/>
+   </form>
+</body>
+</html>

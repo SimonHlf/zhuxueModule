@@ -1,0 +1,345 @@
+html{
+	overflow:hidden;
+}
+body{
+	position:relative;
+	overflow:hidden;
+	background:#f3f2f6;
+}
+/* 当前版本 */
+.nowLoc{
+	width:100%;
+	height:0.50rem;
+	line-height:0.50rem;
+	background:#64ccf2;
+	color:#fff;
+	position:relative;
+	z-index:700;
+}
+.nowLoc p{
+	text-indent:32px;
+}
+.backIcon,
+.goBackBtn{
+	width:30px;
+	height:0.50rem;
+	position:absolute;
+	left:0px;
+	top:0px;
+	background:url(../../onlineStudy/images/backIcon.png) no-repeat center;
+}
+/* 发送培优知识点数据列表 */
+#loreListUl{
+	width:95%;
+	margin:0 auto;
+}
+#loreListUl li{
+	width:100%;
+	height:90px;
+	border:1px solid #e2e2e2;
+	border-radius:4px;
+	background:#fff;
+	margin-top:10px;
+	position:relative;
+}
+#loreListUl li label{
+	width:100%;
+	height:100%;
+	display:inline-block;
+}
+#loreListUl li label .comCheckInp,
+.checkBtn{
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:0px;
+	top:0px;
+	opacity:0;
+}
+.checkIcon,
+.selAllSpan,
+.checkListIcon{
+	width:15px;
+	height:15px;
+	background:url(../images/checkInp.png) no-repeat;
+	position:absolute;
+	background-size:cover;
+}
+.checkIcon,
+.checkListIcon{
+	background-position:0 0;
+}
+.checkIcon{
+	right:10px;
+	top:18px;
+}
+.checkListIcon{
+	right:0px;
+	top:0px;
+}
+.selAllSpan{
+	left:50%;
+	margin-left:-9%;
+	top:13px;
+	background-position:0 -15px;
+}
+.checkActive,
+.seLAllActive,
+.checkSingAct{
+	width:11px;
+	height:11px;
+	background:url(../images/active.png) no-repeat;
+	position:absolute;
+	left:2px;
+	top:2px;
+	background-size:cover;
+}
+.checkActive,
+.checkSingAct{
+	background-position:0 0;
+}
+.seLAllActive{
+	background-position:0 -10px;
+}
+#loreListUl li:nth-last-of-type(1){
+	margin-bottom:10px;
+}
+#loreListUl li h3{
+	text-indent:10px;
+	padding-top:10px;
+	color:#3fb3dd;
+	margin-bottom:5px;
+}
+#loreListUl li p:nth-of-type(1){
+	color:#666;
+}
+#loreListUl li p:nth-of-type(2){
+	color:#999;
+	font-size:0.14rem;
+}
+.listSon:nth-of-type(1){
+	width:40%;
+	max-width:40%;
+}
+.listSon:nth-of-type(1) p{
+	margin-left:10px;
+}
+.listSon:nth-of-type(2),
+.listSon:nth-of-type(3){
+	width:30%;
+	max-width:30%;
+}
+/* 底部发送按钮盒子 */
+#btnBox,
+#detailBtnBox{
+	width:100%;
+	height:0.40rem;
+	line-height:40px;
+	color:#fff;
+	background:#64ccf2;
+	position:relative;
+	z-index:2;
+}
+.comABtn{
+	width:43%;
+	float:left;
+	height:40px;
+	color:#fff;
+	text-align:center;
+	font-size:0.18rem;
+	position:relative;
+}
+.lineSpan{
+	width:1px;
+	height:100%;
+	background:#fff;
+	position:absolute;
+	right:0px;
+	top:0px;
+	opacity:0.5;
+}
+.selAllDiv{
+	width:14%;
+	height:100%;
+	float:left;
+	position:relative;
+}
+#selAllBtn{
+	opacity:0;
+}
+/* 查看巴菲特详情 */
+.buffetDetailBox{
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:0px;
+	top:0px;
+	z-index:701;
+	background:#f3f2f6;
+	-webkit-transition:0.5s;
+	transition:0.5s;
+	-webkit-transform:translateX(100%);
+	transform:translateX(100%);
+}
+.detailTit{
+	width:100%;
+	height:50px;
+	line-height:50px;
+	background:#64ccf2;
+	color:#fff;
+	position:relative;
+	z-index:2;
+}
+.loreNameP{
+	text-indent:32px;
+}
+#checkDetailNav{
+	width:100%;
+	height:50px;
+	background:#fff;
+	position:relative;
+	z-index:1;
+	box-shadow:0px 0px 3px #666;
+}
+.innerNav,
+.finalOpaBox{
+	width:95%;
+	height:100%;
+	margin:0 auto;
+	overflow:hidden;
+	position:relative;
+}
+#detailNavUl{
+	width:540px;
+	margin-top:10px;
+}
+#checkDetailNav li{
+	width:90px;
+	font-size:0.14rem;
+	height:30px;
+	line-height:30px;
+	border-radius:15px;
+	text-align:center;
+	float:left;
+	color:#666;
+}
+#checkDetailNav li.active{
+	background:#64ccf2;
+	color:#fff;
+}
+.shadowSpan{
+	width:5px;
+	height:40px;
+	position:absolute;
+	right:0px;
+	background:url(../../reportCen/images/shadow.png) no-repeat;
+	display:none;
+	background-size:cover;
+	margin-top:5px;
+}
+.posTop{
+	top:0px;
+}
+.posTop1{
+	top:-7px;
+}
+.choiceBox{
+	width:100%;
+	height:40px;
+	line-height:40px;
+	background:#dbdbdb;
+	color:#666;
+	font-size:0.14rem;
+}
+#finalOpaBox{
+	width:95%;
+	height:100%;
+	margin:0 auto;
+	position:relative;
+}
+#innerFinalBox{
+	height:100%;
+	overflow:hidden;
+}
+#finalOptions span{
+	float:left;
+	min-width:97px;
+}
+#detailConWrap{
+	width:100%;
+	background:#fff;
+}
+.comListDiv{
+	display:none;
+	opacity:0;
+}
+/* 详情内部样式 */
+.createDiv{
+	border-bottom:1px solid #dbdbdb;
+	padding-bottom:5px;
+}
+.innerCreateDiv{
+	width:95%;
+	margin:10px auto 0px;
+	color:#666;
+	font-size:0.14rem;
+	position:relative;
+}
+.attachInpLab{
+	display:inline-block;
+	width:100%;
+	height:100%;
+}
+.queTypeP{
+	padding:1px 8px;
+	background:#64ccf2;
+	color:#fff;
+	font-size:0.12rem;
+	display:inline-block;
+}
+.createTit{
+	font-weight:normal;
+	font-size:0.14rem;
+	margin:5px 0px;
+}
+.createTit span,
+.createCon span.titTxt,
+.optionDiv span{
+	color:#333;
+}
+.createCon{
+	margin-bottom:5px;
+}
+.blanks{
+	width:28px;
+	display:inline-block;
+}
+.optionDiv{
+	margin-bottom:5px;
+}
+.comABtnDetailBtn{
+	width:50%;
+	height:100%;
+	display:inline-block;
+	float:left;
+	text-align:center;
+	color:#fff;
+	font-size:0.18rem;
+	position:relative;
+}
+/* 暂无培优试题记录 */
+.noListDataDiv{
+	width:110px;
+	height:280px;
+	margin:0px auto;
+	text-align:center;
+	color:#999;
+	font-size:0.16rem;
+}
+.noListDataDiv p{
+	padding-top:5px;
+}
+.noListDataDiv img{
+	padding-top:35px;
+	opacity:0.9;
+}

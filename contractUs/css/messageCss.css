@@ -1,0 +1,238 @@
+@CHARSET "UTF-8";
+.messWrap{
+	margin-top:30px;
+}
+.messTop,
+.messBot{
+	height:35px;
+	border-radius:4px;
+	background:#fff;
+	box-shadow:3px 3px 5px #CCCBCB;
+}
+.messTxt{
+	font-size:20px;
+	font-weight:normal;
+	margin-left:25px;
+}
+.cols1{
+	color:#7bab11;
+}
+.cols2{
+	color:#444;
+}
+.posRelat{
+	position:relative;
+	height:35px;
+	line-height:35px;
+}
+.posFix{
+	position:fixed;	
+}
+.turnPageBox{
+	float:right;
+	color:#5a5a5a;
+	margin-right:10px;
+}
+.turnPageBox p{
+	margin-right:5px;
+}
+.turnPageBox a{
+	line-height:25px;
+	padding:0 10px;
+	display:inline-block;
+	background:url(../images/turnPage.gif) repeat-x;
+	border-radius:2px;
+	color:#5a5a5a;
+	margin-right:5px;
+}
+.turnPageBox a:hover{
+	background:url(../images/turnPage.gif) repeat-x 0 -25px;
+	color:#fff;
+}
+.triangle{
+	width:0px;
+	height:0px;
+	border-width:12px;
+	position:absolute;
+}
+.triTop{
+	bottom:-24px;
+	left:165px;
+	border-style:solid dashed dashed dashed;
+	border-color:#fff transparent transparent transparent;
+}
+.triBot{
+	bottom:35px;
+	left:165px;
+	border-style:dashed dashed solid dashed;
+	border-color:transparent transparent #fff transparent;
+}
+.messMainCon{
+	width:778px;
+	margin:10px 0 0 175px;
+	position:relative;
+}
+.borLeft{
+	width:5px;
+	position:absolute;
+	height:100%;
+	background:#fff;
+	left:0;
+	top:0px;			
+	box-shadow:0px 3px 5px #cecece;
+}
+.listMessCon{
+	width:800px;
+	margin:0px 0 0 22px;
+	padding-top:10px;
+}
+.listMessCon li{
+	border-bottom:1px dashed #d9d9d9;
+	padding-bottom:20px;
+	margin:20px 0 10px 0px;
+	position:relative;
+}
+.messIcon{
+	width:24px;
+	height:24px;
+	position:absolute;
+	left:-32px;
+	top:40px;
+	background:url(../images/mesDec.gif) no-repeat;
+}
+.timeBox{
+	font-size:16px;
+	color:#666;
+	position:absolute;
+	left:-190px;
+	top:39px;
+}
+.mesConWrap{
+	width:725px;
+	margin-left:6px;
+}
+.mesConTop img{
+	padding-top:20px;
+}
+.mesConTitBox{
+	width:100%;
+	border:1px solid #d3d3d3;
+	border-bottom:none;
+	border-radius:12px 12px 0 0;
+	background:#96bc3a;
+	box-shadow:0px 1px 5px #cecece;
+}
+.mesConTitBox p{
+	height:40px;
+	line-height:40px;
+	font-size:16px;
+	color:#fff;
+	text-indent:12px;
+}
+.mesConTop p strong{
+	font-weight:600;
+}
+.mesCon{
+	width:701px;
+	border:1px solid #d3d3d3;
+	border-top:none;
+	border-radius:0px 0px 12px 12px;
+	padding:12px;
+	box-shadow:1px 1px 5px #cecece;
+	background:#f4ffdc;
+}
+.mesCon p,
+.mesConBot p{
+	font-size:16px;
+	line-height:28px;
+}
+.mesCon p{
+	color:#6f9e06;
+}
+.mesConBot p{
+	color:#e39b00;
+}
+.mesConBot{
+	width:701px;
+	padding:12px;
+	margin:20px 0 0 73px;
+	border:1px solid #d3d3d3;
+	border-radius:12px;
+	position:relative;
+	box-shadow:inset 2px 2px 5px #fff;
+	background:#f4ffdc;
+}
+.triDecIcon{
+	width:13px;
+	height:15px;
+	background:url(../images/triDec.png) no-repeat;
+	position:absolute;
+	left:20px;
+	top:-15px;
+}
+/* 发表留言部分 */
+.pubMessBox{
+	height:300px;
+	margin-top:40px;
+}
+.pubTit{
+	height:35px;
+	background:#f1f1f1;
+}
+.headTit,
+.conTit{
+	width:140px;
+	display:inline-block;
+	font-size:16px;
+	color:#527700;
+	text-align:center;
+	background:#d3e1b6;
+	font-weight:normal;
+}
+.headTit{
+	line-height:35px;
+}
+.conTit{
+	line-height:175px;
+}
+.pubTitTxt{
+	margin:7px 0 0 12px;
+	border:1px solid #d6d6d6;
+	height:8px;
+	padding:6px 0px;
+	width:820px;
+	outline:none;
+	padding-left:5px;
+}
+.pubCon{
+	margin-top:4px;
+	height:175px;
+	background:#f1f1f1;
+}
+
+.pubTxtBox{
+	margin:12px 0 0 12px;
+	width:815px;
+	height:148px;
+	border:1px solid #d6d6d6;
+	outline:none;
+	line-height:24px;
+	overflow:auto;
+	padding:0px 5px;
+	color:#363636;
+}
+.pubMesBtn{
+	width:210px;
+	height:40px;
+	line-height:40px;
+	font-size:18px;
+	color:#fff;
+	text-align:center;
+	background:#8fbc2c;
+	display:inline-block;
+	border-radius:4px;
+	margin:30px 0 0 415px;
+}
+.pubMesBtn:hover{
+	background:#759a22;
+}

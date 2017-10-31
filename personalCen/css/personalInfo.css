@@ -1,0 +1,544 @@
+/* CSS Document */
+.nowPosition{
+	width:730px;
+	height:35px;
+	line-height:35px;
+	margin:0 auto;
+}
+.nowPosition p{
+	color:#666;
+	font-size:14px;
+}
+.fontSet{
+	font-size:16px;
+}
+.nowPosition p span.weightSpan{
+	color:#91c42f;
+	font-weight:bold;
+}
+.perFixCon{
+	width:730px;
+	margin:10px auto 0px;
+}
+/* 选项卡导航 */
+.perFixCon ul{
+	width:100%;
+	height:45px;
+	border-bottom:1px solid #e0e0e0;
+}
+.perFixCon li{
+	float:left;
+	width:112px;
+	text-align:center;
+	margin-right:10px;
+	border:1px solid #e9e9ee;
+	border-bottom:none;
+	line-height:45px;
+	font-size:14px;
+	color:#666;
+	cursor:pointer;
+}
+.perFixCon li:hover{
+	color:#1eb009;
+}
+.perFixCon li.active{
+	width:112px;
+	height:44px;
+	line-height:44px;
+	background:#fff;
+	font-weight:bold;
+	border-top:2px solid #91c42f;
+}
+.perFixCon li.active:hover{
+	color:#666;
+}
+
+/* 选项卡对应内容 */
+.tabcon{
+	width:680px;
+	margin:10px auto 0px;
+	position:relative;
+}
+
+/* ----资料设置---- */
+
+
+/* 公共样式start */
+.comDiv,
+.comDiv1{
+	width:100%;
+	height:35px;
+	line-height:35px;
+	margin-bottom:10px;
+	color:#666;
+	position:relative;
+}
+.comDiv1{
+	width:380px;
+	float:left;
+	margin-top:5px;
+}
+.comDiv1 span.conText{
+	position:absolute;
+	left:-10px; 
+	top:0;
+}
+.comDiv1 input{
+	position:absolute;
+	left:70px;
+}
+.color{
+	color:#4bba1e;
+}
+.comInp,.comInp1{
+	border:1px solid #cdcdcd;
+	box-shadow:2px 2px 2px #f1f1f1 inset;
+	border-radius:2px;
+	height:20px;
+	padding:8px;
+	color:#666;
+	vertical-align:middle;
+}
+.comInp{
+	width:180px;
+}
+.comInp1{
+	width:80px;
+}
+.color1{
+	font-size:12px;
+	color:#999;
+}
+.ml2{
+	margin-left:14px;
+}
+.ml3{
+	margin-left:30px;
+}
+.mlSp{
+	margin-left:-98px;
+}
+/* 性别 */
+.sexBox{
+	width:40px;
+	height:36px;
+	line-height:36px;
+	background:#eee;
+	float:left;
+	cursor:pointer;
+	position:relative;
+	margin-right:10px;
+	text-align:center;
+}
+.sexBox input{
+	width:40px;
+	height:36px;
+	position:absolute;
+	left:0;
+	top:0;
+	opacity:0;
+	filter:alpha(opacity:0);
+	cursor:pointer;
+}
+.choiceIcon{
+	width:0px;
+	height:0px;
+	position:absolute;
+	right:0;
+	top:0;
+	border-width:6px;
+	border-style:solid solid dashed dashed;
+	border-color:#94c22e #94c22e transparent transparent;
+}
+.choiceActive{
+	color:#000;
+}
+/* 公共样式end */
+
+.smallIcon{
+	width:32px;
+	height:32px;
+	position:absolute;
+	left:0;
+	top:0;
+	background:url(../../studyOnline/images/iconBg.png) no-repeat -59px -34px;
+}
+.top1{
+	top:0;
+}
+.top2{
+	top:286px;
+}
+.titleFont{
+	font-size:14px;
+	color:#666;
+	margin-top:2px;
+	margin-left:30px;
+	position:relative;
+}
+.titleFont .line{
+	width:565px;
+	height:1px;
+	display:inline-block;
+	border-bottom:1px solid #eee;
+	overflow:hidden;
+	margin:8px 0 0 3px;
+}
+.account{
+	width:500px;
+	margin-top:15px;
+	margin-left:70px;
+	font-size:14px;
+	padding:12px 15px;
+
+}
+.savaInfo,
+.savaInfo1,
+.savaInfo2{
+	width:102px;
+	height:35px;
+	display:inline-block;
+	border:none;
+	color:#fff;
+	font-size:18px;
+	font-family:"Microsoft Yahei";
+	cursor:pointer;
+	background:url(../images/saveBtn.png) no-repeat left top;
+	outline:none;
+}
+.savaInfo{
+	margin-left:198px;
+}
+.savaInfo1{
+	margin-left:100px;
+	*margin-left:50px;
+	margin-top:10px;
+}
+
+.savaInfo:hover,
+.savaInfo1:hover,
+.savaInfo2:hover{
+	background:url(../images/saveBtn.png) no-repeat left -35px;
+}
+
+/* ----头像设置---- */
+.uploadBtn{
+	height:23px;
+	font-size:16px;
+	font-family:'Microsoft YaHei';
+	color:#fff;
+	display:inline-block;
+	padding:5px 25px;
+	background:#5caae6;
+	border:1px solid #4798d6;
+	cursor:pointer;
+	margin-top:5px;
+}
+.uploadBtn:hover{
+	text-decoration:underline;
+}
+.upIcon{
+	width:16px;
+	height:16px;
+	display:inline-block;
+	background:url(../../loreManager/images/allPic.png) no-repeat -199px -125px;
+	vertical-align:-3px;
+}
+/* ----安全设置---- */
+.gpsIcon{
+	width:30px;
+	height:30px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	background:url(../../studyOnline/images/iconBg.png) no-repeat -57px -67px;
+}
+.Gps{
+	color:#666;
+	margin-left:30px;
+}
+/* 绑定手机和邮箱的样式 */
+#mailInfo,
+#phoneInfo{
+	display:n-one;
+}
+.noMail,
+.noPhone{
+	display:n-one;
+}
+#attachMail,
+#attachPhone{
+	display:n-one;
+}
+#fixMail,
+#fixPhone{
+	display:no-ne;
+}
+.mailIcon{
+	width:20px;
+	height:16px;
+	position:absolute;
+	left:0px;
+	top:10px;
+	background:url(../images/icon.gif) no-repeat 0 -24px;
+}
+.phoneIcon{
+	width:15px;
+	height:20px;
+	position:absolute;
+	left:4px;
+	top:8px;
+	background:url(../images/icon.gif) no-repeat -22px -23px;
+}
+.attachBtn{
+	font-size:12px;
+	color:#1eb009;
+	margin-left:5px;
+}
+.attachBtn:hover{
+	color:#f90;
+}
+.margT{
+	margin-top:20px;
+}
+.blank,
+.twoBlank,
+.qqBlank{
+	display:inline-block;
+}
+.blank{
+	width:6px;
+}
+.twoBlank{
+	width:28px;
+}
+.qqBlank{
+	width:6px;
+}
+.vercodeBox{
+	width:185px;
+	margin-left:32px;
+}
+.changePicBtn{
+	color:#1EB009;
+}
+.changePicBtn:hover{
+	color:#f90;
+}
+.getFreeCode{
+	width:95px;
+	height:36px;
+	line-height:36px;
+	border:none;
+	cursor:pointer;
+	background:url(../images/saveBtn.png) no-repeat 0 -70px;
+	color:#0182AD;
+	text-align:center;
+	position:absolute;
+	right:63px;
+	top:2px;
+	outline:none;
+}
+.getFreeCode:hover{
+	background:url(../images/saveBtn.png) no-repeat 0 -106px;
+}
+/* ----密码管理---- */
+.iCon{
+	background:url(../images/icon.gif) no-repeat;
+}
+.errorIcon,
+.nullIcon,
+.nullPassIcon,
+.lenIcon,
+.succIcon,
+.infoIcon{
+	width:15px;
+	height:15px;
+	position:absolute;
+	left:275px;
+	top:11px;
+	top:9px\9;
+}
+.errorIcon,
+.nullIcon,
+.nullPassIcon,
+.lenIcon,
+.conPasNullIcon{
+	background-position: -116px 0px;
+}
+.conPasNullIcon,
+.succPassIcon{
+	position:absolute;
+	width:15px;
+	height:15px;
+	right:90px;
+	top:11px;
+}
+.conNullPass,
+.passDIff{
+	color:#999;
+	font-size:12px;
+	position:absolute;
+	top:2px;
+}
+.conNullPass{
+	right:-23px;
+}
+.passDIff{
+	right:-106px;
+}
+.succPassIcon{
+	background-position: -99px 0px;
+}
+.succIcon{	
+	background-position: -99px 0px;
+}
+.infoIcon{
+	background-position: -82px 0px;
+}
+.nullPas,
+.newNullPass{
+	position:absolute;
+	right:120px;
+	top:1px;
+	font-size:12px;
+	color:#999;
+}
+.errorPas{
+	position:absolute;
+	right:145px;
+	top:1px;
+	font-size:12px;
+	color:#999;
+}
+.passLength{
+	position:absolute;
+	right:55px;
+	top:0;
+	font-size:12px;
+	color:#999;
+}
+.diffNew{
+	position:absolute;
+	right:73px;
+	top:0;
+	font-size:12px;
+	color:#999;
+}
+.newPasInfo{
+	position:absolute;
+	right:-105px;
+	top:0;
+	font-size:12px;
+	color:#999;
+}
+.nowPasError,
+.nowPasNull,
+.nowPasSucc,
+.newPasNull,
+.newPassLen,
+.newPasDifOld,
+.succNewPas,
+.conPassNull,
+.diffPas,
+.succPass,
+.newPassDesc{
+	display:none;
+}
+.newPassDesc{
+	
+}
+
+/* ----密码管理下的密码强弱---- */
+.pasStrongWeak{
+	width:249px;
+	margin-left:71px;
+	float:left;
+}
+.pasBox{
+	width:64px;
+	float:left;
+	padding-right:2px;
+}
+.pasBox span{
+	width:64px;
+	height:18px;
+	color:#818181;
+	display:block;
+	overflow:hidden;
+	text-align:center;
+}
+.pasBox p{
+	width:64px;
+	height:5px;
+	overflow:hidden;
+}
+.pasBox p#red{
+	background:#ff0000;
+}
+.pasBox p#orange{
+	background:#ff9c00;
+}
+.pasBox p#green{
+	background:#00b300;
+}
+.pasBox p.gray1{
+	background:#cccccc;
+}
+.pasBox p.gray2{
+	background:#adadae;
+}
+.pasBox p.gray3{
+	background:#8d8d8d;
+}
+/* 家长绑定 */
+.parentAttach{
+	width:400px;
+	height:196px;
+	margin:80px auto 0px;
+}
+.attTit{
+	width:100%;
+	height:58px;
+	text-align:center;
+	line-height:58px;
+	background:#68c7ec;
+	color:#fff;
+	font-size:20px;
+	font-weight:normal;
+}
+.botAttCon{
+	width:100%;
+	height:138px;
+	background:#e4f3f6;
+	color:#4c4c4c;
+	
+	position:relative;
+}
+.botAttCon p{
+	font-size:16px;
+	text-align:center;
+	line-height:30px;
+	letter-spacing:1px;
+}
+.parPt{
+	padding-top:34px;
+}
+.parPl{
+	padding-left:10px;
+}
+.attachIcon{
+	width:60px;
+	height:37px;
+	position:absolute;
+	left:30px;
+	top:45px;
+	background:url(../images/attachIcon.png) no-repeat;
+}
+.useTxt{
+	width:100%;
+	font-size:14px;
+	color:#999;
+	text-align:center;
+	padding-top:10px;
+}

@@ -1,0 +1,160 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background:#99e666 url(../../registerPage/images/bodyBg.jpg) no-repeat center -10px;
+}
+.wrap{
+	height:350px;
+	position:relative;
+	margin-top:100px;
+	margin-bottom:20px;
+}
+.logo{
+	position:absolute;
+	left:80px;
+	top:-50px;
+}
+.pic{
+	width:285px;
+	height:357px;
+	position:absolute;
+	left:300px;
+	top:0;
+	background:url(../images/loginPic.png) no-repeat;
+}
+#loginBox{
+	width:406px;
+	height:320px;
+	right:0px;
+	top:30px;
+	/*margin:210px auto 100px;*/
+	background:url(../images/formBg.png) no-repeat;
+	position:absolute;
+}
+.activeText{
+	width:260px;
+	height:20px;
+	font-size:14px;
+	color:#fff;
+	position:absolute;
+	right:0;
+	top:23px;
+}
+.userName,
+.password,
+.vercode{
+	width:310px;
+	height:44px;
+	position:absolute;
+	left:55px;
+	overflow:hidden;
+	background:url(../images/formInput.jpg) no-repeat;
+}
+.userName{
+	background-position:0 0;
+	top:75px;
+}
+.password{
+	background-position:0 -44px;
+	top:125px;
+}
+.vercode{
+	background-position:0 -88px;
+	top:175px;
+}
+.vercodeBox{
+	width:180px;
+	height:35px;
+	position:absolute;
+	left:75px;
+	top:225px;
+}
+.vercodeBox a{
+	line-height:25px;
+	display:inline-block;
+	color:#80a729;
+}
+.vercodeBox a:hover,
+#forgetPass:hover,
+.freeReg a:hover,
+#backIndex a:hover{
+	color:#ff6600;
+	text-decoration:underline;
+}
+.userName input,
+.password input,
+.vercode input{
+	width:260px;
+	height:44px;
+	line-height:44px;
+	margin-left:45px;
+	float:left;
+	border:none;
+	background:none;
+	font-size:16px;
+	font-weight:bold;
+	color:#999;
+	outline:none;
+}
+#loginbtn{
+	width:200px;
+	height:34px;
+	line-height:34px;
+	position:absolute;
+	left:115px;
+	top:260px;
+	font-size:16px;
+	font-weight:bold;
+	text-align:center;
+	color:#fff;
+	background:url(../../../images/login_Bg.png) no-repeat 0 0;
+}
+#loginbtn:hover{
+	color:#2c6400;
+	background:url(../../../images/login_Bg.png) no-repeat 0 -34px;
+}
+#forgetPass{
+	color:#80a729;
+	position:absolute;
+	left:318px;
+	top:270px;
+}
+.freeReg{
+	width:110px;
+	color:#999;
+	position:absolute;
+	right:10px;
+	bottom:2px;
+}
+.freeReg a{
+	color:#80a729;
+}
+#backIndex{
+	width:100px;
+	height:30px;
+	padding-top:18px;
+	background:url(../images/backIndex.png) no-repeat left 0;
+	position:absolute;
+	bottom:2px;
+	left:8px;
+}
+#backIndex a{
+	color:#80a729;
+	margin-left:48px;
+}
+.footer{
+	height:100px;
+	text-align:center;
+	font-size:14px;
+	padding-top:20px;
+}
+.footer p{
+	color:#333;
+	line-height:24px;
+}
+.footer p a{
+	color:#333;
+}
+.footer p a:hover{
+	text-decoration:underline;
+}

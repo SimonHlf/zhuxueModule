@@ -1,0 +1,246 @@
+/* CSS Document */
+body{
+	background:#f1f2f3;
+}
+/* main主要内容部分 */
+.conCenMainPart{
+	margin-top:25px;
+}
+.conCenMainPart li{
+	float:left;
+	width:190px;
+	padding:5px;
+	margin-top:5px;
+	margin-bottom:10px;
+	position:relative;
+}
+.conCenMainPart li.bg{
+	background:#fff;
+}
+.conCenMainPart li.bg1{
+	background:#ecf1f1;
+}
+.leftSubBox{
+	width:180px;
+	height:auto;
+}
+.leftImgBox{
+	width:100%;
+	height:120px;
+	border:1px solid #e8e8e8;
+	background:#efefef url(../../goldenMall/images/useImgBg.png) no-repeat;
+	position:relative;
+}
+.userImg{
+	width:72px;
+	height:72px;
+	border-radius:50%;
+	background:#fff;
+	position:absolute;
+	left:54px;
+	top:18px;
+	overflow:hidden;
+}
+.userImg img{
+	margin:2px;
+}
+.userNames{
+	width:100%;
+	font-weight:normal;
+	font-size:16px;
+	color:#666;
+	position:absolute;
+	bottom:3px;
+	text-align:center;
+}
+.subBox{
+	margin-top:10px;
+	background:#fff;
+}
+.abs{
+	position:absolute;
+	left:0;
+	top:0;
+}
+.Fixed{
+	top:0px;
+	position:fixed;
+}
+.subNames{
+	width:130px;
+	height:35px;
+	line-height:35px;
+	background:url(../images/subState.gif) no-repeat 5px 12px;
+	display:inline-block;
+	color:#444;
+	font-size:14px;
+	padding-left:50px;
+}
+.subNames:hover{
+	color:#94c22e;
+}
+.current{
+	background:url(../images/currentSubState.gif) no-repeat 5px 12px;
+	color:#94c22e;
+}
+.cenList{
+	width:810px;
+	margin-left:10px;
+}
+.netListBox{
+	width:380px;
+	height:135px;
+	float:left;
+	margin:0px 9px 10px 9px;
+	position:relative;
+	background:#fff;
+	transition:box-shadow 0.5s;
+}
+.netListBox:hover{
+	box-shadow:0 0 20px #888;
+}
+.netTeaImg{
+	width:100px;
+	height:100px;
+	border:2px solid #dfdfdf;
+	border-radius:50%;
+	overflow:hidden;
+	position:absolute;
+	margin:14px 0 0 10px;
+}
+.imgMarker{
+	width:100px;
+	height:100px;
+	background:rgba(0,0,0,0.5);
+	position:absolute;
+	left:0;
+	top:0;
+	display:none;
+}
+.imgMarker a{
+	color:#fff;
+	position:absolute;
+	left:25px;
+	top:45px;
+}
+.netInfoBox{
+	width:250px;
+	position:absolute;
+	left:120px;
+	color:#333;
+}
+.netInfoBox .netTeaName{
+	color:#333;
+	padding-top:22px;
+	padding-bottom:6px;
+	font-size:18px;
+}
+.showStarBox{
+	height:21px;
+	font-size:14px;
+}
+.showStarBox dd{
+	width:13px;
+	height:12px;
+	float:left;
+	margin:5px 5px 0 0;
+	background:url(../images/star.png) no-repeat 0 -57px;
+}
+.showStarBox dd.on{
+	background-position:0 -69px;
+}
+.showStarBox dd.halfStar{
+	background-position:0 -81px;
+}
+.totalScore{
+	/*font-family:"Georgia";*/
+	font-size:14px;
+	font-weight:bold;
+	margin-top:-1px;
+	margin-left:5px;
+	color:#EA544A;
+}
+.low{
+	color:#EA544A;
+}
+.mid{
+	color:#ff9c00;
+}
+.hig{
+	color:#00b300;
+}
+.netInfoBox a:hover{
+	color:#f49947;
+}
+.teacheGradeSubj{
+	font-size:14px;
+}
+.attachBox a{
+	float:left;
+	margin-left:-6px;
+	color:#333;
+	font-size:14px;
+}
+.triangles{
+	width:0px;
+	height:0px;   
+    border-width:8px;  
+    border-style:solid dashed dashed solid;  
+    border-color:transparent transparent transparent #32b9ed;
+    display:inline-block;
+    float:left;
+    margin-top:2px;
+}
+
+/* 网络导师个人简介的弹窗 */
+.teaResumeBox{
+	width:860px;
+	margin-left:-430px;
+	position:absolute;
+	left:50%;
+	z-index:10009;
+	display:none;
+}
+/* 个人简介下个人荣誉图片查看按钮点击时候新创建的层 */
+.newLayer{
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:0;
+	z-index:10010;
+	background:#21262C;
+	opacity:0.8;
+	filter:alpha(opacity=80);
+	display:none;	
+}
+
+/* 呈现个人荣誉原图的盒子弹窗 */
+.perGloryBigImgBox{
+	overflow:hidden;
+	background:#fff;
+	display:none;
+	padding:40px 10px;
+	cursor:move;
+	position:absolute;
+	z-index:100001;
+}
+.tipBox{
+	width:100%;
+	height:40px;
+	line-height:40px;
+	position:absolute;
+	left:10px;
+	top:0px;
+}
+.closeBigBox{
+	width:17px;
+	height:17px;
+	position:absolute;
+	right:15px;
+	top:10px;
+	background:url(../../personalCen/images/imgzoom_tb.gif) no-repeat -80px 0px;
+	cursor:pointer;
+}
+.closeBigBox:hover{
+	background:url(../../personalCen/images/imgzoom_tb.gif) no-repeat -80px -39px;
+}

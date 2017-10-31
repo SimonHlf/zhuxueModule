@@ -1,0 +1,270 @@
+/* CSS Document */
+.resumeInfo{
+	margin-top:10px;
+}
+.wrap{
+	position:relative;
+}
+.mb{
+	margin-bottom:10px;
+}
+.netIcon{
+	width:32px;
+	height:32px;
+	position:absolute;
+	left:-5px;
+	top:-5px;
+	background:url(../images/netInfo.jpg) no-repeat;
+}
+.pos1{
+	background-position:0 0;
+}
+.pos2{
+	background-position:0 -32px;
+}
+.pos3{
+	background-position:0 -64px;
+}
+.netParDiv{
+	padding:12px 15px;
+	font-size:14px;
+	margin-left:15px;
+}
+.netComDiv{
+	width:312px;
+	height:35px;
+	line-height:35px;
+	float:left;
+	color:#666;
+}
+.blanks{
+	width:27px;
+	display:inline-block;
+}
+.textBox{
+	width:604px;
+	height:160px;
+	margin:10px 0 0 30px;
+	padding:10px;
+	color:#666;
+	outline:none;
+	border:1px solid #cdcdcd;
+	box-shadow:3px 3px 3px #f1f1f1 inset;
+	border-radius:2px;
+	line-height:20px;
+	overflow:auto;
+}
+.remainBox{
+	width:625px;
+	height:16px;
+	margin:5px 0 0 30px;
+	color:#a9a9a9;
+	float:left;
+	text-align:right;
+}
+
+.upLoadImgBox{
+	width:630px;
+	height:150px;
+	margin-top:10px;
+	margin-left:30px;
+}
+.noUpload{
+	margin-top:5px;
+	float:left;
+	box-shadow:3px 3px 3px #f1f1f1 inset
+}
+.imgMl{
+	margin-left:20px;
+}
+/* 已经上传好荣誉的盒子 */
+.picCoverBox,
+.comUploadBox,
+.comParents{
+	position:relative;
+}
+.comParents{
+	width:0px;
+	height:246px;
+	margin-top:15px;
+	display:none;
+	overflow:hidden;
+}
+.widths{
+	width:720px;
+}
+.comUploadBox{
+	width:442px;
+	height:246px;
+	background:#ededef;
+	overflow:hidden;
+}
+#upImgBox{
+	width:442px;
+	height:auto;
+	position:absolute;
+	left:0;
+	top:0;
+}
+.imgbox{
+	width:104px;
+	height:130px;
+	background:#fff;
+	margin:3px;
+	float:left;
+	display:none;
+	position:relative;
+}
+.comImg{
+	padding:5px;
+}
+.setImg{
+	width:22px;
+	height:22px;
+	background:url(../images/icon.gif) no-repeat -105px -24px;
+	position:absolute;
+	right:3px;
+	top:3px;
+	z-index:20;
+	cursor:pointer;
+	display:none;
+}
+.smallImgLayer{
+	width:104px;
+	height:130px;
+	background:#000;
+	opacity:0.5;
+	filter:alpha(opacity=50);
+	position:absolute;
+	left:0;
+	top:0;
+	display:none;
+}
+.setToolBox{
+	width:90px;
+	height:auto;
+	position:absolute;
+	top:25px;
+	right:3px;
+	display:none;
+}
+.setToolBox li{
+	width:100%;
+	height:30px;
+	line-height:30px;
+	background:#fff;
+	text-align:center;
+	cursor:pointer;
+	position:relative;
+	color:#262626;
+}
+.setToolBox li:hover{
+	background:#94c22e;
+	color:#fff;
+}
+.toolIcon{
+	width:22px;
+	height:22px;
+	background:url(../images/icon.gif) no-repeat -57px -24px;
+	position:absolute;
+	left:2px;
+	top:4px;
+}
+.setToolBox li:hover .toolIcon{
+	background:url(../images/icon.gif) no-repeat -81px -24px;
+}
+.scrollPar{
+	width:5px;
+	height:214px;
+	position:absolute;
+	right:27px;
+	top:32px;
+	display:none;
+}
+.scrollSon{
+	width:5px;
+	height:50px;
+	background:#8b8a86;
+	position:absolute;
+	left:0;
+	top:0;
+	border-radius:20px;
+}
+.picCoverBox{
+	width:188px;
+	height:246px;
+	margin:15px 0 0 30px;
+	background:url(../images/gloryCover.png) no-repeat;
+	overflow:hidden;
+}
+
+
+.picNumNameLayer,
+.lookLayer{
+	width:180px;
+	background:#000;
+	opacity:0.6;
+	filter:alpha(opacity=60);
+	position:absolute;
+	left:1px;
+	
+}
+.picNumNameLayer{
+	bottom:5px;
+	height:30px;
+}
+.lookLayer{
+	height:210px;
+	top:1px;
+	display:none;
+	
+}
+.seePicBtn{
+	width:40px;
+	height:40px;
+	position:absolute;
+	left:75px;
+	top:-40px;
+	cursor:pointer;
+	z-index:5;
+	background:url(../images/lookIcon1.png) no-repeat;
+}
+.nameNum{
+	width:180px;
+	height:30px;
+	line-height:30px;
+	position:absolute;
+	left:1px;
+	bottom:5px;
+	color:#fff;
+	font-size:14px;
+	text-align:center;
+}
+.totalNum{
+	position:absolute;
+	right:10px;
+	top:0px;
+	font-size:20px;
+}
+.margt{
+	margin-top:10px;
+}
+.margL{
+	margin-left:300px;
+}
+.margL1{
+	margin-left:80px;
+}
+.closecomUploadBox{
+	width:32px;
+	height:32px;
+	position:absolute;
+	right:0;
+	top:0;
+	background:url(../images/closeUp.gif) no-repeat;
+	cursor:pointer;
+}
+.closecomUploadBox:hover{
+	background:url(../images/closeUp.gif) no-repeat 0 -32px;
+}
+

@@ -1,0 +1,46 @@
+.loreDetailWrap{
+	width:100%;
+	height:667px;
+}
+/* 左侧导航列表 */
+.leftNav{
+	width:150px;
+	height:auto;
+	margin-top:150px;
+	position:relative;
+	z-index:2;
+}
+.leftNav li{
+	width:100%;
+	height:35px;
+	line-height:35px;
+	border:none;
+	text-align:center;
+	background:none;
+	color:#2C4977;
+	cursor:pointer;
+	font-size:14px;
+}
+.leftNav li:hover{
+	background:#94c22e;
+	color:#fff;
+}
+.leftNav li.active{
+	width:150px;
+	height:36px;
+	background:#fff;
+	font-weight:bold;
+	color:#f90;
+	border-top:2px solid #AAC147;
+	border-bottom:2px solid #AAC147;
+	border-left:2px solid #AAC147;
+}
+/* 右侧主体内容 */
+.rightCon{
+	width:828px;
+	height:667px;
+	border-left:2px solid #AAC147;
+	border-top:2px solid #AAC147;
+	position:relative;
+	z-index:1;
+}

@@ -1,0 +1,69 @@
+.nowPosition{
+	width:730px;
+	height:35px;
+	line-height:35px;
+	margin:0 auto 5px;
+}
+.nowPosition p{
+	font-size:16px;
+	color:#666;
+}
+.nowPosition p span{
+	color:#91c42f;
+	font-weight:bold;
+}
+.imgTabBox{
+	width:730px;
+	height:auto;
+	margin:10px auto 0px;
+}
+.imgTabBox ul{
+	width:100%;
+	height:45px;
+	border-bottom:1px solid #e0e0e0;
+}
+.imgTabBox li{
+	width:110px;
+	height:45px;
+	line-height:45px;
+	text-align:center;
+	float:left;
+	margin-right:10px;
+	border:1px solid #e9e9ee;
+	font-size:14px;
+	color:#666;
+	border-bottom:none;
+	cursor:pointer;
+}
+.imgTabBox li.active{
+	width:110px;
+	height:44px;
+	line-height:44px;
+	background:#fff;
+	font-weight:bold;
+	border-top:2px solid #91c42f;
+}
+.imgTabBox li:hover{
+	color:#1eb009;
+}
+.imgTabBox li.active:hover{
+	color:#666;
+}
+.tongjiBox{
+	width:100%;
+	height:auto;
+	text-align:center;
+	font-size:14px;
+	color:#666;
+	margin:10px 0 10px 0px;
+}
+#weeks,
+#stuRepCount{
+	font-weight:bold;
+	color:#f60;
+}
+.activeImgBox{
+	width:600px;
+	height:500px;
+	margin:0 auto;
+}

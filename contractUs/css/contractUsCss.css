@@ -1,0 +1,92 @@
+@CHARSET "UTF-8";
+body{
+	height:845px;
+}
+.rightPart{
+	width:330px;
+	height:230px;
+	background:#91c42f;
+	margin-left:10px;
+	padding:30px 0 0 20px;
+}
+.mapWrap{
+	width:994px;
+	height:306px;
+	border:3px solid #dddddd;
+	margin-top:50px;
+	margin-bottom:10px;
+}
+.detailConTxt ul li{
+	width:453px;
+	height:107px;
+	border-bottom:1px dashed #d9d9d9;
+	float:left;
+	position:relative;
+}
+.mlLi{
+	margin-right:92px;
+}
+.decIcon{
+	width:69px;
+	background:url(../images/icon.gif) no-repeat;
+	position:absolute;
+	left:40px;
+	top:24px;
+}
+.detailConTxt p{
+	width:322px;
+	position:absolute;
+	left:120px;
+}
+.detailConTxt p.address{
+	top:33px;
+}
+.detailConTxt p.tel{
+	top:40px;
+}
+.detailConTxt p.fax,
+.detailConTxt p.email,
+.detailConTxt p.service{
+	top:46px;
+}
+.detailConTxt p.webTxt{
+	top:50px;
+}
+.detailConTxt p a{
+	color:#878686;
+}
+.detailConTxt p a:hover{
+	text-decoration:underline;
+}
+.comTxtDec{
+	color:#878686;
+	font-size:14px;
+}
+.addIcon{
+	height:55px;
+	background-position:0 0;
+}
+.telIcon{
+	height:69px;
+	background-position:0 -55px;	
+}
+.faxIcon{
+	height:69px;
+	background-position:0 -405px;	
+}
+.mailNum{
+	height:69px;
+	background-position:0 -264px;
+}
+.webSite{
+	height:72px;
+	background-position:0 -124px;
+}
+.hour24{
+	height:68px;
+	background-position:0 -196px;	
+}
+.kefuIcon{
+	height:72px;
+	background-position:0 -333px;	
+}

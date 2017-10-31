@@ -1,0 +1,19 @@
+#roleChoice{
+	width:100%;
+	height:40px;
+	line-height:40px;
+}
+.choice_l{
+	width:200px;
+	line-height:40px;
+}
+.choice_r{
+	width:300px;
+	line-height:40px;
+	background:red;
+}
+#detailCon{
+	width:95%;
+	height:auto;
+	margin:0 auto;
+}

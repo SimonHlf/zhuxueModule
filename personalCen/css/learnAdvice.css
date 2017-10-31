@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+
+.adviceWrap{
+	width:756px;
+	margin:0px auto 0px;
+}
+.nowPosition{
+	width:730px;
+	height:35px;
+	line-height:35px;
+	background:url(../../studyOnline/images/iconBg.gif) no-repeat -181px 5px;
+	margin:0 auto;
+}
+.nowPosition p{
+	text-indent:25px;
+	color:#666;
+}
+.adviceCon{
+	width:100%;
+	height:auto;
+}

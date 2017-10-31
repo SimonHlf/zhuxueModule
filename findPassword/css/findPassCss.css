@@ -1,0 +1,410 @@
+.imgBg{
+    width:100%;
+    height:100%;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:-1;
+}
+.imgBg img{
+	width:100%;
+    height:100%;
+    position:fixed;
+}
+.findPassWrap{
+	width:1000px;
+	height:597px;
+	background:#fff;
+	position:absolute;
+	left:50%;
+	margin-left:-500px;
+	top:50%;
+	margin-top:-300px;
+	z-index:2;
+	padding:4px;
+	border-top:3px solid #f79407;
+}
+.hideLogo{
+	width:112px;
+	height:77px;
+	opacity:0.5;
+	filter:alpha(opacity = 50);
+	position:absolute;
+	right:70px;
+	bottom:25px;
+	z-index:3;
+	display:none;
+}
+.logo{
+	width:200px;
+	height:76px;
+	position:absolute;
+	top:-76px;
+	left:10px;
+}
+.posA{
+	left:0;
+	top:-8px;
+}
+.findPasNav{
+	width:880px;
+	height:39px;
+	margin:30px 0 0 100px;
+}
+.findPasNav li{
+	width:220px;
+	height:39px;
+	float:left;
+	background:url(../images/arrow.gif) no-repeat right top;
+	position:relative;
+}
+.findPasNav li.noArrow{
+	background:none;
+}
+.findPasNav li span{
+	height:39px;
+	position:absolute;
+	top:0;
+	background:url(../images/findPasNav.gif) no-repeat;
+}
+.findPasNav li span.enterName{
+	width:146px;
+	left:0;
+	background-position:0 0;
+}
+.findPasNav li.active span.enterName{
+	background-position:0 -39px;
+}
+.findPasNav li span.identify{
+	width:108px;
+	left:65px;
+	background-position:0 -78px;
+}
+.findPasNav li.active span.identify{
+	background-position:0 -117px;
+}
+.findPasNav li span.setNewPas{
+	width:128px;
+	left:55px;
+	background-position:0 -156px;
+}
+.findPasNav li.active span.setNewPas{
+	background-position:0 -195px;
+}
+.findPasNav li span.done{
+	width:70px;
+	left:65px;
+	background-position:0 -234px;
+}
+.findPasNav li.active span.done{
+	background-position:0 -273px;
+}
+.fixPasBox{
+	width:878px;
+	height:475px;
+	margin:30px 0 0 60px;
+	border:1px solid #ddd;
+	position:relative;
+}
+.fixPasConBox{
+	width:100%;
+	height:100%;
+	position:relative;
+}
+.triangles{
+	width:21px;
+	height:11px;
+	background:#fff url(../../account/registerPage/images/triangle.png) no-repeat;
+	position:absolute;
+	top:-11px;
+}
+.posOne{
+	left:115px;
+}
+.posTwo{
+	left:380px;
+}
+.posThree{
+	left:600px;
+}
+.posFour{
+	left:802px;
+}
+.autoBox{
+	width:383px;
+	height:258px;
+	margin:0px auto 0px;
+	position:relative;
+	padding-top:88px;
+}
+.comInpBox{
+	width:383px;
+	height:60px;
+	background:url(../images/fixInput.gif) no-repeat;
+	position:relative;
+}
+.userNames{
+	background-position:0 0;
+}
+.vercodes{
+	background-position:0 -60px;
+	margin-top:24px;
+}
+.setNewPas,
+.confirPas{
+	background-position:0 -180px;
+}
+.confirPas{
+	margin-top:8px;
+}
+.comInp{
+	width:313px;
+	margin-left:65px;
+	height:59px;
+	line-height:59px;
+	*line-height:56px;
+	background:none;
+	border:none;
+	border:0px;
+	outline:none;
+	font-size:22px;
+	font-family:"微软雅黑";
+	color:#c2c2c2;
+}
+.vercodeImgBox{
+	width:180px;
+	height:25px;
+	position:absolute;
+	left:1px;
+	top:246px;
+}
+.vercodeImgBox a{
+	line-height:25px;
+	display:inline-block;
+	color:#78ae00;
+}
+.vercodeImgBox a:hover{
+	color:#ff6600;
+}
+.writeCol{
+	color:#444;
+}
+.nextBtn{
+	width:380px;
+	height:59px;
+	line-height:59px;
+	text-align:center;
+	position:absolute;
+	left:0;
+	border-radius:6px;
+	background:#3ab0f3;
+	color:#fff;
+	font-size:30px;
+	cursor:pointer;
+	margin-left:1px;
+}
+.nextBtn:hover{
+	background:#35a0dd;
+}
+.posBot{
+	bottom:0px;
+}
+.posBot1{
+	bottom:20px;
+}
+.comIdenBox{
+	height:35px;
+	line-height:35px;
+	font-size:18px;
+	color:#333;
+}
+.comIdenBox strong{
+	font-weight:normal;
+}
+.margTop{
+	margin-top:10px;
+}
+.getCondes{
+	width:65px;
+	height:60px;
+	position:absolute;
+	right:-68px;
+	top:0px;
+	background:url(../images/fixInput.gif) no-repeat 0 -120px;
+	cursor:pointer;
+	border:none;
+	border:0px;
+	outline:none;
+	font-size:14px;
+	font-family:"微软雅黑";
+}
+.getCondes:hover{
+	background:url(../images/fixInput.gif) no-repeat -65px -120px;
+}
+.phoneCodeTip{
+	color:#666;
+	font-size:14px;
+	position:absolute;
+	left:245px;
+	top:245px;
+	display:none;
+}
+.timerNum{
+	color:#fc3333;
+	font-family:Arial;
+	font-weight:bold;
+}
+.doneIcon{
+	width:98px;
+	height:81px;
+	position:absolute;
+	left:0;
+	top:178px;
+	background:url(../images/done.gif) no-repeat;
+}
+.succTxt,
+.succTxt1,
+.succTxt2{
+	position:absolute;
+	left:120px;
+}
+.succTxt{
+	font-size:24px;
+	color:#81bf14;
+	top:180px;
+}
+.succTxt1{
+	width:310px;
+	top:218px;
+	font-size:16px;
+	color:#666;
+}
+.succTxt2{
+	font-size:16px;
+	top:245px;
+}
+.newPassword{
+	color:#f68211;
+	font-weight:bold;
+}
+.succTxt2 a{
+	color:#666;
+	text-decoration:underline;
+}
+.succTxt2 a:hover{
+	color:#f68211;
+}
+/* 密码强弱 */
+.pasStrongWeak{
+	width:285px;
+	padding-top:12px;
+	margin:0 auto;
+}
+.pasBox{
+	width:93px;
+	float:left;
+	padding-right:2px;
+}
+.pasBox span{
+	width:93px;
+	height:15px;
+	color:#818181;
+	display:block;
+	overflow:hidden;
+	text-align:center;
+}
+.pasBox p{
+	width:93px;
+	height:5px;
+	overflow:hidden;
+}
+.pasBox p#red{
+	background:#ff0000;
+}
+.pasBox p#orange{
+	background:#ff9c00;
+}
+.pasBox p#green{
+	background:#00b300;
+}
+.pasBox p.gray1{
+	background:#cccccc;
+}
+.pasBox p.gray2{
+	background:#adadae;
+}
+.pasBox p.gray3{
+	background:#8d8d8d;
+}
+/* 提示信息对应的状态Icon */
+.comIcon{
+	width:20px;
+	height:20px;
+	position:absolute;
+	background:url(../images/fixInput.gif) no-repeat;
+	right:10px;
+	top:20px;
+}
+.rightIcon{
+	background-position:-141px -121px;
+}
+.errorIcon{
+	background-position:-141px -141px;
+}
+.accountNameR,
+.accountNameE,
+.vercondeR,
+.vercondeE,
+.setNewPasR,
+.setNewPasE,
+.conNewPasR,
+.conNewPasE,
+.phoneCodeR,
+.phoneCodeE{
+	display:none;
+}
+/*新密码、确认新密码的输入时提示信息 */
+.pasInfos,
+.emptyNewPas,
+.lesSixLen,
+.conEmptyNews,
+.difPass,
+.accInfo,
+.noExitAcc,
+.verInfo,
+.noExiVer,
+.verNumInfo,
+.phoneCoInfo{
+	position:absolute;
+	width:208px;
+	right:35px;
+	font-size:14px;
+	display:none;
+}
+.pasInfos{
+	top:98px;
+	color:#888;
+}
+.emptyNewPas,
+.lesSixLen,
+.accInfo,
+.noExitAcc{
+	color:#f00808;
+	top:107px;
+}
+.conEmptyNews,
+.difPass{
+	top:208px;
+	color:#f00808;
+}
+.verInfo,
+.noExiVer,
+.verNumInfo{
+	top:194px;
+	color:#f00808;
+}
+.phoneCoInfo{
+	top:189px;
+	right:-36px;
+	color:#f00808;	
+}

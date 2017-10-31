@@ -1,0 +1,602 @@
+body{
+	overflow:hidden;
+	background:#f3f2f6;
+	position:relative;
+}
+.nowLoc{
+	width:100%;
+	height:0.50rem;
+	background:#64ccf2;
+	color:#fff;
+	position:relative;
+	z-index:600;
+}
+.nowLoc p.bigTit,
+.smallTit{
+	width:90%;
+	max-width:90%;
+	position:absolute;
+	left:32px;
+}
+.nowLoc p.bigTit{
+	height:30px;
+	line-height:30px;
+	top:0px;
+}
+.smallTit{
+	height:20px;
+	font-size:0.14rem;
+	top:26px;
+}
+.backIcon{
+	width:30px;
+	height:0.50rem;
+	position:absolute;
+	left:0px;
+	top:0px;
+	background:url(../../onlineStudy/images/backIcon.png) no-repeat center;
+}
+
+/* ------核心答题区域 st------*/
+#mainQuesWrap{
+	width:100%;
+}
+/* 做题进度条 */
+#proBarWrap{
+	width:100%;
+	height:39px;
+	border-bottom:1px solid #d8d8d8;
+	background:#fff;
+}
+#innerProBarDiv{
+	width:80%;
+	line-height:39px;
+	margin:0 auto;
+	height:100%;
+	font-size:0.16rem;
+	color:#999999;
+	position:relative;
+}
+.queNumSpan{
+	display:inline-block;
+	float:left;	
+	margin-right:5px;
+}
+.proBarDiv{
+	height:15px;
+	float:left;
+	margin-top:13px;
+	background:#e6e6e6;
+	border-radius:8px;
+	box-shadow:inset 2px 4px 3px #c5c5c5;
+	position:relative;
+	z-index:1;
+}
+.rateLine{
+	height:100%;
+	border-radius:8px;
+	background:#64ccf2;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.finalDiv{
+	width:26px;
+	height:26px;
+	border-radius:50%;
+	position:absolute;
+	right:0px;
+	top:7px;
+	z-index:2;
+}
+.finalCol{
+	background:#e6e6e6;
+	box-shadow:inset -2px 4px 2px #c5c5c5;
+}
+.finalCol_open{
+	background:#64ccf2;
+}
+.finalFlag{
+	width:18px;
+	height:18px;
+	background:url(../../onlineStudy/images/whole.png) no-repeat 0 -274px;
+	position:absolute;
+	left:4px;
+	top:6px;
+	-webkit-transform:rotate(-6deg);
+	-moz-transform:rotate(-6deg);
+	transform:rotate(-6deg);
+	opacity:0.6;
+}
+/* 答题区域 */
+#questionInfo{
+	overflow:hidden;
+}
+#questionList li{
+	float:left;
+	height:100%;
+	opacity:0;
+}
+.loreTypeTit{
+	background:#fff;
+	padding:10px 10px 5px 10px;
+	border-bottom:1px solid #d8d8d8;
+}
+.loreTypeNum{
+	height:26px;
+	line-height:26px;
+	display:inline-block;
+	font-size:0.30rem;
+	color:#666;
+	font-family:"Aparajita";
+	position:relative;
+	z-index:2;
+}
+.loreTypeTxt{
+	display:inline-block;
+	height:26px;
+	line-height:26px;
+	padding:0 6px;
+	background:#64ccf2;
+	color:#fff;
+	position:relative;
+	font-size:0.16rem;
+	border-radius:0 3px 3px 0px;
+	margin:0px 8px 5px 14px;
+}
+.loreTypeTxt em{
+	position:absolute;
+	border:13px solid #fff;
+	border-right-color:#64ccf2;
+	left:-26px;
+	top:0px;
+}
+.loreTypeTxt i{
+	width:8px;
+	height:8px;
+	background:#fff;
+	border-radius:50%;
+	position:absolute;
+	left:-5px;
+	top:9px;
+}
+.quesTit p{
+	color:#666;
+	line-height:26px;
+	word-break:break-all;
+	word-wrap:break-word;
+}
+.quesTit p img{
+	margin:5px 0px 5px 0px;
+}
+.optionDd{
+	padding:16px 10px 5px 10px;
+	position:relative;
+}
+.answerOptions{
+	width:100%;
+	position:absolute;
+	left:0px;
+	top:16px;
+	z-index:2;
+}
+.answerOptions label{
+	width:100%;
+	display:inline-block;
+	margin-bottom:10px;
+	min-height:40px;
+	opacity:0;
+	text-align:center;
+}
+.answerOptions label input{
+	display:inline-block;
+	width:100%;
+}
+.answerOptions_space{
+	border-top:1px solid #d8d8d8;
+	margin-top:20px;
+	padding-top:5px;
+}
+.optionPar{
+	width:100%;
+	line-height:38px;
+	color:#666;
+	margin-bottom:10px;
+}
+.optionBox{
+	width:20px;
+	height:20px;
+	margin:7px 0 0 20px;
+	border:1px solid #999;
+	position:relative;
+	border-radius:50%;
+	float:left;
+}
+@media all and (max-width:320px){
+	.optionBox{
+		width:20px;
+		height:20px;
+		margin:7px 0 0 20px;
+	}
+}
+@media all and (min-width:321px) and (max-width:350px){
+	.optionBox{	
+		margin-left:22px;
+	}
+}
+@media all and (min-width:351px) and (max-width:380px){
+	.optionBox{	
+		margin-left:26px;
+	}
+}
+.current{
+	border:1px solid #44A9CE;
+}
+.optionBox .spaceAnsRadio{
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:0px;
+	top:0px;
+	opacity:0;
+}
+.spacSpanLabel{
+	position:absolute;
+	left:-15px;
+	top:-8px;
+}
+.optionBox b{
+	width:10px;
+	height:10px;
+	border-radius:50%;
+	background:#44A9CE;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin-left:-5px;
+	margin-top:-5px;
+}
+
+.myAnsOpt{
+	font-size:0.16rem;
+	color:#666;
+	margin-top:16px;
+	position:relative;
+}
+.myAnsTxt{
+	float:left;
+}
+.errStateSpan,
+.rightStateSpan,
+.iconState_suc,
+.iconState_err{
+	height:20px;
+	float:left;
+	margin-left:5px;
+}
+.iconState_err{
+	margin-top:3px;
+}
+.errStateSpan,
+.iconState_err{
+	width:20px;
+	background:url(../../onlineStudy/images/whole.png) no-repeat 0 -125px;
+}
+.rightStateSpan,
+.iconState_suc{
+	width:25px;
+	background:url(../../onlineStudy/images/whole.png) no-repeat -25px -125px;
+}
+.tishiBox,
+.relAnsBox{
+	border-bottom:1px solid #d8d8d8;
+	background:#fff;
+	font-size:0.14rem;
+	color:#666;
+	margin-top:-16px;
+	position:relative;
+	padding:10px;
+	line-height:25px;
+}
+.myAnsRes{
+	background:#fff;
+	margin-top:-16px;
+	line-height:25px;
+	color:#666;
+}
+.tishiBox{
+	text-indent:28px;
+}
+.relRightAnsTxt{
+	font-weight:bold;
+}
+.tishiIcon,
+.warnningIcon{
+	width:24px;
+	height:26px;
+	background:url(../../onlineStudy/images/whole.png) no-repeat 0 -145px;
+	position:absolute;
+}
+.tishiIcon{
+	left:10px;
+	top:8px;
+}
+.warnningIcon{
+	left:165px;
+	top:-3px;
+}
+.choiceTxt{
+	display:inline-block;
+	margin-left:32px;
+	line-height:24px;
+}
+.myRealAnsBox{
+	margin-top:10px;
+	position:relative;
+}
+.optionBox_Que{
+	width:25px;
+	height:25px;
+	background:url(../../onlineStudy/images/whole.png) no-repeat 0 -100px;
+	position:relative;
+	float:left;
+	margin-left:15px;
+	margin-right:5px;
+}
+.optionBox_Que input{
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:0px;
+	top:0px;
+	opacity:0.5;
+}
+.rightSpan,
+.errorSpan{
+	position:absolute;
+	left:-16px;
+	top:0px;
+}
+.optionBox_Que b{
+	width:15px;
+	height:15px;
+	position:absolute;
+	left:5px;
+	top:5px;
+	background:url(../../onlineStudy/images/whole.png) no-repeat -35px -100px;
+}
+.optionDiv{
+	border:1px solid #d8d8d8;
+	margin-bottom:10px;
+	border-radius:6px;
+	position:relative;
+	z-index:1;
+	background:#fff;
+}
+.optionWrod{
+	display:block;
+	width:40px;
+	min-height:40px;
+	text-align:center;
+	background:#efefef;
+	color:#666666;
+	border-radius:6px 0px 0px 6px;
+	float:left;
+}
+.choice_act{
+	background:#c6c6c6;
+}
+.optionDetailTxt{
+	background:#fff;
+	padding:0px 8px;
+	color:#666;
+	float:left;
+	font-size:0.14rem;
+	border-radius:0px 6px 6px 0px;
+	position:relative;
+}
+.questionWrap{
+	position:relative;
+}
+.scroller{
+	width:100%;
+	position:absolute;
+	left:0px;
+	top:0px;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+/* 解析div层 */
+.analysis_div{
+	display:none;
+	width:93%;
+	background:#fff;
+	margin:0 auto 15px;
+	border-radius:6px;
+	padding:10px 0px;
+	color:#666;
+	border:1px solid #d8d8d8;
+}
+.analysisTit{
+	padding-left:10px;
+	font-weight:normal;
+}
+.analysis_div p{
+	padding:5px 10px 0px 10px;
+}
+/* 提交答案 */
+.submitOption{
+	height:40px;
+	line-height:40px;
+}
+.submitDiv{
+	margin-left:10px;	
+}
+.submitDiv .goNextBtn{
+	display:inline-block;
+	width:100%;
+	height:100%;
+	background:#64ccf2;
+	color:#fff;
+	text-align:center;
+	border-radius:6px;
+	font-size:0.20rem;
+}
+/* ------核心答题区域 end------*/
+
+/* ------底部答题卡区域st------ */
+#botCardBox{
+	width:100%;
+	background:#fff;
+	position:absolute;
+	left:0px;
+	z-index:5;
+	color:#999999;
+	border-top:1px solid #d5d5d5;
+}
+#botCard{
+	width:100%;
+}
+.closeBot{
+	width:45px;
+	height:100%;
+	position:absolute;
+	right:0px;
+	top:0px;
+}
+.closeBotIcon{
+	width:30px;
+	height:30px;
+	background:url(../../onlineStudy/images/whole.png) no-repeat -18px -261px;
+	position:absolute;
+	left:10px;
+	top:12px;
+}
+.shadow{
+	width:6px;
+	height:52px;
+	position:absolute;
+	left:-6px;
+	top:0px;
+	background:url(../../onlineStudy/images/shadow.png) no-repeat;
+	display:none;
+}
+.tabNav{
+	margin-left:10px;
+	padding:10px 0px 0px;
+	float:left;
+	overflow:auto;
+}
+.tabNav li{
+	width:30px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	border:1px solid #d5d5d5;
+	float:left;
+	position:relative;
+	margin:0px 10px 10px 0;
+	border-radius:50%;
+}
+.tabNav li span{
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:0;
+	top:0;
+	border-radius:50%;
+}
+.tabNav li.active{
+	background:#e5e5e5;
+}
+.errorState{
+	background:#fb5151;
+	color:#fff;
+	font-weight:bold;
+}
+.rightState{
+	background:#64ccf2;
+	color:#fff;
+	font-weight:bold;
+}
+.errorState_queNum{
+	background:#fce8e8;
+	color:#fb5151;
+}
+.rightState_queNum{
+	background:#e7f7fd;
+	color:#64ccf2;
+}
+.tishiPos{
+	font-size:0.35rem;
+	position:absolute;
+	left:43px;
+	top:10px;
+}
+/* 显示隐藏答题卡 */
+.showHideBtn{
+	width:40px;
+	height:40px;
+	position:absolute;
+	right:0px;
+	bottom:0px;
+	background:url(../../onlineStudy/images/more1.png) no-repeat;
+}
+/* ------底部答题卡区域end------ */
+
+/* 回答正确或者错误的提示信息和正确后金币奖励信息 */
+#tipInfoBox{
+	width:100%;
+	height:100px;
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	/*bottom:-150px;
+	display:none;*/
+	z-index:6;
+	color:#fff;
+	font-size:0.18rem;
+	text-align:center;
+	line-height:28px;
+	-webkit-transition:0.5s ease-out;
+	transition:0.5s ease-out;
+	-webkit-transform:translateY(150px);
+	transform:translateY(150px);
+		
+}
+#tipInfoBox p:nth-of-type(1){
+	margin-top:25px;
+}
+.rightInfo{
+	background:#64ccf2;
+}
+.errorInfo{
+	background:#fb5151;
+}
+#tipFace{
+	width:80px;
+	height:80px;
+	border-radius:50%;
+	position:absolute;
+	left:35px;
+	top:-50px;
+	box-shadow:3px 3px 8px #595959; 
+}
+.rigFace{
+	background:#64e6f2;
+}
+.errFace{
+	background:#ffe400;	
+}
+#facePic{
+	width:60px;
+	height:70px;
+	position:absolute;
+	left:10px;
+	top:5px;
+}
+.rigFacePic{
+	background:url(../../onlineStudy/images/rightFace.png) no-repeat;
+}
+.errFacePic{
+	background:url(../../onlineStudy/images/errorFace.png) no-repeat;
+}

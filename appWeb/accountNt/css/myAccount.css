@@ -1,0 +1,562 @@
+html{
+	overflow:hidden;
+}
+body{
+	overflow:hidden;
+	background:#f3f2f6;
+	position:relative;
+}
+.nowLoc{
+	width:100%;
+	height:0.50rem;
+	line-height:0.50rem;
+	background:#64ccf2;
+	color:#fff;
+	position:relative;
+	z-index:12;
+}
+.nowLoc p.titP{
+	text-indent:32px;
+}
+.backIcon{
+	width:30px;
+	height:0.50rem;
+	position:absolute;
+	left:0px;
+	top:0px;
+	background:url(../../onlineStudy/images/backIcon.png) no-repeat center;
+}
+/* 我的账户头部导航 */
+.accNav{
+	width:100%;
+	height:35px;
+	line-height:35px;
+	background:#64ccf2;
+}
+.accNav li{
+	float:left;
+	height:35px;
+	color:#fff;
+	text-align:center;
+	font-size:0.14rem;
+}
+.accNav li.active{
+	height:32px;
+	border-bottom:3px solid #ffe400;
+}
+/* 对应数据层 */
+.accountType,
+#infoDiv_incWrap{
+	width:100%;
+	position:relative;
+}
+.scroller{
+	width:100%;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.accountType{
+	display:none;
+}
+/* 我的账户 */
+.basicInfo{
+	width:100%;
+	height:140px;
+	background:#2fbaec;
+	position:relative;
+}
+.infoSpan{
+	color:#0079a5;
+	display:inline-block;
+	margin-left:10px;
+	padding-top:15px;
+}
+.basicInfo h2{
+	color:#fff;
+	font-size:0.22rem;
+	font-weight:normal;
+	padding-left:10px;
+	margin-top:5px;
+}
+.basicInfo h2 span{
+	margin-left:10px;
+}
+.botInfo{
+	width:100%;
+	height:50px;
+	background:#64ccf2;
+	color:#fff;
+	font-size:0.16rem;
+	position:absolute;
+	left:0px;
+	bottom:0px;
+}
+.botInfo div{
+	float:left;
+	width:33%;
+	height:50px;
+	text-align:center;
+	position:relative;
+}
+.botInfo div .line{
+	width:1px;
+	height:30px;
+	background:#fff;
+	position:absolute;
+	right:0px;
+	top:10px;
+}
+.botInfo div p{
+	width:100%;
+	height:20px;
+	line-height:20px;
+	margin-top:5px;
+}
+.botInfo div p:nth-of-type(1){
+	font-size:0.14rem;
+	margin-top:5px;
+}
+.botInfo div p:nth-of-type(2){
+	font-size:0.16rem;
+	font-weight:bold;
+	margin-top:0px;
+}
+
+/* 银行卡 */
+.backAccInfo{
+	margin-top:10px;
+	background:#fff;
+	padding-bottom:10px;
+	border-bottom:1px solid #dbdbdb;
+}
+.accTitP{
+	width:100%;
+	height:34px;
+	line-height:35px;
+	background:#fff;
+	border-bottom:1px solid #dbdbdb;
+	border-left:5px solid #64ccf2;
+	color:#64ccf2;
+	text-indent:6px;
+}
+.bankNaNum p,
+.botApplyDiv p{
+	width:100%;
+	height:49px;
+	line-height:50px;
+	color:#666;
+	text-indent:10px;
+	position:relative;
+	background:#fff;
+}
+.bankNaNum p{
+	border-bottom:1px dashed #dbdbdb;
+}
+.botApplyDiv p{
+	border-bottom:1px solid #dbdbdb;
+}
+.botApplyDiv p span{
+	color:#999;
+}
+.moreIcon{
+	width:10px;
+	height:20px;
+	background:url(../images/moreIcon.png) no-repeat;
+	position:absolute;
+	right:15px;
+	top:15px;
+}
+#bankNum,
+#txMoney{
+	width:65%;
+	height:28px;
+	border:none;
+	font-size:0.16rem;
+	color:#666;
+}
+#bankNum{
+	font-family:"verdana";
+}
+.upDateDiv,
+.txABtn{
+	width:60%;
+	height:35px;
+	line-height:35px;
+	background:#64ccf2;
+	margin:10px auto 0px;
+	color:#fff;
+	font-size:0.18rem;
+	border-radius:4px;
+	text-align:center;
+}
+.upDateDiv a,
+.applyInfo a{
+	width:100%;
+	height:100%;
+	display:inline-block;
+	color:#fff;
+}
+/* 申请提现 */
+.applyInfo{
+	width:100%;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	background:#fff;
+	font-size:0.18rem;
+	border-top:1px solid #dbdbdb;
+	position:absolute;
+	left:0px;
+	bottom:0px;
+}
+.applyInfo a{
+	color:#333;
+}
+/* 申请提现弹窗 */
+.topApplyDiv{
+	width:100%;
+	height:180px;
+	padding-top:10px;
+}
+@media all and (min-width:600px){
+	.topApplyDiv{
+		height:220px;
+		padding-top:30px;
+	}
+}
+.applyDec{
+	width:130px;
+	height:130px;
+	background:#ffc33d;
+	margin:0px auto 2px;
+	border-radius:50%;
+}
+.applyDec img{
+	margin:0px 0 0 20px;
+	padding-top:10px;
+}
+.topApplyDiv p{
+	text-align:center;
+	color:#333;
+}
+.topApplyDiv p:nth-of-type(2){
+	font-weight:bold;
+}
+.botApplyDiv{
+	width:100%;
+	border-top:1px solid #dbdbdb;
+	position:relative;
+}
+#txMoney::-webkit-input-placeholder{
+	color:#999;
+}
+.botNote{
+	width:100%;
+	border-top:1px solid #d1d1d1;
+	height:49px;
+	background:#e2e2e2;
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	color:#666;
+	font-size:0.14rem;
+}
+.padClas{
+	padding:5px 10px;
+}
+.lineClas{
+	line-height:50px;
+	padding-left:10px;
+}
+.botNote span{
+	color:#333;
+}
+/* 更换银行弹窗层 */
+.changeBank,
+#applyWindow{
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:0px;
+	top:0px;
+	z-index:500;
+	-webkit-transition:0.5s;
+	transition:0.5s;
+	-webkit-transform:translateX(100%);
+	transform:translateX(100%);
+}
+.changeBank{
+	background:#fff;
+}
+#applyWindow{
+	background:#f3f2f6;
+}
+.detailTit{
+	width:100%;
+	height:39px;
+	line-height:40px;
+	border-bottom:1px solid #dddddd;
+	background:#fff;
+	color:#333;
+}
+.goBackBtn{
+	width:60px;
+	color:#2798c2;
+	height:100%;
+	text-indent:22px;
+	position:relative;
+}
+.goBackBtn span{
+	width:28px;
+	height:28px;
+	background:url(../../studyRecord/images/back.png) no-repeat left center;
+	position:absolute;
+	left:0px;
+	top:7px;
+	background-size:cover;
+}
+.compBtn{
+	width:50px;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	position:absolute;
+	right:0px;
+	top:0px;
+	color:#666;
+	display:none;
+}
+/* 新增银行卡和更换银行卡 */
+#bankWrapper{
+	width:100%;
+	background:#f3f2f6;
+	position:relative;
+}
+.bankScroller{
+	width:100%;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.bankMidWinDiv li{
+	width:100%;
+	height:39px;
+	line-height:40px;
+	position:relative;
+	border-bottom:1px solid #ddd;
+	text-indent:45px;
+	color:#333;
+	background:#fff;
+	font-size:0.14rem;
+}
+.bankMidWinDiv li .comBankIcon{
+	width:30px;
+	height:30px;
+	background:url(../images/bankIcon.png) no-repeat;
+	position:absolute;
+	left:10px;
+	top:5px;
+	background-size:cover;
+}
+.bankMidWinDiv li .icbcIcon{
+	background-position:0 0;
+}
+.bankMidWinDiv li .abcIcon{
+	background-position:0 -30px;
+}
+.bankMidWinDiv li .ccbIcon{
+	background-position:0 -60px;
+}
+.bankMidWinDiv li .cmbIcon{
+	background-position:0 -90px;
+}
+.bankMidWinDiv li .bocIcon{
+	background-position:0 -120px;
+}
+.bankMidWinDiv li .psbcIcon{
+	background-position:0 -150px;
+}
+.bankMidWinDiv li .commIcon{
+	background-position:0 -180px;
+}
+.bankMidWinDiv li .citicIcon{
+	background-position:0 -210px;
+}
+.bankMidWinDiv li .cmbcIcon{
+	background-position:0 -240px;
+}
+.bankMidWinDiv li .cebIcon{
+	background-position:0 -270px;
+}
+.bankMidWinDiv li .cibIcon{
+	background-position:0 -300px;
+}
+.bankMidWinDiv li .spdbIcon{
+	background-position:0 -330px;
+}
+.bankMidWinDiv li .gdbIcon{
+	background-position:0 -360px;
+}
+.bankMidWinDiv li .hxbankIcon{
+	background-position:0 -390px;
+}
+.bankMidWinDiv li .shbankIcon{
+	background-position:0 -420px;
+}
+.bankMidWinDiv li .shnsbankIcon{
+	background-position:0 -450px;
+}
+.bankMidWinDiv li .com_BankRdio{
+	width:100%;
+	height:40px;
+	position:absolute;
+	right:0px;
+	top:0px;
+	z-index:5;
+	opacity:0;
+	-webkit-tap-highlight-color:transparent;
+}
+.bankMidWinDiv li .comCirSpan,
+.bankMidWinDiv li b{
+	position:absolute;
+	border-radius:50%;
+}
+.bankMidWinDiv li .comCirSpan{
+	width:23px;
+	height:23px;
+	border:1px solid #ddd;
+	z-index:1;
+	right:10px;
+	top:8px;
+}
+.bankMidWinDiv li b{
+	width:29px;
+	height:29px;
+	background:url(../images/selectIcon.png) no-repeat;	
+	z-index:2;
+	right:8px;
+	top:6px;
+}
+/* 收入明细 */
+.titDiv{
+	background:#fefcec;
+	height:35px;
+	line-height:35px;
+	position:relative;
+	overflow:hidden;
+}
+#titleInfo{
+	color:#f76f2b;
+	font-size:0.14rem;
+}
+.titIcon{
+	width:27px;
+	height:25px;
+	background:url(../images/titIcon.png) no-repeat;
+	margin:5px 0 0 10px;
+}
+.titDiv p{
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:40px;
+	top:0px;
+}
+.listItem{
+	width:95%;
+	height:100px;
+	background:#fff;
+	border:1px solid #e2e2e2;
+	margin:10px auto 0px;
+	border-radius:4px;
+}
+.listItem h3{
+	font-weight:normal;
+	text-indent:10px;
+	padding-top:10px;
+	color:#333;
+	margin-bottom:5px;
+}
+.listItem h3 strong{
+	font-size:0.18rem;
+	color:#3fb3dd;
+}
+.listItem h3 span{
+	font-size:0.14rem;
+}
+.listItem p{
+	margin-left:10px;
+}
+.listItem p:nth-of-type(1){
+	color:#666;
+}
+.listItem p:nth-of-type(2){
+	color:#999;
+	font-size:0.14rem;
+}
+/* 收入明细 */
+.listSon_inc:nth-of-type(1){
+	width:15%;
+}
+.listSon_inc:nth-of-type(2){
+	width:60%;
+}
+.listSon_inc:nth-of-type(3){
+	width:25%;
+}
+/* 提现记录 */
+.listSon_tx{
+	position:relative;
+	z-index:18;
+}
+.listSon_tx:nth-of-type(1){
+	width:40%;
+	max-width:40%;
+}
+.listSon_tx:nth-of-type(2){
+	width:40%;
+	max-width:40%;
+}
+.listSon_tx:nth-of-type(3){
+	width:20%;
+}
+.checkMore{
+	width:16px;
+	height:16px;
+	position:absolute;
+	right:7px;
+	top:11px;
+	background:url(../images/checkMore.png) no-repeat;
+	display:none;
+	z-index:13;
+}
+/* 学生购买记录 */
+.listSon_buy:nth-of-type(1){
+	width:38%;
+}
+.listSon_buy:nth-of-type(2){
+	width:25%;
+}
+.listSon_buy:nth-of-type(3){
+	width:35%;
+}
+.listSon_inc p,
+.listSon_tx p,
+.listSon_buy p{
+	height:24px;
+	line-height:24px;
+}
+/* 暂无记录 */
+.noAccDataDiv{
+	width:180px;
+	text-align:center;
+	margin:0 auto;
+	color:#666;
+}
+.noPayState{
+	color:#f76f2b;
+}
+.payState{
+	color:#3fb3dd;
+}

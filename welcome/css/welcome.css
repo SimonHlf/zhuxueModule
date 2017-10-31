@@ -1,0 +1,567 @@
+@charset "utf-8";
+/* CSS Document */
+.bg3{
+	background:url(../images/bodyBg.jpg) no-repeat;
+}
+/* 主体内容的样式 */
+.homePage{
+	margin:0 auto;
+	position:relative;
+}
+.head .logos{
+	width:154px;
+	height:106px;
+	position:absolute;
+	top:0px;
+	left:50px;
+}
+/* 切换系统 */
+.switchBtn{
+	position:absolute;
+	width:50px;
+	height:54px;
+	background:url(../images/pull_3.gif) no-repeat 0 0;
+	right:-36px;
+	top:0px;
+}
+.useImg{
+	width:116px;
+	height:116px;
+	position:absolute;
+	left:-80px;
+	top:50px;
+	background:#ebebeb;
+	border:4px solid #fff;
+	border-radius:4px;
+	overflow:hidden;
+}
+.layerName,
+.imgLayer{
+	width:116px;
+	height:30px;
+	line-height:30px;
+	position:absolute;
+	left:0;
+	text-align:center;
+}
+.layerName{
+	bottom:-30px;
+}
+.imgLayer{
+	background:#000;
+	opacity:0.5;
+	filter:alpha(opacity=50);
+	z-index:0;
+}
+.nameUser{
+	color:#fff;
+	font-size:14px;
+	position:relative;
+	z-index:2;
+}
+.homeCon{
+	position:relative;
+	top:80px;
+}
+.contents{
+	width:1000px;
+	border-radius:3px;
+	padding:0 3px 3px 0px;	
+	background:rgba(255,255,255,0.5);
+}
+.contents .modulePart{
+	width:197px;
+	height:165px;
+	float:left;
+	position:relative;
+	cursor:pointer;
+	margin:1px 0 0 1px;
+	border:1px solid #fff;
+}
+.homeCon .modulePart:hover{
+	background:#fff;
+}
+.modulePart a{
+	display:inline-block;
+	width:197px;
+	height:165px;
+	line-height:292px;
+	text-align:center;
+	position:absolute;
+	left:0;
+	top:0;
+}
+.modulePart a img{
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.modulePart span{
+	color:#333d46;
+	font-size:16px;
+}
+.roleChoice{
+	width:360px;
+	height:180px;
+	margin-top:-90px;
+	margin-left:-180px;
+	background:#fff;
+	position:absolute;
+	left:50%;
+	top:50%;
+	z-index:100008;
+	display:none;
+}
+
+/* 判断网络导师收费文本框是否填写 */
+.judgeNetTea{
+	width:907px;
+	height:600px;
+	background:#fff;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin-left:-454px;
+	margin-top:-290px;
+	z-index:10010;
+	display:none;
+	background:url(../../account/registerPage/images/introWebFun/viewBoxBg.jpg) repeat 0 0;
+	border-bottom-right-radius:10px; 
+	border-bottom-left-radius:10px;
+}
+.viewCon{
+	width:907px;
+	height:600px;
+	overflow:hidden;
+	margin:0 auto;
+	position:relative;
+}
+.viewCon ul{
+	height:600px;
+	position:relative;
+	left:0;
+}
+.viewCon ul li{
+	width:907px;
+	height:600px;
+	float:left;
+}
+.introTitle{
+	height:78px;
+	background:#2c3134;
+	border-bottom:4px solid #252828;
+	font-family:楷体_GB2312,楷体;
+}
+.introTitle h2{
+	height:73px;
+	line-height:73px;
+	font-size:28px;
+	color:#fff;
+	padding-left:45px;
+	font-weight:normal;
+}
+.introCon3{
+	width:786px;
+	margin:20px auto 0px;
+}
+.introCon1{
+	width:738px;
+	margin:30px auto 0px;
+}
+.introCon1 p.one{
+	width:282px;
+	height:55px;
+	padding-top:40px;
+}
+.introCon1 .topWrap{
+	width:738px;
+	height:175px;
+}
+.introCon1 p.three{
+	width:738px;
+	height:179px;
+	padding-top:35px;
+}
+.introCon2{
+	width:701px;
+	margin:15px auto 0px;
+}
+.quAn{
+	height:114px;
+	margin-bottom:15px;
+}
+.quAn p{
+	font-size:14px;
+	height:57px;
+	line-height:57px;
+}
+.quAn p.one{
+	padding-left:60px;
+	background:url(../../account/registerPage/images/introWebFun/quAn.jpg) no-repeat 0 0;
+}
+.quAn p.two{
+	padding-left:60px;
+	background:url(../../account/registerPage/images/introWebFun/quAn.jpg) no-repeat right -57px;
+}
+.introCon3{
+	width:786px;
+	margin:20px auto 0px;
+}
+.detail,
+.detail1{
+	background:white;
+	background:rgba(255,255,255,0.5);
+	padding:20px 36px 0 20px;
+}
+.detail{
+	height:68px;
+}
+.detail1{
+	height:78px;
+}
+.detail p,
+.detail1 p{
+	font-size:14px;
+	line-height:26px;
+}
+.detail1 .c1{
+	font-weight:bold;
+	color:#f57915;
+	margin-left:10px;
+}
+.detailTitle{
+	position:relative;
+	display:inline-block;
+	height:21px;
+	line-height:21px;
+	font-weight:bold;
+	background:#7fa93d;
+	padding-left:3px;
+	padding-right:12px;
+	color:#fff;
+}
+.detailTitle .triangle{
+	width:11px;
+	height:21px;
+	display:inline-block;
+	position:absolute;
+	right:-11px;
+	top:0;
+	background:url(../../account/registerPage/images/introWebFun/triangleIcon.png) no-repeat;
+}
+.margL{
+	margin-left:8px;
+}
+.gifCon{
+	margin-top:10px;
+}
+.gifCon1{
+	margin-top:55px;
+}
+.ml{
+	margin-left:40px;
+}
+.ml1{
+	margin-left:65px;
+}
+.ml2{
+	margin-left:5px;
+}
+.introPic{
+	width:728px;
+	margin:25px 0 0 58px;
+}
+.smallPic{
+	margin:128px 54px 0 0;
+}
+.economyPro{
+	width:292px;
+}
+.proDetailBox{
+	width:290px;
+	border:solid 1px #c7d693;
+	background:#f3fbe6;
+	height:290px;
+	margin-top:5px;
+}
+.proDetailBox p{
+	padding:10px 10px 0 10px;
+	line-height:26px;
+	color:#333;
+	font-size:14px;
+}
+.proDetailBox p .color1{
+	color:#4e7f01;
+}
+.proDetailBox p .color2{
+	color:#f57915;
+}
+.ecoMid{
+	margin:70px 35px 0 35px;
+}
+.introCon4{
+	width:820px;
+	margin:20px auto 0px;
+}
+.picCon{
+	width:370px;
+}
+.picCon1{
+	width:360px;
+	background:#f3fbe6;
+	border:solid 1px #c7d693;
+	margin-bottom:25px;
+}
+.picCon1 p{
+	line-height:26px;
+	color:#333;
+	padding:15px 15px;
+	font-size:12px;
+}
+.netTeaName{
+	width:605px;
+	height:150px;
+	margin:40px auto 0px;
+}
+
+.realName{
+	margin-left:20px;
+	padding-top:20px;
+}
+.realName strong{
+	font-size:14px;
+}
+.realName input{
+	width:146px;
+	height:25px;
+	line-height:25px;
+	border:1px solid #ccc;
+	vertical-align:middle;
+	padding:0 8px;
+}
+.note{
+	width:300px;
+	margin-left:10px;
+	padding-top:18px;
+	font-size:12px;
+	line-height:16px;
+}
+.note p{
+	color:#333;
+}
+/* 上一步下一步 */
+.prevPage,
+.nextPage,
+#endButton{
+	position:absolute;
+	font-size:18px;
+	font-weight:bold;
+	width:106px;
+	height:38px;
+	line-height:40px;
+	color:#af680c;
+	bottom:30px;
+	background:url(../../account/registerPage/images/pageButton.gif) no-repeat;
+}
+.prevPage{
+	background-position:0 0;
+	text-indent:35px;
+	right:165px;
+}
+.nextPage,
+#endButton{
+	right:50px;
+}
+.nextPage{
+	text-indent:13px;
+	background-position:0 -38px;
+}
+#endButton{
+	display:none;
+	text-align:center;
+	background-position:0 -76px;
+}
+#endButton:hover{
+	text-decoration:underline;
+}
+/* 用户反馈 */
+.feedback{
+	width:50px;
+	height:50px;
+	background:url(../images/sideIcon.png) no-repeat;
+	position:fixed;
+	right:0px;
+	cursor:pointer;
+	z-index:800;
+	bottom:25px;
+}
+.chargeCardEnBtn{
+	position:fixed;
+	cursor:pointer;
+	z-index:800;
+	right:0px;
+}
+.classBtn1{
+	width:242px;
+	height:212px;
+	background:url(../images/chargeIcon.png) no-repeat;
+	top:106px;
+}
+.classBtn2{
+	width:50px;
+	height:50px;
+	bottom:135px;
+	background:url(../images/sideIcon.png) no-repeat 0 -372px;
+}
+.classBtn2:hover{
+	background:url(../images/sideIcon.png) no-repeat 0 -422px;
+}
+.feedback:hover{
+	background-position:0 -50px;
+	transition:.5s;
+}
+#feedbackBox{
+	width:626px;
+	height:474px;
+	position:absolute;
+	left:-50%;
+	margin-left:-313px;
+	display:none;
+	z-index:1000;
+}
+.feedStyle{
+	margin-top:5px;	
+}
+.feedType,
+.txtfeed{	
+	font-size:14px;
+	text-align:center;
+	cursor:pointer;
+	float:left;
+	position:relative;
+	height:42px;
+	line-height:42px;
+}
+.feedType{
+	color:#777;
+	width:120px;
+	background:#fff;
+	margin-right:10px;
+
+}
+.feedType:hover{
+	color:#333;
+}
+.txtfeed{
+	color:#555;
+	margin:0 5px 0 10px;
+}
+.txtTit{
+	height:38px;
+	line-height:38px;
+	color:#555;
+	margin:0 5px 0 10px;
+	font-size:14px;
+}
+.feedType input{
+	width:120px;
+	height:46px;
+	opacity:0;
+	filter:alpha(opacity=0);
+	position:absolute;
+	left:-2px;
+	top:-2px;
+	cursor:pointer;
+}
+.feedType em{
+	width:26px;
+	height:26px;
+	position:absolute;
+	right:0;
+	top:0;
+	background:url(../images/sideIcon.png) no-repeat 0 -240px;
+}
+/* 反馈标题文本输入框 */
+.feedTit{
+	margin-top:10px;
+}
+.input_Tit{
+	vertical-align:middle;
+	width:528px;
+	padding:12px 5px;
+	border:0;
+	color:#777;
+	outline:none;
+}
+/* 反馈内容 */
+.feedCon{
+	width:100%;
+	height:210px;
+	margin-top:10px;
+}
+.feedCon textarea{
+	width:518px;
+	height:190px;
+	border:0;
+	padding:10px;
+	color:#777;
+	outline:none;
+	overflow:auto;
+	margin-left:73px;
+}
+.remainBox{
+	width:100%;
+	height:16px;
+	line-height:16px;
+	text-align:right;
+	color:#555;
+	margin-top:5px;
+	
+}
+.remainBox p{
+	margin-right:5px;
+}
+/* 费用不足到期提醒 */
+.alert_windows{
+	display:none;
+	position:absolute;
+	z-index:1000;
+	width:564px;
+	height:278px;
+	background:url(../images/payAlertBg.png) no-repeat;
+	color:#fff;
+}
+.dueTit{
+	font-size:20px;
+	font-weight:normal;
+	position:absolute;
+	left:192px;
+	top:75px;
+}
+.dueCon{
+	width:404px;
+	font-size:16px;
+	position:absolute;
+	left:76px;
+	top:115px;
+}
+.dueCon strong{
+	color:#ffc200;
+}
+.alertBtn{
+	color:#77b211;
+	font-size:20px;
+	font-weight:bold;
+	position:absolute;
+	top:185px;
+}
+.knowBtn{
+	left:200px;
+}
+.buyBtn{
+	left:280px;
+}
+.alertBtn:hover{
+	text-decoration:underline;
+	color:#fff;
+}

@@ -1,0 +1,237 @@
+.smallNav{
+	height:23px;
+	line-height:23px;
+	margin-top:25px;
+	color:#666;
+	position:relative;
+}
+.smallNav p.autoBox{
+	background:#fff;
+	position:absolute;
+	left:0;
+	top:0;
+	padding:0px 3px 0 10px;
+}
+.triangDec{
+	width:16px;
+	height:23px;
+	background:url(../images/smallNavDec.png) no-repeat;
+	position:absolute;
+	right:-16px;
+	top:0px;
+}
+.smallNav a{
+	color:#666;
+}
+.smallNav a:hover{
+	color:#333;
+}
+.topProDetail{
+	background:#fff;
+	padding:10px 0 5px 0px;
+}
+.proImgBox{
+	width:365px;
+	height:365px;
+	background:#fff;
+}
+.proDetails{
+	width:400px;
+	height:275px;
+	background:#fff;
+	padding-right:10px;
+}
+.proDetails h2{
+	font-size:18px;
+	color:#333;
+	max-width:410px;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	white-space:nowrap;
+}
+.prodetails{
+	color:#666;
+	line-height:20px;
+}
+.goldBox{
+	width:400px;
+	height:80px;
+	background:url(../images/goldBox.gif) no-repeat;
+	margin-top:10px;
+	font-size:14px;
+}
+.price{
+	color:#666;
+	text-indent:2em;
+	padding-top:12px;
+	padding-bottom:5px;
+}
+.nums{
+	font-size:18px;
+	color:#ff5a00;
+	font-weight:600;
+}
+.stock,
+.buyNum{
+	color:#666;
+}
+.stock span,
+.buyNum span{
+	font-weight:bold;
+	color:#ff5a00;
+}
+.stock{
+	text-indent:2em;
+}
+.buyNum{
+	margin-left:15px;
+}
+.freePackage{
+	height:36px;
+	line-height:36px;
+	margin-top:20px;
+	border-top:1px dashed #c9c9c9;
+	border-bottom:1px dashed #c9c9c9;
+	color:#999;
+}
+.goBuyBtn{
+	width:122px;
+	height:38px;
+	line-height:38px;
+	display:inline-block;
+	background:#f5c055;
+	margin-top:20px;
+	text-align:center;
+	color:#fff;
+	font-size:16px;
+}
+.goBuyBtn:hover{
+	background:#f3b436;
+	transition:.5s;
+}
+/*-------- 中间商品详情文字图片信息兑换排行 兑换及时信息播报   ------------*/
+.midProDetail{
+	margin-top:20px;
+}
+.rightInfos{
+	width:760px;
+}
+.rightHead{
+	width:760px;
+	background:url(../images/detailPro.gif) no-repeat;
+	height:37px;
+	line-height:37px;
+	overflow:hidden;
+	
+}
+.addRelative{
+	position:relative;
+}
+.exchangeBtn{
+	width:67px;
+	height:17px;
+	background:url(../images/goBuy.jpg) no-repeat;
+	display:none;
+	text-align:center;
+	color:#fff;
+	position:absolute;
+	right:3px;
+	top:16px;
+	z-index:3;
+}
+.exchangeBtn:hover{
+	text-decoration:underline;
+}
+.imgTxtBox{
+	width:700px;
+	background:#fff;
+	padding:10px 30px;
+}
+.imgTxtBox img{
+	margin-bottom:5px;
+}
+.imgTxtBox p{
+	font-size:14px;
+	line-height:22px;
+	color:#666;
+	margin-bottom:5px;
+}
+.leftRank{
+	width:230px;
+	background:url(../images/rankPro.gif) no-repeat;
+	padding-bottom:10px;
+}
+.rankHead{
+	height:0px;
+	line-height:37px;
+	text-align:center;
+	color:#363636;
+	font-size:20px;
+	padding-top:37px;
+	overflow:hidden;
+}
+.rankCon{
+	width:200px;
+	background:#fafafa;
+	padding:15px 15px;
+}
+.rankCon li{
+	border-bottom:1px dashed #666;
+	padding-bottom:3px;
+	margin-bottom:3px;
+}
+.rankNum{
+	width:20px;
+	height:20px;
+	line-height:20px;
+	margin-top:6px;
+	border-radius:50%;
+	text-align:center;
+	background:#eee;
+	color:#fff;
+}
+.hotRank{
+	background:#EB460C;
+}
+.rankImgBox{
+	width:120px;
+	margin-left:10px;
+	color:#333;
+	text-align:center;
+
+}
+.rankImgBox:hover{
+	text-decoration:underline;
+}
+.rankImgBox img{
+	width:90px;
+	height:58px;
+	padding-top:5px;
+}
+.rankProName{
+	width:100%;
+	display:inline-block;
+	max-width:160px;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	white-space:nowrap;
+}
+.addFixed{
+	position:fixed;
+	top:0px;
+	z-index:30;
+}
+.backTop{
+	width:50px;
+	height:50px;
+	background:url("../../welcome/images/sideIcon.png") no-repeat scroll 0 -272px;
+	position:fixed;
+	right:10px;
+	bottom:10px;
+	z-index:100;
+	display:none;
+}
+.backTop:hover{
+	background:url("../../welcome/images/sideIcon.png") no-repeat scroll 0 -322px;
+	transition:.5s;
+}

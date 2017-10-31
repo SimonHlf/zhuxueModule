@@ -1,0 +1,81 @@
+/*  */
+.quesListWrap{
+	width:100%;
+	height:100%;
+	position:relative;
+}
+.listTop{
+	width:100%;
+	height:78px;
+	background:url(../images/headBg.png) no-repeat;
+	position:relative;
+	z-index:3;
+}
+.listTop h2{
+	font-size:20px;
+	color:#f90;
+	text-indent:100px;
+	padding-top:20px;
+}
+.listTop p .forTit{
+	text-indent:100px;
+}
+.forTit{
+	color:#999;
+	font-size:16px;
+}
+.totalNum{
+	position:absolute;
+	font-size:14px;
+	color:#999;
+	margin-left:6px;
+	margin-top:2px;
+}
+#questionListDiv{
+	position:relative;
+	background:url(../images/quesWrapBg.png) no-repeat left bottom;
+}
+.queListWrap{
+	position:relative;
+	background:url(../images/midBg.png) repeat-y;
+}
+.mainUlConBox{
+	width:820px;
+	height:100%;
+	position:relative;
+	margin-left:137px;
+	z-index:2;
+	overflow:hidden;
+}
+#goldCoinBox,
+#goldCoinBox1{
+	width:91px;
+	height:0px;
+	position:absolute;
+	left:50%;
+	top:165px;
+	margin-left:-45px;
+	opacity:1;
+	filter:alpha(opacity=100);
+	display:none;
+}
+/* Ä£Äâ¹ö¶¯Ìõ */
+.parentScroll{
+	width:11px;
+	position:absolute;
+	right:3px;
+	top:0;
+	border-radius:20px;
+}
+.parScroHei2{
+	height:74px;
+}
+.sonScrollBar{
+	width:11px;
+	height:50px;
+	position:absolute;
+	left:0;
+	top:0;
+	background:#999;
+	border-radius:20px;
+}

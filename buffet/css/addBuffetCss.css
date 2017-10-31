@@ -1,0 +1,173 @@
+.addPracticeWrap{
+	width:100%;
+	position:relative;
+}
+.headTitle{
+	font-size:16px;
+	color:#2C4977;
+}
+.choiceBox{
+	width:730px;
+	background:#edffd1;
+	border:1px solid #67ae2c;
+	color:#666;
+	padding:5px 10px;
+}
+.queSty{
+	margin-right:10px;
+	font-size:14px;
+}
+.relateBox{
+	width:100%;
+	clear:both;
+	padding-top:7px;
+	font-size:14px;
+}
+/* 鍏宠仈璇嶆潯杈撳叆妗�*/
+#dic_new{
+	width:200px;
+	padding:5px 2px;
+	border:1px solid #ccc;
+	vertical-align:middle;
+	border-radius:3px;
+}
+.topTitle{
+	width:100%;
+	height:38px;
+	line-height:38px;
+	position:relative;
+	margin-top:10px;
+}
+.topTitle span{
+	font-size:16px;
+	color:#2C4977;
+	position:absolute;
+	left:0;
+	top:0px;
+}
+.selectBox{
+	width:750px;
+	border-top:3px solid #2C4977;
+	margin-top:10px;
+	padding:5px 0px;
+	position:relative;
+}
+.selectBox .ansSelect,
+.ansText{
+	font-size:14px;
+	color:#666;
+	font-weight:bold;
+}
+
+.selectBox label{
+	color:#666;
+}
+.noticeIcon{
+	width:25px;
+	height:25px;
+	position:absolute;
+	left:148px;
+	*left:165px;
+	top:3px;
+	background:url(../../loreManager/images/allPic.png) no-repeat -29px -116px;
+}
+.notice{
+	color:red;
+	margin-left:25px;
+}
+/* 鏂囧瓧鍥剧墖閫夐」鐩掑瓙鏍峰紡 */
+.textBox,
+.imgBox{
+	margin-top:5px;
+}
+.textBox .colors{
+	font-size:14px;
+	font-weight:bold;
+	color:#666;
+}
+.textBox .txtInput{
+	width:152px;
+	padding:5px 3px;
+	border:1px solid #cdcdcd;
+	box-shadow:2px 2px 2px #e2dede inset;
+	border-radius:3px;
+	color:#333;
+	margin-right:5px;
+	vertical-align:middle;
+}
+.textBox .otherChoice{
+	margin-top:5px;
+}
+/* 鍥剧墖鐩掑瓙*/
+.imgBox img:hover{
+	cursor:pointer;
+}
+.imgBox .comImgBox{
+	width:102px;
+	float:left;
+	margin-right:5px;
+}
+.imgBox .comImgBox img{
+	padding:1px;
+}
+.imgBox .comImgBox p{
+	text-align:center;
+	color:#2C4977;
+	font-weight:bold;
+	font-size:12px;
+}
+#myEditor_answer_select{
+	margin-bottom:5px;
+}
+.addAnsSelBtn,
+.seacrhBtn{
+	width:60px;
+	height:25px;
+	line-height:25px;
+	text-align:center;
+	border:none;
+	background:url(../../loreManager/images/allPic.png) no-repeat -351px -66px;
+	color:#fff;
+	cursor:pointer;
+}
+.addAnsSelBtn:hover,
+.seacrhBtn:hover{
+	text-decoration:underline;
+	background:url(../../loreManager/images/allPic.png) no-repeat -411px -66px;
+}
+.comHei{
+	height:30px;
+	line-height:30px;
+	font-size:14px;
+}
+.multiBtn{
+	width:28px;
+	height:25px;
+	text-align:cener;
+	cursor:pointer;
+	border:none;
+	background:url(../../loreManager/images/allPic.png) no-repeat -351px -66px;
+	outline:none;
+	color:#fff;
+}
+.multiBtn:hover{
+	background:url(../../loreManager/images/allPic.png) no-repeat -411px -66px;
+}
+.clearBtn{
+	width:100px;
+}
+/* 切换问题类型 */
+#changeTypeButton,
+#resetBtn,
+.clearBtn{
+	height:25px;
+	line-height:25px;
+	*line-height:20px;
+	cursor:pointer;
+	overflow:visible;
+}
+#changeTypeButton,
+#resetBtn{
+	padding:0 5px;
+	
+}

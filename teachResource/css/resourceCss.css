@@ -1,0 +1,174 @@
+/* 助学网教学资源 */
+.resWrap{
+	height:auto;
+}
+.resBigTit{
+	font-size:44px;
+	font-weight:normal;
+	padding-top:55px;
+	text-align:center;
+	color:#332c2b;
+}
+.comResDiv{
+	width:100%;
+	height:90px;
+	background:#dcdddd;
+	margin-top:10px;
+}
+.smallTit,
+.smallTits{
+	font-size:25px;
+	font-weight:normal;
+	text-align:center;
+	color:#332c2b;
+}
+.smallTit{
+	padding-top:15px;
+}
+.smallTits{
+	line-height:90px;
+}
+.detailCon{
+	font-size:14px;
+	color:#332c2b;
+	text-align:center;
+	padding-top:5px;
+}
+.banben{
+	width:100%;
+	height:185px;
+	position:relative;
+}
+.listBanBen{
+	width:98px;
+	height:auto;
+	text-align:center;
+	position:absolute;
+	top:35px;
+}
+.listBanBen p,
+.suyuan p,
+.expTit,
+.yufuxi p{
+	color:#332c2b;
+	font-size:14px;
+	
+}
+.pdTop{
+	padding-top:10px;
+}
+.posL1{
+	left:140px;
+}
+.posL2{
+	left:455px;
+}
+.posR1{
+	right:140px;
+}
+.suyuan{
+	width:100%;
+	height:auto;
+	margin-bottom:60px;
+}
+.suyuan img{
+	float:left;
+	margin:40px 104px 0 165px;
+}
+.suyuan p{
+	width:240px;
+	float:left;
+	padding-top:150px;
+}
+.wuwei{
+	width:100%;
+	height:auto;
+	margin-bottom:30px;
+}
+.expTit{
+	width:652px;
+	text-align:center;
+	margin:24px 0 45px 170px;
+}
+.leftPart,
+.cenPart{
+	width:395px;
+	height:auto;
+	margin-right:9px;
+}
+.rightPart{
+	width:192px;
+	height:auto;
+}
+.innerTop,
+.innerBottom{
+	width:100%;
+	height:135px;
+}
+.innerPart{
+	width:192px;
+	height:135px;
+}
+.mr{
+	margin-right:10px;
+}
+.mb{
+	margin-bottom:10px;
+}
+.tingBg{
+	background:#00a2e9;
+}
+.xueBg{
+	background:#a6d4ae;
+}
+.kanBg{
+	background:#8fbc2c;
+}
+.zuoBg{
+	background:#7c6fb0;
+}
+.beiBg{
+	background:#bcc774;
+}
+.innerPart p{
+	font-size:14px;
+	text-align:center;
+	line-height:135px;
+}
+.ziyuan{
+	width:100%;
+	height:auto;
+	margin-bottom:30px;
+}
+.ziyuan img{
+	float:left;
+	margin-top:8px;
+	margin-right:12px;
+}
+.ziyuanTxt{
+	width:500px;
+	height:286px;
+	background:#91c42f;
+	margin-top:8px;
+	line-height:286px;
+	color:#fff;
+	text-align:center;
+}
+.font18{
+	font-size:22px;
+}
+.font14{
+	font-size:16px;
+}
+.yufuxi{
+	width:100%;
+	margin-top:25px;
+	margin-bottom:80px;
+}
+.yufuxi p{
+	text-align:center;
+	line-height:25px;
+}
+.yufuxi p.marBot{
+	margin-bottom:10px;
+}
